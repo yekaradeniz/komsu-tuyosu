@@ -16,7 +16,7 @@ import { generateVoice, getAudioDuration } from './generateVoice.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const content = JSON.parse(readFileSync(join(ROOT, 'content', 'beyin-oyunlari.json'), 'utf-8'));
+const content = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-tuyosu.json'), 'utf-8'));
 const photos = JSON.parse(readFileSync(join(ROOT, 'content', 'photos.json'), 'utf-8'));
 const statePath = join(ROOT, 'output', 'log.json');
 const state = readState(statePath);
