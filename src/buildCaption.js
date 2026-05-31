@@ -1,29 +1,28 @@
 // YouTube spam koruma algoritmasi ayni caption'i tekrarlayan hesaplari
 // flag eder. Bu yuzden her gun verse'in ilk satiri + rotating hashtag seti
-// uretiyoruz. Tum captionlar farkli ama brand kimligi (#psikoloji,
-// #zihnimizinsırları gibi core taglar) korunuyor.
+// uretiyoruz. Tum captionlar farkli ama brand kimligi (#komşutüyosu,
+// #evipuçları gibi core taglar) korunuyor.
 
-const CORE_TAGS = ['#psikoloji', '#zihnimizinsırları', '#davranisbilimleri'];
+const CORE_TAGS = ['#komşutüyosu', '#evipuçları', '#pratikbilgi'];
 
 const ROTATION_POOL = [
-  '#zihin', '#psikolojikkavramlar', '#sosyalpsikoloji', '#bilissel',
-  '#kisilik', '#ilskiler', '#manipulasyon', '#kararvermek',
-  '#empati', '#oz', '#bilim', '#beyin',
-  '#farkindalik', '#mentalsaglik', '#egitim', '#dusunce',
-  '#duygular', '#bilinc', '#analitik', '#refleks',
-  '#shorts', '#kisiselgelisim', '#psikolojikipucu',
-  '#nedenboyleyim', '#insandavranisi'
+  '#temizlik', '#evtüyoları', '#mutfaktüyoları', '#evdüzeni',
+  '#pratikçözüm', '#evbakımı', '#organizasyon', '#çamaşır',
+  '#tasarruf', '#leketemizliği', '#yaşamhilesi', '#püfnoktası',
+  '#dekorasyon', '#mutfak', '#temizlikipuçları', '#evişleri',
+  '#hayatkurtaran', '#evhali', '#pratikbilgiler', '#evhanımı',
+  '#shorts', '#nasılyapılır', '#evdekorasyonu', '#tüyo'
 ];
 
 const ROTATION_COUNT = 4;
 
 const INTRO_VARIANTS = [
   v => `${v}`,
-  v => `${v}\n\nSen hiç fark ettin mi?`,
-  v => `Soru:\n${v}`,
-  v => `${v}\n\nCevap videoda.`,
-  v => `Zihnimizin Sırları | ${v}`,
-  v => `Bugünün sorusu:\n\n${v}`
+  v => `${v}\n\nSen biliyor muydun?`,
+  v => `Komşu tüyosu:\n${v}`,
+  v => `${v}\n\nDetaylar videoda.`,
+  v => `Komşu Tüyosu | ${v}`,
+  v => `Bugünün tüyosu:\n\n${v}`
 ];
 
 function dateSeed(dateStr) {

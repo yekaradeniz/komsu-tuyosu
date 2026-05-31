@@ -1,4 +1,4 @@
-// Zihnimizin Sirlari - YouTube Shorts only post script.
+// Komsu Tuyosu - YouTube Shorts only post script.
 // cli-render.js calistiktan sonra state.lastPost'a bakar, bekleyen reel'i
 // YouTube'a yukler. Instagram flow YOK (kanal sadece YouTube).
 
@@ -12,7 +12,7 @@ import { uploadToYoutube } from './uploadToYoutube.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const content = JSON.parse(readFileSync(join(ROOT, 'content', 'beyin-oyunlari.json'), 'utf-8'));
+const content = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-tuyosu.json'), 'utf-8'));
 const statePath = join(ROOT, 'output', 'log.json');
 const state = readState(statePath);
 

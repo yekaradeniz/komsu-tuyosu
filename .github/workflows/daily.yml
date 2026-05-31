@@ -1,10 +1,9 @@
-name: Daily Post - Zihnimizin Sirlari
+name: Daily Post - Komsu Tuyosu
 
 on:
   schedule:
-    # 09:23 UTC = 12:23 TR. ":30" ve ":00" GitHub kuyrugunda en yogun dakikalar;
-    # garip dakika (:23) secerek scheduled gecikmeyi azaltmaya calisiyoruz.
-    - cron: '23 9 * * *'
+    # 06:15 UTC = 09:15 TR. Komsu Tuyosu sabah yayin saati.
+    - cron: '15 6 * * *'
   workflow_dispatch:          # manuel tetikleme butonu
   repository_dispatch:        # harici tetikleyici (cron-job.org vb.) icin
     types: [daily-post]

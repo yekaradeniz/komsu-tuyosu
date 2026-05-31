@@ -61,8 +61,8 @@ export async function uploadToYoutube({ videoPath, verse, caption, clientId, cli
     snippet: {
       title,
       description,
-      tags: ['psikoloji', 'zihnimizinsırları', 'zihniminsirlari', 'davranisbilimleri', 'sosyalpsikoloji', 'zihin', 'shorts', 'psikolojikkavramlar', 'bilim'],
-      categoryId: '27'   // Education
+      tags: ['ev ipuçları', 'komşu tüyosu', 'pratik bilgi', 'temizlik ipuçları', 'mutfak tüyoları', 'ev düzeni', 'organizasyon', 'yaşam hileleri', 'tasarruf', 'shorts'],
+      categoryId: '26'   // Howto & Style
     },
     status: {
       privacyStatus: 'public',

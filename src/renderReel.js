@@ -7,7 +7,7 @@ import { chromium } from 'playwright';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const TEMPLATE_DIR = join(__dirname, '..', 'template');
-const AUDIO_DIR = join(__dirname, '..', 'audio-beyinoyunlari');
+const AUDIO_DIR = join(__dirname, '..', 'audio-komsu-tuyosu');
 
 /**
  * audio/ klasöründeki MP3'leri sıralı olarak listeler.

@@ -40,7 +40,7 @@ if (pendingRetry) {
   const postedSet = new Set(state.postedVerseIds);
   const unposted = content.filter(e => !postedSet.has(e.id));
   if (unposted.length === 0) {
-    throw new Error(`Tüm uygun günler paylaşıldı. beyin-oyunlari.json bitti.`);
+    throw new Error(`Tüm uygun günler paylaşıldı. komsu-tuyosu.json bitti.`);
   }
   entry = unposted[0];
 
@@ -54,7 +54,7 @@ if (pendingRetry) {
     if (!hasExplanation) missing.push('explanation (mânâ)');
     throw new Error(
       `${entry.id} icin eksik alan(lar): ${missing.join(', ')}. ` +
-      `content/beyin-oyunlari.json'a doldurun, sonra workflow'u tekrar tetikleyin. ` +
+      `content/komsu-tuyosu.json'a doldurun, sonra workflow'u tekrar tetikleyin. ` +
       `Post atilmadi (sira korunuyor).`
     );
   }
@@ -249,7 +249,7 @@ if (nextType === 'reel') {
   await renderToPng({
     verse: entry.verse,
     original: null,
-    source: 'Zihnimizin Sırları',
+    source: 'Komşu Tüyosu',
     photoUrl: photo.url
   }, slide1);
   console.log(`Slide 1: ${slide1}`);

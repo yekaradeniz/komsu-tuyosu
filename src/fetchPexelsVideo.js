@@ -1,33 +1,32 @@
-// Mood → Pexels arama terimi (Zihnimizin Sirlari / psikoloji temali)
+// Mood → Pexels arama terimi (Komşu Tüyosu / ev-yaşam temalı)
 const MOOD_QUERIES = {
-  'dark': [
-    'dark moody atmosphere', 'cinematic black smoke', 'shadow play',
-    'low key lighting', 'dark room window light', 'moody silhouette',
-    'fog dark city', 'misty street night', 'dark abstract motion',
-    'black ink water', 'dark cinematic portrait', 'shadow figure'
+  'cleaning': [
+    'cleaning home', 'wiping kitchen counter', 'spray bottle cleaning', 'mopping floor',
+    'scrubbing surface', 'microfiber cloth wiping', 'cleaning bathroom', 'tidy home cleaning',
+    'washing dishes', 'cleaning supplies'
   ],
-  'psychology': [
-    'brain mind visualization', 'thinking person silhouette',
-    'mirror reflection face', 'eye close up macro', 'face shadow profile',
-    'crowd people slow motion', 'lonely person window', 'thoughtful portrait',
-    'staring person dark', 'people walking blur', 'human face emotion',
-    'puzzle pieces dark', 'maze aerial view'
+  'kitchen': [
+    'modern kitchen interior', 'kitchen counter clean', 'cooking preparation', 'kitchen organizing',
+    'food ingredients table', 'kitchen utensils', 'refrigerator food', 'pantry shelves'
   ],
-  'cinematic': [
-    'cinematic abstract waves', 'neon city night', 'rain window night',
-    'slow motion smoke', 'particles floating dark', 'liquid ink motion',
-    'cinematic dark gradient', 'glow neon abstract', 'night city aerial',
-    'cinematic light leak dark', 'dust particles light beam', 'starry sky timelapse',
-    'cinematic dark blue', 'futuristic abstract'
+  'laundry': [
+    'laundry machine', 'folding clothes', 'washing machine close up', 'hanging laundry',
+    'clean folded towels', 'laundry basket clothes', 'washing clothes'
+  ],
+  'organizing': [
+    'home organization', 'storage boxes shelf', 'tidy closet', 'decluttering home',
+    'organized drawer', 'minimal home interior', 'folded clothes wardrobe'
+  ],
+  'cozy': [
+    'cozy living room', 'warm home interior', 'home plants decor', 'comfortable bright home',
+    'morning sunlight room', 'clean tidy bedroom', 'home decoration'
   ]
 };
 
 const FALLBACK_QUERIES = [
-  'dark moody atmosphere', 'cinematic black smoke', 'abstract dark motion',
-  'neon city night', 'shadow play light', 'fog night street',
-  'black ink water', 'particles floating dark', 'cinematic dark blue',
-  'low key lighting portrait', 'dark room window', 'rain window night',
-  'slow motion smoke', 'misty street', 'liquid ink motion'
+  'clean modern home', 'home interior bright', 'kitchen counter clean', 'cleaning home',
+  'tidy living room', 'home organization', 'cozy home interior', 'household chores',
+  'home plants', 'folding laundry', 'wiping surface', 'organized kitchen'
 ];
 
 // Süre aralıkları sıralı olarak denenecek - sıkıdan gevşeğe.
