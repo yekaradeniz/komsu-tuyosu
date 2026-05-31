@@ -1,32 +1,34 @@
 // Mood → Pexels arama terimi (Komşu Tüyosu / ev-yaşam temalı)
+// MARKA KURALI: her videoda KADIN (ev kadını / ev işi yapan kadın) olmali, erkek gelmesin.
+// Bu yuzden tum sorgular "woman" / "housewife" odakli.
 const MOOD_QUERIES = {
   'cleaning': [
-    'cleaning home', 'wiping kitchen counter', 'spray bottle cleaning', 'mopping floor',
-    'scrubbing surface', 'microfiber cloth wiping', 'cleaning bathroom', 'tidy home cleaning',
-    'washing dishes', 'cleaning supplies'
+    'woman cleaning home', 'woman wiping counter', 'housewife cleaning', 'woman mopping floor',
+    'woman cleaning kitchen', 'woman scrubbing surface', 'woman cleaning bathroom', 'housewife housework',
+    'woman washing dishes', 'woman cleaning house'
   ],
   'kitchen': [
-    'modern kitchen interior', 'kitchen counter clean', 'cooking preparation', 'kitchen organizing',
-    'food ingredients table', 'kitchen utensils', 'refrigerator food', 'pantry shelves'
+    'woman in kitchen', 'housewife cooking', 'woman kitchen counter', 'woman preparing food',
+    'woman organizing kitchen', 'woman kitchen utensils', 'woman cooking home', 'housewife kitchen'
   ],
   'laundry': [
-    'laundry machine', 'folding clothes', 'washing machine close up', 'hanging laundry',
-    'clean folded towels', 'laundry basket clothes', 'washing clothes'
+    'woman doing laundry', 'woman folding clothes', 'housewife laundry', 'woman hanging laundry',
+    'woman folding towels', 'woman laundry room', 'woman washing clothes'
   ],
   'organizing': [
-    'home organization', 'storage boxes shelf', 'tidy closet', 'decluttering home',
-    'organized drawer', 'minimal home interior', 'folded clothes wardrobe'
+    'woman organizing home', 'woman tidying closet', 'housewife organizing', 'woman decluttering',
+    'woman folding clothes wardrobe', 'woman organizing drawer', 'woman arranging home'
   ],
   'cozy': [
-    'cozy living room', 'warm home interior', 'home plants decor', 'comfortable bright home',
-    'morning sunlight room', 'clean tidy bedroom', 'home decoration'
+    'woman cozy home', 'woman home interior', 'housewife living room', 'woman relaxing home',
+    'woman morning home', 'woman home plants', 'woman comfortable home'
   ]
 };
 
 const FALLBACK_QUERIES = [
-  'clean modern home', 'home interior bright', 'kitchen counter clean', 'cleaning home',
-  'tidy living room', 'home organization', 'cozy home interior', 'household chores',
-  'home plants', 'folding laundry', 'wiping surface', 'organized kitchen'
+  'woman cleaning home', 'housewife housework', 'woman in kitchen', 'woman doing laundry',
+  'woman tidying home', 'woman organizing home', 'housewife cleaning', 'woman cooking home',
+  'woman home interior', 'woman cleaning house', 'housewife kitchen', 'woman household chores'
 ];
 
 // Süre aralıkları sıralı olarak denenecek - sıkıdan gevşeğe.
