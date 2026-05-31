@@ -1,0 +1,25 @@
+{
+  "name": "komsu-tuyosu",
+  "version": "0.1.0",
+  "description": "Daily ev/yaşam ipuçları, automated to YouTube",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "daily": "node src/index.js daily",
+    "render": "node src/cli-render.js",
+    "post": "node src/cli-post.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.51.0",
+    "ffmpeg-static": "^5.3.0",
+    "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0"
+  }
+}

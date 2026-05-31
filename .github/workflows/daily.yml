@@ -1,0 +1,108 @@
+name: Daily Post - Zihnimizin Sirlari
+
+on:
+  schedule:
+    # 09:23 UTC = 12:23 TR. ":30" ve ":00" GitHub kuyrugunda en yogun dakikalar;
+    # garip dakika (:23) secerek scheduled gecikmeyi azaltmaya calisiyoruz.
+    - cron: '23 9 * * *'
+  workflow_dispatch:          # manuel tetikleme butonu
+  repository_dispatch:        # harici tetikleyici (cron-job.org vb.) icin
+    types: [daily-post]
+
+permissions:
+  contents: write           # output MP4 ve log.json commit icin gerekli
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Random jitter (0-30 dk) - bot pattern bozma
+        if: github.event_name == 'schedule'
+        run: |
+          DELAY=$((RANDOM % 1800))
+          echo "Random delay: ${DELAY}s ($((DELAY/60)) dk)"
+          sleep $DELAY
+
+      - name: Generate today's reel
+        run: npm run render
+        timeout-minutes: 12
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          REELS_ENABLED: 'true'
+          CAROUSEL_ENABLED: 'false'
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+
+      - name: Commit generated MP4 + state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config pull.rebase true
+          git add output/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily reel $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                echo "Push basarili (deneme $i)"
+                break
+              fi
+              echo "Push basarisiz (deneme $i), tekrar deneniyor..."
+              sleep 3
+            done
+          fi
+
+      - name: Upload to YouTube Shorts
+        run: npm run post
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+
+      - name: Commit post result (videoId)
+        run: |
+          git add output/log.json
+          if git diff --staged --quiet; then
+            echo "log.json degismedi"
+          else
+            git commit -m "chore: youtube post $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                echo "Push basarili (deneme $i)"
+                break
+              fi
+              echo "Push basarisiz (deneme $i), tekrar deneniyor..."
+              sleep 3
+            done
+          fi

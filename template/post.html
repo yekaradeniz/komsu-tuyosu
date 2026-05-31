@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>benden içeri</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+    background: #1a1a1a;
+  }
+  .post-bg {
+    position: absolute; inset: 0;
+    background-image: url('{{photoUrl}}');
+    background-size: cover;
+    background-position: center;
+  }
+  .post-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+  }
+  .post-gradient {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg,
+      rgba(0,0,0,0.10) 0%,
+      rgba(0,0,0,0.38) 45%,
+      rgba(0,0,0,0.82) 100%);
+  }
+  .post-content {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 0 50px 145px;
+    text-align: center;
+    color: #f5efe1;
+    z-index: 2;
+  }
+  .original {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    color: #d9c79a;
+    margin-bottom: 42px;
+    line-height: 1.5;
+    opacity: 0.93;
+  }
+  .verse {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: {{verseFontSize}};
+    line-height: 1.32;
+    color: #faf6ec;
+    margin-bottom: 60px;
+    letter-spacing: 0.6px;
+    white-space: pre-line;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+  }
+  .divider {
+    width: 108px;
+    height: 3px;
+    background: rgba(217, 199, 154, 0.6);
+    margin: 0 auto 30px;
+  }
+  .source {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 31px;
+    letter-spacing: 13.5px;
+    text-transform: uppercase;
+    color: #d9c79a;
+  }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+  <div class="post-bg"></div>
+  <div class="post-overlay"></div>
+  <div class="post-gradient"></div>
+  <div class="post-content">
+    <div class="original {{originalHidden}}">{{original}}</div>
+    <div class="verse">{{verse}}</div>
+    <div class="divider"></div>
+    <div class="source">{{source}}</div>
+  </div>
+<script>
+  (function() {
+    const verse = document.querySelector('.verse');
+    if (!verse) return;
+    verse.style.whiteSpace = 'pre';
+    let size = parseFloat(window.getComputedStyle(verse).fontSize);
+    while (verse.scrollWidth > verse.clientWidth && size > 24) {
+      size -= 1;
+      verse.style.fontSize = size + 'px';
+    }
+    verse.style.whiteSpace = 'pre-line';
+  })();
+</script>
+</body>
+</html>

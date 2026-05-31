@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px; height: 1920px; overflow: hidden; background: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+  }
+  .content {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    /* Reels safe zone: sag ~130px (ikon kolonu), alt ~400px (caption/share UI) */
+    padding: 0 130px 400px 70px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .header {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #c62828;
+    padding: 8px 22px 8px 32px;
+    margin-bottom: 36px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+  }
+  .divider {
+    width: 0; height: 0;
+    margin: 0;
+  }
+  .explanation {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: {{explanationFontSize}};
+    line-height: 1.42;
+    color: #ffffff;
+    text-align: left;
+    white-space: pre-line;
+    letter-spacing: -0.2px;
+    /* Gradient yok; her arka planda okunur olsun diye -webkit-text-stroke
+       siyah outline + multi-layer drop shadow ile yaziyi her zeminde belirgin yap */
+    -webkit-text-stroke: 1px #000;
+    text-shadow:
+      0 2px 4px rgba(0,0,0,0.95),
+      0 4px 14px rgba(0,0,0,0.9),
+      0 0 22px rgba(0,0,0,0.75),
+      2px 2px 0 rgba(0,0,0,0.6);
+    margin-bottom: 56px;
+  }
+  .footer-divider {
+    width: 0; height: 0;
+    margin: 0;
+  }
+  .footer {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #c62828;
+    padding: 8px 22px 8px 30px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <div class="header">Cevap</div>
+    <div class="divider"></div>
+    <div class="explanation">{{explanation}}</div>
+    <div class="footer-divider"></div>
+    <div class="footer">Zihnimizin Sırları</div>
+  </div>
+<script>
+  (function() {
+    const content = document.querySelector('.content');
+    const explanation = document.querySelector('.explanation');
+    let size = parseFloat(window.getComputedStyle(explanation).fontSize);
+    const maxHeight = 1770;
+    while (content.offsetHeight > maxHeight && size > 40) {
+      size -= 1;
+      explanation.style.fontSize = size + 'px';
+    }
+  })();
+</script>
+</body>
+</html>
