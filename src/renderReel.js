@@ -136,34 +136,41 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     // 3) FFmpeg ile compose et
     // DINAMIK SURE PLANI:
     //   verseLen = voiceDuration + 2 (1sn lead + voice + 1sn trail). Voice yoksa 12sn sabit.
-    //   manaLen = manaVoiceDuration + 2. Mana voice yoksa 18sn sabit.
-    //   transitionLen = 0.5sn (verse ile mana arasi bekleme - kullanici karari)
-    //   totalLen = verseLen + transitionLen + manaLen + 2 (final fade)
+    //   manaLen = lead + manaVoiceDuration + fade. Mana voice yoksa 18sn sabit.
+    //   transitionLen = 0 (gecis boslugu kaldirildi - sikilastirildi)
+    //   Soru sesi bitince cevap sesi baslayana kadar ~1.4sn (1 trailing + 0 gecis + 0.4 lead)
+    //   Cevap sesi bitince video 0.5sn'de fade olup kapanir (FADE_DUR)
     const hasVoice = !!voicePath && existsSync(voicePath) && voiceDuration > 0;
     const hasManaVoice = !!manaVoicePath && existsSync(manaVoicePath) && manaVoiceDuration > 0;
     const verseLen = hasVoice ? Math.round(voiceDuration + 2) : 12;
-    const manaLen = hasManaVoice ? Math.round(manaVoiceDuration + 2) : 18;
-    const transitionLen = 0.5;
-    const finalFadeStart = verseLen + transitionLen + manaLen;
-    const totalLen = finalFadeStart + 2;
+    const transitionLen = 0;
+    const MANA_LEAD = 0.4;     // cevap belirdikten sonra ses baslayana kadarki bekleme
+    const FADE_DUR = 0.5;      // kapanis fade suresi (yarim saniye - kullanici karari)
+    const manaOffset = verseLen + transitionLen;
+
+    // Cevap gorunur kalma suresi: sesli ise lead + ses + kapanis fade'i; sessizse 18sn.
+    const manaLen = hasManaVoice ? (MANA_LEAD + manaVoiceDuration + FADE_DUR) : 18;
+
+    // Kapanis fade'i icerik biter bitmez baslar (sesli: cevap sesi sonu), 0.5sn surer.
+    const finalFadeStart = hasManaVoice
+      ? (manaOffset + MANA_LEAD + manaVoiceDuration)
+      : (manaOffset + manaLen - FADE_DUR);
+    const totalLen = finalFadeStart + FADE_DUR;
 
     // Verse fade-out: son 1sn icinde
     const verseFadeOutStart = verseLen - 1.5;
-    // Mana fade-in: 0.7sn (mana akisi icinde, offset edildi)
-    // Mana fade-out: son 1.5sn icinde
-    const manaFadeOutStart = manaLen - 1.5;
-    // Mana baslangic offset'i (PTS+X/TB)
-    const manaOffset = verseLen + transitionLen;
+    // Mana kendi fade-out'u global kapanis fade'i ile ayni anda baslar (icerikle birlikte kapanir)
+    const manaFadeOutStart = manaLen - FADE_DUR;
 
     // 2x render PNG'leri (2160x3840) lanczos ile 1080x1920'ye dusururuz - text keskinlesir
     const filterComplex =
       `[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg];` +
       `[1:v]scale=1080:1920:flags=lanczos,setpts=PTS-STARTPTS[grad];` +
       `[2:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${verseFadeOutStart}:d=1:alpha=1,setpts=PTS-STARTPTS[vtxt];` +
-      `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${manaFadeOutStart}:d=1:alpha=1,setpts=PTS+${manaOffset}/TB[mtxt];` +
+      `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${manaFadeOutStart}:d=${FADE_DUR}:alpha=1,setpts=PTS+${manaOffset}/TB[mtxt];` +
       `[bg][grad]overlay=0:0[bg2];` +
       `[bg2][vtxt]overlay=0:0[tmp];` +
-      `[tmp][mtxt]overlay=0:0,fade=t=out:st=${finalFadeStart}:d=1[outv]`;
+      `[tmp][mtxt]overlay=0:0,fade=t=out:st=${finalFadeStart}:d=${FADE_DUR}[outv]`;
 
     const args = [
       '-y',
@@ -182,7 +189,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
 
     // Mana voice'i ne zaman baslar: verseLen + transitionLen (geçiş sonrasi)
     // adelay millisaniye cinsinden
-    const manaVoiceStartMs = (verseLen + transitionLen + 1) * 1000;  // +1sn lead
+    const manaVoiceStartMs = (verseLen + transitionLen + MANA_LEAD) * 1000;
     const voiceFadeOutStart = hasVoice ? voiceDuration - 0.5 : 0;
     const manaVoiceFadeOutStart = hasManaVoice ? manaVoiceDuration - 0.5 : 0;
 

@@ -92,7 +92,7 @@ if (nextType === 'reel') {
 
   const usedVideoIds = new Set(state.usedVideoIds ?? []);
 
-  // Zihnimizin Sirlari: entry.pexelsQuery varsa soru-baginli arama; yoksa mood fallback.
+  // Komsu Tuyosu: entry.pexelsQuery varsa soru-baginli arama; yoksa mood fallback.
   // Moderasyon (validateVideoFrames) BYPASS: Salih Baba'daki kadin/imaj filtresi
   // burada gerekli degil, her gorsel kullanilabilir (kullanici karari).
   const candidates = Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0
@@ -146,12 +146,14 @@ if (nextType === 'reel') {
         console.log(`  Soru voice: ${voiceDuration.toFixed(1)}sn`);
 
         if (entry.explanation && entry.explanation.trim()) {
-          console.log('Cevap sesi (ElevenLabs)...');
+          console.log('Cevap sesi (ElevenLabs, speed 1.2)...');
+          // CEVAP icin speed 1.2: video suresini kisaltir, completion rate artar (icerik aynidir).
           manaVoicePath = await generateVoice({
             text: entry.explanation,
             voiceId: elevenVoiceId,
             apiKey: elevenKey,
-            cacheDir: voiceCacheDir
+            cacheDir: voiceCacheDir,
+            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.2 }
           });
           manaVoiceDuration = await getAudioDuration(manaVoicePath);
           console.log(`  Cevap voice: ${manaVoiceDuration.toFixed(1)}sn`);
