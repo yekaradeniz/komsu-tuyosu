@@ -132,15 +132,15 @@ if (nextType === 'reel') {
     if (elevenKey && elevenVoiceId) {
       const voiceCacheDir = join(ROOT, 'output', 'audio-cache');
       try {
-        console.log('Soru sesi (ElevenLabs)...');
-        // SORU icin speed 0.9: noktalama az oldugu icin default 1.0'da cok hizli okunuyor.
-        // CEVAP default 1.0 kullanir (noktalama yogun, dogal tempo).
+        console.log('Soru sesi (ElevenLabs, speed 1.1)...');
+        // SORU icin speed 1.1: 0.9 cok yavas geliyordu, hafif hizlandirildi (kullanici karari).
+        // CEVAP speed 1.2 kullanir (asagida).
         voicePath = await generateVoice({
           text: entry.verse,
           voiceId: elevenVoiceId,
           apiKey: elevenKey,
           cacheDir: voiceCacheDir,
-          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 0.9 }
+          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 }
         });
         voiceDuration = await getAudioDuration(voicePath);
         console.log(`  Soru voice: ${voiceDuration.toFixed(1)}sn`);
