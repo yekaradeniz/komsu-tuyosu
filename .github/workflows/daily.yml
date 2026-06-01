@@ -1,11 +1,9 @@
 name: Daily Post - Komsu Tuyosu
 
 on:
-  schedule:
-    # 06:15 UTC = 09:15 TR. Komsu Tuyosu sabah yayin saati.
-    - cron: '15 6 * * *'
-  workflow_dispatch:          # manuel tetikleme butonu
-  repository_dispatch:        # harici tetikleyici (cron-job.org vb.) icin
+  # GitHub schedule KALDIRILDI (gecikmeli/guvenilmez). Tek otomatik tetikleyici: cron-job.org.
+  workflow_dispatch:          # sadece elle 'Run' butonu
+  repository_dispatch:        # TEK otomatik tetikleyici: cron-job.org her gun 09:15
     types: [daily-post]
 
 permissions:
