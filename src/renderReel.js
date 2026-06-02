@@ -201,10 +201,15 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         '-stream_loop', '-1', '-i', audioPath,              // [6] bg music
         '-filter_complex',
         filterComplex +
+        // Ses miksi: konusmalari birlestir; muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir),
+        // sonra sidechaincompress ile konusma varken muzigi OTOMATIK kis (ducking). Sabit volume yok.
         `;[4:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
         `;[5:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
-        `;[6:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
-        `;[vvoice][mvoice][bgmus]amix=inputs=3:duration=longest:dropout_transition=0[outa]`,
+        `;[vvoice][mvoice]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[allvoice]` +
+        `;[allvoice]asplit=2[voice_out][voice_key]` +
+        `;[6:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]` +
+        `;[bgraw][voice_key]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=400[bgduck]` +
+        `;[voice_out][bgduck]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
