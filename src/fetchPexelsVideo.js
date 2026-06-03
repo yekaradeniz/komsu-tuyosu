@@ -1,3 +1,30 @@
+// EROTIK/UYGUNSUZ ICERIK FILTRESI: Pexels bazen alakasiz glamour/sensual "woman"
+// videolari donduruyor (or. "woman-drinking-milk"). Pexels VIDEO API tag vermiyor (bos)
+// ama video.url slug aciklayici. Slug'da su kelimelerden biri varsa o video ATLANIR.
+// 1) Gercekten erotik kelimeler (slug'da gecerse video atlanir). Masum kelime YOK.
+const BLOCKED_URL_WORDS = [
+  'sensual', 'seductive', 'seduce', 'seductively', 'sexy', 'erotic', 'sexual',
+  'lingerie', 'bikini', 'underwear', 'nude', 'naked', 'topless', 'panties', 'thong',
+  'cleavage', 'glamour', 'boudoir', 'twerk', 'provocative', 'striptease',
+  'swimsuit', 'swimwear', 'wet-tshirt'
+];
+
+// 2) Sensual/glamour icerik ureten fotografcilar - bunlarin TUM videolari elenir.
+// (Ron Lach "woman-drinking-milk" gibi MASUM slug'la sensual cekim yapiyor; kelime
+// filtresi yakalayamaz, ama ceken kisi bellidir.) Yeni problemli cikan ceken oldukca
+// buraya kucuk harfle ekle.
+const BLOCKED_USERS = [
+  'ron lach'
+];
+
+export function isCleanVideo(video) {
+  const u = (video.url || '').toLowerCase();
+  if (BLOCKED_URL_WORDS.some((w) => u.includes(w))) return false;
+  const author = ((video.user && video.user.name) || '').toLowerCase().trim();
+  if (BLOCKED_USERS.includes(author)) return false;
+  return true;
+}
+
 // Mood → Pexels arama terimi (Komşu Tüyosu / ev-yaşam temalı)
 // MARKA KURALI: her videoda KADIN (ev kadını / ev işi yapan kadın) olmali, erkek gelmesin.
 // Bu yuzden tum sorgular "woman" / "housewife" odakli.
@@ -96,6 +123,7 @@ export async function fetchPexelsCandidates(moods, apiKey, usedVideoIds = new Se
         const fullId = `pexels-${video.id}`;
         if (usedVideoIds.has(fullId)) continue;
         if (seenIds.has(fullId)) continue;
+        if (!isCleanVideo(video)) continue;
         const best = pickBestFile(video);
         if (!best) continue;
         seenIds.add(fullId);
@@ -162,6 +190,7 @@ export async function fetchPexelsCandidatesByQueries(queries, apiKey, usedVideoI
         const fullId = `pexels-${video.id}`;
         if (usedVideoIds.has(fullId)) continue;
         if (seenIds.has(fullId)) continue;
+        if (!isCleanVideo(video)) continue;
         const best = pickBestFile(video);
         if (!best) continue;
         seenIds.add(fullId);
