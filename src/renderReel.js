@@ -203,8 +203,8 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         filterComplex +
         // Ses miksi: konusmalari birlestir; muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir),
         // sonra sidechaincompress ile konusma varken muzigi OTOMATIK kis (ducking). Sabit volume yok.
-        `;[4:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
-        `;[5:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
+        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
+        `;[5:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
         `;[vvoice][mvoice]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[allvoice]` +
         `;[allvoice]asplit=2[voice_out][voice_key]` +
         `;[6:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]` +
@@ -221,7 +221,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         '-stream_loop', '-1', '-i', audioPath,              // [5]
         '-filter_complex',
         filterComplex +
-        `;[4:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[voice]` +
+        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[voice]` +
         `;[5:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
         `;[voice][bgmus]amix=inputs=2:duration=longest:dropout_transition=0[outa]`,
         '-map', '[outv]',
@@ -234,7 +234,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         '-i', voicePath,
         '-filter_complex',
         filterComplex +
-        `;[4:a]volume=1.0,afade=t=in:st=0:d=0.5,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[outa]`,
+        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
