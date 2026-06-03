@@ -113,7 +113,7 @@ if (nextType === 'reel') {
       const localPath = join(tmpDir, `cand-${i}.mp4`);
       console.log(`[${i + 1}/${candidates.length}] ${c.id} (query: "${c.query}") indiriliyor...`);
       await downloadVideo(c.url, localPath);
-      const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 3);
+      const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 1);
       if (mod.approved) {
         console.log(`✓ ${c.id} moderasyondan gecti`);
         chosen = c;
