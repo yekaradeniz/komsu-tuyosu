@@ -90,15 +90,16 @@ if (nextType === 'reel') {
   const pexelsKey = process.env.PEXELS_API_KEY;
   if (!pexelsKey) throw new Error('PEXELS_API_KEY tanımlı değil; reel oluşturulamaz');
 
+  const geminiKey = process.env.GEMINI_API_KEY;
   const usedVideoIds = new Set(state.usedVideoIds ?? []);
 
   // Komsu Tuyosu: entry.pexelsQuery varsa soru-baginli arama; yoksa mood fallback.
-  // Moderasyon (validateVideoFrames) BYPASS: Salih Baba'daki kadin/imaj filtresi
-  // burada gerekli degil, her gorsel kullanilabilir (kullanici karari).
+  // MODERASYON: her aday Gemini frame kontrolunden gecer (suggestive/glamour/erotik REJECT,
+  // normal ev isi YES). Reddedilenler usedVideoIds'e eklenir (asagida), bir daha denenmez.
   const candidates = Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0
     ? await fetchPexelsCandidatesByQueries(entry.pexelsQuery, pexelsKey, usedVideoIds)
     : await fetchPexelsCandidates(entry.moods, pexelsKey, usedVideoIds);
-  console.log(`${candidates.length} Pexels aday bulundu (query-based: ${!!entry.pexelsQuery})`);
+  console.log(`${candidates.length} Pexels aday (excl. ${usedVideoIds.size}), Gemini moderasyonundan gececek...`);
 
   const tmpDir = mkdtempSync(join(tmpdir(), 'pexels-'));
   let chosen = null;
@@ -106,13 +107,25 @@ if (nextType === 'reel') {
   const rejectedIds = [];
 
   try {
-    // Ilk adayi direkt al, moderasyon yok
-    const c = candidates[0];
-    const localPath = join(tmpDir, `cand-0.mp4`);
-    console.log(`[1/${candidates.length}] ${c.id} (query: "${c.query}") indiriliyor...`);
-    await downloadVideo(c.url, localPath);
-    chosen = c;
-    chosenPath = localPath;
+    // Adaylari sirayla dene: indir, Gemini frame moderasyonu, ilk onaylanani kullan
+    for (let i = 0; i < candidates.length; i++) {
+      const c = candidates[i];
+      const localPath = join(tmpDir, `cand-${i}.mp4`);
+      console.log(`[${i + 1}/${candidates.length}] ${c.id} (query: "${c.query}") indiriliyor...`);
+      await downloadVideo(c.url, localPath);
+      const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 3);
+      if (mod.approved) {
+        console.log(`✓ ${c.id} moderasyondan gecti`);
+        chosen = c;
+        chosenPath = localPath;
+        break;
+      }
+      console.log(`✗ ${c.id} reddedildi: ${mod.reason}`);
+      rejectedIds.push(c.id);
+    }
+    if (!chosen) {
+      throw new Error(`${candidates.length} adayin hicbiri moderasyondan gecemedi (hepsi suggestive/uygunsuz)`);
+    }
 
     // Müzik rotation: state.audioIndex'i kullan, audio/ klasörü doluysa sırayla seç
     const tracks = listAudioTracks();

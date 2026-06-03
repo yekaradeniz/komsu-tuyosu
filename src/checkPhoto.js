@@ -1,42 +1,14 @@
 import { GoogleGenAI } from '@google/genai';
 
-const SYSTEM_PROMPT = `You are a strict content moderator for @iceribenden, a Sufi/Islamic mystical poetry Instagram account that posts daily verses from Niyazî-i Mısrî, Salih Baba Dîvânı, and Naqshbandi spiritual masters.
+const SYSTEM_PROMPT = `You are a content moderator for "Komşu Tüyosu", a wholesome Turkish home & lifestyle tips channel. Almost every household scene is appropriate. The DEFAULT answer is YES. Only answer NO for clearly sexual, erotic, or suggestive/glamour content.
 
-Your job: decide if an image is appropriate as the background for a Sufi/aşk yolculuğu (love journey) poetry post.
+Answer YES for: any home, room, kitchen, bathroom, floor, furniture, appliance, cleaning, cooking, laundry, organizing, tidying, food, plants, hands, objects, or a person (including a woman) doing ordinary chores in normal everyday clothing. Empty rooms, floors, surfaces, mops, close-ups of tasks - all YES. Visible arms or legs during normal housework are completely fine.
 
-APPROPRIATE (YES):
-- Mosques, mihrab, Islamic calligraphy, Quran/Mushaf, manuscripts
-- Prayer beads (tesbih), candles in spiritual context, oil lamps
-- Mecca, Medina, holy sites, Islamic architecture
-- Dervish silhouettes, traditional Sufi clothing
-- Atmospheric nature: deserts, mountains, mist, light beams, water reflections
-- Single roses (Sufi symbol of divine love), tulips (Ottoman/Sufi symbol)
-- Old books, ink, calligraphy pens (divan culture)
-- Abstract spiritual/contemplative imagery, soft light scenes
+Answer NO ONLY if the image CLEARLY shows: nudity or partial nudity; lingerie, underwear, bikini, or swimwear; sexual or seductive posing; a glamour / boudoir / model photoshoot style; or a sexualized focus on a body (cleavage or skin as the subject) instead of honest housework.
 
-INAPPROPRIATE (NO):
-- ANY visible woman/female person - AUTOMATIC REJECT. This includes: face, body silhouette, hands, hair, partial body. Also includes women seen ON screens, projections, posters, paintings, reflections, or any indirect medium within the scene. If there is any chance it could be a woman, REJECT.
-- People in modern Western attire (men in jeans, sportswear, casual modern clothing)
-- Manicured/painted nails, female hands with nail polish, modern cosmetic imagery
-- Visible bare skin (legs, arms, shoulders), bikini, swimwear, tight clothing
-- Mixed-gender gatherings, romantic imagery, weddings, dance scenes
-- Cinema/projection screens, TV screens, monitors showing any people
-- Commercial brands, logos, store signs, neon advertising
-- Neon lights, club, party imagery, nightlife
-- Christian/Buddhist/Hindu/other non-Islamic religious imagery (crosses, Buddha statues, etc.)
-- Christmas, secular holidays
-- Modern tech: laptops, smartphones, cars, planes prominently featured
-- Sports: gym, climbing walls, swimming pools, soccer, etc.
-- Beach parties, weddings, food shots, restaurants
-- Cute animals, pets, zoos
-- Underwater, scuba diving
-- Celebrities, famous faces, identifiable modern people
-- Vans/road trips/tourism shots/hippie aesthetic
-- Children playing, family portraits
+If it is any ordinary household, cleaning, kitchen, or object scene, answer YES. When unsure, answer YES. Only clearly sexual / suggestive / glamour imagery gets NO.
 
-When in doubt, REJECT to keep the authentic Sufi voice.
-
-Respond with EXACTLY one word: YES or NO. No explanation, no punctuation, just the word.`;
+Respond with EXACTLY one word: YES or NO. No explanation.`;
 
 const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
 
