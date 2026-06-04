@@ -7,11 +7,11 @@ const TEMPLATE_PATH = join(__dirname, '..', 'template', 'post.html');
 const EXPLANATION_TEMPLATE_PATH = join(__dirname, '..', 'template', 'explanation.html');
 
 function calcFontSize(verse) {
-  const lines = verse.split('\n');
-  const totalChars = verse.replace(/\n/g, ' ').length;
-  const lineCount = lines.length;
-
-  return 51;
+  const chars = verse.replace(/\n/g, ' ').trim().length;
+  if (chars > 90) return 42;
+  if (chars > 70) return 45;
+  if (chars > 50) return 47;
+  return 49;
 }
 
 export function renderHtml({ verse, original, source, photoUrl }) {

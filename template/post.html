@@ -89,13 +89,14 @@
   (function() {
     const verse = document.querySelector('.verse');
     if (!verse) return;
-    verse.style.whiteSpace = 'pre';
+    // Soru sarmalanarak (cok satir) gosterilir; sadece tasma olursa kuculur.
+    verse.style.whiteSpace = 'pre-line';
+    const maxHeight = 560;
     let size = parseFloat(window.getComputedStyle(verse).fontSize);
-    while (verse.scrollWidth > verse.clientWidth && size > 24) {
+    while ((verse.scrollWidth > verse.clientWidth || verse.scrollHeight > maxHeight) && size > 30) {
       size -= 1;
       verse.style.fontSize = size + 'px';
     }
-    verse.style.whiteSpace = 'pre-line';
   })();
 </script>
 </body>
