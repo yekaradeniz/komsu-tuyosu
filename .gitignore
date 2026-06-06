@@ -2,7 +2,7 @@ node_modules/
 .env
 .env.*
 .DS_Store
-output/_bg-test.mp4
+output/*.mp4
 output/*-frame-*.png
 *.log
 output/audio-cache/
