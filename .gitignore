@@ -3,6 +3,7 @@ node_modules/
 .env.*
 .DS_Store
 output/*.mp4
+output/*.png
 output/*-frame-*.png
 *.log
 output/audio-cache/
