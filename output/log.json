@@ -1,16 +1,14 @@
 {
   "launchDate": "2026-06-01",
   "lastPost": {
-    "date": "2026-06-09",
-    "verseId": "kt-0016",
-    "photoId": "pexels-4109491",
-    "postId": "kTCP18z-BM8",
+    "date": "2026-06-10",
+    "verseId": "kt-0017",
+    "photoId": "pexels-37856635",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/kTCP18z-BM8"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-7621626",
     "pexels-8466809",
     "pexels-4058810",
     "pexels-10140657",
@@ -23,7 +21,8 @@
     "pexels-7640941",
     "pexels-34822125",
     "pexels-7641384",
-    "pexels-4109491"
+    "pexels-4109491",
+    "pexels-37856635"
   ],
   "postedVerseIds": [
     "kt-0001",
@@ -41,7 +40,8 @@
     "kt-0013",
     "kt-0014",
     "kt-0015",
-    "kt-0016"
+    "kt-0016",
+    "kt-0017"
   ],
   "usedVideoIds": [
     "pexels-6863732",
@@ -59,9 +59,10 @@
     "pexels-7640941",
     "pexels-34822125",
     "pexels-7641384",
-    "pexels-4109491"
+    "pexels-4109491",
+    "pexels-37856635"
   ],
-  "audioIndex": 8,
+  "audioIndex": 0,
   "lastSuccessfulPostId": "kTCP18z-BM8",
   "cooldownUntil": null
 }
