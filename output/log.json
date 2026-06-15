@@ -1,16 +1,14 @@
 {
   "launchDate": "2026-06-01",
   "lastPost": {
-    "date": "2026-06-14",
-    "verseId": "kt-0026",
-    "photoId": "pexels-7641188",
-    "postId": "TEVSL40uCHE",
+    "date": "2026-06-15",
+    "verseId": "kt-0027",
+    "photoId": "pexels-7351642",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/TEVSL40uCHE"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-7640941",
     "pexels-34822125",
     "pexels-7641384",
     "pexels-4109491",
@@ -23,7 +21,8 @@
     "pexels-7641373",
     "pexels-7641641",
     "pexels-7703497",
-    "pexels-7641188"
+    "pexels-7641188",
+    "pexels-7351642"
   ],
   "postedVerseIds": [
     "kt-0001",
@@ -51,7 +50,8 @@
     "kt-0023",
     "kt-0024",
     "kt-0025",
-    "kt-0026"
+    "kt-0026",
+    "kt-0027"
   ],
   "usedVideoIds": [
     "pexels-6863732",
@@ -79,9 +79,10 @@
     "pexels-7641373",
     "pexels-7641641",
     "pexels-7703497",
-    "pexels-7641188"
+    "pexels-7641188",
+    "pexels-7351642"
   ],
-  "audioIndex": 0,
+  "audioIndex": 1,
   "lastSuccessfulPostId": "TEVSL40uCHE",
   "cooldownUntil": null
 }
