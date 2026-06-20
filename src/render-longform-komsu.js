@@ -369,13 +369,14 @@ try {
   for (const lab of overlayLabels) { f.push(`${last}${lab}overlay=0:0[v${vi}]`); last = `[v${vi}]`; vi++; }
   f.push(`${last}fade=t=out:st=${finalFadeStart.toFixed(2)}:d=${FADE_OUT}[outv]`);
 
-  // Audio
-  const aLabels = [];
-  f.push(`[3:a]volume=${MUSIC_VOL},afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart.toFixed(2)}:d=${FADE_OUT}[mus]`);
-  aLabels.push('[mus]');
+  // Audio - SIDECHAIN DUCKING (Shorts taktigi): konusma varken muzik otomatik kisilir,
+  // konusma bitince (gecisler) muzik geri yukselir. Once tum konusma sesleri bir "voice bus"ta
+  // toplanir, asplit ile ikiye ayrilir (biri cikisa, biri sidechain anahtari), muzik bu anahtarla
+  // sidechaincompress'ten gecirilip duck edilir.
+  const voiceLabels = [];
   const cardDelay = Math.round(cardAudioStart * 1000);
   f.push(`[4:a]volume=1.0,afade=t=out:st=${(cardVoiceDur - 0.3).toFixed(2)}:d=0.4,adelay=${cardDelay}|${cardDelay}[cv]`);
-  aLabels.push('[cv]');
+  voiceLabels.push('[cv]');
   for (let i = 0; i < items.length; i++) {
     const qIdx = voiceBase + i * 2;
     const aIdx = qIdx + 1;
@@ -383,9 +384,17 @@ try {
     const aDelay = Math.round(sched[i].aAudioStart * 1000);
     f.push(`[${qIdx}:a]volume=1.0,afade=t=out:st=${(itemAudios[i].qDur - 0.3).toFixed(2)}:d=0.4,adelay=${qDelay}|${qDelay}[qv${i}]`);
     f.push(`[${aIdx}:a]volume=1.0,afade=t=out:st=${(itemAudios[i].aDur - 0.3).toFixed(2)}:d=0.4,adelay=${aDelay}|${aDelay}[av${i}]`);
-    aLabels.push(`[qv${i}]`, `[av${i}]`);
+    voiceLabels.push(`[qv${i}]`, `[av${i}]`);
   }
-  f.push(`${aLabels.join('')}amix=inputs=${aLabels.length}:duration=longest:dropout_transition=0:normalize=0[outa]`);
+  // Tum konusma seslerini birlestir -> voice bus
+  f.push(`${voiceLabels.join('')}amix=inputs=${voiceLabels.length}:duration=longest:dropout_transition=0:normalize=0[voicebus]`);
+  f.push(`[voicebus]asplit=2[voiceout][voicekey]`);
+  // Muzik: arka plan seviyesi + giris/cikis fade
+  f.push(`[3:a]volume=${MUSIC_VOL},afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart.toFixed(2)}:d=${FADE_OUT}[musraw]`);
+  // Ducking: konusma sinyali (voicekey) muzigi bastirir (Shorts ile ayni parametreler)
+  f.push(`[musraw][voicekey]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=400[musduck]`);
+  // Final: konusma + duck edilmis muzik
+  f.push(`[voiceout][musduck]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[outa]`);
 
   const fcFile = join(tmp, 'fc.txt');
   writeFileSync(fcFile, f.join(';'));
