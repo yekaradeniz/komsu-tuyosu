@@ -37,7 +37,7 @@ jobs:
 
       - name: Render long-form (siradaki haftalik 5'li)
         run: npm run render:longform
-        timeout-minutes: 30
+        timeout-minutes: 40
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

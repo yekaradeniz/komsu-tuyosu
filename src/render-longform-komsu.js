@@ -234,7 +234,7 @@ try {
     const seg = join(vidDir, `seg-${scene.key}.mp4`);
     await ffmpeg(['-y', '-stream_loop', '-1', '-i', pick.path, '-t', scene.dur.toFixed(3),
       '-vf', 'scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1,fps=30,format=yuv420p',
-      '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', seg]);
+      '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', seg]);
     sceneSegments.push(seg);
   }
 
@@ -247,7 +247,7 @@ try {
   const concatInputs = sceneSegments.map((_, i) => `[v${i}]`).join('');
   const fcStr = fcParts.join(';') + `;${concatInputs}concat=n=${sceneSegments.length}:v=1:a=0[outv]`;
   concatArgs.push('-filter_complex', fcStr, '-map', '[outv]', '-an',
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', '30',
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', '-r', '30',
     '-t', String(bodyDurWithFade), bgPath);
   await ffmpeg(concatArgs);
   console.log('bg.mp4 hazir (sahne-bazli)');
@@ -380,10 +380,11 @@ try {
   writeFileSync(fcFile, f.join(';'));
 
   const finalOut = join(OUT_DIR, 'komsu-longform.mp4');
+  // preset veryfast + maxrate/bufsize KALDIRILDI: GitHub runner (2 vCPU) medium preset'te
+  // 30dk timeout'a takiliyordu. veryfast 4-6x hizli, 1080p'de kalite farki minimal.
   a2.push('-filter_complex_script', fcFile, '-map', '[outv]', '-map', '[outa]',
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '18',
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21',
     '-profile:v', 'high', '-level', '4.2', '-pix_fmt', 'yuv420p', '-r', '30',
-    '-maxrate', '15M', '-bufsize', '30M',
     '-c:a', 'aac', '-b:a', '192k', '-ar', '48000',
     '-movflags', '+faststart', '-t', String(bodyTotalLen), finalOut);
   await ffmpeg(a2);
