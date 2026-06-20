@@ -18,7 +18,8 @@ if (!clientId || !clientSecret) {
 
 const PORT = 8765;
 const REDIRECT_URI = `http://localhost:${PORT}/callback`;
-const SCOPE = 'https://www.googleapis.com/auth/youtube.upload';
+// force-ssl: upload + thumbnail set + video yonetimi (kapak otomatik set icin gerekli)
+const SCOPE = 'https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.force-ssl';
 
 const authUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');
 authUrl.searchParams.set('client_id', clientId);

@@ -22,7 +22,14 @@ const OUT_DIR = join(ROOT, 'output');
 const ffmpegPath = (await import('ffmpeg-static')).default;
 const FFMPEG = process.env.FFMPEG_PATH || ffmpegPath || 'ffmpeg';
 
-const args = process.argv.slice(2);
+const rawArgs = process.argv.slice(2);
+// Flag'leri (--image <path>) pozisyonel argumanlardan ayir
+let bgImageFile = null;
+const args = [];
+for (let i = 0; i < rawArgs.length; i++) {
+  if (rawArgs[i] === '--image') { bgImageFile = rawArgs[++i]; continue; }
+  args.push(rawArgs[i]);
+}
 // Meta varsa o haftanin secilmis tuyolarini + videosunu kullan (render yazar)
 const META_PATH = join(OUT_DIR, 'komsu-longform-meta.json');
 const meta = existsSync(META_PATH) ? JSON.parse(readFileSync(META_PATH, 'utf-8')) : null;
@@ -61,12 +68,16 @@ const chips = listItems
   .map(it => `<span class="chip"><span class="tick">✓</span>${it.keyword || it.title}</span>`)
   .join('');
 
+// bgImageFile (--image <path>): arka plani videodan kare yerine hazir gorselden al (yukarida parse edildi)
 const tmp = mkdtempSync(join(tmpdir(), 'thumb-'));
 try {
-  // 1) Videodan arka plan karesi (intro/temiz ev sahnesi - 5. saniye)
+  // 1) Arka plan karesi: --image verildiyse o gorsel, yoksa videodan 5. saniye
   const framePng = join(tmp, 'frame.png');
-  await ffmpeg(['-y', '-ss', '5', '-i', videoPath, '-frames:v', '1',
-    '-vf', 'scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720', framePng]);
+  const src = bgImageFile || videoPath;
+  const ffArgs = bgImageFile
+    ? ['-y', '-i', src, '-frames:v', '1', '-vf', 'scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720', framePng]
+    : ['-y', '-ss', '5', '-i', src, '-frames:v', '1', '-vf', 'scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720', framePng];
+  await ffmpeg(ffArgs);
   const bgDataUri = 'data:image/png;base64,' + readFileSync(framePng).toString('base64');
 
   // 2) HTML doldur + render
