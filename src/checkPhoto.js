@@ -13,14 +13,18 @@ Respond with EXACTLY one word: YES or NO. No explanation.`;
 const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
 
 // Gemini bazen gecici asiri yuk hatasi doner (503/500/502/504, UNAVAILABLE,
-// "high demand", "overloaded"). Bunlar genelde saniyeler/dakika icinde gecer.
+// "high demand", "overloaded") ya da gecici AG hatasi (connect/fetch timeout).
+// Bunlar genelde saniyeler/dakika icinde gecer -> backoff ile tekrar dene.
 const TRANSIENT_GEMINI_STATUSES = new Set([500, 502, 503, 504]);
 function isTransientGeminiError(err) {
   if (!err) return false;
   if (TRANSIENT_GEMINI_STATUSES.has(err.status)) return true;
-  const m = String(err.message || '').toLowerCase();
+  const code = String(err.code || err.cause?.code || '').toUpperCase();
+  if (code.includes('TIMEOUT') || code.includes('ECONN') || code.includes('ENOTFOUND') || code.includes('UND_ERR')) return true;
+  const m = (String(err.message || '') + ' ' + String(err.cause?.message || '')).toLowerCase();
   return m.includes('unavailable') || m.includes('high demand')
     || m.includes('overloaded') || m.includes('try again')
+    || m.includes('fetch failed') || m.includes('timeout') || m.includes('network')
     || m.includes('"code":503') || m.includes('"code":500')
     || m.includes('"code":502') || m.includes('"code":504');
 }

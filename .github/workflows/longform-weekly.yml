@@ -1,0 +1,78 @@
+name: Weekly Long-form - Komsu Tuyosu
+
+on:
+  workflow_dispatch:          # elle 'Run' butonu (test icin)
+  repository_dispatch:        # otomatik tetikleyici: cron-job.org her Pazar 11:30 TR
+    types: [weekly-longform]
+
+permissions:
+  contents: write           # longform-state.json + meta commit icin
+
+concurrency:
+  group: weekly-longform
+  cancel-in-progress: false
+
+jobs:
+  longform:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Render long-form (siradaki haftalik 5'li)
+        run: npm run render:longform
+        timeout-minutes: 30
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+
+      - name: Kapak uret (thumbnail)
+        run: npm run thumb:longform
+
+      - name: Upload to YouTube + kapak set
+        run: npm run post:longform
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+
+      - name: Commit state (haftalik index ilerlet)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config pull.rebase true
+          git add output/longform-state.json output/komsu-longform-meta.json
+          if git diff --staged --quiet; then
+            echo "State degismedi (upload basarisiz olabilir)"
+          else
+            git commit -m "chore: haftalik long-form $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                echo "Push basarili (deneme $i)"
+                break
+              fi
+              echo "Push basarisiz (deneme $i), tekrar deneniyor..."
+              sleep 3
+            done
+          fi
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}

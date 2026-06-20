@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1920px; height:1080px; overflow:hidden; background:transparent;
+  -webkit-font-smoothing:antialiased; text-rendering:geometricPrecision; }
+.wrap { width:100%; height:100%; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; padding:90px 260px; }
+.badge {
+  display:flex; align-items:center; gap:16px; margin-bottom:46px;
+}
+.pill {
+  font-family:'Anton', sans-serif; font-weight:400;
+  font-size:34px; letter-spacing:6px; text-transform:uppercase; color:#ffffff;
+  background-color:#E08A2B; padding:6px 30px; border-radius:999px;
+  -webkit-text-stroke:1px #1a0c00;
+  text-shadow:2px 2px 0 #1a0c00, 0 6px 16px rgba(0,0,0,0.7);
+}
+.topic {
+  font-family:'Inter', sans-serif; font-weight:600;
+  font-size:30px; letter-spacing:4px; text-transform:uppercase;
+  color:#ffe2bd; text-shadow:0 2px 8px rgba(0,0,0,0.9);
+}
+.answer {
+  font-family:'Inter', sans-serif; font-weight:500;
+  font-size:{{answerFontSize}}; line-height:1.62;
+  color:#ffffff; text-align:left; max-width:1400px;
+  text-shadow:
+    0 0 8px rgba(0,0,0,0.95),
+    0 2px 8px rgba(0,0,0,0.92),
+    0 4px 16px rgba(0,0,0,0.82);
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">
+      <span class="pill">İpucu</span>
+      <span class="topic">{{title}}</span>
+    </div>
+    <div class="answer" id="answer">{{answer}}</div>
+  </div>
+<script>
+  const el = document.querySelector('#answer');
+  const wrap = document.querySelector('.wrap');
+  let size = parseFloat(getComputedStyle(el).fontSize);
+  while (wrap.scrollHeight > 1080 && size > 24) { size -= 1; el.style.fontSize = size + 'px'; }
+</script>
+</body>
+</html>

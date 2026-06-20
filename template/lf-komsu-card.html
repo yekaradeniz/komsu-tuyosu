@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1920px; height:1080px; overflow:hidden; background:transparent;
+  -webkit-font-smoothing:antialiased; text-rendering:geometricPrecision; }
+.wrap { width:100%; height:100%; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; padding:0 160px; }
+.kicker {
+  font-family:'Inter', sans-serif; font-weight:700;
+  font-size:30px; letter-spacing:16px; text-transform:uppercase;
+  color:#ffe2bd; margin-bottom:46px;
+  text-shadow:0 2px 8px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.9);
+}
+.title-wrap { line-height:1.18; text-align:center; }
+.title {
+  display:inline;
+  font-family:'Anton', 'Bebas Neue', sans-serif; font-weight:400;
+  font-size:{{titleFontSize}}; line-height:1.18;
+  color:#ffffff; text-transform:uppercase; letter-spacing:2px;
+  background-color:#E08A2B;
+  padding:8px 28px;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  -webkit-text-stroke:1.5px #1a0c00;
+  text-shadow:4px 4px 0 #1a0c00, 6px 6px 18px rgba(0,0,0,0.85), 0 10px 28px rgba(0,0,0,0.7);
+}
+.sub {
+  margin-top:52px;
+  font-family:'Inter', sans-serif; font-weight:600;
+  font-size:34px; letter-spacing:6px; text-transform:uppercase;
+  color:#ffffff; opacity:0.96;
+  text-shadow:0 2px 8px rgba(0,0,0,0.95), 0 0 6px rgba(0,0,0,0.9);
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="kicker">Komşu Tüyosu</div>
+    <div class="title-wrap"><span class="title" id="title">{{title}}</span></div>
+    <div class="sub">{{total}} Pratik Tüyo</div>
+  </div>
+<script>
+  const el = document.querySelector('#title');
+  const wrap = document.querySelector('.wrap');
+  let size = parseFloat(getComputedStyle(el).fontSize);
+  while (wrap.scrollHeight > 1080 && size > 60) { size -= 2; el.style.fontSize = size + 'px'; }
+</script>
+</body>
+</html>
