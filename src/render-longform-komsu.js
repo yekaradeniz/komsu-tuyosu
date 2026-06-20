@@ -264,8 +264,19 @@ try {
     musicDur += await getAudioDuration(t);
     tIdx++;
   }
-  console.log(`${musicList.length} parca, ${musicDur.toFixed(0)}sn`);
-  const musicConcat = musicList.map(m => `file '${m.replace(/'/g, "'\\''")}'`).join('\n');
+  console.log(`${musicList.length} parca, ${musicDur.toFixed(0)}sn - loudnorm (tutarli seviye) uygulaniyor...`);
+  // Her sarkiyi AYRI loudnorm ile ayni algilanan seviyeye (-14 LUFS) getir, SONRA concat et.
+  // Boylece kisik/yuksek master'li farkli sarkilar baştan sona ayni seviyede duyulur.
+  // (Eskiden ham sese sabit volume carpani uygulaniyordu -> sarki degisince seviye ziplyordu.)
+  const normTracks = [];
+  for (let i = 0; i < musicList.length; i++) {
+    const np = join(tmp, `mnorm-${i}.m4a`);
+    await ffmpeg(['-y', '-i', musicList[i],
+      '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11',
+      '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', np]);
+    normTracks.push(np);
+  }
+  const musicConcat = normTracks.map(m => `file '${m.replace(/'/g, "'\\''")}'`).join('\n');
   writeFileSync(join(tmp, 'music.txt'), musicConcat);
   const musicPath = join(tmp, 'music.aac');
   await ffmpeg(['-y', '-f', 'concat', '-safe', '0', '-i', join(tmp, 'music.txt'),
