@@ -1,0 +1,36 @@
+{
+  "index": 0,
+  "weekNo": 1,
+  "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
+  "thumbTop": "Bu Haftanın",
+  "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
+  "items": [
+    {
+      "id": "kt-0001",
+      "keyword": "Yatak",
+      "title": "Sabah Yatağını Hemen Toplama"
+    },
+    {
+      "id": "kt-0002",
+      "keyword": "Cam",
+      "title": "Camları Sirkeyle Parlat"
+    },
+    {
+      "id": "kt-0003",
+      "keyword": "Havlu",
+      "title": "Havlulara Yumuşatıcı Kullanma"
+    },
+    {
+      "id": "kt-0004",
+      "keyword": "Çamaşır",
+      "title": "Çamaşır Makinesi Neden Kokar"
+    },
+    {
+      "id": "kt-0005",
+      "keyword": "Yumurta",
+      "title": "Yumurtayı Kapakta Saklama"
+    }
+  ],
+  "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
+  "durationSec": 336
+}
