@@ -397,7 +397,8 @@ try {
     videoTitle,
     thumbTop: data.thumbTop || 'Bu Haftanın',
     thumbBig: data.thumbBig || '<span class="hl">5</span> Pratik Tüyosu',
-    items: items.map(it => ({ id: it.id, keyword: it.keyword || it.title, title: it.title })),
+    // start = tuyonun video icindeki baslangic saniyesi (YouTube bolum/chapter icin)
+    items: items.map((it, i) => ({ id: it.id, keyword: it.keyword || it.title, title: it.title, start: Math.round(sched[i].qOverlayStart) })),
     videoPath: finalOut,
     durationSec: Math.round(bodyTotalLen)
   }, null, 2));

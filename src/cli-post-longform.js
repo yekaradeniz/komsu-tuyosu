@@ -11,6 +11,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { uploadLongform } from './uploadLongform.js';
+import { buildSeo } from './seoMeta.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -35,16 +36,8 @@ for (const [n, v] of Object.entries({ YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, 
   if (!v) { console.error('Env eksik:', n); process.exit(1); }
 }
 
-// Baslik + aciklama
-const title = meta.videoTitle || 'Bu Haftanın 5 Pratik Ev Tüyosu';
-const bullets = meta.items.map(it => `• ${it.title}`).join('\n');
-const description =
-  `Bu haftanın 5 pratik ev tüyosu, evdeki işlerini kolaylaştıracak basit ama etkili önerilerle karşında.\n\n` +
-  `Bu videoda:\n${bullets}\n\n` +
-  `Her hafta yeni pratik ev tüyoları için kanala abone ol.\n\n` +
-  `#evipuçları #komşutüyosu #pratikbilgi #evdüzeni #temizlik #yaşamhileleri`;
-const tags = ['ev ipuçları', 'komşu tüyosu', 'pratik bilgi', 'temizlik ipuçları', 'mutfak tüyoları',
-  'ev düzeni', 'organizasyon', 'yaşam hileleri', 'pratik ev', 'haftanın tüyoları'];
+// DINAMIK SEO: baslik + aciklama (zaman damgali bolumler) + etiketler, o haftanin tuyolarindan
+const { title, description, tags } = buildSeo({ items: meta.items });
 
 console.log(`Long-form upload: HAFTA ${meta.weekNo} - "${title}"`);
 console.log(`Tuyolar: ${meta.items.map(i => i.id).join(', ')}`);

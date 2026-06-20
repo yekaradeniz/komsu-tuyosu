@@ -1,0 +1,96 @@
+/**
+ * Long-form video icin DINAMIK SEO metadata uretir (baslik, aciklama, etiketler).
+ * Tamamen o haftanin tuyolarindan turetilir - sabit/jenerik degil.
+ *
+ * @param {object} o
+ * @param {Array<{id,title,keyword,start?}>} o.items  - o haftanin tuyolari (start = sn, opsiyonel chapter)
+ * @returns {{title:string, description:string, tags:string[]}}
+ */
+export function buildSeo({ items }) {
+  const N = items.length;
+  const keywords = items.map(i => i.keyword).filter(Boolean);
+  const titles = items.map(i => i.title).filter(Boolean);
+
+  // --- Baslik (max ~100 char): net + aranabilir, konulari listeler ---
+  const kwList = joinTr(keywords);
+  let title = `${N} Pratik Ev Tüyosu: ${kwList} | Komşu Tüyosu`;
+  if (title.length > 100) {
+    title = `${N} Pratik Ev Tüyosu: ${joinTr(keywords.slice(0, 3))} ve Dahası`;
+  }
+  if (title.length > 100) title = `${N} Pratik Ev Tüyosu | Komşu Tüyosu`;
+
+  // --- Bolumler (chapters) - start varsa ---
+  const hasChapters = items.every(i => typeof i.start === 'number');
+  let chapters = '';
+  if (hasChapters) {
+    const lines = ['00:00 Giriş'];
+    items.forEach(it => lines.push(`${fmt(it.start)} ${it.title}`));
+    chapters = `⏱️ Bölümler:\n${lines.join('\n')}\n\n`;
+  }
+
+  // --- Aciklama (ilk satir SEO icin kritik) ---
+  const kwLower = keywords.map(k => k.toLocaleLowerCase('tr-TR')).join(', ');
+  const bullets = titles.map(t => `▸ ${t}`).join('\n');
+  const description =
+    `Evdeki işleri kolaylaştıran ${N} pratik ev tüyosu: ${kwLower}. Pahalı ürünlere gerek yok, ` +
+    `evindeki basit malzemelerle büyük kolaylık. Komşu Tüyosu ile her hafta yeni pratik bilgiler!\n\n` +
+    `📋 Bu videoda öğrenecekleriniz:\n${bullets}\n\n` +
+    chapters +
+    `🏠 Her hafta yeni pratik ev tüyoları için kanala abone ol ve bildirimleri aç.\n\n` +
+    buildHashtags(keywords);
+
+  // --- Etiketler (dinamik + sabit kanal etiketleri) ---
+  const baseTags = [
+    'ev tüyoları', 'pratik bilgi', 'komşu tüyosu', 'ev temizliği', 'pratik ev tüyoları',
+    'ev düzeni', 'yaşam hileleri', 'pratik bilgiler', 'temizlik ipuçları', 'ev ipuçları'
+  ];
+  const dynTags = [];
+  for (const k of keywords) {
+    const kl = k.toLocaleLowerCase('tr-TR');
+    dynTags.push(kl, `${kl} temizliği`, `${kl} ipucu`);
+  }
+  // YouTube etiket limiti ~500 karakter toplam; benzersizlestir + makul kes
+  const tags = dedupeCap([...dynTags, ...baseTags], 30, 480);
+
+  return { title, description, tags };
+}
+
+function buildHashtags(keywords) {
+  const fixed = ['#evtüyoları', '#pratikbilgi', '#komşutüyosu'];
+  const dyn = keywords.map(k => '#' + slug(k));
+  const extra = ['#evtemizliği', '#evdüzeni', '#yaşamhileleri'];
+  return dedupe([...fixed, ...dyn, ...extra]).slice(0, 13).join(' ');
+}
+
+function slug(s) {
+  return String(s).toLocaleLowerCase('tr-TR').replace(/[^0-9a-zçğıöşü]/g, '');
+}
+
+function joinTr(arr) {
+  if (arr.length === 0) return '';
+  if (arr.length === 1) return arr[0];
+  return arr.slice(0, -1).join(', ') + ' ve ' + arr[arr.length - 1];
+}
+
+function fmt(sec) {
+  const s = Math.max(0, Math.round(sec));
+  const m = Math.floor(s / 60);
+  const r = s % 60;
+  return `${String(m).padStart(2, '0')}:${String(r).padStart(2, '0')}`;
+}
+
+function dedupe(arr) {
+  const seen = new Set();
+  return arr.filter(x => { const k = x.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
+function dedupeCap(arr, maxCount, maxChars) {
+  const out = [];
+  let chars = 0;
+  for (const t of dedupe(arr)) {
+    if (out.length >= maxCount) break;
+    if (chars + t.length + 1 > maxChars) continue;
+    out.push(t); chars += t.length + 1;
+  }
+  return out;
+}
