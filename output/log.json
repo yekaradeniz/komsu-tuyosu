@@ -2,15 +2,13 @@
   "launchDate": "2026-06-01",
   "lastPost": {
     "date": "2026-06-21",
-    "verseId": "kt-0038",
-    "photoId": "pexels-6374409",
-    "postId": "KCc85xSoz-I",
+    "verseId": "kt-0039",
+    "photoId": "pexels-6998656",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/KCc85xSoz-I"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-7703497",
     "pexels-7641188",
     "pexels-7351642",
     "pexels-4620886",
@@ -23,7 +21,8 @@
     "pexels-28316767",
     "pexels-5901658",
     "pexels-7640932",
-    "pexels-6374409"
+    "pexels-6374409",
+    "pexels-6998656"
   ],
   "postedVerseIds": [
     "kt-0001",
@@ -63,7 +62,8 @@
     "kt-0035",
     "kt-0036",
     "kt-0037",
-    "kt-0038"
+    "kt-0038",
+    "kt-0039"
   ],
   "usedVideoIds": [
     "pexels-6863732",
@@ -103,9 +103,10 @@
     "pexels-28316767",
     "pexels-5901658",
     "pexels-7640932",
-    "pexels-6374409"
+    "pexels-6374409",
+    "pexels-6998656"
   ],
-  "audioIndex": 3,
+  "audioIndex": 4,
   "lastSuccessfulPostId": "KCc85xSoz-I",
   "cooldownUntil": null
 }
