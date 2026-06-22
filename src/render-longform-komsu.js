@@ -26,6 +26,7 @@ import { fetchPexelsCandidatesByQueries } from './fetchPexelsVideo.js';
 import { generateVoice, getAudioDuration } from './generateVoice.js';
 import { downloadVideo } from './renderReel.js';
 import { validateVideoFrames } from './checkVideoFrames.js';
+import { getSeries, resolveEpisode } from './series.js';
 
 // ---------- Path & env ----------
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -46,43 +47,44 @@ for (const [n, v] of Object.entries({ PEXELS_KEY, ELEVEN_KEY, ELEVEN_VOICE })) {
 }
 
 // ---------- CLI ----------
-//   (varsayilan)        : state'teki siradaki haftalik 5'liyi render eder
-//   --week N            : N. haftayi render eder (1-tabanli)  [index=(N-1)*perWeek]
-//   --index I           : havuzda I. tuyodan baslayarak perWeek tane
-//   --items N           : sadece test - secilen gruptan ilk N tuyo
+//   --series weekly|malzeme : hangi seri (varsayilan weekly)
+//   (varsayilan)            : state'teki siradaki bolumu render eder
+//   --episode N / --week N  : N. bolumu render eder (1-tabanli)
+//   --index I               : havuzda/bolumde I. index'ten basla (0-tabanli)
+//   --items N               : sadece test - secilen bolumden ilk N item
 const args = process.argv.slice(2);
 const limitIdx = args.indexOf('--items');
 const itemsLimit = limitIdx >= 0 ? parseInt(args[limitIdx + 1], 10) : null;
-const weekIdx = args.indexOf('--week');
+const epIdx = args.indexOf('--episode') >= 0 ? args.indexOf('--episode') : args.indexOf('--week');
 const idxIdx = args.indexOf('--index');
+const serIdx = args.indexOf('--series');
 
-// ---------- Data ----------
-const data = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-longform.json'), 'utf-8'));
-const videoTitle = data.videoTitle;
-const introQuery = data.introQuery && data.introQuery.length ? data.introQuery : ['clean tidy home interior'];
-const perWeek = data.perWeek || 5;
-const pool = (data.content || data.items || []).filter(u => u.question && u.question.trim() && u.answer && u.answer.trim());
-if (pool.length === 0) { console.error('Long-form icerik havuzu bos (content)'); process.exit(1); }
+// ---------- Seri + Data ----------
+const series = getSeries(serIdx >= 0 ? args[serIdx + 1] : 'weekly');
+const data = JSON.parse(readFileSync(join(ROOT, 'content', series.contentFile), 'utf-8'));
 
-// Haftalik index: CLI override yoksa state dosyasindan oku
-const STATE_PATH = join(OUT_DIR, 'longform-state.json');
+const STATE_PATH = join(OUT_DIR, series.stateFile);
 let stateIndex = 0;
 if (existsSync(STATE_PATH)) {
   try { stateIndex = JSON.parse(readFileSync(STATE_PATH, 'utf-8')).index || 0; } catch {}
 }
+const stepSize = series.mode === 'episodes' ? 1 : (data.perWeek || 5);
 let startIndex = stateIndex;
-if (weekIdx >= 0) startIndex = (parseInt(args[weekIdx + 1], 10) - 1) * perWeek;
+if (epIdx >= 0) startIndex = (parseInt(args[epIdx + 1], 10) - 1) * stepSize;
 else if (idxIdx >= 0) startIndex = parseInt(args[idxIdx + 1], 10);
 
-if (startIndex >= pool.length) {
-  console.error(`Long-form havuzu bitti (index ${startIndex} >= ${pool.length}). Yeni icerik ekleyin.`);
+const ep = resolveEpisode(series, data, startIndex);
+if (!ep) {
+  console.error(`Seri "${series.name}" havuzu bitti (index ${startIndex}). Yeni icerik ekleyin.`);
   process.exit(1);
 }
-let items = pool.slice(startIndex, startIndex + perWeek);
+let items = ep.items;
 if (itemsLimit) items = items.slice(0, itemsLimit);
-if (items.length === 0) { console.error('Secilen grupta tuyo yok'); process.exit(1); }
-const weekNo = Math.floor(startIndex / perWeek) + 1;
-console.log(`Long-form HAFTA ${weekNo} (index ${startIndex}): "${videoTitle}" - ${items.length} tuyo (${items.map(i=>i.id).join(', ')})`);
+if (items.length === 0) { console.error('Secilen bolumde item yok'); process.exit(1); }
+const videoTitle = ep.videoTitle;
+const introQuery = ep.introQuery;
+const episodeNo = ep.episodeNo;
+console.log(`[${series.name}] BOLUM ${episodeNo} (index ${startIndex}): "${videoTitle}" - ${items.length} item`);
 
 // ---------- Helpers ----------
 function ffmpeg(a) {
@@ -399,7 +401,7 @@ try {
   const fcFile = join(tmp, 'fc.txt');
   writeFileSync(fcFile, f.join(';'));
 
-  const finalOut = join(OUT_DIR, 'komsu-longform.mp4');
+  const finalOut = join(OUT_DIR, series.outName);
   // preset veryfast + maxrate/bufsize KALDIRILDI: GitHub runner (2 vCPU) medium preset'te
   // 30dk timeout'a takiliyordu. veryfast 4-6x hizli, 1080p'de kalite farki minimal.
   a2.push('-filter_complex_script', fcFile, '-map', '[outv]', '-map', '[outa]',
@@ -409,16 +411,17 @@ try {
     '-movflags', '+faststart', '-t', String(bodyTotalLen), finalOut);
   await ffmpeg(a2);
 
-  // Meta: bu haftanin secilen tuyolari + ciktilar -> kapak ve upload bunu kullanir
-  const metaPath = join(OUT_DIR, 'komsu-longform-meta.json');
+  // Meta: bu bolumun item'lari + ciktilar -> kapak ve upload bunu kullanir
+  const metaPath = join(OUT_DIR, series.metaName);
   writeFileSync(metaPath, JSON.stringify({
+    series: series.name,
     index: startIndex,
-    weekNo,
+    episodeNo,
     videoTitle,
-    thumbTop: data.thumbTop || 'Bu Haftanın',
-    thumbBig: data.thumbBig || '<span class="hl">5</span> Pratik Tüyosu',
-    // start = tuyonun video icindeki baslangic saniyesi (YouTube bolum/chapter icin)
-    items: items.map((it, i) => ({ id: it.id, keyword: it.keyword || it.title, title: it.title, start: Math.round(sched[i].qOverlayStart) })),
+    thumbTop: ep.thumbTop,
+    thumbBig: ep.thumbBig,
+    // start = item'in video icindeki baslangic saniyesi (YouTube bolum/chapter icin)
+    items: items.map((it, i) => ({ id: it.id || null, keyword: it.keyword || it.title, title: it.title, start: Math.round(sched[i].qOverlayStart) })),
     videoPath: finalOut,
     durationSec: Math.round(bodyTotalLen)
   }, null, 2));

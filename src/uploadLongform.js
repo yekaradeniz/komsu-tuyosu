@@ -19,10 +19,10 @@ async function getAccessToken({ clientId, clientSecret, refreshToken }) {
 }
 
 /**
- * Long-form (yatay, Shorts DEGIL) video yukler + kapak (thumbnail) set eder.
- * @returns {Promise<{videoId, url, thumbnailSet}>}
+ * Long-form (yatay, Shorts DEGIL) video yukler + kapak (thumbnail) set eder + (varsa) playlist'e ekler.
+ * @returns {Promise<{videoId, url, thumbnailSet, playlistAdded}>}
  */
-export async function uploadLongform({ videoPath, thumbnailPath, title, description, tags, clientId, clientSecret, refreshToken }) {
+export async function uploadLongform({ videoPath, thumbnailPath, title, description, tags, playlistId, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
   const metadata = {
@@ -79,5 +79,21 @@ export async function uploadLongform({ videoPath, thumbnailPath, title, descript
     } catch (e) { console.warn(`Kapak set hatasi: ${e.message}`); }
   }
 
-  return { videoId, url: `https://www.youtube.com/watch?v=${videoId}`, thumbnailSet };
+  // 4) Playlist'e ekle (opsiyonel)
+  let playlistAdded = false;
+  if (playlistId) {
+    try {
+      const plRes = await fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          snippet: { playlistId, resourceId: { kind: 'youtube#video', videoId } }
+        })
+      });
+      if (plRes.ok) { playlistAdded = true; }
+      else { console.warn(`Playlist'e eklenemedi (${plRes.status}): ${(await plRes.text()).slice(0, 200)}`); }
+    } catch (e) { console.warn(`Playlist ekleme hatasi: ${e.message}`); }
+  }
+
+  return { videoId, url: `https://www.youtube.com/watch?v=${videoId}`, thumbnailSet, playlistAdded };
 }

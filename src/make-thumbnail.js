@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { spawn } from 'node:child_process';
 import { chromium } from 'playwright';
+import { getSeries } from './series.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -23,18 +24,21 @@ const ffmpegPath = (await import('ffmpeg-static')).default;
 const FFMPEG = process.env.FFMPEG_PATH || ffmpegPath || 'ffmpeg';
 
 const rawArgs = process.argv.slice(2);
-// Flag'leri (--image <path>) pozisyonel argumanlardan ayir
+// Flag'leri (--image <path>, --series <name>) pozisyonel argumanlardan ayir
 let bgImageFile = null;
+let seriesName = 'weekly';
 const args = [];
 for (let i = 0; i < rawArgs.length; i++) {
   if (rawArgs[i] === '--image') { bgImageFile = rawArgs[++i]; continue; }
+  if (rawArgs[i] === '--series') { seriesName = rawArgs[++i]; continue; }
   args.push(rawArgs[i]);
 }
-// Meta varsa o haftanin secilmis tuyolarini + videosunu kullan (render yazar)
-const META_PATH = join(OUT_DIR, 'komsu-longform-meta.json');
+const series = getSeries(seriesName);
+// Meta varsa o bolumun secilmis item'larini + videosunu kullan (render yazar)
+const META_PATH = join(OUT_DIR, series.metaName);
 const meta = existsSync(META_PATH) ? JSON.parse(readFileSync(META_PATH, 'utf-8')) : null;
-const videoPath = args[0] || (meta && meta.videoPath) || join(OUT_DIR, 'komsu-longform.mp4');
-const outPath = args[1] || join(OUT_DIR, 'komsu-thumb.png');
+const videoPath = args[0] || (meta && meta.videoPath) || join(OUT_DIR, series.outName);
+const outPath = args[1] || join(OUT_DIR, series.thumbName);
 
 function ffmpeg(a) {
   return new Promise((resolve, reject) => {
@@ -54,12 +58,13 @@ function fillTemplate(name, vars) {
   return html;
 }
 
-const data = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-longform.json'), 'utf-8'));
-// Kapak listesi: meta varsa o haftanin 5 tuyosu, yoksa havuzun ilk perWeek tanesi
+const data = JSON.parse(readFileSync(join(ROOT, 'content', series.contentFile), 'utf-8'));
+// Kapak listesi: meta varsa o bolumun item'lari (otomasyon hep meta yazar), yoksa fallback
 const perWeek = data.perWeek || 5;
-const listItems = meta && meta.items && meta.items.length
-  ? meta.items
+const fallbackItems = series.mode === 'episodes'
+  ? ((data.videos && data.videos[0] && data.videos[0].items) || [])
   : (data.content || data.items || []).filter(u => u.question && u.answer).slice(0, perWeek);
+const listItems = meta && meta.items && meta.items.length ? meta.items : fallbackItems;
 const N = listItems.length;
 
 const topLine = (meta && meta.thumbTop) || data.thumbTop || 'Bu Haftanın';

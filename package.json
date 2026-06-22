@@ -15,7 +15,10 @@
     "post": "node src/cli-post.js",
     "render:longform": "node src/render-longform-komsu.js",
     "thumb:longform": "node src/make-thumbnail.js",
-    "post:longform": "node src/cli-post-longform.js"
+    "post:longform": "node src/cli-post-longform.js",
+    "render:malzeme": "node src/render-longform-komsu.js --series malzeme",
+    "thumb:malzeme": "node src/make-thumbnail.js --series malzeme",
+    "post:malzeme": "node src/cli-post-longform.js --series malzeme"
   },
   "dependencies": {
     "@google/genai": "^1.51.0",
