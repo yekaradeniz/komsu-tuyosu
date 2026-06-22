@@ -418,6 +418,7 @@ try {
     index: startIndex,
     episodeNo,
     videoTitle,
+    material: ep.material || null,
     thumbTop: ep.thumbTop,
     thumbBig: ep.thumbBig,
     // start = item'in video icindeki baslangic saniyesi (YouTube bolum/chapter icin)

@@ -13,6 +13,7 @@ export const SERIES = {
     outName: 'komsu-longform.mp4',
     metaName: 'komsu-longform-meta.json',
     thumbName: 'komsu-thumb.png',
+    thumbTemplate: 'lf-komsu-thumb.html',
     mode: 'pool',          // content[] havuzdan perWeek'lik dilim
     playlistId: null
   },
@@ -23,6 +24,7 @@ export const SERIES = {
     outName: 'komsu-malzeme.mp4',
     metaName: 'komsu-malzeme-meta.json',
     thumbName: 'komsu-malzeme-thumb.png',
+    thumbTemplate: 'lf-komsu-thumb-malzeme.html',   // malzeme adi on planda
     mode: 'episodes',      // videos[] dizisinden tek bolum (index)
     playlistId: 'PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G'  // "Malzeme Serisi" (PLAYLIST_ID_MALZEME env override eder)
   }
@@ -52,6 +54,7 @@ export function resolveEpisode(series, data, startIndex) {
       items: ep.items,
       videoTitle: ep.videoTitle || `Evde ${ep.material} Kullanmanın 5 Yolu`,
       introQuery: ep.introQuery && ep.introQuery.length ? ep.introQuery : ['clean tidy home interior'],
+      material: ep.material,                                    // kapakta on planda
       thumbTop: `Evde ${ep.material}`,
       thumbBig: `<span class="hl">${ep.items.length}</span> Kullanımı`,
       index: startIndex,

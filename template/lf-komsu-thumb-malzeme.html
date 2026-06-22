@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1280px; height:720px; overflow:hidden; -webkit-font-smoothing:antialiased; text-rendering:geometricPrecision; }
+.bg { position:absolute; inset:0; background-image:url('{{bgImage}}'); background-size:cover; background-position:center; }
+.shade { position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.78) 100%); }
+.content { position:absolute; inset:0; display:flex; flex-direction:column;
+  justify-content:flex-end; align-items:center; text-align:center; padding:0 60px 56px; }
+.material { font-family:'Anton', sans-serif; font-size:{{materialFontSize}}; line-height:0.9;
+  text-transform:uppercase; letter-spacing:2px; color:#ffffff;
+  -webkit-text-stroke:3px #1a0c00;
+  text-shadow:0 6px 0 #1a0c00, 0 14px 40px rgba(0,0,0,0.8); }
+.bar { width:200px; height:10px; background:#E08A2B; border-radius:6px; margin:18px 0 16px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.5); }
+.usage { font-family:'Anton', sans-serif; font-size:56px; line-height:1; text-transform:uppercase;
+  letter-spacing:2px; color:#E08A2B; margin-bottom:22px;
+  text-shadow:0 4px 16px rgba(0,0,0,0.9); }
+.usage .hl { color:#ffffff; }
+.list { display:flex; flex-wrap:wrap; justify-content:center; gap:11px 12px; max-width:1080px; }
+.chip { font-family:'Inter', sans-serif; font-weight:700; font-size:27px; color:#ffffff;
+  text-transform:uppercase; letter-spacing:1px; background:rgba(224,138,43,0.92);
+  padding:7px 18px; border-radius:999px; box-shadow:0 4px 12px rgba(0,0,0,0.5); }
+.chip .tick { color:#1a0c00; font-weight:800; margin-right:6px; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="shade"></div>
+  <div class="content">
+    <div class="material" id="material">{{material}}</div>
+    <div class="bar"></div>
+    <div class="usage">{{usage}}</div>
+    <div class="list">{{chips}}</div>
+  </div>
+<script>
+  const el=document.querySelector('#material'); let s=parseFloat(getComputedStyle(el).fontSize);
+  while(el.getBoundingClientRect().width>1140&&s>56){s-=4;el.style.fontSize=s+'px';}
+</script>
+</body>
+</html>

@@ -27,10 +27,12 @@ const rawArgs = process.argv.slice(2);
 // Flag'leri (--image <path>, --series <name>) pozisyonel argumanlardan ayir
 let bgImageFile = null;
 let seriesName = 'weekly';
+let templateOverride = null;
 const args = [];
 for (let i = 0; i < rawArgs.length; i++) {
   if (rawArgs[i] === '--image') { bgImageFile = rawArgs[++i]; continue; }
   if (rawArgs[i] === '--series') { seriesName = rawArgs[++i]; continue; }
+  if (rawArgs[i] === '--template') { templateOverride = rawArgs[++i]; continue; }
   args.push(rawArgs[i]);
 }
 const series = getSeries(seriesName);
@@ -67,8 +69,12 @@ const fallbackItems = series.mode === 'episodes'
 const listItems = meta && meta.items && meta.items.length ? meta.items : fallbackItems;
 const N = listItems.length;
 
+// weekly degiskenleri
 const topLine = (meta && meta.thumbTop) || data.thumbTop || 'Bu Haftanın';
 const bigLine = (meta && meta.thumbBig) || data.thumbBig || `<span class="hl">${N}</span> Pratik Tüyosu`;
+// malzeme degiskenleri (malzeme adi on planda)
+const material = (meta && meta.material) || (data.videos && data.videos[0] && data.videos[0].material) || '';
+const usage = `<span class="hl">${N}</span> Pratik Kullanımı`;
 const chips = listItems
   .map(it => `<span class="chip"><span class="tick">✓</span>${it.keyword || it.title}</span>`)
   .join('');
@@ -85,8 +91,10 @@ try {
   await ffmpeg(ffArgs);
   const bgDataUri = 'data:image/png;base64,' + readFileSync(framePng).toString('base64');
 
-  // 2) HTML doldur + render
-  const html = fillTemplate('lf-komsu-thumb.html', { bgImage: bgDataUri, topLine, bigLine, chips });
+  // 2) HTML doldur + render (seri sablonu / --template override; kullanilmayan placeholder zararsiz)
+  const html = fillTemplate(templateOverride || series.thumbTemplate || 'lf-komsu-thumb.html', {
+    bgImage: bgDataUri, topLine, bigLine, chips, material, usage, materialFontSize: '150px'
+  });
   const browser = await chromium.launch();
   try {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 720 }, deviceScaleFactor: 2 });
