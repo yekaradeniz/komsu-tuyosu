@@ -1,0 +1,42 @@
+{
+  "series": "malzeme",
+  "index": 0,
+  "episodeNo": 1,
+  "videoTitle": "Evde Sirkenin 5 Şaşırtıcı Kullanımı",
+  "thumbTop": "Evde Sirke",
+  "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
+  "items": [
+    {
+      "id": "mz-001-1",
+      "keyword": "Cam",
+      "title": "Camları Sirkeyle Parlat",
+      "start": 6
+    },
+    {
+      "id": "mz-001-2",
+      "keyword": "Kireç",
+      "title": "Çaydanlık Kirecini Çöz",
+      "start": 57
+    },
+    {
+      "id": "mz-001-3",
+      "keyword": "Çamaşır",
+      "title": "Çamaşırları Yumuşat",
+      "start": 108
+    },
+    {
+      "id": "mz-001-4",
+      "keyword": "Koku",
+      "title": "Buzdolabı Kokusunu Gider",
+      "start": 157
+    },
+    {
+      "id": "mz-001-5",
+      "keyword": "Gider",
+      "title": "Tıkanan Gideri Aç",
+      "start": 208
+    }
+  ],
+  "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
+  "durationSec": 263
+}
