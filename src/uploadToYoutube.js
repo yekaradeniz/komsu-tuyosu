@@ -51,7 +51,22 @@ function buildDescription(caption) {
  * @param {string} opts.refreshToken
  * @returns {Promise<{videoId: string, url: string}>}
  */
-export async function uploadToYoutube({ videoPath, verse, caption, clientId, clientSecret, refreshToken }) {
+// Mood -> Turkce etiket (Shorts etiketlerini o gunun konusuna gore dinamiklestirir)
+const MOOD_TAGS = {
+  cleaning: ['temizlik', 'temizlik ipuçları'],
+  kitchen: ['mutfak', 'mutfak tüyoları'],
+  laundry: ['çamaşır', 'çamaşır ipuçları'],
+  organizing: ['ev düzeni', 'organizasyon'],
+  cozy: ['ev bakımı', 'ev dekorasyonu']
+};
+function buildTags(moods) {
+  const base = ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
+  const dyn = (moods || []).flatMap(m => MOOD_TAGS[m] || []);
+  // Kanal adi (komsu tuyosu) etiket olarak KULLANILMIYOR (marka degil)
+  return [...new Set([...dyn, ...base])].slice(0, 15);
+}
+
+export async function uploadToYoutube({ videoPath, verse, caption, moods, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
   const title = buildTitle(verse);
@@ -61,8 +76,10 @@ export async function uploadToYoutube({ videoPath, verse, caption, clientId, cli
     snippet: {
       title,
       description,
-      tags: ['ev ipuçları', 'komşu tüyosu', 'pratik bilgi', 'temizlik ipuçları', 'mutfak tüyoları', 'ev düzeni', 'organizasyon', 'yaşam hileleri', 'tasarruf', 'shorts'],
-      categoryId: '26'   // Howto & Style
+      tags: buildTags(moods),
+      categoryId: '26',   // Howto & Style
+      defaultLanguage: 'tr',
+      defaultAudioLanguage: 'tr'
     },
     status: {
       privacyStatus: 'public',

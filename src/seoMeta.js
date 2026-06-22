@@ -33,7 +33,7 @@ export function buildSeo({ items }) {
   const bullets = titles.map(t => `▸ ${t}`).join('\n');
   const description =
     `Evdeki işleri kolaylaştıran ${N} pratik ev tüyosu: ${kwLower}. Pahalı ürünlere gerek yok, ` +
-    `evindeki basit malzemelerle büyük kolaylık. Komşu Tüyosu ile her hafta yeni pratik bilgiler!\n\n` +
+    `evindeki basit malzemelerle büyük kolaylık. Her hafta yeni pratik ev bilgileri!\n\n` +
     `📋 Bu videoda öğrenecekleriniz:\n${bullets}\n\n` +
     chapters +
     `🏠 Her hafta yeni pratik ev tüyoları için kanala abone ol ve bildirimleri aç.\n\n` +
@@ -41,7 +41,7 @@ export function buildSeo({ items }) {
 
   // --- Etiketler (dinamik + sabit kanal etiketleri) ---
   const baseTags = [
-    'ev tüyoları', 'pratik bilgi', 'komşu tüyosu', 'ev temizliği', 'pratik ev tüyoları',
+    'ev tüyoları', 'pratik bilgi', 'ev temizliği', 'pratik ev tüyoları', 'püf noktası',
     'ev düzeni', 'yaşam hileleri', 'pratik bilgiler', 'temizlik ipuçları', 'ev ipuçları'
   ];
   const dynTags = [];
@@ -56,7 +56,7 @@ export function buildSeo({ items }) {
 }
 
 function buildHashtags(keywords) {
-  const fixed = ['#evtüyoları', '#pratikbilgi', '#komşutüyosu'];
+  const fixed = ['#evtüyoları', '#pratikbilgi', '#evipuçları'];
   const dyn = keywords.map(k => '#' + slug(k));
   const extra = ['#evtemizliği', '#evdüzeni', '#yaşamhileleri'];
   return dedupe([...fixed, ...dyn, ...extra]).slice(0, 13).join(' ');

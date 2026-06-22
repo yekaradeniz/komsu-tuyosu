@@ -47,6 +47,7 @@ try {
     videoPath,
     verse: entry.verse,
     caption,
+    moods: entry.moods,
     clientId: ytClientId,
     clientSecret: ytClientSecret,
     refreshToken: ytRefreshToken

@@ -1,9 +1,9 @@
 // YouTube spam koruma algoritmasi ayni caption'i tekrarlayan hesaplari
 // flag eder. Bu yuzden her gun verse'in ilk satiri + rotating hashtag seti
-// uretiyoruz. Tum captionlar farkli ama brand kimligi (#komşutüyosu,
-// #evipuçları gibi core taglar) korunuyor.
+// uretiyoruz. Tum captionlar farkli. Kanal adi (komsu tuyosu) marka olmadigi
+// icin hashtag/intro olarak KULLANILMAZ; konu odakli hashtagler kullanilir.
 
-const CORE_TAGS = ['#komşutüyosu', '#evipuçları', '#pratikbilgi'];
+const CORE_TAGS = ['#evipuçları', '#pratikbilgi'];
 
 const ROTATION_POOL = [
   '#temizlik', '#evtüyoları', '#mutfaktüyoları', '#evdüzeni',
@@ -19,9 +19,9 @@ const ROTATION_COUNT = 4;
 const INTRO_VARIANTS = [
   v => `${v}`,
   v => `${v}\n\nSen biliyor muydun?`,
-  v => `Komşu tüyosu:\n${v}`,
+  v => `${v}\n\nDenediniz mi?`,
   v => `${v}\n\nDetaylar videoda.`,
-  v => `Komşu Tüyosu | ${v}`,
+  v => `Bunu biliyor muydun?\n\n${v}`,
   v => `Bugünün tüyosu:\n\n${v}`
 ];
 
