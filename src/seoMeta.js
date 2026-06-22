@@ -6,18 +6,24 @@
  * @param {Array<{id,title,keyword,start?}>} o.items  - o haftanin tuyolari (start = sn, opsiyonel chapter)
  * @returns {{title:string, description:string, tags:string[]}}
  */
-export function buildSeo({ items }) {
+export function buildSeo({ items, material }) {
   const N = items.length;
   const keywords = items.map(i => i.keyword).filter(Boolean);
   const titles = items.map(i => i.title).filter(Boolean);
 
-  // --- Baslik (max ~100 char): net + aranabilir, konulari listeler ---
+  // --- Baslik (max ~100 char): net + aranabilir, konulari listeler (marka adi YOK) ---
   const kwList = joinTr(keywords);
-  let title = `${N} Pratik Ev Tüyosu: ${kwList} | Komşu Tüyosu`;
-  if (title.length > 100) {
-    title = `${N} Pratik Ev Tüyosu: ${joinTr(keywords.slice(0, 3))} ve Dahası`;
+  let title;
+  if (material) {
+    // Malzeme serisi: malzeme adi on planda
+    title = `Evde ${material}: ${N} Pratik Kullanım (${joinTr(keywords.slice(0, 3))})`;
+    if (title.length > 100) title = `Evde ${material} Kullanmanın ${N} Pratik Yolu`;
+    if (title.length > 100) title = `Evde ${material}: ${N} Pratik Kullanım`;
+  } else {
+    title = `${N} Pratik Ev Tüyosu: ${kwList}`;
+    if (title.length > 100) title = `${N} Pratik Ev Tüyosu: ${joinTr(keywords.slice(0, 3))} ve Dahası`;
+    if (title.length > 100) title = `${N} Pratik Ev Tüyosu`;
   }
-  if (title.length > 100) title = `${N} Pratik Ev Tüyosu | Komşu Tüyosu`;
 
   // --- Bolumler (chapters) - start varsa ---
   const hasChapters = items.every(i => typeof i.start === 'number');
@@ -31,13 +37,15 @@ export function buildSeo({ items }) {
   // --- Aciklama (ilk satir SEO icin kritik) ---
   const kwLower = keywords.map(k => k.toLocaleLowerCase('tr-TR')).join(', ');
   const bullets = titles.map(t => `▸ ${t}`).join('\n');
+  const intro = material
+    ? `Evde ${material} ne işe yarar? İşte ${material} ile yapabileceğin ${N} pratik ve etkili uygulama: ${kwLower}. Pahalı ürünlere gerek yok, evindeki basit malzemeyle büyük kolaylık!`
+    : `Evdeki işleri kolaylaştıran ${N} pratik ev tüyosu: ${kwLower}. Pahalı ürünlere gerek yok, evindeki basit malzemelerle büyük kolaylık. Her hafta yeni pratik ev bilgileri!`;
   const description =
-    `Evdeki işleri kolaylaştıran ${N} pratik ev tüyosu: ${kwLower}. Pahalı ürünlere gerek yok, ` +
-    `evindeki basit malzemelerle büyük kolaylık. Her hafta yeni pratik ev bilgileri!\n\n` +
+    `${intro}\n\n` +
     `📋 Bu videoda öğrenecekleriniz:\n${bullets}\n\n` +
     chapters +
     `🏠 Her hafta yeni pratik ev tüyoları için kanala abone ol ve bildirimleri aç.\n\n` +
-    buildHashtags(keywords);
+    buildHashtags(keywords, material);
 
   // --- Etiketler (dinamik + sabit kanal etiketleri) ---
   const baseTags = [
@@ -55,11 +63,12 @@ export function buildSeo({ items }) {
   return { title, description, tags };
 }
 
-function buildHashtags(keywords) {
+function buildHashtags(keywords, material) {
+  const matTag = material ? ['#' + slug(material)] : [];
   const fixed = ['#evtüyoları', '#pratikbilgi', '#evipuçları'];
   const dyn = keywords.map(k => '#' + slug(k));
   const extra = ['#evtemizliği', '#evdüzeni', '#yaşamhileleri'];
-  return dedupe([...fixed, ...dyn, ...extra]).slice(0, 13).join(' ');
+  return dedupe([...matTag, ...fixed, ...dyn, ...extra]).slice(0, 13).join(' ');
 }
 
 function slug(s) {

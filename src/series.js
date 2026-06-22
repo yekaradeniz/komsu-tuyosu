@@ -15,7 +15,7 @@ export const SERIES = {
     thumbName: 'komsu-thumb.png',
     thumbTemplate: 'lf-komsu-thumb.html',
     mode: 'pool',          // content[] havuzdan perWeek'lik dilim
-    playlistId: null
+    playlistId: 'PLynH0txiEqh26QdVivze5z7xUNmUMgFPP'  // "Bu Haftanın Tüyoları"
   },
   malzeme: {
     name: 'malzeme',

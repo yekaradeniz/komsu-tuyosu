@@ -1,28 +1,29 @@
 /**
  * Mevcut bir long-form videonun SEO metadata'sini gunceller (baslik/aciklama/etiket).
- * Kullanim: node scripts/update-video-seo.mjs <videoId> [weekNo]
- *   weekNo verilmezse 1 (havuzun ilk 5'i) kabul edilir.
+ * Kullanim: node scripts/update-video-seo.mjs <videoId> [episodeNo] [series]
+ *   series: weekly (varsayilan) | malzeme
  */
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { buildSeo } from '../src/seoMeta.js';
+import { getSeries, resolveEpisode } from '../src/series.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const [, , videoId, weekArg] = process.argv;
-if (!videoId) { console.error('Kullanim: node scripts/update-video-seo.mjs <videoId> [weekNo]'); process.exit(1); }
-const weekNo = parseInt(weekArg || '1', 10);
+const [, , videoId, epArg, seriesArg] = process.argv;
+if (!videoId) { console.error('Kullanim: node scripts/update-video-seo.mjs <videoId> [episodeNo] [series]'); process.exit(1); }
+const epNo = parseInt(epArg || '1', 10);
 
-const data = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-longform.json'), 'utf-8'));
-const perWeek = data.perWeek || 5;
-const start = (weekNo - 1) * perWeek;
-const items = (data.content || []).slice(start, start + perWeek)
-  .map(it => ({ id: it.id, title: it.title, keyword: it.keyword }));
-if (items.length === 0) { console.error('Bu haftada tuyo yok'); process.exit(1); }
+const series = getSeries(seriesArg || 'weekly');
+const data = JSON.parse(readFileSync(join(ROOT, 'content', series.contentFile), 'utf-8'));
+const step = series.mode === 'episodes' ? 1 : (data.perWeek || 5);
+const ep = resolveEpisode(series, data, (epNo - 1) * step);
+if (!ep) { console.error('Bolum bulunamadi'); process.exit(1); }
+const items = ep.items.map(it => ({ id: it.id, title: it.title, keyword: it.keyword }));
 
-const { title, description, tags } = buildSeo({ items });
+const { title, description, tags } = buildSeo({ items, material: ep.material || null });
 
 const { YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN } = process.env;
 const tr = await fetch('https://oauth2.googleapis.com/token', {

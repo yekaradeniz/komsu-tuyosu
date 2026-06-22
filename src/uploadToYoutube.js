@@ -37,7 +37,8 @@ function buildTitle(verse) {
  * Instagram caption'ini YouTube description'a donusturur (#Shorts ekler).
  */
 function buildDescription(caption) {
-  return `${caption}\n\n#Shorts`;
+  // Shorts -> long-form yonlendirme + abone CTA
+  return `${caption}\n\n▶ Daha detaylı anlatımlı uzun videolar için kanaldaki "Bu Haftanın Tüyoları" ve "Malzeme Serisi" oynatma listelerine göz at. Her gün yeni bir pratik ev ipucu için abone ol!\n\n#Shorts`;
 }
 
 /**
@@ -66,7 +67,7 @@ function buildTags(moods) {
   return [...new Set([...dyn, ...base])].slice(0, 15);
 }
 
-export async function uploadToYoutube({ videoPath, verse, caption, moods, clientId, clientSecret, refreshToken }) {
+export async function uploadToYoutube({ videoPath, verse, caption, moods, playlistId, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
   const title = buildTitle(verse);
@@ -131,6 +132,18 @@ export async function uploadToYoutube({ videoPath, verse, caption, moods, client
   const videoId = result.id;
   if (!videoId) {
     throw new Error(`YouTube upload sonucu beklenmedi: ${JSON.stringify(result)}`);
+  }
+
+  // 3) Playlist'e ekle (opsiyonel - hata upload'i bozmaz)
+  if (playlistId) {
+    try {
+      const plRes = await fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${accessToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ snippet: { playlistId, resourceId: { kind: 'youtube#video', videoId } } })
+      });
+      if (!plRes.ok) console.warn(`Shorts playlist'e eklenemedi (${plRes.status})`);
+    } catch (e) { console.warn(`Shorts playlist ekleme hatasi: ${e.message}`); }
   }
 
   return {
