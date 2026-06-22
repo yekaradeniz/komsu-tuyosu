@@ -60,7 +60,7 @@ const MOOD_TAGS = {
   organizing: ['ev düzeni', 'organizasyon'],
   cozy: ['ev bakımı', 'ev dekorasyonu']
 };
-function buildTags(moods) {
+export function buildTags(moods) {
   const base = ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
   const dyn = (moods || []).flatMap(m => MOOD_TAGS[m] || []);
   // Kanal adi (komsu tuyosu) etiket olarak KULLANILMIYOR (marka degil)
