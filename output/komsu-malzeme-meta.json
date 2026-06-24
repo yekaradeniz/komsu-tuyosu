@@ -1,0 +1,43 @@
+{
+  "series": "malzeme",
+  "index": 1,
+  "episodeNo": 2,
+  "videoTitle": "Karbonatın Bilmediğin 5 Faydası",
+  "material": "Karbonat",
+  "thumbTop": "Evde Karbonat",
+  "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
+  "items": [
+    {
+      "id": "mz-002-1",
+      "keyword": "Koku",
+      "title": "Halı Kokusunu Al",
+      "start": 6
+    },
+    {
+      "id": "mz-002-2",
+      "keyword": "Tencere",
+      "title": "Tencere Dibini Temizle",
+      "start": 55
+    },
+    {
+      "id": "mz-002-3",
+      "keyword": "Derz",
+      "title": "Banyo Derzini Beyazlat",
+      "start": 108
+    },
+    {
+      "id": "mz-002-4",
+      "keyword": "Tazelik",
+      "title": "Buzdolabını Kokusuz Tut",
+      "start": 162
+    },
+    {
+      "id": "mz-002-5",
+      "keyword": "Yağ",
+      "title": "Yağlı Fırını Söktür",
+      "start": 212
+    }
+  ],
+  "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
+  "durationSec": 269
+}
