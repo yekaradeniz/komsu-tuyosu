@@ -1,36 +1,43 @@
 {
-  "index": 0,
-  "weekNo": 1,
+  "series": "weekly",
+  "index": 5,
+  "episodeNo": 2,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
+  "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0001",
-      "keyword": "Yatak",
-      "title": "Sabah Yatağını Hemen Toplama"
-    },
-    {
-      "id": "kt-0002",
-      "keyword": "Cam",
-      "title": "Camları Sirkeyle Parlat"
-    },
-    {
-      "id": "kt-0003",
-      "keyword": "Havlu",
-      "title": "Havlulara Yumuşatıcı Kullanma"
-    },
-    {
-      "id": "kt-0004",
-      "keyword": "Çamaşır",
-      "title": "Çamaşır Makinesi Neden Kokar"
-    },
-    {
-      "id": "kt-0005",
+      "id": "kt-0006",
       "keyword": "Yumurta",
-      "title": "Yumurtayı Kapakta Saklama"
+      "title": "Yumurta Tazelik Testi",
+      "start": 6
+    },
+    {
+      "id": "kt-0007",
+      "keyword": "Patates",
+      "title": "Patatesle Soğanı Ayır",
+      "start": 82
+    },
+    {
+      "id": "kt-0008",
+      "keyword": "Mikrodalga",
+      "title": "Mikrodalgayı Buharla Temizle",
+      "start": 154
+    },
+    {
+      "id": "kt-0009",
+      "keyword": "Tencere",
+      "title": "Yanmış Tencere Dibi",
+      "start": 226
+    },
+    {
+      "id": "kt-0010",
+      "keyword": "Soğan",
+      "title": "Eldeki Soğan Kokusu",
+      "start": 300
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 336
+  "durationSec": 380
 }
