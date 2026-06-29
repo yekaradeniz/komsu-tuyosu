@@ -45,7 +45,7 @@ for (const [n, v] of Object.entries({ YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, 
 
 // DINAMIK SEO: o bolumun item'larindan baslik + aciklama (zaman damgali) + etiket
 // malzeme serisinde meta.material ile baslik/aciklama malzeme odakli olur
-const { title, description, tags } = buildSeo({ items: meta.items, material: meta.material || null });
+const { title, description, tags } = buildSeo({ items: meta.items, material: meta.material || null, videoTitle: meta.videoTitle });
 
 console.log(`[${series.name}] upload BOLUM ${meta.episodeNo} - "${title}"`);
 

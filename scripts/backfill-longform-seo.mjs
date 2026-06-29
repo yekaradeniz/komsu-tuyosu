@@ -64,11 +64,16 @@ function parseChapterStarts(desc) {
   return lines.length ? lines : null;
 }
 
-// SEO uret: Komsu {items,material} / Zihin {concept,videoTitle,items}
+// Canli aciklamadaki "▸ <baslik>" madde imlerini cikar (baslik degisse de stabil eslestirme).
+function parseBullets(desc) {
+  return (desc || '').split('\n').filter(l => l.trim().startsWith('▸')).map(l => l.replace(/^\s*▸\s*/, '').trim());
+}
+
+// SEO uret: Komsu {items,material,videoTitle} / Zihin {concept,videoTitle,items}
 function makeSeo(ep, items) {
   return ep.concept
     ? buildSeo({ concept: ep.concept, videoTitle: ep.videoTitle, items })
-    : buildSeo({ items, material: ep.material || null });
+    : buildSeo({ items, material: ep.material || null, videoTitle: ep.videoTitle });
 }
 
 const access = await token();
@@ -116,7 +121,10 @@ for (const sName of Object.keys(SERIES)) {
 // 4) Eslestir + guncelle
 const updates = [];
 for (const v of live) {
-  const match = expected.find(e => norm(e.title) === norm(v.title));
+  const liveItems = parseBullets(v.description);
+  const match =
+    (liveItems.length && expected.find(e => norm(e.items.map(i => i.title).join('|')) === norm(liveItems.join('|'))))
+    || expected.find(e => norm(e.title) === norm(v.title));
   if (!match) { console.log(`\n[ESLESMEDI] ${v.id} "${v.title}" (manuel bakilmali)`); continue; }
 
   const starts = parseChapterStarts(v.description);

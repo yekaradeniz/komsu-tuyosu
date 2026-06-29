@@ -21,9 +21,9 @@ const data = JSON.parse(readFileSync(join(ROOT, 'content', series.contentFile), 
 const step = series.mode === 'episodes' ? 1 : (data.perWeek || 5);
 const ep = resolveEpisode(series, data, (epNo - 1) * step);
 if (!ep) { console.error('Bolum bulunamadi'); process.exit(1); }
-const items = ep.items.map(it => ({ id: it.id, title: it.title, keyword: it.keyword }));
+const items = ep.items.map(it => ({ id: it.id, title: it.title, keyword: it.keyword, start: it.start }));
 
-const { title, description, tags } = buildSeo({ items, material: ep.material || null });
+const { title, description, tags } = buildSeo({ items, material: ep.material || null, videoTitle: ep.videoTitle });
 
 const { YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN } = process.env;
 const tr = await fetch('https://oauth2.googleapis.com/token', {

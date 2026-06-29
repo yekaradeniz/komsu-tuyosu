@@ -6,23 +6,32 @@
  * @param {Array<{id,title,keyword,start?}>} o.items  - o haftanin tuyolari (start = sn, opsiyonel chapter)
  * @returns {{title:string, description:string, tags:string[]}}
  */
-export function buildSeo({ items, material }) {
+export function buildSeo({ items, material, videoTitle }) {
   const N = items.length;
   const keywords = items.map(i => i.keyword).filter(Boolean);
   const titles = items.map(i => i.title).filter(Boolean);
 
-  // --- Baslik (max ~100 char): net + aranabilir, konulari listeler (marka adi YOK) ---
-  const kwList = joinTr(keywords);
+  // --- Baslik: TIKLAMA (CTR) odakli. Kucuk kanalda izlenme aramadan degil akis/onerilen'den
+  //     gelir; baslik anahtar kelime listesi degil, merak/fayda kancasi olmali.
+  //     malzeme: icerikteki el yazimi videoTitle (orn "Limonun 5 Mucize Ev Kullanimi") onceliklidir.
+  //     weekly: havuzdan dinamik dilim; her bolum farkli gorunsun diye merak cercevesi rotasyonu. ---
   let title;
   if (material) {
-    // Malzeme serisi: malzeme adi on planda
-    title = `Evde ${material}: ${N} Pratik Kullanım (${joinTr(keywords.slice(0, 3))})`;
-    if (title.length > 100) title = `Evde ${material} Kullanmanın ${N} Pratik Yolu`;
+    title = (videoTitle && videoTitle.trim())
+      ? videoTitle.trim()
+      : `Evde ${material}: Bilmediğiniz ${N} Pratik Kullanım`;
     if (title.length > 100) title = `Evde ${material}: ${N} Pratik Kullanım`;
   } else {
-    title = `${N} Pratik Ev Tüyosu: ${kwList}`;
-    if (title.length > 100) title = `${N} Pratik Ev Tüyosu: ${joinTr(keywords.slice(0, 3))} ve Dahası`;
-    if (title.length > 100) title = `${N} Pratik Ev Tüyosu`;
+    const frames = [
+      `Hayatınızı Kolaylaştıracak ${N} Pratik Ev Tüyosu`,
+      `Çoğu Kişinin Bilmediği ${N} Pratik Ev Tüyosu`,
+      `Keşke Daha Önce Bilseydim Dediğiniz ${N} Ev Tüyosu`,
+      `Evde İşinizi Kolaylaştıran ${N} Akıllı Ev Tüyosu`,
+    ];
+    const seed = keywords.reduce((a, k) => a + k.length, keywords.length);
+    const frame = frames[seed % frames.length];
+    title = `${frame}: ${keywords.slice(0, 2).join(', ')} ve Dahası`;
+    if (title.length > 100) title = frame;
   }
 
   // --- Bolumler (chapters) - start varsa, YouTube kurallarina uygun ---
