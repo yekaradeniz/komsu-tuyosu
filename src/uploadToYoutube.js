@@ -27,9 +27,17 @@ async function getAccessToken({ clientId, clientSecret, refreshToken }) {
 /**
  * Verse'in ilk satirini baslik olarak duzenler (max 90 karakter + ' #Shorts').
  */
-function buildTitle(verse) {
+function buildTitle(verse, concept) {
   const firstLine = (String(verse).split('\n').find(l => l.trim().length > 0) ?? '').trim();
-  const base = firstLine.length > 90 ? firstLine.slice(0, 87) + '...' : firstLine;
+  let base = firstLine.length > 90 ? firstLine.slice(0, 87) + '...' : firstLine;
+  // Konu (concept) baslikta zaten yoksa ve yer varsa ekle: aranabilir terim one cikar.
+  if (concept && concept.trim()) {
+    const c = concept.trim();
+    const norm = s => s.toLocaleLowerCase('tr-TR').replace(/[^0-9a-zçğıöşü ]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!norm(base).includes(norm(c)) && base.length + c.length + 3 <= 90) {
+      base = `${base} | ${c}`;
+    }
+  }
   return `${base} #Shorts`;
 }
 
@@ -60,24 +68,26 @@ const MOOD_TAGS = {
   organizing: ['ev düzeni', 'organizasyon'],
   cozy: ['ev bakımı', 'ev dekorasyonu']
 };
-export function buildTags(moods) {
+export function buildTags(moods, concept) {
   const base = ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
   const dyn = (moods || []).flatMap(m => MOOD_TAGS[m] || []);
+  // O gunun konusu (concept) en spesifik tag; ayni mood'daki yuzlerce Short'u ayristirir.
+  const conceptTags = concept && concept.trim() ? [concept.trim().toLocaleLowerCase('tr-TR')] : [];
   // Kanal adi (komsu tuyosu) etiket olarak KULLANILMIYOR (marka degil)
-  return [...new Set([...dyn, ...base])].slice(0, 15);
+  return [...new Set([...conceptTags, ...dyn, ...base])].slice(0, 15);
 }
 
-export async function uploadToYoutube({ videoPath, verse, caption, moods, playlistId, clientId, clientSecret, refreshToken }) {
+export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, playlistId, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
-  const title = buildTitle(verse);
+  const title = buildTitle(verse, concept);
   const description = buildDescription(caption);
 
   const metadata = {
     snippet: {
       title,
       description,
-      tags: buildTags(moods),
+      tags: buildTags(moods, concept),
       categoryId: '26',   // Howto & Style
       defaultLanguage: 'tr',
       defaultAudioLanguage: 'tr'

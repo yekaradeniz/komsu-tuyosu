@@ -29,8 +29,10 @@ export async function uploadLongform({ videoPath, thumbnailPath, title, descript
     snippet: {
       title: title.slice(0, 100),
       description,
-      tags: tags || ['ev ipuçları', 'komşu tüyosu', 'pratik bilgi', 'temizlik', 'ev düzeni'],
-      categoryId: '26'   // Howto & Style
+      tags: tags || ['ev ipuçları', 'pratik bilgi', 'temizlik', 'ev düzeni', 'pratik ev tüyoları'],
+      categoryId: '26',   // Howto & Style
+      defaultLanguage: 'tr',
+      defaultAudioLanguage: 'tr'
     },
     status: { privacyStatus: 'public', selfDeclaredMadeForKids: false }
   };

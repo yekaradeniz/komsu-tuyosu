@@ -31,10 +31,10 @@ describe('buildCaption', () => {
     expect(a).not.toBe(b);
   });
 
-  it('caption en fazla 7 hashtag icerir (3 core + 4 rotated)', () => {
+  it('caption en fazla 6 hashtag icerir (2 core + 4 rotated)', () => {
     const caption = buildCaption(entry, '2026-05-12');
     const hashtagCount = (caption.match(/#/g) || []).length;
-    expect(hashtagCount).toBe(7);
+    expect(hashtagCount).toBe(6);
   });
 
   it('30 gun boyunca tum captionlar farklidir', () => {

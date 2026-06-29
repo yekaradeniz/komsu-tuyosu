@@ -47,6 +47,7 @@ try {
     videoPath,
     verse: entry.verse,
     caption,
+    concept: entry.concept,
     moods: entry.moods,
     playlistId: 'PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2',  // "Pratik Ev İpuçları" (Shorts)
     clientId: ytClientId,

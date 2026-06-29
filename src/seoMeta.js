@@ -25,14 +25,8 @@ export function buildSeo({ items, material }) {
     if (title.length > 100) title = `${N} Pratik Ev Tüyosu`;
   }
 
-  // --- Bolumler (chapters) - start varsa ---
-  const hasChapters = items.every(i => typeof i.start === 'number');
-  let chapters = '';
-  if (hasChapters) {
-    const lines = ['00:00 Giriş'];
-    items.forEach(it => lines.push(`${fmt(it.start)} ${it.title}`));
-    chapters = `⏱️ Bölümler:\n${lines.join('\n')}\n\n`;
-  }
+  // --- Bolumler (chapters) - start varsa, YouTube kurallarina uygun ---
+  const chapters = buildChapters(items);
 
   // --- Aciklama (ilk satir SEO icin kritik) ---
   const kwLower = keywords.map(k => k.toLocaleLowerCase('tr-TR')).join(', ');
@@ -53,6 +47,11 @@ export function buildSeo({ items, material }) {
     'ev düzeni', 'yaşam hileleri', 'pratik bilgiler', 'temizlik ipuçları', 'ev ipuçları'
   ];
   const dynTags = [];
+  // Malzeme serisinde malzemenin kendisi videonun en guclu arama terimi; tag'lere de koy.
+  if (material) {
+    const m = material.toLocaleLowerCase('tr-TR');
+    dynTags.push(m, `evde ${m}`, `${m} kullanımı`);
+  }
   for (const k of keywords) {
     const kl = k.toLocaleLowerCase('tr-TR');
     dynTags.push(kl, `${kl} temizliği`, `${kl} ipucu`);
@@ -86,6 +85,26 @@ function fmt(sec) {
   const m = Math.floor(s / 60);
   const r = s % 60;
   return `${String(m).padStart(2, '0')}:${String(r).padStart(2, '0')}`;
+}
+
+/**
+ * YouTube bolum (chapter) bloku uretir.
+ * YouTube kurallari: ilk bolum 00:00 olmali, en az 3 bolum, her segment >= 10sn.
+ * Intro genelde <10sn oldugu icin ayri "00:00 Giris" bolumu ilk segment'i bozuyordu
+ * (chapters tamamen devre disi kaliyordu). Onun yerine ilk item'i 00:00'a sabitliyoruz
+ * ve 10sn'den yakin item'lari atlayip kurali garantiliyoruz.
+ */
+function buildChapters(items) {
+  if (!items || !items.length || !items.every(i => typeof i.start === 'number')) return '';
+  const pts = items.map((it, i) => ({ t: i === 0 ? 0 : Math.round(it.start), label: it.title }));
+  const valid = [];
+  for (const p of pts) {
+    if (!valid.length) { valid.push(p); continue; }
+    if (p.t - valid[valid.length - 1].t >= 10) valid.push(p);
+  }
+  if (valid.length < 3) return '';
+  const lines = valid.map(p => `${fmt(p.t)} ${p.label}`);
+  return `⏱️ Bölümler:\n${lines.join('\n')}\n\n`;
 }
 
 function dedupe(arr) {
