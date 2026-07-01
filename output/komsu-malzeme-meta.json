@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 2,
-  "episodeNo": 3,
-  "videoTitle": "Limonun 5 Mucize Ev Kullanımı",
-  "material": "Limon",
-  "thumbTop": "Evde Limon",
+  "index": 3,
+  "episodeNo": 4,
+  "videoTitle": "Tuzun Şaşırtacak 5 Ev Sırrı",
+  "material": "Tuz",
+  "thumbTop": "Evde Tuz",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-003-1",
-      "keyword": "Mikrodalga",
-      "title": "Mikrodalgayı Buharla Temizle",
-      "start": 6
+      "id": "mz-004-1",
+      "keyword": "Leke",
+      "title": "Dökülen Şarabı Kurtar",
+      "start": 5
     },
     {
-      "id": "mz-003-2",
-      "keyword": "Tahta",
-      "title": "Doğrama Tahtasını Arındır",
+      "id": "mz-004-2",
+      "keyword": "Tava",
+      "title": "Tavayı Tuzla Ovala",
       "start": 58
     },
     {
-      "id": "mz-003-3",
-      "keyword": "Kireç",
-      "title": "Musluk Kirecini Parlat",
-      "start": 112
+      "id": "mz-004-3",
+      "keyword": "Leke",
+      "title": "Bardak Lekesini Sök",
+      "start": 110
     },
     {
-      "id": "mz-003-4",
-      "keyword": "Beyazlatma",
-      "title": "Beyaz Çamaşırı Ağart",
-      "start": 167
+      "id": "mz-004-4",
+      "keyword": "Gider",
+      "title": "Lavabo Giderini Ferahlat",
+      "start": 166
     },
     {
-      "id": "mz-003-5",
-      "keyword": "Koku",
-      "title": "Bulaşık Kokusunu Yok Et",
-      "start": 223
+      "id": "mz-004-5",
+      "keyword": "Buz",
+      "title": "Buzlu Camı Çözme",
+      "start": 218
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 279
+  "durationSec": 277
 }
