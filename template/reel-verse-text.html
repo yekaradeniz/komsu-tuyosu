@@ -54,7 +54,7 @@
     const wrap = document.querySelector('.verse-wrap');
     const stage = document.querySelector('.stage');
     let size = parseFloat(window.getComputedStyle(verse).fontSize);
-    const minSize = 70;
+    const minSize = 44;   // uzun verse metinleri icin (eski 70 tasiyordu)
     const maxHeight = 900;
     while ((wrap.offsetHeight > maxHeight || verse.getBoundingClientRect().width > stage.clientWidth) && size > minSize) {
       size -= 2;
