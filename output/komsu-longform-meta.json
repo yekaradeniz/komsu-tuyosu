@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 5,
-  "episodeNo": 2,
+  "index": 10,
+  "episodeNo": 3,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0006",
-      "keyword": "Yumurta",
-      "title": "Yumurta Tazelik Testi",
+      "id": "kt-0011",
+      "keyword": "Yeşillik",
+      "title": "Yeşillikler Bir Hafta Taze Kalsın",
       "start": 6
     },
     {
-      "id": "kt-0007",
-      "keyword": "Patates",
-      "title": "Patatesle Soğanı Ayır",
-      "start": 82
+      "id": "kt-0012",
+      "keyword": "Bal",
+      "title": "Kristalleşen Balı Geri Kazan",
+      "start": 86
     },
     {
-      "id": "kt-0008",
-      "keyword": "Mikrodalga",
-      "title": "Mikrodalgayı Buharla Temizle",
-      "start": 154
+      "id": "kt-0013",
+      "keyword": "Meyve",
+      "title": "Sert Meyveyi Hızlı Olgunlaştır",
+      "start": 167
     },
     {
-      "id": "kt-0009",
-      "keyword": "Tencere",
-      "title": "Yanmış Tencere Dibi",
-      "start": 226
+      "id": "kt-0014",
+      "keyword": "Tahta",
+      "title": "Ahşap Kesme Tahtası Bakımı",
+      "start": 247
     },
     {
-      "id": "kt-0010",
-      "keyword": "Soğan",
-      "title": "Eldeki Soğan Kokusu",
-      "start": 300
+      "id": "kt-0015",
+      "keyword": "Duş",
+      "title": "Duş Başlığındaki Kireci Çöz",
+      "start": 325
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 380
+  "durationSec": 409
 }
