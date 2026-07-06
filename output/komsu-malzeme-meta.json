@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 3,
-  "episodeNo": 4,
-  "videoTitle": "Tuzun Şaşırtacak 5 Ev Sırrı",
-  "material": "Tuz",
-  "thumbTop": "Evde Tuz",
+  "index": 4,
+  "episodeNo": 5,
+  "videoTitle": "Diş Macununun Bilmediğin 5 Kullanımı",
+  "material": "Diş macunu",
+  "thumbTop": "Evde Diş macunu",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-004-1",
-      "keyword": "Leke",
-      "title": "Dökülen Şarabı Kurtar",
-      "start": 5
+      "id": "mz-005-1",
+      "keyword": "Gümüş",
+      "title": "Gümüş Takıları Parlat",
+      "start": 6
     },
     {
-      "id": "mz-004-2",
-      "keyword": "Tava",
-      "title": "Tavayı Tuzla Ovala",
-      "start": 58
+      "id": "mz-005-2",
+      "keyword": "Ütü",
+      "title": "Ütüyü İçten Temizle",
+      "start": 64
     },
     {
-      "id": "mz-004-3",
-      "keyword": "Leke",
-      "title": "Bardak Lekesini Sök",
-      "start": 110
+      "id": "mz-005-3",
+      "keyword": "Duvar",
+      "title": "Duvardaki İzleri Sil",
+      "start": 122
     },
     {
-      "id": "mz-004-4",
-      "keyword": "Gider",
-      "title": "Lavabo Giderini Ferahlat",
-      "start": 166
+      "id": "mz-005-4",
+      "keyword": "Ahşap",
+      "title": "Bardak Halkalarını Çıkar",
+      "start": 181
     },
     {
-      "id": "mz-004-5",
-      "keyword": "Buz",
-      "title": "Buzlu Camı Çözme",
-      "start": 218
+      "id": "mz-005-5",
+      "keyword": "Lavabo",
+      "title": "Lavaboyu Tertemiz Yap",
+      "start": 237
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 277
+  "durationSec": 298
 }
