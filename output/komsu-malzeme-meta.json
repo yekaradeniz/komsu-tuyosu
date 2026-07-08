@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 4,
-  "episodeNo": 5,
-  "videoTitle": "Diş Macununun Bilmediğin 5 Kullanımı",
-  "material": "Diş macunu",
-  "thumbTop": "Evde Diş macunu",
+  "index": 5,
+  "episodeNo": 6,
+  "videoTitle": "Zeytinyağının Mutfak Dışı 5 Kullanımı",
+  "material": "Zeytinyağı",
+  "thumbTop": "Evde Zeytinyağı",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-005-1",
-      "keyword": "Gümüş",
-      "title": "Gümüş Takıları Parlat",
+      "id": "mz-006-1",
+      "keyword": "Mobilya",
+      "title": "Ahşap Mobilyayı Besle",
       "start": 6
     },
     {
-      "id": "mz-005-2",
-      "keyword": "Ütü",
-      "title": "Ütüyü İçten Temizle",
-      "start": 64
+      "id": "mz-006-2",
+      "keyword": "Menteşe",
+      "title": "Gıcırdayan Menteşeyi Yağla",
+      "start": 63
     },
     {
-      "id": "mz-005-3",
-      "keyword": "Duvar",
-      "title": "Duvardaki İzleri Sil",
-      "start": 122
+      "id": "mz-006-3",
+      "keyword": "Etiket",
+      "title": "Etiket Yapışkanını Çıkar",
+      "start": 120
     },
     {
-      "id": "mz-005-4",
-      "keyword": "Ahşap",
-      "title": "Bardak Halkalarını Çıkar",
-      "start": 181
+      "id": "mz-006-4",
+      "keyword": "Çelik",
+      "title": "Paslanmaz Çeliği Parlat",
+      "start": 179
     },
     {
-      "id": "mz-005-5",
-      "keyword": "Lavabo",
-      "title": "Lavaboyu Tertemiz Yap",
+      "id": "mz-006-5",
+      "keyword": "Deri",
+      "title": "Deri Eşyalara Bakım Yap",
       "start": 237
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 298
+  "durationSec": 296
 }
