@@ -4,9 +4,10 @@
     "date": "2026-07-09",
     "verseId": "kt-0064",
     "photoId": "pexels-7641374",
-    "postId": null,
+    "postId": "0w3rGVNdvLU",
     "type": "reel",
-    "carousel": false
+    "carousel": false,
+    "youtubeUrl": "https://www.youtube.com/shorts/0w3rGVNdvLU"
   },
   "recentPhotos": [
     "pexels-8946986",
@@ -158,6 +159,6 @@
     "pexels-7641374"
   ],
   "audioIndex": 2,
-  "lastSuccessfulPostId": "EExXkbm7XOI",
+  "lastSuccessfulPostId": "0w3rGVNdvLU",
   "cooldownUntil": null
 }
