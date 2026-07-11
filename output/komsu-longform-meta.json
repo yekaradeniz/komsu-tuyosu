@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 10,
-  "episodeNo": 3,
+  "index": 15,
+  "episodeNo": 4,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0011",
-      "keyword": "Yeşillik",
-      "title": "Yeşillikler Bir Hafta Taze Kalsın",
+      "id": "kt-0016",
+      "keyword": "Derz",
+      "title": "Derzleri Karbonatla Beyazlat",
       "start": 6
     },
     {
-      "id": "kt-0012",
-      "keyword": "Bal",
-      "title": "Kristalleşen Balı Geri Kazan",
-      "start": 86
+      "id": "kt-0017",
+      "keyword": "Gider",
+      "title": "Lavabo Giderini Karbonatla Aç",
+      "start": 73
     },
     {
-      "id": "kt-0013",
-      "keyword": "Meyve",
-      "title": "Sert Meyveyi Hızlı Olgunlaştır",
-      "start": 167
+      "id": "kt-0018",
+      "keyword": "Renkliler",
+      "title": "Renkliler Çabuk Solmasın",
+      "start": 140
     },
     {
-      "id": "kt-0014",
-      "keyword": "Tahta",
-      "title": "Ahşap Kesme Tahtası Bakımı",
-      "start": 247
+      "id": "kt-0019",
+      "keyword": "Sararma",
+      "title": "Koltukaltı Sararmasını Çıkar",
+      "start": 209
     },
     {
-      "id": "kt-0015",
-      "keyword": "Duş",
-      "title": "Duş Başlığındaki Kireci Çöz",
-      "start": 325
+      "id": "kt-0020",
+      "keyword": "Çorap",
+      "title": "Çoraplar Tek Tek Kaybolmasın",
+      "start": 281
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 409
+  "durationSec": 351
 }
