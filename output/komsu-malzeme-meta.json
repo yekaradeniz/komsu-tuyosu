@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 6,
-  "episodeNo": 7,
-  "videoTitle": "Gazete Kağıdının Akıllıca 5 Kullanımı",
-  "material": "Gazete kağıdı",
-  "thumbTop": "Evde Gazete kağıdı",
+  "index": 7,
+  "episodeNo": 8,
+  "videoTitle": "Kahve Telvesini Sakın Atma: 5 Kullanım",
+  "material": "Kahve telvesi",
+  "thumbTop": "Evde Kahve telvesi",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-007-1",
-      "keyword": "Cam",
-      "title": "Camları İz Bırakmadan Sil",
+      "id": "mz-008-1",
+      "keyword": "Koku",
+      "title": "Buzdolabı Kokusunu Al",
       "start": 6
     },
     {
-      "id": "mz-007-2",
-      "keyword": "Ayakkabı",
-      "title": "Islak Ayakkabıyı Kurut",
-      "start": 63
+      "id": "mz-008-2",
+      "keyword": "Ovma",
+      "title": "Tıkanan Yağı Ovala",
+      "start": 68
     },
     {
-      "id": "mz-007-3",
-      "keyword": "Koku",
-      "title": "Dolap Kokusunu Gider",
-      "start": 122
+      "id": "mz-008-3",
+      "keyword": "Gübre",
+      "title": "Bitkilere Doğal Gübre",
+      "start": 132
     },
     {
-      "id": "mz-007-4",
-      "keyword": "Bahçe",
-      "title": "Yabani Otları Bastır",
-      "start": 179
+      "id": "mz-008-4",
+      "keyword": "Lavabo",
+      "title": "Lavabo Borusunu Tazele",
+      "start": 194
     },
     {
-      "id": "mz-007-5",
-      "keyword": "Paketleme",
-      "title": "Kırılacak Eşyayı Sar",
-      "start": 244
+      "id": "mz-008-5",
+      "keyword": "Karınca",
+      "title": "Karıncaları Uzaklaştır",
+      "start": 257
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 309
+  "durationSec": 328
 }
