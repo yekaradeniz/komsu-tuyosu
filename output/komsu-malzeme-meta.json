@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 7,
-  "episodeNo": 8,
-  "videoTitle": "Kahve Telvesini Sakın Atma: 5 Kullanım",
-  "material": "Kahve telvesi",
-  "thumbTop": "Evde Kahve telvesi",
+  "index": 8,
+  "episodeNo": 9,
+  "videoTitle": "Nişastanın Mutfak Dışı 5 Şaşırtıcı Kullanımı",
+  "material": "Nişasta",
+  "thumbTop": "Evde Nişasta",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-008-1",
+      "id": "mz-009-1",
+      "keyword": "Leke",
+      "title": "Yağ Lekesini Hemen Çek",
+      "start": 7
+    },
+    {
+      "id": "mz-009-2",
+      "keyword": "Gümüş",
+      "title": "Gümüşleri Pırıl Pırıl Yap",
+      "start": 63
+    },
+    {
+      "id": "mz-009-3",
+      "keyword": "Cilt",
+      "title": "Cildi Yumuşatan Banyo",
+      "start": 119
+    },
+    {
+      "id": "mz-009-4",
+      "keyword": "Kağıt",
+      "title": "Yapışkan Kartları Ayır",
+      "start": 177
+    },
+    {
+      "id": "mz-009-5",
       "keyword": "Koku",
-      "title": "Buzdolabı Kokusunu Al",
-      "start": 6
-    },
-    {
-      "id": "mz-008-2",
-      "keyword": "Ovma",
-      "title": "Tıkanan Yağı Ovala",
-      "start": 68
-    },
-    {
-      "id": "mz-008-3",
-      "keyword": "Gübre",
-      "title": "Bitkilere Doğal Gübre",
-      "start": 132
-    },
-    {
-      "id": "mz-008-4",
-      "keyword": "Lavabo",
-      "title": "Lavabo Borusunu Tazele",
-      "start": 194
-    },
-    {
-      "id": "mz-008-5",
-      "keyword": "Karınca",
-      "title": "Karıncaları Uzaklaştır",
-      "start": 257
+      "title": "Halıdaki Kötü Kokuyu Al",
+      "start": 233
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 328
+  "durationSec": 290
 }
