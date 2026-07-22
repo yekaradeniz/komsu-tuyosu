@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 8,
-  "episodeNo": 9,
-  "videoTitle": "Nişastanın Mutfak Dışı 5 Şaşırtıcı Kullanımı",
-  "material": "Nişasta",
-  "thumbTop": "Evde Nişasta",
+  "index": 9,
+  "episodeNo": 10,
+  "videoTitle": "Bulaşık Deterjanının 5 Akıllı Ev Kullanımı",
+  "material": "Bulaşık deterjanı",
+  "thumbTop": "Evde Bulaşık deterjanı",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-009-1",
-      "keyword": "Leke",
-      "title": "Yağ Lekesini Hemen Çek",
-      "start": 7
+      "id": "mz-010-1",
+      "keyword": "Yaka",
+      "title": "Lekeli Yakaları Kurtar",
+      "start": 6
     },
     {
-      "id": "mz-009-2",
-      "keyword": "Gümüş",
-      "title": "Gümüşleri Pırıl Pırıl Yap",
-      "start": 63
+      "id": "mz-010-2",
+      "keyword": "Mücevher",
+      "title": "Mücevherleri Parlat",
+      "start": 67
     },
     {
-      "id": "mz-009-3",
-      "keyword": "Cilt",
-      "title": "Cildi Yumuşatan Banyo",
-      "start": 119
+      "id": "mz-010-3",
+      "keyword": "Cam",
+      "title": "Pencere Cam Temizleyicisi Yap",
+      "start": 129
     },
     {
-      "id": "mz-009-4",
-      "keyword": "Kağıt",
-      "title": "Yapışkan Kartları Ayır",
-      "start": 177
+      "id": "mz-010-4",
+      "keyword": "Gider",
+      "title": "Tıkalı Gideri Aç",
+      "start": 188
     },
     {
-      "id": "mz-009-5",
-      "keyword": "Koku",
-      "title": "Halıdaki Kötü Kokuyu Al",
-      "start": 233
+      "id": "mz-010-5",
+      "keyword": "Tencere",
+      "title": "Yağlı Tencereyi Bekleterek Temizle",
+      "start": 253
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 290
+  "durationSec": 315
 }
