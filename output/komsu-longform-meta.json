@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 20,
-  "episodeNo": 5,
+  "index": 25,
+  "episodeNo": 6,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0021",
-      "keyword": "Dolap",
-      "title": "Kıyafetleri Dik Katla",
+      "id": "kt-0026",
+      "keyword": "Buzdolabı",
+      "title": "Buzdolabı Kokusunu Karbonatla Çöz",
       "start": 6
     },
     {
-      "id": "kt-0022",
-      "keyword": "Kablo",
-      "title": "Kabloları Ruloyla Düzenle",
-      "start": 78
+      "id": "kt-0027",
+      "keyword": "Ayakkabı",
+      "title": "Ayakkabı Kokusunu Karbonat Alır",
+      "start": 79
     },
     {
-      "id": "kt-0023",
+      "id": "kt-0028",
+      "keyword": "Koku",
+      "title": "Evi Saatlerce Mis Gibi Kokut",
+      "start": 145
+    },
+    {
+      "id": "kt-0029",
+      "keyword": "Petek",
+      "title": "Petek Arkasına Folyo Koy",
+      "start": 215
+    },
+    {
+      "id": "kt-0030",
       "keyword": "Buzdolabı",
-      "title": "Buzdolabında Doğru Yerleşim",
-      "start": 149
-    },
-    {
-      "id": "kt-0024",
-      "keyword": "Askı",
-      "title": "Askıda Yer Kazan",
-      "start": 225
-    },
-    {
-      "id": "kt-0025",
-      "keyword": "Halı",
-      "title": "Halı Lekesini Ovma",
-      "start": 298
+      "title": "Buzdolabı Arkasındaki Tozu Al",
+      "start": 283
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 379
+  "durationSec": 355
 }
