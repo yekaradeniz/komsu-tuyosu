@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 9,
-  "episodeNo": 10,
-  "videoTitle": "Bulaşık Deterjanının 5 Akıllı Ev Kullanımı",
-  "material": "Bulaşık deterjanı",
-  "thumbTop": "Evde Bulaşık deterjanı",
+  "index": 10,
+  "episodeNo": 11,
+  "videoTitle": "Aspirinin Sağlık Dışı 5 Pratik Kullanımı",
+  "material": "Aspirin",
+  "thumbTop": "Evde Aspirin",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-010-1",
-      "keyword": "Yaka",
-      "title": "Lekeli Yakaları Kurtar",
+      "id": "mz-011-1",
+      "keyword": "Leke",
+      "title": "Ter Lekesini Beyazlat",
       "start": 6
     },
     {
-      "id": "mz-010-2",
-      "keyword": "Mücevher",
-      "title": "Mücevherleri Parlat",
-      "start": 67
+      "id": "mz-011-2",
+      "keyword": "Çiçek",
+      "title": "Çiçeklerin Ömrünü Uzat",
+      "start": 62
     },
     {
-      "id": "mz-010-3",
-      "keyword": "Cam",
-      "title": "Pencere Cam Temizleyicisi Yap",
-      "start": 129
+      "id": "mz-011-3",
+      "keyword": "Fuga",
+      "title": "Banyo Fugalarını Temizle",
+      "start": 114
     },
     {
-      "id": "mz-010-4",
-      "keyword": "Gider",
-      "title": "Tıkalı Gideri Aç",
-      "start": 188
+      "id": "mz-011-4",
+      "keyword": "Bitki",
+      "title": "Saksı Toprağını Sağlıklı Tut",
+      "start": 169
     },
     {
-      "id": "mz-010-5",
-      "keyword": "Tencere",
-      "title": "Yağlı Tencereyi Bekleterek Temizle",
-      "start": 253
+      "id": "mz-011-5",
+      "keyword": "Sivilce",
+      "title": "Sivilceyi Kurutmaya Yardım Et",
+      "start": 225
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 315
+  "durationSec": 292
 }
