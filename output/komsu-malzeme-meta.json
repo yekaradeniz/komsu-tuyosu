@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 10,
-  "episodeNo": 11,
-  "videoTitle": "Aspirinin Sağlık Dışı 5 Pratik Kullanımı",
-  "material": "Aspirin",
-  "thumbTop": "Evde Aspirin",
+  "index": 11,
+  "episodeNo": 12,
+  "videoTitle": "Naylon Poşetin Bilmediğin 5 Akıllı Kullanımı",
+  "material": "Naylon poşet",
+  "thumbTop": "Evde Naylon poşet",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-011-1",
-      "keyword": "Leke",
-      "title": "Ter Lekesini Beyazlat",
+      "id": "mz-012-1",
+      "keyword": "Kireç",
+      "title": "Musluk Kireçini Sök",
       "start": 6
     },
     {
-      "id": "mz-011-2",
-      "keyword": "Çiçek",
-      "title": "Çiçeklerin Ömrünü Uzat",
-      "start": 62
+      "id": "mz-012-2",
+      "keyword": "Boya",
+      "title": "Boya Fırçasını Taze Tut",
+      "start": 68
     },
     {
-      "id": "mz-011-3",
-      "keyword": "Fuga",
-      "title": "Banyo Fugalarını Temizle",
-      "start": 114
+      "id": "mz-012-3",
+      "keyword": "Koku",
+      "title": "Buzdolabını Kokusuz Sakla",
+      "start": 123
     },
     {
-      "id": "mz-011-4",
-      "keyword": "Bitki",
-      "title": "Saksı Toprağını Sağlıklı Tut",
-      "start": 169
+      "id": "mz-012-4",
+      "keyword": "Çöp",
+      "title": "Çöp Kovasına Yedek Koy",
+      "start": 178
     },
     {
-      "id": "mz-011-5",
-      "keyword": "Sivilce",
-      "title": "Sivilceyi Kurutmaya Yardım Et",
-      "start": 225
+      "id": "mz-012-5",
+      "keyword": "Yağmur",
+      "title": "Yağmurda Eşyanı Koru",
+      "start": 231
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 292
+  "durationSec": 290
 }
