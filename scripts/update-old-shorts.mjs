@@ -52,7 +52,16 @@ for (const v of vids) {
   if (!entry) { nomatch++; console.log(`? eslesmedi: ${v.snippet.title.slice(0, 50)}`); continue; }
   const date = (v.snippet.publishedAt || '2026-06-01').slice(0, 10);
   const caption = buildCaption(entry, date);
-  const description = `${caption}\n\n▶ Daha detaylı anlatımlı uzun videolar için kanaldaki "Bu Haftanın Tüyoları" ve "Malzeme Serisi" oynatma listelerine göz at!\n\n#Shorts`;
+  // Tiklanabilir abone linki (?sub_confirmation=1 = tek tikla abone) + playlist URL'leri.
+  // Eski videolarda sadece playlist ADI yaziyordu, link yoktu -> tiklanamiyordu.
+  const SUB = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
+  const PL_H = 'https://www.youtube.com/playlist?list=PLynH0txiEqh26QdVivze5z7xUNmUMgFPP';
+  const PL_M = 'https://www.youtube.com/playlist?list=PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G';
+  const description = `${caption}\n\n` +
+    `🔔 Her gün yeni bir pratik ev tüyosu: ${SUB}\n\n` +
+    `▶ Daha detaylı uzun videolar:\n` +
+    `• Bu Haftanın Tüyoları: ${PL_H}\n` +
+    `• Malzeme Serisi (sirke, karbonat, limon...): ${PL_M}\n\n#Shorts`;
   const tags = buildTags(entry.moods);
   const res = await fetch('https://www.googleapis.com/youtube/v3/videos?part=snippet', {
     method: 'PUT', headers: { ...H, 'Content-Type': 'application/json' },
