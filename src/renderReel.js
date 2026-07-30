@@ -117,13 +117,19 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
       explanationFontSize: `${calcExplanationFontSize(explanation)}px`
     });
 
+    // ABONE CTA karti: cevap bitince 2.2sn gorunur. Kanalin abone donusumu cok
+    // zayifti (1000 izlenmede 0.66 abone); video hicbir cagri yapmadan bitiyordu.
+    const ctaHtml = fillTemplate('reel-cta.html', {});
+
     const gradientPng = join(tmp, 'gradient.png');
     const versePng = join(tmp, 'verse.png');
     const manaPng = join(tmp, 'mana.png');
+    const ctaPng = join(tmp, 'cta.png');
     await renderHtmlToPng(gradientHtml, gradientPng, browser);
     await renderHtmlToPng(verseHtml, versePng, browser);
     await renderHtmlToPng(manaHtml, manaPng, browser);
-    console.log('Overlay PNGleri hazir');
+    await renderHtmlToPng(ctaHtml, ctaPng, browser);
+    console.log('Overlay PNGleri hazir (CTA dahil)');
 
     // 2) Pexels videosunu indir (gerekirse)
     let actualVideoPath = videoPath;
@@ -151,11 +157,13 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     // Cevap gorunur kalma suresi: sesli ise lead + ses + kapanis fade'i; sessizse 18sn.
     const manaLen = hasManaVoice ? (MANA_LEAD + manaVoiceDuration + FADE_DUR) : 18;
 
-    // Kapanis fade'i icerik biter bitmez baslar (sesli: cevap sesi sonu), 0.5sn surer.
-    const finalFadeStart = hasManaVoice
-      ? (manaOffset + MANA_LEAD + manaVoiceDuration)
-      : (manaOffset + manaLen - FADE_DUR);
-    const totalLen = finalFadeStart + FADE_DUR;
+    // CTA (abone) karti: cevap karti TAMAMEN kaybolduktan sonra belirir (ust uste
+    // binmesin), video onunla kapanir. manaOffset + manaLen = cevabin fade'i bitisi.
+    const CTA_LEN = 2.2;
+    const ctaStart = manaOffset + manaLen;
+    // Kapanis fade'i CTA'nin son yarim saniyesinde.
+    const finalFadeStart = ctaStart + CTA_LEN - FADE_DUR;
+    const totalLen = ctaStart + CTA_LEN;
 
     // Verse fade-out: son 1sn icinde
     const verseFadeOutStart = verseLen - 1.5;
@@ -168,16 +176,22 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
       `[1:v]scale=1080:1920:flags=lanczos,setpts=PTS-STARTPTS[grad];` +
       `[2:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${verseFadeOutStart}:d=1:alpha=1,setpts=PTS-STARTPTS[vtxt];` +
       `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${manaFadeOutStart}:d=${FADE_DUR}:alpha=1,setpts=PTS+${manaOffset}/TB[mtxt];` +
+      `[4:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.45:alpha=1,setpts=PTS+${ctaStart}/TB[ctxt];` +
+      // eof_action=pass SART: overlay, input'u bitince son karesini SONSUZA TEKRAR eder.
+      // Cevap kartinin fade'i tam input sonunda bittigi icin soluk bir metin ekranda
+      // kaliyordu (CTA'nin arkasinda hayalet yazi). pass ile input bitince overlay durur.
       `[bg][grad]overlay=0:0[bg2];` +
-      `[bg2][vtxt]overlay=0:0[tmp];` +
-      `[tmp][mtxt]overlay=0:0,fade=t=out:st=${finalFadeStart}:d=${FADE_DUR}[outv]`;
+      `[bg2][vtxt]overlay=0:0:eof_action=pass[tmp];` +
+      `[tmp][mtxt]overlay=0:0:eof_action=pass[tmp2];` +
+      `[tmp2][ctxt]overlay=0:0:eof_action=pass,fade=t=out:st=${finalFadeStart}:d=${FADE_DUR}[outv]`;
 
     const args = [
       '-y',
       '-stream_loop', '-1', '-i', actualVideoPath,
       '-loop', '1', '-t', String(totalLen), '-i', gradientPng,
       '-loop', '1', '-t', String(verseLen), '-i', versePng,
-      '-loop', '1', '-t', String(manaLen), '-i', manaPng
+      '-loop', '1', '-t', String(manaLen), '-i', manaPng,
+      '-loop', '1', '-t', String(CTA_LEN), '-i', ctaPng      // [4] abone CTA karti
     ];
 
     // Audio karma matrix:
@@ -196,18 +210,18 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     if (hasVoice && hasManaVoice && hasMusic) {
       console.log(`Verse voice (${voiceDuration.toFixed(1)}sn) + Mana voice (${manaVoiceDuration.toFixed(1)}sn) + müzik`);
       args.push(
-        '-i', voicePath,                                    // [4] verse voice
-        '-i', manaVoicePath,                                // [5] mana voice
-        '-stream_loop', '-1', '-i', audioPath,              // [6] bg music
+        '-i', voicePath,                                    // [5] verse voice
+        '-i', manaVoicePath,                                // [6] mana voice
+        '-stream_loop', '-1', '-i', audioPath,              // [7] bg music
         '-filter_complex',
         filterComplex +
         // Ses miksi: konusmalari birlestir; muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir),
         // sonra sidechaincompress ile konusma varken muzigi OTOMATIK kis (ducking). Sabit volume yok.
-        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
-        `;[5:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
+        `;[6:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
         `;[vvoice][mvoice]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[allvoice]` +
         `;[allvoice]asplit=2[voice_out][voice_key]` +
-        `;[6:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]` +
+        `;[7:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]` +
         `;[bgraw][voice_key]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=400[bgduck]` +
         `;[voice_out][bgduck]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[outa]`,
         '-map', '[outv]',
@@ -217,12 +231,12 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     } else if (hasVoice && hasMusic) {
       console.log(`Voice (${voiceDuration.toFixed(1)}sn) + müzik karışıyor`);
       args.push(
-        '-i', voicePath,                                    // [4]
-        '-stream_loop', '-1', '-i', audioPath,              // [5]
+        '-i', voicePath,                                    // [5]
+        '-stream_loop', '-1', '-i', audioPath,              // [6]
         '-filter_complex',
         filterComplex +
-        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[voice]` +
-        `;[5:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[voice]` +
+        `;[6:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
         `;[voice][bgmus]amix=inputs=2:duration=longest:dropout_transition=0[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
@@ -231,10 +245,10 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     } else if (hasVoice) {
       console.log(`Voice (${voiceDuration.toFixed(1)}sn) (müzik yok)`);
       args.push(
-        '-i', voicePath,
+        '-i', voicePath,                                    // [5]
         '-filter_complex',
         filterComplex +
-        `;[4:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[outa]`,
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
@@ -242,9 +256,9 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     } else if (hasMusic) {
       console.log(`Müzik ekleniyor: ${audioPath}`);
       args.push(
-        '-stream_loop', '-1', '-i', audioPath,
+        '-stream_loop', '-1', '-i', audioPath,              // [5]
         '-filter_complex',
-        filterComplex + `;[4:a]afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1,volume=0.85[outa]`,
+        filterComplex + `;[5:a]afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1,volume=0.85[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'

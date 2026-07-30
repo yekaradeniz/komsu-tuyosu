@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px; height: 1920px; overflow: hidden; background: transparent;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+  }
+  /* Reels safe zone: sag ~130px (ikon kolonu), alt ~400px (caption/share UI) */
+  .stage {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 0 130px 430px 70px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+  }
+  .kicker {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: 46px; letter-spacing: 3px; line-height: 1.25;
+    color: #ffffff; margin-bottom: 34px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.95), 0 0 20px rgba(0,0,0,0.85);
+  }
+  /* Ana cagri: turuncu band + kalin beyaz yazi (kanal kimligiyle ayni dil) */
+  .cta {
+    display: inline-block;
+    font-family: 'Anton', sans-serif; font-weight: 400;
+    font-size: 130px; line-height: 1.1; letter-spacing: 3px;
+    text-transform: uppercase; color: #ffffff;
+    background-color: #E08A2B; padding: 14px 46px;
+    -webkit-text-stroke: 2px #1a0c00;
+    text-shadow: 5px 5px 0 #1a0c00, 6px 6px 20px rgba(0,0,0,0.8);
+    transform: rotate(-1.5deg);
+  }
+  .sub {
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    font-size: 44px; letter-spacing: 1px; color: #ffe2bd;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.95), 0 0 16px rgba(0,0,0,0.85);
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="kicker">İşine yaradıysa</div>
+    <div><span class="cta">ABONE OL</span></div>
+    <div class="sub">Her gün yeni bir ev tüyosu</div>
+  </div>
+</body>
+</html>

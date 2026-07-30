@@ -85,12 +85,15 @@ async function searchPage(apiKey, query, orientation = 'portrait') {
 }
 
 function pickBestFile(video, orientation = 'portrait') {
-  // Portrait (height>width, >=1080p) ya da landscape (width>height, >=1920p) en yuksek
-  // cozunurluk tercih edilir (ffmpeg lanczos ile hedef boyuta olcekler - keskinlik artar).
+  // PORTRAIT (Shorts): en yuksek cozunurluk (4K) tercih edilir - kisa video, downscale
+  //   keskinligi artiriyor, render suresi sorun degil. DOKUNMA, kalite buna bagli.
+  // LANDSCAPE (long-form): hedefe EN YAKIN kaynak (>=1920). 5 sahneli uzun videoda 4K
+  //   indirme + moderasyon kare cikarma + compose kat kat yavasliyor (Zihin long-form
+  //   40dk timeout'a takildi). 1920 kaynak = birebir olcek, gorsel fark yok.
   const isLandscape = orientation === 'landscape';
   const files = (video.video_files ?? [])
     .filter(f => isLandscape ? (f.width > f.height && f.width >= 1920) : (f.height > f.width && f.height >= 1080))
-    .sort((a, b) => isLandscape ? (b.width - a.width) : (b.height - a.height));
+    .sort((a, b) => isLandscape ? (a.width - b.width) : (b.height - a.height));
   return files[0];
 }
 

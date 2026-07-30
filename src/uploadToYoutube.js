@@ -25,28 +25,51 @@ async function getAccessToken({ clientId, clientSecret, refreshToken }) {
 }
 
 /**
- * Verse'in ilk satirini baslik olarak duzenler (max 90 karakter + ' #Shorts').
+ * Baslik: verse'in ILK TAM CUMLESI + (varsa) konu etiketi + #Shorts.
+ *
+ * Onemli: verse'ler artik 90-140 karakter (2 tam cumle). Eskiden ilk 87 karakter
+ * kesilip '...' ekleniyordu, bu da "...bam..." gibi ORTADAN KESIK basliklar
+ * uretiyordu. Artik ilk cumle sinirindan (. ? !) kesiyoruz - baslik hep tam.
  */
 function buildTitle(verse, concept) {
   const firstLine = (String(verse).split('\n').find(l => l.trim().length > 0) ?? '').trim();
-  let base = firstLine.length > 90 ? firstLine.slice(0, 87) + '...' : firstLine;
+
+  // Ilk cumle sinirini bul (nokta/soru/unlem + bosluk). Kisaltma yerine tam cumle.
+  const m = firstLine.match(/^(.{15,95}?[.?!])(\s|$)/);
+  let base = m ? m[1].trim() : firstLine;
+  // Hala uzunsa kelime sinirindan kes (ortadan kesme yok)
+  if (base.length > 95) {
+    base = base.slice(0, 92).replace(/\s+\S*$/, '') + '...';
+  }
+
   // Konu (concept) baslikta zaten yoksa ve yer varsa ekle: aranabilir terim one cikar.
   if (concept && concept.trim()) {
     const c = concept.trim();
     const norm = s => s.toLocaleLowerCase('tr-TR').replace(/[^0-9a-zçğıöşü ]/g, ' ').replace(/\s+/g, ' ').trim();
-    if (!norm(base).includes(norm(c)) && base.length + c.length + 3 <= 90) {
+    if (!norm(base).includes(norm(c)) && base.length + c.length + 3 <= 88) {
       base = `${base} | ${c}`;
     }
   }
-  return `${base} #Shorts`;
+  const withTag = `${base} #Shorts`;
+  return withTag.length <= 100 ? withTag : base.slice(0, 100);
 }
 
 /**
  * Instagram caption'ini YouTube description'a donusturur (#Shorts ekler).
  */
+// Tiklanabilir linkler. sub_confirmation=1: link tiklandiginda abone onay
+// penceresi acilir (tek tikla abone) - duz kanal linkinden cok daha etkili.
+const SUB_LINK = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
+const PL_HAFTANIN = 'https://www.youtube.com/playlist?list=PLynH0txiEqh26QdVivze5z7xUNmUMgFPP';
+const PL_MALZEME = 'https://www.youtube.com/playlist?list=PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G';
+
 function buildDescription(caption) {
-  // Shorts -> long-form yonlendirme + abone CTA
-  return `${caption}\n\n▶ Daha detaylı anlatımlı uzun videolar için kanaldaki "Bu Haftanın Tüyoları" ve "Malzeme Serisi" oynatma listelerine göz at. Her gün yeni bir pratik ev ipucu için abone ol!\n\n#Shorts`;
+  // Shorts -> abone CTA (tek tik link) + long-form yonlendirme (gercek linkler)
+  return `${caption}\n\n` +
+    `🔔 Her gün yeni bir pratik ev tüyosu: ${SUB_LINK}\n\n` +
+    `▶ Daha detaylı uzun videolar:\n` +
+    `• Bu Haftanın Tüyoları: ${PL_HAFTANIN}\n` +
+    `• Malzeme Serisi (sirke, karbonat, limon...): ${PL_MALZEME}\n\n#Shorts`;
 }
 
 /**
@@ -77,7 +100,7 @@ export function buildTags(moods, concept) {
   return [...new Set([...conceptTags, ...dyn, ...base])].slice(0, 15);
 }
 
-export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, playlistId, clientId, clientSecret, refreshToken }) {
+export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, playlistId, firstComment, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
   const title = buildTitle(verse, concept);
@@ -154,6 +177,23 @@ export async function uploadToYoutube({ videoPath, verse, caption, concept, mood
       });
       if (!plRes.ok) console.warn(`Shorts playlist'e eklenemedi (${plRes.status})`);
     } catch (e) { console.warn(`Shorts playlist ekleme hatasi: ${e.message}`); }
+  }
+
+  // 4) Otomatik ilk yorum (etkilesim + abone CTA).
+  // Bos yorum kutusu insanlari yazmaktan cekindirir; ilk yorum soru sorunca
+  // yanit gelme olasiligi artar, yorum sinyali de dagitimi besler.
+  if (firstComment) {
+    try {
+      const cRes = await fetch('https://www.googleapis.com/youtube/v3/commentThreads?part=snippet', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${accessToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          snippet: { videoId, topLevelComment: { snippet: { textOriginal: firstComment } } }
+        })
+      });
+      if (cRes.ok) console.log('Ilk yorum atildi');
+      else console.warn(`Ilk yorum atilamadi (${cRes.status}): ${(await cRes.text()).slice(0, 160)}`);
+    } catch (e) { console.warn(`Ilk yorum hatasi: ${e.message}`); }
   }
 
   return {

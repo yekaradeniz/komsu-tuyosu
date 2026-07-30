@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { readState, writeState } from './state.js';
 import { buildCaption } from './buildCaption.js';
+import { buildFirstComment } from './buildFirstComment.js';
 import { uploadToYoutube } from './uploadToYoutube.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -50,6 +51,7 @@ try {
     concept: entry.concept,
     moods: entry.moods,
     playlistId: 'PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2',  // "Pratik Ev İpuçları" (Shorts)
+    firstComment: buildFirstComment(entry, date),      // etkilesim + abone CTA
     clientId: ytClientId,
     clientSecret: ytClientSecret,
     refreshToken: ytRefreshToken

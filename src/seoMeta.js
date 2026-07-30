@@ -43,11 +43,15 @@ export function buildSeo({ items, material, videoTitle }) {
   const intro = material
     ? `Evde ${material} ne işe yarar? İşte ${material} ile yapabileceğin ${N} pratik ve etkili uygulama: ${kwLower}. Pahalı ürünlere gerek yok, evindeki basit malzemeyle büyük kolaylık!`
     : `Evdeki işleri kolaylaştıran ${N} pratik ev tüyosu: ${kwLower}. Pahalı ürünlere gerek yok, evindeki basit malzemelerle büyük kolaylık. Her hafta yeni pratik ev bilgileri!`;
+  // sub_confirmation=1: tiklandiginda abone onay penceresi acilir (tek tikla abone)
+  const SUB_LINK = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
+  const PL_SHORTS = 'https://www.youtube.com/playlist?list=PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2';
   const description =
     `${intro}\n\n` +
     `📋 Bu videoda öğrenecekleriniz:\n${bullets}\n\n` +
     chapters +
-    `🏠 Her hafta yeni pratik ev tüyoları için kanala abone ol ve bildirimleri aç.\n\n` +
+    `🔔 Her hafta yeni pratik ev tüyoları için abone ol: ${SUB_LINK}\n` +
+    `⚡ Kısa ipuçları (Shorts) oynatma listesi: ${PL_SHORTS}\n\n` +
     buildHashtags(keywords, material);
 
   // --- Etiketler (dinamik + sabit kanal etiketleri) ---
