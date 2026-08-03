@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 11,
-  "episodeNo": 12,
-  "videoTitle": "Naylon Poşetin Bilmediğin 5 Akıllı Kullanımı",
-  "material": "Naylon poşet",
-  "thumbTop": "Evde Naylon poşet",
+  "index": 12,
+  "episodeNo": 13,
+  "videoTitle": "Kabartma Tozunun Bilmediğin 5 Faydası",
+  "material": "Kabartma tozu",
+  "thumbTop": "Evde Kabartma tozu",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-012-1",
-      "keyword": "Kireç",
-      "title": "Musluk Kireçini Sök",
+      "id": "mz-013-1",
+      "keyword": "Gider",
+      "title": "Tıkalı Gideri Aç",
       "start": 6
     },
     {
-      "id": "mz-012-2",
-      "keyword": "Boya",
-      "title": "Boya Fırçasını Taze Tut",
-      "start": 68
-    },
-    {
-      "id": "mz-012-3",
+      "id": "mz-013-2",
       "keyword": "Koku",
-      "title": "Buzdolabını Kokusuz Sakla",
-      "start": 123
+      "title": "Buzdolabı Kokusunu Gider",
+      "start": 63
     },
     {
-      "id": "mz-012-4",
-      "keyword": "Çöp",
-      "title": "Çöp Kovasına Yedek Koy",
+      "id": "mz-013-3",
+      "keyword": "Tencere",
+      "title": "Yanmış Tencereyi Kurtar",
+      "start": 118
+    },
+    {
+      "id": "mz-013-4",
+      "keyword": "Halı",
+      "title": "Halıdaki Lekeyi Çıkar",
       "start": 178
     },
     {
-      "id": "mz-012-5",
-      "keyword": "Yağmur",
-      "title": "Yağmurda Eşyanı Koru",
-      "start": 231
+      "id": "mz-013-5",
+      "keyword": "Sebze",
+      "title": "Sebze Meyveyi İyice Yıka",
+      "start": 236
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 290
+  "durationSec": 300
 }
