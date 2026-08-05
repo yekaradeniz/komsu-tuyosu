@@ -107,11 +107,15 @@ if (nextType === 'reel') {
   const rejectedIds = [];
 
   try {
-    // Adaylari sirayla dene: indir, Gemini frame moderasyonu, ilk onaylanani kullan
-    for (let i = 0; i < candidates.length; i++) {
+    // Adaylari sirayla dene: indir, Gemini frame moderasyonu, ilk onaylanani kullan.
+    // UST SINIR: moderasyon bozulursa yuzlerce aday denenip render timeout'a giriyor
+    // (Zihin'de 5 Ags 2026'da yasandi: Gemini bos yanit -> her aday "reddedildi").
+    const MAX_TRY = 15;
+    const tryCount = Math.min(candidates.length, MAX_TRY);
+    for (let i = 0; i < tryCount; i++) {
       const c = candidates[i];
       const localPath = join(tmpDir, `cand-${i}.mp4`);
-      console.log(`[${i + 1}/${candidates.length}] ${c.id} (query: "${c.query}") indiriliyor...`);
+      console.log(`[${i + 1}/${tryCount}] ${c.id} (query: "${c.query}") indiriliyor...`);
       await downloadVideo(c.url, localPath);
       const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 2);
       if (mod.approved) {
@@ -124,7 +128,7 @@ if (nextType === 'reel') {
       rejectedIds.push(c.id);
     }
     if (!chosen) {
-      throw new Error(`${candidates.length} adayin hicbiri moderasyondan gecemedi (hepsi suggestive/uygunsuz)`);
+      throw new Error(`Denenen ${tryCount} adayin hicbiri moderasyondan gecemedi (toplam ${candidates.length} aday). Moderasyon bozuk olabilir - Gemini yanitlarini kontrol edin.`);
     }
 
     // Müzik rotation: state.audioIndex'i kullan, audio/ klasörü doluysa sırayla seç

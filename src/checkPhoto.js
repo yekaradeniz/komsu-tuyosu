@@ -60,11 +60,20 @@ export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
         }],
         config: {
           systemInstruction: SYSTEM_PROMPT,
-          maxOutputTokens: 10,
+          // thinkingBudget 0: 2.5 modellerinde "thinking" acilirsa dusunme token'lari
+          // maxOutputTokens'i tuketip metni BOS birakiyor (Zihin'de tum adaylar
+          // reddedilip render timeout'a girdi). Onlem olarak burada da kapali.
+          thinkingConfig: { thinkingBudget: 0 },
+          maxOutputTokens: 20,
           temperature: 0
         }
       });
       const answer = (result.text || '').trim().toUpperCase();
+      // BOS/anlamsiz yanit = moderasyon calismadi, "uygunsuz" DEMEK DEGIL.
+      if (!answer.startsWith('YES') && !answer.startsWith('NO')) {
+        console.warn(`Gemini bos/anlamsiz yanit ("${answer.slice(0, 20)}") - moderasyon atlandi (red DEGIL)`);
+        return { approved: true, reason: 'empty-response-skipped' };
+      }
       return { approved: answer.startsWith('YES'), reason: answer };
     } catch (err) {
       if (err.status === 429 || (err.message && err.message.includes('quota'))) {
