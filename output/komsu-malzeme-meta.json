@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 12,
-  "episodeNo": 13,
-  "videoTitle": "Kabartma Tozunun Bilmediğin 5 Faydası",
-  "material": "Kabartma tozu",
-  "thumbTop": "Evde Kabartma tozu",
+  "index": 13,
+  "episodeNo": 14,
+  "videoTitle": "Saç Kreminin Saç Dışında 5 Kullanımı",
+  "material": "Saç kremi",
+  "thumbTop": "Evde Saç kremi",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-013-1",
-      "keyword": "Gider",
-      "title": "Tıkalı Gideri Aç",
+      "id": "mz-014-1",
+      "keyword": "Yüzük",
+      "title": "Sıkışan Yüzüğü Çıkar",
       "start": 6
     },
     {
-      "id": "mz-013-2",
-      "keyword": "Koku",
-      "title": "Buzdolabı Kokusunu Gider",
-      "start": 63
+      "id": "mz-014-2",
+      "keyword": "Makyaj",
+      "title": "Makyajı Nazikçe Temizle",
+      "start": 67
     },
     {
-      "id": "mz-013-3",
-      "keyword": "Tencere",
-      "title": "Yanmış Tencereyi Kurtar",
-      "start": 118
+      "id": "mz-014-3",
+      "keyword": "Tıraş",
+      "title": "Tıraş Köpüğü Yerine Kullan",
+      "start": 124
     },
     {
-      "id": "mz-013-4",
-      "keyword": "Halı",
-      "title": "Halıdaki Lekeyi Çıkar",
-      "start": 178
+      "id": "mz-014-4",
+      "keyword": "Yünlü",
+      "title": "Yünlüleri Yumuşat",
+      "start": 179
     },
     {
-      "id": "mz-013-5",
-      "keyword": "Sebze",
-      "title": "Sebze Meyveyi İyice Yıka",
-      "start": 236
+      "id": "mz-014-5",
+      "keyword": "Ayna",
+      "title": "Banyo Kapısını Buğusuz Tut",
+      "start": 234
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 300
+  "durationSec": 299
 }
