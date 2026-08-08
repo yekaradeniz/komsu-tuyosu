@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 30,
-  "episodeNo": 7,
+  "index": 35,
+  "episodeNo": 8,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0031",
-      "keyword": "Toz",
-      "title": "Önce Toz Al, Sonra Süpür",
-      "start": 6
+      "id": "kt-0036",
+      "keyword": "Ahşap",
+      "title": "Ahşap Mobilyaya Sirke Sürme",
+      "start": 5
     },
     {
-      "id": "kt-0032",
-      "keyword": "Mikrofiber",
-      "title": "Toz Bezini Islatma",
-      "start": 79
+      "id": "kt-0037",
+      "keyword": "Ekran",
+      "title": "Ekranı Cam Spreyiyle Silme",
+      "start": 74
     },
     {
-      "id": "kt-0033",
-      "keyword": "Ayna",
-      "title": "Aynaya Direkt Sprey Sıkma",
-      "start": 150
+      "id": "kt-0038",
+      "keyword": "Klavye",
+      "title": "Ekran Tozunu Ağızla Üfleme",
+      "start": 144
     },
     {
-      "id": "kt-0034",
-      "keyword": "Cam",
-      "title": "Camı Güneşte Silme",
-      "start": 216
+      "id": "kt-0039",
+      "keyword": "Kapı",
+      "title": "En Çok Dokunulan Yerler",
+      "start": 209
     },
     {
-      "id": "kt-0035",
-      "keyword": "Çelik",
-      "title": "Paslanmaz Çeliği Yönünde Sil",
-      "start": 284
+      "id": "kt-0040",
+      "keyword": "Düğme",
+      "title": "Işık Düğmesine Sprey Sıkma",
+      "start": 278
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 362
+  "durationSec": 349
 }
