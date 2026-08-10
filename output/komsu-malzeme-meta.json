@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 13,
-  "episodeNo": 14,
-  "videoTitle": "Saç Kreminin Saç Dışında 5 Kullanımı",
-  "material": "Saç kremi",
-  "thumbTop": "Evde Saç kremi",
+  "index": 14,
+  "episodeNo": 15,
+  "videoTitle": "Sıvı Yağın Mutfak Dışında 5 Kullanımı",
+  "material": "Sıvı yağ",
+  "thumbTop": "Evde Sıvı yağ",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-014-1",
-      "keyword": "Yüzük",
-      "title": "Sıkışan Yüzüğü Çıkar",
+      "id": "mz-015-1",
+      "keyword": "Menteşe",
+      "title": "Gıcırdayan Menteşeyi Yağla",
       "start": 6
     },
     {
-      "id": "mz-014-2",
-      "keyword": "Makyaj",
-      "title": "Makyajı Nazikçe Temizle",
-      "start": 67
+      "id": "mz-015-2",
+      "keyword": "Etiket",
+      "title": "Yapışkan Etiketi Sök",
+      "start": 65
     },
     {
-      "id": "mz-014-3",
-      "keyword": "Tıraş",
-      "title": "Tıraş Köpüğü Yerine Kullan",
-      "start": 124
+      "id": "mz-015-3",
+      "keyword": "Ahşap",
+      "title": "Ahşap Mobilyaya Parlaklık Ver",
+      "start": 125
     },
     {
-      "id": "mz-014-4",
-      "keyword": "Yünlü",
-      "title": "Yünlüleri Yumuşat",
-      "start": 179
+      "id": "mz-015-4",
+      "keyword": "Leke",
+      "title": "Eldeki İnatçı Kiri Çıkar",
+      "start": 182
     },
     {
-      "id": "mz-014-5",
-      "keyword": "Ayna",
-      "title": "Banyo Kapısını Buğusuz Tut",
-      "start": 234
+      "id": "mz-015-5",
+      "keyword": "Vida",
+      "title": "Paslı Vidayı Gevşet",
+      "start": 241
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 299
+  "durationSec": 309
 }
