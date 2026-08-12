@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 14,
-  "episodeNo": 15,
-  "videoTitle": "Sıvı Yağın Mutfak Dışında 5 Kullanımı",
-  "material": "Sıvı yağ",
-  "thumbTop": "Evde Sıvı yağ",
+  "index": 15,
+  "episodeNo": 16,
+  "videoTitle": "Unun Yemek Dışında 5 Şaşırtıcı Kullanımı",
+  "material": "Un",
+  "thumbTop": "Evde Un",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-015-1",
-      "keyword": "Menteşe",
-      "title": "Gıcırdayan Menteşeyi Yağla",
+      "id": "mz-016-1",
+      "keyword": "Çelik",
+      "title": "Paslanmaz Çeliği Parlat",
       "start": 6
     },
     {
-      "id": "mz-015-2",
-      "keyword": "Etiket",
-      "title": "Yapışkan Etiketi Sök",
+      "id": "mz-016-2",
+      "keyword": "Karınca",
+      "title": "Karıncaları Mutfaktan Uzaklaştır",
       "start": 65
     },
     {
-      "id": "mz-015-3",
-      "keyword": "Ahşap",
-      "title": "Ahşap Mobilyaya Parlaklık Ver",
-      "start": 125
+      "id": "mz-016-3",
+      "keyword": "Yangın",
+      "title": "Yağ Yangınını Söndür",
+      "start": 124
     },
     {
-      "id": "mz-015-4",
-      "keyword": "Leke",
-      "title": "Eldeki İnatçı Kiri Çıkar",
-      "start": 182
+      "id": "mz-016-4",
+      "keyword": "Hamur",
+      "title": "Hamur ve Oyun Macunu Yap",
+      "start": 187
     },
     {
-      "id": "mz-015-5",
-      "keyword": "Vida",
-      "title": "Paslı Vidayı Gevşet",
-      "start": 241
+      "id": "mz-016-5",
+      "keyword": "Yağ",
+      "title": "Yağ Lekesini Hemen Emdir",
+      "start": 249
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 309
+  "durationSec": 316
 }
