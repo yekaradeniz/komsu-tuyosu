@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 35,
-  "episodeNo": 8,
+  "index": 40,
+  "episodeNo": 9,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0036",
-      "keyword": "Ahşap",
-      "title": "Ahşap Mobilyaya Sirke Sürme",
-      "start": 5
+      "id": "kt-0041",
+      "keyword": "Anahtar",
+      "title": "Anahtarları Düzenli Temizle",
+      "start": 6
     },
     {
-      "id": "kt-0037",
-      "keyword": "Ekran",
-      "title": "Ekranı Cam Spreyiyle Silme",
-      "start": 74
+      "id": "kt-0042",
+      "keyword": "Zemin",
+      "title": "Süpürmeden Önce Toz Topla",
+      "start": 81
     },
     {
-      "id": "kt-0038",
-      "keyword": "Klavye",
-      "title": "Ekran Tozunu Ağızla Üfleme",
-      "start": 144
+      "id": "kt-0043",
+      "keyword": "Paspas",
+      "title": "Paspas Suyunu Sık Sık Değiştir",
+      "start": 158
     },
     {
-      "id": "kt-0039",
-      "keyword": "Kapı",
-      "title": "En Çok Dokunulan Yerler",
-      "start": 209
+      "id": "kt-0044",
+      "keyword": "Laminat",
+      "title": "Laminatı Bol Suyla Yıkama",
+      "start": 231
     },
     {
-      "id": "kt-0040",
-      "keyword": "Düğme",
-      "title": "Işık Düğmesine Sprey Sıkma",
-      "start": 278
+      "id": "kt-0045",
+      "keyword": "Süpürge",
+      "title": "Süpürge Çekmiyorsa Fırçaya Bak",
+      "start": 304
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 349
+  "durationSec": 382
 }
