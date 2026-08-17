@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 15,
-  "episodeNo": 16,
-  "videoTitle": "Unun Yemek Dışında 5 Şaşırtıcı Kullanımı",
-  "material": "Un",
-  "thumbTop": "Evde Un",
+  "index": 16,
+  "episodeNo": 17,
+  "videoTitle": "Alüminyum Folyonun 5 Şaşırtıcı Kullanımı",
+  "material": "Alüminyum folyo",
+  "thumbTop": "Evde Alüminyum folyo",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-016-1",
-      "keyword": "Çelik",
-      "title": "Paslanmaz Çeliği Parlat",
+      "id": "mz-017-1",
+      "keyword": "Bıçak",
+      "title": "Bıçakları Folyoyla Bile",
       "start": 6
     },
     {
-      "id": "mz-016-2",
-      "keyword": "Karınca",
-      "title": "Karıncaları Mutfaktan Uzaklaştır",
+      "id": "mz-017-2",
+      "keyword": "Ütü",
+      "title": "Ütüyü İki Kat Hızlandır",
       "start": 65
     },
     {
-      "id": "mz-016-3",
-      "keyword": "Yangın",
-      "title": "Yağ Yangınını Söndür",
-      "start": 124
+      "id": "mz-017-3",
+      "keyword": "Gümüş",
+      "title": "Gümüşleri Folyoyla Parlat",
+      "start": 116
     },
     {
-      "id": "mz-016-4",
-      "keyword": "Hamur",
-      "title": "Hamur ve Oyun Macunu Yap",
-      "start": 187
+      "id": "mz-017-4",
+      "keyword": "Saksı",
+      "title": "Folyoyla Saksıyı Koru",
+      "start": 172
     },
     {
-      "id": "mz-016-5",
-      "keyword": "Yağ",
-      "title": "Yağ Lekesini Hemen Emdir",
-      "start": 249
+      "id": "mz-017-5",
+      "keyword": "Pil",
+      "title": "Pili Folyoyla Çalıştır",
+      "start": 225
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 316
+  "durationSec": 284
 }
