@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 16,
-  "episodeNo": 17,
-  "videoTitle": "Alüminyum Folyonun 5 Şaşırtıcı Kullanımı",
-  "material": "Alüminyum folyo",
-  "thumbTop": "Evde Alüminyum folyo",
+  "index": 17,
+  "episodeNo": 18,
+  "videoTitle": "Çayın Bilmediğin 5 Pratik Kullanımı",
+  "material": "Çay",
+  "thumbTop": "Evde Çay",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-017-1",
-      "keyword": "Bıçak",
-      "title": "Bıçakları Folyoyla Bile",
+      "id": "mz-018-1",
+      "keyword": "Koku",
+      "title": "Çayla Kötü Kokuyu Al",
       "start": 6
     },
     {
-      "id": "mz-017-2",
-      "keyword": "Ütü",
-      "title": "Ütüyü İki Kat Hızlandır",
+      "id": "mz-018-2",
+      "keyword": "Ahşap",
+      "title": "Çayla Ahşabı Canlandır",
       "start": 65
     },
     {
-      "id": "mz-017-3",
-      "keyword": "Gümüş",
-      "title": "Gümüşleri Folyoyla Parlat",
-      "start": 116
+      "id": "mz-018-3",
+      "keyword": "Bitki",
+      "title": "Çay Telvesiyle Bahçeyi Besle",
+      "start": 121
     },
     {
-      "id": "mz-017-4",
-      "keyword": "Saksı",
-      "title": "Folyoyla Saksıyı Koru",
-      "start": 172
+      "id": "mz-018-4",
+      "keyword": "Yağ",
+      "title": "Yağlı Tencereyi Çayla Aç",
+      "start": 181
     },
     {
-      "id": "mz-017-5",
-      "keyword": "Pil",
-      "title": "Pili Folyoyla Çalıştır",
-      "start": 225
+      "id": "mz-018-5",
+      "keyword": "Göz",
+      "title": "Şişmiş Gözü Çayla İndir",
+      "start": 236
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 284
+  "durationSec": 299
 }
