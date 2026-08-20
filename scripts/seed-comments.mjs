@@ -8,7 +8,7 @@ import { buildFirstComment } from '../src/buildFirstComment.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const LIMIT = parseInt(process.argv[2] || '20', 10);
+const LIMIT = parseInt(process.argv[2] || '12', 10);
 const content = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-tuyosu.json'), 'utf-8'));
 
 const { YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN } = process.env;
@@ -32,6 +32,7 @@ function findEntry(title) {
 function durSec(iso) { const m = /PT(?:(\d+)M)?(?:(\d+)S)?/.exec(iso || '') || []; return (parseInt(m[1] || 0) * 60) + parseInt(m[2] || 0); }
 
 const ch = await get('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true');
+if (!ch.items) { console.log('kanal okunamadi (kota olabilir), atlaniyor'); process.exit(0); }
 const up = ch.items[0].contentDetails.relatedPlaylists.uploads;
 let ids = [], pt = '';
 do {
@@ -63,6 +64,10 @@ for (const v of targets) {
     body: JSON.stringify({ snippet: { videoId: v.id, topLevelComment: { snippet: { textOriginal: text } } } })
   });
   if (res.ok) { ok++; console.log(`✓ ${v.views} izl | ${v.title.slice(0, 42)}`); }
-  else { fail++; console.log(`✗ (${res.status}) ${v.title.slice(0, 35)}: ${(await res.text()).slice(0, 120)}`); }
+  else {
+    const t = await res.text(); fail++;
+    if (res.status === 403 && t.includes('quota')) { console.log('kota doldu, kalan yarin devam edecek'); break; }
+    console.log(`✗ (${res.status}) ${v.title.slice(0, 35)}`);
+  }
 }
 console.log(`\nYorum atildi: ${ok} | eslesmedi: ${miss} | hata: ${fail}`);

@@ -107,3 +107,11 @@ jobs:
               sleep 3
             done
           fi
+
+      - name: Eski videolara yorum backfill (kota dostu, gunde 12)
+        run: node scripts/seed-comments.mjs 12
+        continue-on-error: true
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
