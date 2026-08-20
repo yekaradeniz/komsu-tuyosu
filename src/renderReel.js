@@ -148,9 +148,9 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     //   Cevap sesi bitince video 0.5sn'de fade olup kapanir (FADE_DUR)
     const hasVoice = !!voicePath && existsSync(voicePath) && voiceDuration > 0;
     const hasManaVoice = !!manaVoicePath && existsSync(manaVoicePath) && manaVoiceDuration > 0;
-    const verseLen = hasVoice ? Math.round(voiceDuration + 2) : 12;
+    const verseLen = hasVoice ? Math.round(voiceDuration + 1) : 12;
     const transitionLen = 0;
-    const MANA_LEAD = 0.4;     // cevap belirdikten sonra ses baslayana kadarki bekleme
+    const MANA_LEAD = 0.25;     // cevap belirdikten sonra ses baslayana kadarki bekleme
     const FADE_DUR = 0.5;      // kapanis fade suresi (yarim saniye - kullanici karari)
     const manaOffset = verseLen + transitionLen;
 
@@ -159,7 +159,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
 
     // CTA (abone) karti: cevap karti TAMAMEN kaybolduktan sonra belirir (ust uste
     // binmesin), video onunla kapanir. manaOffset + manaLen = cevabin fade'i bitisi.
-    const CTA_LEN = 2.2;
+    const CTA_LEN = 1.5;
     const ctaStart = manaOffset + manaLen;
     // Kapanis fade'i CTA'nin son yarim saniyesinde.
     const finalFadeStart = ctaStart + CTA_LEN - FADE_DUR;
@@ -174,8 +174,8 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
     const filterComplex =
       `[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg];` +
       `[1:v]scale=1080:1920:flags=lanczos,setpts=PTS-STARTPTS[grad];` +
-      `[2:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${verseFadeOutStart}:d=1:alpha=1,setpts=PTS-STARTPTS[vtxt];` +
-      `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.7:alpha=1,fade=t=out:st=${manaFadeOutStart}:d=${FADE_DUR}:alpha=1,setpts=PTS+${manaOffset}/TB[mtxt];` +
+      `[2:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.25:alpha=1,fade=t=out:st=${verseFadeOutStart}:d=1:alpha=1,setpts=PTS-STARTPTS[vtxt];` +
+      `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.25:alpha=1,fade=t=out:st=${manaFadeOutStart}:d=${FADE_DUR}:alpha=1,setpts=PTS+${manaOffset}/TB[mtxt];` +
       `[4:v]scale=1080:1920:flags=lanczos,format=rgba,fade=t=in:st=0:d=0.45:alpha=1,setpts=PTS+${ctaStart}/TB[ctxt];` +
       // eof_action=pass SART: overlay, input'u bitince son karesini SONSUZA TEKRAR eder.
       // Cevap kartinin fade'i tam input sonunda bittigi icin soluk bir metin ekranda
@@ -217,7 +217,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         filterComplex +
         // Ses miksi: konusmalari birlestir; muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir),
         // sonra sidechaincompress ile konusma varken muzigi OTOMATIK kis (ducking). Sabit volume yok.
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[vvoice]` +
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[vvoice]` +
         `;[6:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
         `;[vvoice][mvoice]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[allvoice]` +
         `;[allvoice]asplit=2[voice_out][voice_key]` +
@@ -235,7 +235,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         '-stream_loop', '-1', '-i', audioPath,              // [6]
         '-filter_complex',
         filterComplex +
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[voice]` +
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[voice]` +
         `;[6:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
         `;[voice][bgmus]amix=inputs=2:duration=longest:dropout_transition=0[outa]`,
         '-map', '[outv]',
@@ -248,7 +248,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
         '-i', voicePath,                                    // [5]
         '-filter_complex',
         filterComplex +
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=1000|1000[outa]`,
+        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[outa]`,
         '-map', '[outv]',
         '-map', '[outa]',
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
