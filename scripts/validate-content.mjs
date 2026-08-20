@@ -22,16 +22,18 @@ const ROOT = join(__dirname, '..');
 const CONTENT = process.env.CONTENT_FILE || (existsSync(join(ROOT, 'content', 'komsu-tuyosu.json'))
   ? 'komsu-tuyosu.json' : 'beyin-oyunlari.json');
 
-// Olculen: 231 karakter metin = 14.4 saniye ses -> ~16 karakter/saniye
-const CPS = 16.0;
-// Sabit sahne payi: 0.15 lead + 0.85 trail + 0.25 cevap lead + 0.5 fade + 1.5 CTA
-const OVERHEAD = 3.25;
+// KALIBRE EDILDI (20 Ags 2026, gercek ses dosyalari + render olcumu):
+// 100ch verse = 7.2sn, 161ch cevap = 11.0sn -> ~14.2 karakter/saniye.
+// Ayni videonun gercek suresi 21.8sn oldu -> sabit sahne payi 3.6sn.
+// (Once 16 CPS / 3.25sn varsayilmisti, tahminler ~2sn iyimser cikiyordu.)
+const CPS = 14.2;
+const OVERHEAD = 3.6;
 
 const LIM = {
   verseMin: 85, verseMax: 120,
   firstSentenceMax: 88,      // baslik bu cumleden uretiliyor
   explMin: 120, explMax: 190,
-  videoMaxSec: 21
+  videoMaxSec: 22
 };
 
 const args = process.argv.slice(2);
