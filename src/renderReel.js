@@ -102,6 +102,23 @@ function ffmpeg(args) {
  * @param {number} [opts.manaVoiceDuration] - manaVoicePath suresi (saniye). manaVoicePath varsa zorunlu.
  * @param {string} opts.outPath - çıkış MP4 yolu
  */
+
+// Kaynak videonun suresini saniye olarak doner (ffmpeg stderr'inden).
+function getVideoDuration(path) {
+  return new Promise((resolve, reject) => {
+    const ffmpegPath = process.env.FFMPEG_PATH || 'ffmpeg';
+    const proc = spawn(ffmpegPath, ['-i', path], { stdio: ['ignore', 'ignore', 'pipe'] });
+    let err = '';
+    proc.stderr.on('data', d => err += d.toString());
+    proc.on('close', () => {
+      const m = err.match(/Duration:\s*(\d+):(\d+):(\d+\.?\d*)/);
+      if (!m) return reject(new Error('sure okunamadi'));
+      resolve(Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]));
+    });
+    proc.on('error', reject);
+  });
+}
+
 export async function renderReel({ verse, explanation, videoUrl, videoPath, audioPath, voicePath, voiceDuration, manaVoicePath, manaVoiceDuration, outPath }) {
   const tmp = mkdtempSync(join(tmpdir(), 'reel-'));
   const browser = await chromium.launch();
@@ -138,6 +155,16 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
       await downloadVideo(videoUrl, actualVideoPath);
       console.log('Pexels video indirildi');
     }
+
+    // B-ROLL BASLANGICI: stok videolarin ilk saniyeleri genelde duragan olur
+    // (kamera stabilize, sahne kuruluyor). Arastirma: Shorts'u en hareketli
+    // b-roll ile ac. Kaynagin %20'sinden basla, kisa kaynakta 0'da kal.
+    let brollSkip = 0;
+    try {
+      const srcDur = await getVideoDuration(actualVideoPath);
+      if (srcDur > 8) brollSkip = Math.min(Math.round(srcDur * 0.2), 6);
+    } catch (e) { brollSkip = 0; console.warn(`B-roll suresi okunamadi (${e.message}), bastan baslanacak`); }
+    if (brollSkip) console.log(`B-roll ${brollSkip}sn ileriden basliyor (duragan giris atlandi)`);
 
     // 3) FFmpeg ile compose et
     // DINAMIK SURE PLANI:
@@ -187,6 +214,7 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
 
     const args = [
       '-y',
+      '-ss', String(brollSkip),
       '-stream_loop', '-1', '-i', actualVideoPath,
       '-loop', '1', '-t', String(totalLen), '-i', gradientPng,
       '-loop', '1', '-t', String(verseLen), '-i', versePng,
