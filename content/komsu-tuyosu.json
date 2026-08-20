@@ -1892,7 +1892,7 @@
     "id": "kt-0107",
     "day": 107,
     "concept": "Sakız çözme buz",
-    "verse": "Kıyafetine yapışan sakızı çekip koparmaya çalışma sakın. Onu zahmetsizce söküp atmanın çok daha kolay bir yolu var.",
+    "verse": "Kıyafetine yapışan sakızı sakın çekip koparma. Onu zahmetsizce sökmenin çok daha kolay bir yolu var.",
     "explanation": "Sakızın üzerine buz koyup sertleşene kadar bekle, donunca kaşık veya künt bıçak sırtıyla kazı. Soğukta sakız kırılganlaşıp bütün kalkar. Çekersen lifi uzatırsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -1910,7 +1910,7 @@
     "id": "kt-0108",
     "day": 108,
     "concept": "Halı kahve lekesi",
-    "verse": "Halıya kahve dökülünce hemen bezle ovmaya başlıyorsan büyük hata yapıyorsun. O hareket lekeyi daha da derine itiyor.",
+    "verse": "Halıya kahve dökülünce hemen ovmaya başlıyorsan hata yapıyorsun. O hareket lekeyi daha derine itiyor.",
     "explanation": "Önce temiz bezle bastırarak sıvının çoğunu çek. Sonra bir bardak ılık suya bir çay kaşığı bulaşık deterjanı karıştır, beze emdirip bastırarak sil. Ovmak lekeyi derine iter.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -1928,7 +1928,7 @@
     "id": "kt-0109",
     "day": 109,
     "concept": "Mobilya kan lekesi",
-    "verse": "Kanepene kan bulaşınca sıcak su ve bol deterjan aklına gelmesin. Doğru yöntem bunun tam tersinden geçiyor.",
+    "verse": "Kanepene kan bulaşınca sıcak suya ve bol deterjana sarılma. Doğru yöntem bunun tam tersinden geçiyor.",
     "explanation": "Soğuk suyla nemlendirdiğin beze az karbonat al, kan lekesine dıştan içe bastırarak sil, sonra kuru bezle nemini çek. Döşemeyi ıslatma, dolguya kaçıp koku yapar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -1946,7 +1946,7 @@
     "id": "kt-0110",
     "day": 110,
     "concept": "Halı kırmızı şarap",
-    "verse": "Halıya şarap dökülünce tecrübeli ev hanımları neden hemen tuza koşuyor biliyor musun? Sebebini duyunca çok şaşıracaksın.",
+    "verse": "Halıya şarap dökülünce tecrübeli ev hanımları neden tuza koşuyor? Sebebini duyunca çok şaşıracaksın.",
     "explanation": "Önce bezle bastırarak fazlasını çek, hemen üzerine bol tuz dök. Tuz nemi ve pigmenti emer, kuruyunca süpür. Kalan iz için maden suyu döküp bastırarak sil.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -1964,7 +1964,7 @@
     "id": "kt-0111",
     "day": 111,
     "concept": "Yağ lekesi mısır nişastası",
-    "verse": "Kanepene yağ damlayınca ilk aklına gelen ıslak bezse hemen dur. Mutfağındaki bir toz o lekeyi ovmadan kendine çekiyor.",
+    "verse": "Kanepene yağ damlayınca ilk işin ıslak beze uzanmaksa dur. Mutfağındaki bir toz o lekeyi kendine çekiyor.",
     "explanation": "Taze yağ lekesinin üzerine bolca mısır nişastası serp, 15-20 dakika yağı emmesini bekle, sonra fırçayla temizle. Nişasta yağı kendine çeker. Çıkmazsa tekrarla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -1982,7 +1982,7 @@
     "id": "kt-0112",
     "day": 112,
     "concept": "Makyaj fondöten",
-    "verse": "Yakana bulaşan fondöteni hemen suya tutuyorsan büyük hata yapıyorsun. Su o lekeyi çıkarmak yerine iyice yayıyor.",
+    "verse": "Yakana bulaşan fondöteni hemen suya tutuyorsan hata yapıyorsun. Su o lekeyi çıkarmak yerine yayıyor.",
     "explanation": "Fondöten yağ bazlıdır. Bir damla bulaşık deterjanını lekeye sürüp parmakla nazikçe yedir, 5 dakika bekle, ılık suyla yıka. Su tek başına yağlı makyajı çözemez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2000,7 +2000,7 @@
     "id": "kt-0113",
     "day": 113,
     "concept": "Mürekkep halı",
-    "verse": "Halıdaki mürekkep lekesini suyla ve daire çizerek silmeye çalışma. Fark etmeden lekeyi büyütüyorsun ama çözüm çok basit.",
+    "verse": "Halıdaki mürekkep lekesini daire çizerek silmeye çalışma. Lekeyi büyütüyorsun ama çözümü çok basit.",
     "explanation": "Kolonya emdirilmiş pamukla lekenin dışından içine doğru bastırarak sil ve her dokunuşta temiz yüzey kullan. Dairesel ovmak lekeyi büyütür. Sonunda nemli bezle durula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2018,7 +2018,7 @@
     "id": "kt-0114",
     "day": 114,
     "concept": "Eski kan lekesi",
-    "verse": "Kurumuş kan lekesini görünce artık çıkmaz deyip pes etme. Doğru sırayla uygulanan basit bir yöntem o lekeyi söküyor.",
+    "verse": "Kurumuş kan lekesini görünce artık çıkmaz deyip pes etme. Doğru sırayla basit bir yöntem onu söküyor.",
     "explanation": "Kurumuş lekeyi önce soğuk suda 30 dakika ıslat. Sonra karbonat macunu sürüp bekle, eski diş fırçasıyla nazikçe ovala ve soğuk suyla yıka. Sıcak su kullanma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2036,7 +2036,7 @@
     "id": "kt-0115",
     "day": 115,
     "concept": "Çikolata kıyafet",
-    "verse": "Kıyafetine bulaşan erimiş çikolatayı suyla ovalamaya başlama sakın. Onu iz bırakmadan çıkarmanın doğru bir sırası var.",
+    "verse": "Kıyafetine bulaşan çikolatayı suyla ovalamaya başlama. Onu iz bırakmadan çıkarmanın bir sırası var.",
     "explanation": "Önce künt bıçakla fazla çikolatayı kaldır ve soğuk suyla arkadan durula. Sonra bir damla bulaşık deterjanı sürüp 10 dakika bekle, yıka. Sıcak su yağı sabitler.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2054,7 +2054,7 @@
     "id": "kt-0116",
     "day": 116,
     "concept": "Mürekkep deri kanepe",
-    "verse": "Deri kanepene kalem çizildi diye sert temizleyicilere sarılma. Deriyi bozmadan o izi silmenin çok daha nazik bir yolu var.",
+    "verse": "Deri kanepene kalem çizildi diye sert temizleyicilere sarılma. Deriyi bozmadan silmenin nazik bir yolu var.",
     "explanation": "Mürekkebe pamukla çok az alkollü mendil bastırarak nazikçe sil, hemen ardından nemli bezle alkolü al ve kurula. Alkol deriyi kurutur, bekletme. Önce köşede dene.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2072,7 +2072,7 @@
     "id": "kt-0117",
     "day": 117,
     "concept": "Ter lekesi yorgan",
-    "verse": "Yastık ve yorgandaki sarı ter izleri normal yıkamayla bir türlü çıkmıyor değil mi? Meğer çözüm bambaşka bir yerdeymiş.",
+    "verse": "Yastık ve yorgandaki sarı ter izleri yıkamayla çıkmıyor değil mi? Meğer çözüm bambaşka bir yerdeymiş.",
     "explanation": "Karbonatı azıcık suyla macun yap, sarı lekeye sürüp bir saat beklet, sonra makinede yıka. Karbonat ter tuzlarını çözer. Çamaşır suyu kullanma, klor sarılığı sabitler.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2090,7 +2090,7 @@
     "id": "kt-0118",
     "day": 118,
     "concept": "Dolap kapak içi",
-    "verse": "Dolap kapaklarının iç yüzü evinin en boşa harcanan alanı olabilir. Oraya ekleyeceğin küçük bir şey rafları ferahlatıyor.",
+    "verse": "Dolap kapaklarının iç yüzü evinin en çok boşa giden alanı. Oraya takacağın küçük bir şey rafları ferahlatıyor.",
     "explanation": "Dolabın iç kapağına ince tel sepet ya da yapışkan raylı tutucu tak. Streci, folyoyu ve fırçaları oraya diz, ölü alan işe yarar. Yapıştıracaksan yüzey kuru olsun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2108,7 +2108,7 @@
     "id": "kt-0119",
     "day": 119,
     "concept": "Çekmece bölme kutu",
-    "verse": "Çekmece karmaşasını bitirmek için pahalı organizer almana hiç gerek yok. Evinde zaten olan bir şey bu işi çözüyor.",
+    "verse": "Çekmece karmaşasını bitirmek için pahalı organizer almana gerek yok. Evinde zaten olan bir şey bu işi çözüyor.",
     "explanation": "Telefon kutusu ya da küçük karton kutuları çekmecenin içine yan yana diz ve sabitle. Her bölmeye bir grup koy: piller, kalemler, şarjlar. Bedava bölme sistemi, eşya kaymaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2125,7 +2125,7 @@
     "id": "kt-0120",
     "day": 120,
     "concept": "Kiler FIFO sırası",
-    "verse": "Kilerin arkasındaki konservelerin tarihi hep mi geçmiş çıkıyor? Marketlerin yıllardır kullandığı basit bir düzen bu israfı bitiriyor.",
+    "verse": "Kilerin arkasındaki konservelerin tarihi hep mi geçiyor? Marketlerin kullandığı basit bir düzen bunu bitiriyor.",
     "explanation": "Yeni aldığın konserve ve paketleri hep arkaya koy, eskileri öne al. Tıpkı markette olduğu gibi ilk giren ilk çıkar. Böylece arkada unutulan ürünün tarihi geçmez, israf olmaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2143,7 +2143,7 @@
     "id": "kt-0121",
     "day": 121,
     "concept": "Ayakkabı ters çift",
-    "verse": "Ayakkabı rafın hep dolu ama yenisine yer mi yok? Dizme şeklini biraz değiştirince aynı rafa çok daha fazla çift sığıyor.",
+    "verse": "Ayakkabı rafın dolu ama yeni çifte yer mi yok? Dizme şeklini değiştirince aynı rafa çok daha fazlası sığıyor.",
     "explanation": "Bir ayakkabının burnunu öne, çiftini topuk öne koy. Böylece geniş bilek kısımları üst üste binmez, aynı rafa çok daha fazla çift sığar. Çocuk ayakkabılarında iyi iş görür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2160,7 +2160,7 @@
     "id": "kt-0122",
     "day": 122,
     "concept": "Çocuk dikey katlama",
-    "verse": "Çekmecede alttaki kıyafeti ararken üsttekileri hep dağıtıyor musun? Katlama şeklini değiştirince hepsi tek bakışta görünüyor.",
+    "verse": "Alttaki kıyafeti ararken çekmecenin üstünü hep dağıtıyor musun? Katlamayı değiştirince hepsi tek bakışta görünüyor.",
     "explanation": "Tişört ve bezleri üst üste değil, küçük dik paketler halinde katlayıp çekmeceye dosya gibi diz. Alttakini ararken üstü dağıtmazsın, hepsi tek bakışta görünür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2178,7 +2178,7 @@
     "id": "kt-0123",
     "day": 123,
     "concept": "Cüzdan aylık temizlik",
-    "verse": "Cüzdanın şişip cebine sığmaz hale geldiyse suçlu içindeki eski kağıtlar. Ayda bir yapacağın küçük bir temizlik bu derdi bitiriyor.",
+    "verse": "Cüzdanın şişip cebine sığmıyorsa suçlu içindeki eski kağıtlar. Ayda bir yapacağın küçük bir iş bunu bitiriyor.",
     "explanation": "Ayda bir cüzdanı boşalt. Eski fişleri, geçmiş ve kullanmadığın kartları çıkar. Sadece her gün kullandığın 4-5 kartı tut, gerisini evde bir kutuda sakla. Cüzdan incelir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2195,7 +2195,7 @@
     "id": "kt-0124",
     "day": 124,
     "concept": "Kolye pipet dolanma",
-    "verse": "İnce kolyelerin çantanda hep düğümlenip birbirine mi dolanıyor? Mutfağındaki basit bir malzeme zincirleri dümdüz tutuyor.",
+    "verse": "İnce kolyelerin çantanda hep birbirine mi dolanıyor? Mutfağındaki basit bir şey zincirleri dümdüz tutuyor.",
     "explanation": "İnce kolyenin bir ucunu pipetin içinden geçir, kapatıp çantana koy. Pipet zinciri düz tutar ve düğümlenmez. Küpeleri de eski bir düğme kartına takarak çiftleri ayrı tut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2212,7 +2212,7 @@
     "id": "kt-0125",
     "day": 125,
     "concept": "Küpe düğme çift",
-    "verse": "Küpelerinin teki hep kayboluyor ve çiftini bir türlü bulamıyor musun? Eski bir gömlekten çıkan minik parça bu derdi çözüyor.",
+    "verse": "Küpelerinin teki hep kaybolup çiftini bulamıyor musun? Eski bir gömlekten çıkan minik parça bunu çözüyor.",
     "explanation": "Küpeleri eski bir gömlek düğmesinin deliklerinden geçirip arkadan kapat. Çift hep birlikte durur, teki kaybolmaz. Hap kutusu da yüzükleri ayırmak için idealdir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2229,7 +2229,7 @@
     "id": "kt-0126",
     "day": 126,
     "concept": "Oyuncak açık kova",
-    "verse": "Çocuğun oyuncaklarını bir türlü toplamıyorsa suç onda olmayabilir. Asıl sorun kullandığın kutuların şeklinde gizli.",
+    "verse": "Çocuğun oyuncaklarını toplamıyorsa suç onda olmayabilir. Asıl sorun kullandığın kutuların şeklinde gizli.",
     "explanation": "Kapaklı kutu yerine açık kova ve sepet kullan. Çocuk kapak açmadan içine atar, toplamak oyuna döner. Her kovaya tek tür koy ve üstüne resimli etiket yapıştır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2246,7 +2246,7 @@
     "id": "kt-0127",
     "day": 127,
     "concept": "Evrak üç grup",
-    "verse": "Faturalar ve kağıtlar masanın üstünde yığılıp mı duruyor? Üç basit kutuyla bu karmaşa bir daha geri gelmemek üzere bitiyor.",
+    "verse": "Faturalar ve kağıtlar masanın üstünde yığılıp mı duruyor? Üç basit kutu bu karmaşayı temelli bitiriyor.",
     "explanation": "Gelen evrakı üç gruba ayır: yapılacak, saklanacak ve atılacak. Ödenecek faturaları görünür tut, işi bitince saklanacak klasöre taşı. Kağıt yığılmaz, fatura kaçırmazsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2263,7 +2263,7 @@
     "id": "kt-0128",
     "day": 128,
     "concept": "Garanti foto arşiv",
-    "verse": "Garanti belgesi lazım olunca bütün çekmeceleri mi boşaltıyorsun? Telefonunla yapacağın küçük bir hazırlık seni bu dertten kurtarıyor.",
+    "verse": "Garanti belgesi lazım olunca çekmeceleri mi boşaltıyorsun? Telefonunla yapacağın küçük bir hazırlık yetiyor.",
     "explanation": "Garanti belgesi ve faturanın fotoğrafını çek, ürün adıyla bir albüme at. Kağıdı yine bir zarfta sakla. Fiş mürekkebi zamanla solar, fotoğraf kalıcı kayıt olur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2280,7 +2280,7 @@
     "id": "kt-0129",
     "day": 129,
     "concept": "Kavanoz silinebilir etiket",
-    "verse": "Kavanozlara etiket yazarken çoğu kişi aynı hatayı yapıyor. İçerik değişince o yazı silinmiyor ve kavanoz lekeli kalıyor.",
+    "verse": "Kavanozlara etiket yazarken çoğu kişi aynı hatayı yapıyor. İçerik değişince o yazı bir türlü silinmiyor.",
     "explanation": "Cam kavanoza doğrudan kalıcı kalemle yazma, sonra çıkmaz. Maskeleme bandının üstüne ya da silinebilir tahta kalemiyle cama yaz. İçerik değişince siler yeniden yazarsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2298,7 +2298,7 @@
     "id": "kt-0130",
     "day": 130,
     "concept": "Yatak altı kutu",
-    "verse": "Evinde depo yok ve eşyalar bir türlü sığmıyor mu? Evin en büyük boş alanı aslında her gece üzerinde uyuduğun yerin hemen altında.",
+    "verse": "Evinde depo yok ve eşyalar bir türlü sığmıyor mu? En büyük boş alan her gece uyuduğun yerin altında.",
     "explanation": "Tekerlekli sığ saklama kutusu ya da vakum poşetiyle yatak altını kullan. Sezonluk yorgan, mont ve battaniyeleri oraya kaldır. Tozdan korumak için kapaklı kutu seç.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2316,7 +2316,7 @@
     "id": "kt-0131",
     "day": 131,
     "concept": "Kapı arkası askılık",
-    "verse": "Banyoda eşyalarını koyacak yer kalmadıysa güzel bir haberim var. Hiç kullanmadığın kocaman bir alan her gün gözünün önünde duruyor.",
+    "verse": "Banyoda eşyalarına yer kalmadıysa güzel bir haberim var. Hiç kullanmadığın kocaman bir alan gözünün önünde.",
     "explanation": "Kapının üstüne oturan çapalı askılık ya da cep panel tak. Havlu, bornoz ve saç kurutma makinesini oraya as. Çoğu model delik delmeden takılır, dar banyoda yer kazandırır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2334,7 +2334,7 @@
     "id": "kt-0132",
     "day": 132,
     "concept": "Tava tepsi dik dur",
-    "verse": "Dolaptan tava çekerken üstündekiler hep birden mi devriliyor? Dizme yönünü değiştiren küçük bir hile bu kaosu tamamen bitiriyor.",
+    "verse": "Dolaptan tava çekerken üstündekiler hep devriliyor mu? Dizme yönünü değiştiren küçük bir hile bu kaosu bitiriyor.",
     "explanation": "Tepsi, kesme tahtası ve tavaları yatay değil dik dur. Dosya rafı ya da raf böleni kullan. Her birini tek tek çekersin, üstteki düşmez. Ucuz tel evrak rafı da iş görür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2352,7 +2352,7 @@
     "id": "kt-0133",
     "day": 133,
     "concept": "Asılı sebze sepeti",
-    "verse": "Mutfak tezgahında çalışacak yer kalmadıysa çözüm yukarıda seni bekliyor. Üstelik bu yöntem sebzelerin ömrünü de uzatıyor.",
+    "verse": "Mutfak tezgahında çalışacak yer kalmadı mı? Çözüm yukarıda seni bekliyor ve sebzelerin ömrünü de uzatıyor.",
     "explanation": "Patates, soğan ve sarımsağı üç katlı asılı tel sepete koy. Tezgah açılır, hava dolaşımı çürümeyi geciktirir. Soğanla patatesi ayrı kata koy, yan yana durursa çabuk bozulur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2370,7 +2370,7 @@
     "id": "kt-0134",
     "day": 134,
     "concept": "Dönen tabla dolap",
-    "verse": "Köşe dolabının arkasındaki eşyalara bir türlü ulaşamıyor musun? O ölü alanı kullanılır hale getiren çok pratik bir çözüm var.",
+    "verse": "Köşe dolabının arkasına bir türlü ulaşamıyor musun? O ölü alanı kullanılır hale getiren pratik bir çözüm var.",
     "explanation": "Dolaba dönen tabla koy. Baharat, şişe ve kavanozları üzerine diz, çevirerek arkadakine ulaşırsın. Buzdolabı rafında da sosları öne çekmekte işe yarar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2388,7 +2388,7 @@
     "id": "kt-0135",
     "day": 135,
     "concept": "Çarşaf set içi",
-    "verse": "Nevresim takımların dolapta hep birbirine mi karışıyor? Hepsini tek pakette tutan çok akıllıca bir katlama yöntemi var.",
+    "verse": "Nevresim takımların dolapta hep birbirine mi karışıyor? Seti tek pakette tutan akıllıca bir katlama yöntemi var.",
     "explanation": "Çarşafı, nevresimi ve bir yastık kılıfını katla, sonra aynı takımın diğer yastık kılıfının içine koy. Tüm set tek paket olur, dolapta dağılmaz, takımı bir arada bulursun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2406,7 +2406,7 @@
     "id": "kt-0136",
     "day": 136,
     "concept": "Kablo uç etiket",
-    "verse": "Priz arkasındaki kablo yumağından hangisini çekeceğini bilemiyor musun? Yanlış fişi çekme derdini bitiren minik bir hile var.",
+    "verse": "Priz arkasında hangi kabloyu çekeceğini bilemiyor musun? Yanlış fişi çekme derdini bitiren minik bir hile var.",
     "explanation": "Her şarj ve cihaz kablosunun ucuna küçük bir maskeleme bandı sarıp isimlendir: modem, lamba, tv. Bir fişi çekmen gerektiğinde doğrusunu bulursun. Ekmek poşeti klipsi de olur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2423,7 +2423,7 @@
     "id": "kt-0137",
     "day": 137,
     "concept": "Çanta dolgu dik",
-    "verse": "Dolaptaki çantaların ezilip şekli mi bozuluyor? Onları ilk günkü gibi dimdik tutmanın çok basit bir yolu var.",
+    "verse": "Dolaptaki çantaların ezilip şekli mi bozuluyor? Onları ilk günkü gibi dik tutmanın çok basit bir yolu var.",
     "explanation": "Çantanın içine eski bir havlu, kağıt ya da geldiği dolgu malzemesini koyup dik tut. Boş çanta şekli bozulup yan yatar. Aralarına raf böleni koyarsan ezilmez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2440,7 +2440,7 @@
     "id": "kt-0138",
     "day": 138,
     "concept": "Sezon kutu etiket",
-    "verse": "Kış eşyalarını kutulara kaldırmadan önce yapman gereken küçük bir şey var. Bunu atlarsan gelecek sezon bütün kutuları tek tek açarsın.",
+    "verse": "Kış eşyalarını kaldırmadan önce yapman gereken küçük bir şey var. Bunu atlarsan gelecek sezon tüm kutuları açarsın.",
     "explanation": "Sezonluk kutuyu kaldırmadan üstüne içindekini ve odayı yaz, örneğin kış montu yatak altı. Saydam kutu kullanırsan içini görürsün. Gelecek sezon hepsini tek tek açmazsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2457,7 +2457,7 @@
     "id": "kt-0139",
     "day": 139,
     "concept": "Bölmeli çamaşır sepeti",
-    "verse": "Çamaşır günü yerlere yığılıp renk ayırmaktan sıkıldın mı? Bu derdi daha başlamadan bitiren çok basit bir yöntem var.",
+    "verse": "Çamaşır günü yerlere yığılıp renk ayırmaktan sıkıldın mı? Bu derdi başlamadan bitiren çok basit bir yöntem var.",
     "explanation": "Banyoya iki ya da üç bölmeli çamaşır sepeti koy. Beyazı, renkliyi ve hassası kirlettiğin anda ayrı at. Yıkama günü doğrudan makineye verirsin, yerde ayırma derdi kalmaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2475,7 +2475,7 @@
     "id": "kt-0140",
     "day": 140,
     "concept": "Kuru gıda kare kavanoz",
-    "verse": "Açtığın makarna ve bakliyat paketleri dolaba bir türlü sığmıyor mu? Sorunun asıl kaynağı dolabın değil paketlerin kendisi.",
+    "verse": "Açtığın makarna ve bakliyat paketleri dolaba sığmıyor mu? Asıl sorun dolabın değil paketlerin kendisi.",
     "explanation": "Açtığın makarna, bakliyat ve unu aynı boy kare kavanozlara aktar. Kareler yan yana ve üst üste tam oturur, arada boşluk kalmaz. Ağzı kapalı kavanoz böceklenmeyi zorlaştırır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2493,7 +2493,7 @@
     "id": "kt-0141",
     "day": 141,
     "concept": "Çocuk erişir raf",
-    "verse": "Çocuğun en ufak şey için sürekli seni mi çağırıyor? Evde yapacağın küçük bir değişiklik bu döngüyü tamamen kırabilir.",
+    "verse": "Çocuğun en ufak şey için sürekli seni mi çağırıyor? Evde yapacağın küçük bir değişiklik bu döngüyü kırıyor.",
     "explanation": "Çocuğun günlük kullandığı bardak, atıştırmalık ve oyuncağı onun erişebileceği alt raflara koy. Kendi alır, kendi kaldırır, özgüven kazanır. Kırılacak eşyaları üst raflara al.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2511,7 +2511,7 @@
     "id": "kt-0142",
     "day": 142,
     "concept": "Yedek düğme kese",
-    "verse": "Yeni kıyafetlerle gelen o küçük yedek düğme poşetlerini hemen atıyor musun? Onlar ileride bir kıyafetini çöpten kurtarabilir.",
+    "verse": "Kıyafetle gelen küçük yedek düğme poşetini hemen atıyor musun? O poşet ileride bir kıyafetini kurtarabilir.",
     "explanation": "Yedek düğme ve iplikleri kilitli bir poşete koy, üstüne hangi kıyafete ait olduğunu yaz, dikiş kutunda topla. Düğme düştüğünde tam rengini bulursun, kıyafet çöpe gitmez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2528,7 +2528,7 @@
     "id": "kt-0143",
     "day": 143,
     "concept": "Aynaya tıraş köpüğü",
-    "verse": "Banyo aynan her duştan sonra buğulanıp seni bekletiyor mu? Evde zaten bulunan bir ürün bu sorunu günlerce çözebiliyor.",
+    "verse": "Banyo aynan her duştan sonra buğulanıp seni bekletiyor mu? Evde zaten olan bir ürün bunu günlerce çözüyor.",
     "explanation": "Aynaya az tıraş köpüğü sür, kuru bezle ince bir film kalacak şekilde parlat. Sabun maddeleri suyu damlacık yerine ince tabakaya çevirir, ayna buğulanmaz. Etki günlerce sürer.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2546,7 +2546,7 @@
     "id": "kt-0144",
     "day": 144,
     "concept": "Cam kabin su çekme",
-    "verse": "Duşakabinin camındaki beyaz kireç izleriyle uğraşmaktan yoruldun mu? Duştan sonraki 20 saniyelik bir hareket bunu tamamen önlüyor.",
+    "verse": "Duşakabin camındaki beyaz kireç izlerinden yoruldun mu? Duş sonrası 20 saniyelik bir hareket bunu önlüyor.",
     "explanation": "Duş bitince cam ve fayanslardaki suyu cam çektirme ile aşağı sıyır. Su damlası yüzeyde kuruyunca kireç izi bırakır, sen daha kurumadan aldığında iz hiç oluşmaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2564,7 +2564,7 @@
     "id": "kt-0145",
     "day": 145,
     "concept": "Duş perdesi küfü",
-    "verse": "Duş perdesinin alt kenarı yavaş yavaş kararmaya mı başladı? Onu yepyeni yapmanın yolu ovalamaktan çok daha zahmetsiz.",
+    "verse": "Duş perdesinin alt kenarı kararmaya mı başladı? Onu yepyeni yapmanın yolu ovalamaktan çok daha zahmetsiz.",
     "explanation": "Duş perdesini birkaç havluyla 30 derecede yıka, havlular sürtünüp küf ve sabun tabakasını ovalar. Kurutmadan tekrar as, kendi ağırlığıyla düzleşir. Çamaşır suyu kullanma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2583,7 +2583,7 @@
     "id": "kt-0146",
     "day": 146,
     "concept": "Perde altı küfü önleme",
-    "verse": "Duştan çıkınca perdeyi kenara toplayıp büzüştürüyor musun? Bu masum alışkanlık banyoda hiç istemediğin bir şeye davetiye çıkarıyor.",
+    "verse": "Duştan çıkınca perdeyi kenara toplayıp büzüyor musun? Bu masum alışkanlık banyoda istemediğin bir şeye kapı açıyor.",
     "explanation": "Islak perdeyi büzersen kıvrımların arasında nem hapsolur ve küf tam orada başlar. Duş bitince perdeyi sonuna kadar yay, hava aksın. Pencereyi aç veya aspiratörü çalıştır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2602,7 +2602,7 @@
     "id": "kt-0147",
     "day": 147,
     "concept": "Musluk parlatma",
-    "verse": "Krom muslukların eski parlaklığını kaybettiyse pahalı spreylere para verme. Mutfağındaki bir malzeme onları yeniden ışıldatabilir.",
+    "verse": "Krom muslukların eski parlaklığını mı kaybetti? Mutfağındaki basit bir malzeme onları yeniden ışıldatıyor.",
     "explanation": "Musluğu nemli bezle sil, kuru mikrofiber bezle parlat. İnatçı su lekesine bezi limon suyuna batırıp sür, 1 dakika beklet, durula, kurula. Tel sünger kullanma, kromu çizer.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2620,7 +2620,7 @@
     "id": "kt-0148",
     "day": 148,
     "concept": "Klozet kenarı kireç",
-    "verse": "Klozetin su çizgisindeki sarı kireç fırçayla bir türlü çıkmıyor mu? Evdeki basit bir malzeme onu yumuşatıp söküp atmanı sağlıyor.",
+    "verse": "Klozetin su çizgisindeki sarı kireç fırçayla çıkmıyor mu? Evdeki basit bir malzeme onu söküp atmanı sağlıyor.",
     "explanation": "Klozet suyunu kovayla boşaltıp kireçli bölgeyi açığa çıkar. Tuvalet kağıdını sirkeye batırıp su çizgisine yapıştır, 1-2 saat beklet, sonra fırçala. Temizleyiciyle karıştırma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2638,7 +2638,7 @@
     "id": "kt-0149",
     "day": 149,
     "concept": "Klozet fırçası bakımı",
-    "verse": "Klozet fırçasının kabını en son ne zaman temizlediğini hatırlıyor musun? O kapalı kutunun içinde hiç hoş olmayan şeyler oluyor.",
+    "verse": "Klozet fırçasının kabını en son ne zaman temizledin? O kapalı kutunun içinde hoş olmayan şeyler oluyor.",
     "explanation": "Fırçayı kabına ıslak koyma, kapağın altına sıkıştırıp birkaç dakika damlat, sonra kabın dibine biraz temizleyici dök. Haftada bir kabı boşaltıp durula, yoksa koku yapar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2656,7 +2656,7 @@
     "id": "kt-0150",
     "day": 150,
     "concept": "Havlu nemli kalması",
-    "verse": "Banyodaki havlun aradan saatler geçse de bir türlü kurumuyor mu? Sorun havluda değil onu her gün asış şeklinde gizli.",
+    "verse": "Banyodaki havlun saatler geçse de bir türlü kurumuyor mu? Sorun havluda değil onu asma şeklinde gizli.",
     "explanation": "Havluyu çengele tıkıştırma, ortadan ikiye katlayıp askıya yay, hava iki yüzünden de geçsin. Üst üste binen katların arasında nem kalır ve koku orada birikir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2675,7 +2675,7 @@
     "id": "kt-0151",
     "day": 151,
     "concept": "Lavabo gideri saçı",
-    "verse": "Lavabon yavaş akmaya başlayınca aklına hemen kimyasal dökmek mi geliyor? Oysa çoğu tıkanma çok daha basit bir yolla açılıyor.",
+    "verse": "Lavabon yavaş akınca aklına hemen kimyasal dökmek mi geliyor? Oysa çoğu tıkanma çok daha basit bir yolla açılıyor.",
     "explanation": "Çoğu tıkanmanın sebebi sifonda biriken saç ve sabun. Tahliye süzgecini çıkar, ulaşamadığın saçı cımbızla veya plastik tıkaç açıcı şeritle çek. Gider tek seferde açılır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2693,7 +2693,7 @@
     "id": "kt-0152",
     "day": 152,
     "concept": "Gider taşması önleme",
-    "verse": "Lavabo giderin sürekli saçla tıkanıp seni uğraştırıyor mu? Bu derdi daha başlamadan bitiren ucuz bir çözüm var.",
+    "verse": "Lavabo giderin sürekli saçla mı tıkanıyor? Bu derdi daha başlamadan bitiren çok ucuz bir çözüm var.",
     "explanation": "Gidere silikon veya çelik bir saç süzgeci yerleştir. Saçın çoğu süzgeçte kalır, sifona inmez, tıkanma baştan engellenir. Her duştan sonra süzgeci boşaltıp durula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2712,7 +2712,7 @@
     "id": "kt-0153",
     "day": 153,
     "concept": "Fayans buğu temizliği",
-    "verse": "Banyo fayanslarını ovalamaktan kolların mı yoruluyor? Aslında doğru zamanı seçersen kir neredeyse kendiliğinden çıkıyor.",
+    "verse": "Banyo fayanslarını ovalamaktan kolların mı yoruluyor? Doğru zamanı seçersen kir neredeyse kendiliğinden çıkıyor.",
     "explanation": "Sıcak duşun buharı fayanstaki sabun ve kireç kalıntısını yumuşatır. Duştan hemen sonra nemli bezle sil, ovalamaya gerek kalmaz. Kuru yüzeyde kir sertleşir ve zor çıkar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2730,7 +2730,7 @@
     "id": "kt-0154",
     "day": 154,
     "concept": "Diş fırçası bardağı",
-    "verse": "Diş fırçası bardağının dibindeki o kaygan tabakayı hiç fark ettin mi? Orada gözle görmediğin bir şeyler birikiyor.",
+    "verse": "Diş fırçası bardağının dibindeki kaygan tabakayı fark ettin mi? Orada gözünün görmediği bir şey birikiyor.",
     "explanation": "Bardağın dibinde biriken su diş macunu artığıyla karışıp kaygan bir biyofilm yapar. Haftada bir karbonatla ovala, durula, ters çevirip kurut. Bardağı delikli bir altlığa koy.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2749,7 +2749,7 @@
     "id": "kt-0155",
     "day": 155,
     "concept": "Banyo nem ve havalandırma",
-    "verse": "Banyondaki küfü ne kadar silsen de geri mi geliyor? Çünkü asıl sorun temizlikte değil bambaşka bir yerde saklı.",
+    "verse": "Banyondaki küfü ne kadar silsen de geri mi geliyor? Asıl sorun temizlikte değil bambaşka bir yerde saklı.",
     "explanation": "Küfün asıl sebebi sürekli yüksek nem. Duş sırasında ve sonrasında aspiratörü en az 15-20 dakika çalıştır, yoksa pencereyi aç. Nem düşünce küf üreyecek ortam kalmaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2768,7 +2768,7 @@
     "id": "kt-0156",
     "day": 156,
     "concept": "Sabunluk kireç tabakası",
-    "verse": "Sabunluğun dibinde biriken o jöle gibi tabakayla uğraşmaktan bıktın mı? Onu söküp atmak sandığından çok daha kolay.",
+    "verse": "Sabunluğun dibindeki jöle gibi tabakadan bıktın mı? Onu söküp atmak sandığından çok daha kolay.",
     "explanation": "Sabunluğun dibindeki kaygan tabaka sabun ve su karışımıdır. Sabunluğu çıkar, sıcak suya 10 dakika batır, eski diş fırçasıyla ovala, durula. Sabunu delikli bir altlıkta tut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2786,7 +2786,7 @@
     "id": "kt-0157",
     "day": 157,
     "concept": "Sifon kapağı kapalı",
-    "verse": "Sifonu her seferinde kapağı açık mı çekiyorsun? O anda gözle göremediğin bir şey banyonun her yerine yayılıyor.",
+    "verse": "Sifonu kapağı açık mı çekiyorsun? O anda gözle göremediğin bir şey banyonun her yerine yayılıyor.",
     "explanation": "Sifon çekildiğinde minik su zerrecikleri havaya fırlar, diş fırçana kadar yayılır. Sifonu çekmeden önce kapağı kapat, zerrecikler içeride kalır. Hijyende ciddi fark yaratır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2805,7 +2805,7 @@
     "id": "kt-0158",
     "day": 158,
     "concept": "Yer fayansı derz fırçası",
-    "verse": "Banyo zeminindeki derzler ne kadar paspas yapsan da kararmış mı duruyor? Çünkü asıl kir paspasın hiç ulaşamadığı bir yerde.",
+    "verse": "Banyo zeminindeki derzler paspasa rağmen kararmış mı duruyor? Asıl kir paspasın ulaşamadığı yerde.",
     "explanation": "Karbonatı az suyla macun yap, derzlere sür, sert bir fırçayla ovala, 10 dakika beklet, durula. Paspas sadece yüzeyi siler. Sonra zemini iyice kurut ki nem küfe dönmesin.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2823,7 +2823,7 @@
     "id": "kt-0159",
     "day": 159,
     "concept": "Lavabo taşması deliği",
-    "verse": "Lavabonun üst kenarındaki o küçük delikten kötü koku geliyorsa sebebi içinde gizli. Temizlemenin çok kolay bir yolu var.",
+    "verse": "Lavabonun kenarındaki o küçük delikten kötü koku mu geliyor? Temizlemenin çok kolay bir yolu var.",
     "explanation": "Lavabonun üst kenarındaki taşma deliği içten kir bağlar, koku oradan gelir. Küçük bir huniyle karbonat dök, üstüne sirke ekle, 10 dakika beklet, sıcak suyla durula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2841,7 +2841,7 @@
     "id": "kt-0160",
     "day": 160,
     "concept": "Krom yüzey su lekesi",
-    "verse": "Banyo armatürlerinin üzerindeki beyaz lekeler aslında kir değil. Onları çıkarmanın yolu da ovmaktan geçmiyor.",
+    "verse": "Armatürlerin üzerindeki beyaz lekeler aslında kir değil. Onları çıkarmanın yolu da ovmaktan geçmiyor.",
     "explanation": "O beyaz benekler sudan kalan kireç. Bezi beyaz sirkeyle ıslat, krom yüzeye sar, 10 dakika beklet, sil ve bol suyla durula. Sirkeyi saatlerce bırakma, kromu matlaştırır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2859,7 +2859,7 @@
     "id": "kt-0161",
     "day": 161,
     "concept": "Banyo paspası bakımı",
-    "verse": "Banyo paspasını en son ne zaman yıkadığını hatırlıyor musun? Her gün bastığın o paspas düşündüğünden çok daha kirli olabilir.",
+    "verse": "Banyo paspasını en son ne zaman yıkadın? Her gün bastığın o paspas sandığından çok daha kirli olabilir.",
     "explanation": "Banyo paspası sürekli nem ve ölü deri çeker, bakteri ile küfe ortam olur. Arkası kauçuksa nazik programda yumuşatıcısız yıka. İki paspas edin, biri yıkanırken diğeri dursun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2878,7 +2878,7 @@
     "id": "kt-0162",
     "day": 162,
     "concept": "Silikon küfü",
-    "verse": "Küvet kenarındaki silikonda siyah lekeler var ve ne kadar ovarsan ov çıkmıyor mu? Çünkü sorun yüzeyde değil, çok daha derinde.",
+    "verse": "Küvet kenarındaki silikonda siyah lekeler ne ovsan çıkmıyor mu? Çünkü sorun yüzeyde değil derinlerde.",
     "explanation": "O siyahlık silikonun gözeneklerine işlemiş küf, ovmakla çıkmaz. Kağıt mendili karbonat ve az suyla macun yapıp silikona bastır, birkaç saat beklet, sonra kaldır ve durula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2896,7 +2896,7 @@
     "id": "kt-0163",
     "day": 163,
     "concept": "Duş başlığı silikon delik",
-    "verse": "Duş başlığındaki kireci temizlemek için sökmene hiç gerek yok. Sadece parmağınla yapacağın küçük bir hareket yetiyor.",
+    "verse": "Duş başlığındaki kireci temizlemek için sökmene gerek yok. Parmağınla yapacağın küçük bir hareket yetiyor.",
     "explanation": "Modern duş başlıklarında esnek silikon memeler var. Su akarken parmağını başlığın üstünde dairesel ovala, silikon esneyince kireç kırılıp dökülür. Haftada bir tekrarla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2914,7 +2914,7 @@
     "id": "kt-0164",
     "day": 164,
     "concept": "Klozet içi gizli koku",
-    "verse": "Tuvaleti her gün fırçalıyorsun ama koku bir türlü gitmiyor mu? Çünkü asıl kirin biriktiği o gizli yeri atlıyorsun.",
+    "verse": "Tuvaleti her gün fırçalıyorsun ama koku gitmiyor mu? Asıl kirin biriktiği gizli yeri atlıyorsun.",
     "explanation": "Koku çoğu zaman su çizgisinin altındaki fırçanın değmediği gizli kıvrımdan gelir. Klozet temizleyici jeli kenarın altına sıkıp gece beklet. Tabanın çevresini de sil.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2932,7 +2932,7 @@
     "id": "kt-0165",
     "day": 165,
     "concept": "Banyo dolabı nem",
-    "verse": "Banyo dolabından çıkan havlular hep rutubet kokuyorsa çözüm çok basit. Dolabın içine koyacağın tek bir şey bu kokuyu bitiriyor.",
+    "verse": "Banyo dolabından çıkan havlular rutubet mi kokuyor? İçine koyacağın tek bir şey bu kokuyu bitiriyor.",
     "explanation": "Kapalı banyo dolabı nem tutar, havlular küf kokar. Dolaba bir kase pirinç veya silika jel paketi koy, nemi çeksin. Havluları tamamen kurumadan dolaba kaldırma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2951,7 +2951,7 @@
     "id": "kt-0166",
     "day": 166,
     "concept": "Fayans parlaklığı durulama",
-    "verse": "Banyoyu tertemiz yapıyorsun ama fayanslar yine de donuk mu duruyor? Suçlu kir değil, temizlerken yaptığın küçük bir hata.",
+    "verse": "Banyoyu tertemiz yapıyorsun ama fayanslar donuk mu duruyor? Suçlu kir değil temizlerken yaptığın bir hata.",
     "explanation": "Temizlik ürünü fayansta kalırsa kuruyunca donuk bir film bırakır. Ovaladıktan sonra yüzeyi temiz suyla iyice durula ve kuru bezle sil. Kalıntı gidince parlaklık geri gelir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2969,7 +2969,7 @@
     "id": "kt-0167",
     "day": 167,
     "concept": "Klozet tank kapağı",
-    "verse": "Klozetin haznesini hiç açıp içine baktın mı? Orada biriken şey hem suyunu boşa akıtıyor hem de mekanizmayı bozuyor olabilir.",
+    "verse": "Klozetin haznesini hiç açıp içine baktın mı? Orada biriken şey hem suyu boşa akıtıyor hem mekanizmayı bozuyor.",
     "explanation": "Kireç ve tortu birikince mekanizma takılır, su boşa akar. Suyu kapat, tankı boşalt, dipteki tortuyu sirkeli bezle sil. Tanka renkli tablet atma, lastik contaları yıpratır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -2987,7 +2987,7 @@
     "id": "kt-0168",
     "day": 168,
     "concept": "Banyo aynası leke",
-    "verse": "Aynayı ne kadar silersen sil hep iz mi kalıyor? Sorun senin özensizliğin değil, elindeki bezin ta kendisi.",
+    "verse": "Aynayı ne kadar silersen sil hep iz mi kalıyor? Sorun senin özenin değil elindeki bezin ta kendisi.",
     "explanation": "Kağıt havlu ve pamuklu bez iz bırakır. Aynayı az nemli mikrofiber bezle sil, sonra kuru mikrofiberle parlat. Aynaya doğrudan sprey sıkma, kenarlardan akıp çerçeveyi karartır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3005,7 +3005,7 @@
     "id": "kt-0169",
     "day": 169,
     "concept": "Ekmek buzlukta dilim",
-    "verse": "Ekmeğini taze kalsın diye buzdolabına koyuyorsan büyük bir yanlış yapıyorsun. Ekmek en hızlı orada bayatlıyor.",
+    "verse": "Ekmeği taze kalsın diye buzdolabına koyuyorsan yanlış yapıyorsun. Ekmek en hızlı orada bayatlıyor.",
     "explanation": "Buzdolabının 4 derecesi ekmekteki nişastayı en hızlı sertleştiren aralıktır. Taze yenmeyecekse dilimleyip poşetle dondurucuya at, tostluktan çıkınca taze gibi olur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3023,7 +3023,7 @@
     "id": "kt-0170",
     "day": 170,
     "concept": "Peynir kağıt + kapalı kap",
-    "verse": "Peyniri streç filme sarıp kaldırıyorsan onu farkında olmadan bozuyorsun. Çünkü peynirin nefes alması gerekiyor.",
+    "verse": "Peyniri streç filme sarıp kaldırıyorsan farkında olmadan bozuyorsun. Çünkü peynirin nefes alması gerekiyor.",
     "explanation": "Streçle sıkıca sarmak peyniri terletip küflendirir. Önce yağlı kağıda sar, sonra hafif kapalı kaba koy. Böyle peynir nefes alır, kurumaz ve daha az küflenir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3041,7 +3041,7 @@
     "id": "kt-0171",
     "day": 171,
     "concept": "Et en alt rafta",
-    "verse": "Çiğ eti buzdolabının hangi rafına koyduğuna hiç dikkat ediyor musun? Yanlış raf ailenin sağlığını bile tehlikeye atabilir.",
+    "verse": "Çiğ eti buzdolabının hangi rafına koyduğuna dikkat ediyor musun? Yanlış raf sağlığını tehlikeye atabilir.",
     "explanation": "Çiğ et ve balığı her zaman en alt rafa, kapalı kapta koy. Damlayan su alttaki pişmiş yemeğe bulaşırsa çapraz bulaşma olur. Kural: pişmiş yemek üstte, çiğ et altta.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3059,7 +3059,7 @@
     "id": "kt-0172",
     "day": 172,
     "concept": "Balığı buzla sakla",
-    "verse": "Taze balık buzdolabında bir gün bile dayanmadan kokmaya başlar. Ama balıkçıların bildiği küçük bir hileyle iki gün taptaze kalıyor.",
+    "verse": "Taze balık buzdolabında bir günde kokmaya başlar. Ama balıkçıların bildiği hileyle iki gün taptaze kalıyor.",
     "explanation": "Taze balık normal rafta bir günde kokar. Süzgeçli kaba koyup üzerine buz doldur, alttan eriyen su aksın. Böyle sıfır derecede kalır ve iki gün taze durur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3076,7 +3076,7 @@
     "id": "kt-0173",
     "day": 173,
     "concept": "Maydanoz su bardağında",
-    "verse": "Maydanozu poşetin içinde buzdolabına atıyorsan iki güne solması normal. Onu haftalarca dipdiri tutmanın çok basit bir yolu var.",
+    "verse": "Maydanozu poşetle buzdolabına atıyorsan iki güne solar. Onu haftalarca dipdiri tutmanın basit bir yolu var.",
     "explanation": "Maydanoz ve dereotu sapları çiçek gibi su ister. Sapları kesip bir bardak suya dik, üstüne gevşek poşet geçir, dolaba koy. Suyunu 2 günde bir değiştir, haftalarca diri kalır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3094,7 +3094,7 @@
     "id": "kt-0174",
     "day": 174,
     "concept": "Limonu kavanozda buzlukta",
-    "verse": "Yarım kalan limonu açıkta bırakıyorsan suyu da vitamini de uçup gidiyor. Onu ziyan etmeden saklamanın akıllıca bir yolu var.",
+    "verse": "Yarım kalan limonu açıkta bırakıyorsan suyu da vitamini de uçuyor. Ziyan etmeden saklamanın akıllı bir yolu var.",
     "explanation": "Kesilmiş limon açıkta hızla kurur. Az kullanıyorsan suyunu sık, buz kalıbına dök, donunca poşete al. Bütün limonları su dolu kapalı kavanozda haftalarca diri tutarsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3112,7 +3112,7 @@
     "id": "kt-0175",
     "day": 175,
     "concept": "Soğanı askıda sakla",
-    "verse": "Soğanları poşetin içinde ya da buzdolabında saklıyorsan çabuk çürümesine şaşırma. Onların istediği bambaşka bir yer var.",
+    "verse": "Soğanı poşette ya da buzdolabında saklıyorsan çabuk çürümesine şaşırma. Onların istediği yer bambaşka.",
     "explanation": "Soğan ve sarımsak serin, karanlık ve havadar yer ister. Kapalı poşette nem yapıp çürür. File torbaya koyup as. Buzdolabı ise soğanı yumuşatıp kokuturur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3130,7 +3130,7 @@
     "id": "kt-0176",
     "day": 176,
     "concept": "Muz sapına streç",
-    "verse": "Muzların iki günde kararmasından şikayetçiysen çözüm sandığından basit. Sapına saracağın minicik bir şey günlerce fark yaratıyor.",
+    "verse": "Muzların iki günde kararmasından şikayetçi misin? Sapına saracağın minicik bir şey günlerce fark yaratıyor.",
     "explanation": "Muz olgunlaşma gazını en çok sapından salar. Sap kısmını birkaç kat streç filmle sıkıca sar, muz 3-5 gün geç kararır. Her muzun sapını ayrı sararsan etki daha güçlü olur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3147,7 +3147,7 @@
     "id": "kt-0177",
     "day": 177,
     "concept": "Muz diğer meyveden ayrı",
-    "verse": "Meyve tabağındaki elmalar armutlar neden bu kadar çabuk çürüyor biliyor musun? Suçlu hemen yanlarında duran o sarı meyve.",
+    "verse": "Meyve tabağındaki elmalar armutlar neden bu kadar çabuk çürüyor? Suçlu hemen yanlarındaki sarı meyve.",
     "explanation": "Muz yüksek etilen gazı yayar, yanındaki elma ve armudu hızla çürütür. Olgunlaşmasını istemediğin meyveyi muzdan uzak tut. Sert avokadoyu ise muzla aynı poşete koy.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3165,7 +3165,7 @@
     "id": "kt-0178",
     "day": 178,
     "concept": "Domates tezgahta sapı aşağı",
-    "verse": "Domatesi taze kalsın diye buzdolabına koyuyorsan aslında lezzetini öldürüyorsun. Onun asıl istediği yer bambaşka.",
+    "verse": "Domatesi taze kalsın diye buzdolabına koyuyorsan lezzetini öldürüyorsun. Onun istediği yer bambaşka.",
     "explanation": "Soğuk, domatesin aromasını bozar ve etini unlaştırır. Domatesi oda sıcaklığında, sap deliği aşağı bakacak şekilde tut, böyle geç çürür. Sadece aşırı olgunsa dolaba al.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3182,7 +3182,7 @@
     "id": "kt-0179",
     "day": 179,
     "concept": "Mantar kese kağıdı",
-    "verse": "Mantarı marketten geldiği poşetin içinde saklıyorsan yanlış yapıyorsun. Onu günlerce diri tutmanın çok basit bir yolu var.",
+    "verse": "Mantarı marketten geldiği poşette mi saklıyorsun? Onu günlerce diri tutmanın çok basit bir yolu var.",
     "explanation": "Plastik poşet mantarı terletir, kayganlaşıp kokar. Kese kağıdı torbaya koy, kağıt fazla nemi emer, mantar kuru ve diri kalır. Yıkamayı pişirmeden hemen önce yap.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3200,7 +3200,7 @@
     "id": "kt-0180",
     "day": 180,
     "concept": "Açık konserveyi kaba aktar",
-    "verse": "Açtığın konservenin kalanını tenekesiyle buzdolabına koyuyorsan dikkat et. O kutunun içinde hiç istemediğin bir şey oluyor.",
+    "verse": "Açtığın konservenin kalanını tenekesiyle dolaba koyuyorsan dikkat et. O kutuda hiç istemediğin bir şey oluyor.",
     "explanation": "Açılan konserveyi tenekede saklama, hava temasıyla iç kaplama bozulur ve metalik tat oluşur. Kalanını cam veya plastik kapalı kaba aktar, 3-4 günde tüket.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3218,7 +3218,7 @@
     "id": "kt-0181",
     "day": 181,
     "concept": "Yumurtayı kabuksuz dondur",
-    "verse": "Elinde fazla yumurta kaldı diye çöpe atmayı düşünüyorsan bir dakika bekle. Onları aylarca saklayabileceğin bir yöntem var.",
+    "verse": "Elinde fazla yumurta kaldı diye çöpe atmayı düşünme. Onları aylarca saklayabileceğin bir yöntem var.",
     "explanation": "Yumurta kabuğuyla dondurulmaz, kabuk çatlar. Çırp, buz kalıbına dök, donunca poşete al. Her göze bir yumurta gelir, omlet veya kek için saklarsın. Çözünce mutlaka pişir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3236,7 +3236,7 @@
     "id": "kt-0182",
     "day": 182,
     "concept": "Dondurucuya tarih etiketi",
-    "verse": "Dondurucundaki paketlerin içinde ne olduğunu hatırlamıyorsan yiyecekleri boşa harcıyorsun. Çözümü sandığından çok daha kolay.",
+    "verse": "Dondurucundaki paketlerde ne olduğunu bilmiyorsan yemek çöpe gidiyor. Çözümü sandığından çok daha kolay.",
     "explanation": "Etiketsiz dondurucu, unutulup atılan yiyecek demektir. Her paketin üstüne maskeleme bandı yapıştırıp içerik ve tarih yaz. Eski tarihliyi öne al, önce onu kullan.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3254,7 +3254,7 @@
     "id": "kt-0183",
     "day": 183,
     "concept": "Dondurucuyu dolu tut",
-    "verse": "Boş dondurucunun daha az elektrik harcadığını sanıyorsan yanılıyorsun. Gerçek tam tersi ve çözümü mutfağında hazır bekliyor.",
+    "verse": "Boş dondurucu daha az elektrik harcar mı sanıyorsun? Gerçek tam tersi ve çözümü mutfağında hazır bekliyor.",
     "explanation": "Dolu dondurucu daha az çalışır, çünkü donmuş gıdalar birbirini soğuk tutar. Boşluk varsa su dolu pet şişeler koy. Ama hava akımı için tıka basa doldurma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3272,7 +3272,7 @@
     "id": "kt-0184",
     "day": 184,
     "concept": "Sebzeyi yıkamadan sakla",
-    "verse": "Sebzeleri eve gelir gelmez yıkayıp dolaba diziyorsan onları daha çabuk çürütüyorsun. Peki doğrusu ne zaman yıkamak?",
+    "verse": "Sebzeleri eve gelir gelmez yıkayıp dolaba diziyorsan daha çabuk çürütüyorsun. Peki doğrusu ne zaman yıkamak?",
     "explanation": "Yıkamanın bıraktığı nem çürümeyi hızlandırır. Sebze ve meyveyi kullanmadan hemen önce yıka, depolarken kuru tut. Çilek ve üzüm özellikle yıkanmadan saklanmalı.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3290,7 +3290,7 @@
     "id": "kt-0185",
     "day": 185,
     "concept": "Sebzelik nem ayarı",
-    "verse": "Buzdolabının sebzeliğindeki o küçük sürgünün ne işe yaradığını hiç merak ettin mi? Yanlış ayar sebzeleri erken çürütüyor olabilir.",
+    "verse": "Sebzelikteki o küçük sürgünün ne işe yaradığını hiç merak ettin mi? Yanlış ayar sebzeleri erken çürütüyor.",
     "explanation": "O sürgü sebzeliğin nem ayarıdır. Yeşillik ve sebze için sürgüyü kapat, nem yüksek kalsın. Meyve için aç, etilen kaçsın. Yanlış ayar sebzeleri erken çürütür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3308,7 +3308,7 @@
     "id": "kt-0186",
     "day": 186,
     "concept": "Sütü kapakta saklama",
-    "verse": "Sütü buzdolabının kapağındaki rafta saklıyorsan büyük bir hata yapıyorsun. Çünkü süt en hızlı orada bozuluyor.",
+    "verse": "Sütü buzdolabının kapağındaki rafta saklıyorsan hata yapıyorsun. Çünkü süt en hızlı orada bozuluyor.",
     "explanation": "Kapak, buzdolabının en sıcak ve sıcaklığı en çok dalgalanan yeridir. Sütü kapağa değil iç raflara koy. Kapağa turşu, sos, reçel gibi dayanıklı şeyler gider.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3326,7 +3326,7 @@
     "id": "kt-0187",
     "day": 187,
     "concept": "Etin paketini değiştir",
-    "verse": "Marketten aldığın eti o köpük tabağıyla buzdolabına koyuyorsan dikkat et. O tabakta gözünden kaçan bir tehlike birikiyor.",
+    "verse": "Marketten aldığın eti köpük tabağıyla dolaba koyuyorsan dikkat et. O tabakta gözden kaçan bir tehlike var.",
     "explanation": "Marketin köpük tabağı uzun saklama için değildir, tabakta biriken su bakteri üretir. Hemen pişirmeyeceksen eti porsiyonlara böl, kilitli poşete sıkı sarıp dondur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3344,7 +3344,7 @@
     "id": "kt-0188",
     "day": 188,
     "concept": "Donmuş eti dolapta çöz",
-    "verse": "Donmuş eti tezgahın üstünde çözülmeye bırakıyorsan büyük risk alıyorsun. O bekleyen ette neler olduğunu duyunca çok şaşıracaksın.",
+    "verse": "Donmuş eti tezgahta çözülmeye bırakıyorsan büyük risk alıyorsun. O ette neler olduğunu duyunca şaşıracaksın.",
     "explanation": "Donmuş eti oda sıcaklığında çözmek dışını bakteri üreme aralığına sokar, içi hala donuktur. Bir gece önceden buzdolabına al. Acelen varsa kapalı poşette soğuk su altında çöz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3361,7 +3361,7 @@
     "id": "kt-0189",
     "day": 189,
     "concept": "Bayat ekmeği diriltme",
-    "verse": "Bayatlayan ekmeği çöpe atmadan önce bir dur. Onu beş dakikada fırından yeni çıkmış gibi yapmanın bir yolu var.",
+    "verse": "Bayatlayan ekmeği çöpe atmadan önce bir dur. Onu beş dakikada yeni pişmiş gibi yapmanın bir yolu var.",
     "explanation": "Bayatlama nemin nişastadan ayrılmasıdır ve geri verilebilir. Ekmeğin üstünü hafif ıslat, 180 derece fırında 5-8 dakika tut. Bu bir kez işe yarar, hemen tüket.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3378,7 +3378,7 @@
     "id": "kt-0190",
     "day": 190,
     "concept": "Peynir küfü ne yapılır",
-    "verse": "Peynirin ucunda küf gördün diye hepsini çöpe mi atıyorsun? Bazen buna hiç gerek yok ama önemli bir şartı var.",
+    "verse": "Peynirin ucunda küf gördün diye hepsini çöpe mi atıyorsun? Bazen buna gerek yok ama önemli bir şartı var.",
     "explanation": "Sert peynirde küflü yeri 1 santim derinlik ve çevresinden kesip atınca kalanı yenir. Ama beyaz peynir, lor ve kremalı peynirde küf her yere yayılır, tamamını at.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3395,7 +3395,7 @@
     "id": "kt-0191",
     "day": 191,
     "concept": "Yeşil patates ve filiz",
-    "verse": "Patatesin yeşillenen ve filizlenen kısmını görmezden gelip yiyorsan dikkat et. O yeşil bölgede mideni bozan bir madde saklanıyor.",
+    "verse": "Patatesin yeşillenen kısmını görmezden gelip yiyorsan dikkat et. O bölgede mideni bozan bir madde var.",
     "explanation": "Patates ışık gördükçe yeşilenir ve bu kısımlarda solanin artar, fazlası mideyi bozar. Yeşil veya filizli bölgeyi bol kazı, tamamen yeşilse at. Serin, karanlık yerde sakla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3413,7 +3413,7 @@
     "id": "kt-0192",
     "day": 192,
     "concept": "Yeşilliği haşlayıp dondur",
-    "verse": "Fazla aldığın ıspanağı çürütmekten korkuyorsan sana güzel bir haberim var. Doğru yöntemle aylar sonra bile yemyeşil kalıyor.",
+    "verse": "Fazla aldığın ıspanağı çürütmekten mi korkuyorsun? Doğru yöntemle aylar sonra bile yemyeşil kalıyor.",
     "explanation": "Çiğ dondurursan rengi ve dokusu bozulur. Kaynar suda 1-2 dakika haşla, buzlu suya at, suyunu sık, poşetleyip dondur. Aylar sonra bile yeşil kalır. Fasulyede de geçerli.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3431,7 +3431,7 @@
     "id": "kt-0193",
     "day": 193,
     "concept": "Avokadoyu soğanla sakla",
-    "verse": "Yarım kalan avokadoyu çekirdeğiyle saklarsan kararmaz diyorlar ama bu tam doğru değil. Asıl işe yarayan yöntem bambaşka.",
+    "verse": "Yarım avokadoyu çekirdeğiyle saklayınca kararmaz diyorlar ama tam doğru değil. Asıl yöntem bambaşka.",
     "explanation": "Çekirdek sadece dokunduğu yeri korur. Kesik yüzeye limon suyu sür, kapalı bir kaba bir dilim soğanla koy. Asit ve soğan buharı kararmayı geciktirir, 1-2 gün taze kalır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3448,7 +3448,7 @@
     "id": "kt-0194",
     "day": 194,
     "concept": "Buzdolabı 4 derece",
-    "verse": "Buzdolabının kaç derecede çalıştığını bilmiyorsan yiyeceklerin boşa bozuluyor olabilir. Doğru ayarı öğrenmenin kolay bir yolu var.",
+    "verse": "Buzdolabının kaç derecede çalıştığını biliyor musun? Yanlış ayar yiyeceklerini boşa bozuyor olabilir.",
     "explanation": "Buzdolabı 4 derece, dondurucu -18 derece olmalı. Daha sıcaksa bakteri ürer, daha soğuksa boşa elektrik yakar. Dolaba bir bardak su koy, sabah buz gibi ama donmamış olmalı.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3466,7 +3466,7 @@
     "id": "kt-0195",
     "day": 195,
     "concept": "Sıcak yemeği soğutma",
-    "verse": "Sıcak tencereyi hemen buzdolabına koymak yanlış ama tezgahta saatlerce bekletmek de riskli. Peki bu yemeği ne yapman gerekiyor?",
+    "verse": "Sıcak tencereyi hemen dolaba koymak yanlış ama tezgahta bekletmek de riskli. Peki bu yemeği ne yapmalısın?",
     "explanation": "Buhar tüten yemeği direkt koyarsan dolabın ısısı yükselir. Tencereyi soğuk su dolu lavaboya oturt, ılıyınca kapalı kapta dolaba koy. Dışarıda 2 saatten fazla bekletme.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3484,7 +3484,7 @@
     "id": "kt-0196",
     "day": 196,
     "concept": "Çöp kovası dibi gazete",
-    "verse": "Çöp kovanın poşetini düzenli değiştirdiğin halde hala kokuyor mu? Çünkü asıl sorun poşette değil, hiç bakmadığın bir yerde.",
+    "verse": "Çöp kovanın poşetini sık değiştirdiğin halde hala kokuyor mu? Asıl sorun poşette değil, başka bir yerde.",
     "explanation": "Poşet fark edilmeden sızar, sıvı kovanın dibinde birikip kokar. Poşetin altına katlanmış bir gazete koy, sızan suyu emsin. Haftada bir değiştir, kovayı sirkeli suyla sil.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3503,7 +3503,7 @@
     "id": "kt-0197",
     "day": 197,
     "concept": "Ayakkabı gece havalandırma",
-    "verse": "Ayakkabıların dolapta durdukça kokusu bir türlü geçmiyor mu? Çünkü asıl sorun ayakkabıda değil, içinde biriken nemde.",
+    "verse": "Ayakkabıların dolapta durdukça kokusu geçmiyor mu? Asıl sorun ayakkabıda değil, içinde biriken nemde.",
     "explanation": "Ayak teri ayakkabının içine siner, kapalı dolapta nem bakteriyle kokuya döner. Çıkardığında hemen dolaba koyma, gece boyu havadar yerde bırak. İki çifti sırayla giy.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3522,7 +3522,7 @@
     "id": "kt-0198",
     "day": 198,
     "concept": "Buzdolabı kahve telvesi",
-    "verse": "Buzdolabın ağır kokuyorsa kahve telveni çöpe atmadan önce bir düşün. O telvenin seni çok şaşırtacak bir marifeti var.",
+    "verse": "Buzdolabın ağır kokuyorsa kahve telveni çöpe atmadan önce dur. O telvenin şaşırtıcı bir marifeti var.",
     "explanation": "Kuru kahve telvesini küçük bir kaseye yay, buzdolabının rafına koy. Telve kötü kokuları emer. Birkaç günde bir yenisiyle değiştir. Soğanlı kokularda çok işe yarar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3541,7 +3541,7 @@
     "id": "kt-0199",
     "day": 199,
     "concept": "Bulaşık makinesi filtresi",
-    "verse": "Bulaşık makinen kötü kokuyorsa suçlu deterjan değil. Çoğu kişinin varlığını bile bilmediği gizli bir parça var.",
+    "verse": "Bulaşık makinen kötü kokuyorsa suçlu deterjan değil. Çoğu kişinin varlığını bilmediği gizli bir parça var.",
     "explanation": "Alt sepetin altında dönen bir filtre var, yemek artıkları orada birikip kokar. Filtreyi çıkar, ılık sabunlu suda fırçayla yıka, yerine tak. Ayda bir tekrarla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3560,7 +3560,7 @@
     "id": "kt-0200",
     "day": 200,
     "concept": "Araba içi karbonat",
-    "verse": "Arabandaki kötü koku için spreye para vermene hiç gerek yok. Mutfağında duran bir malzeme o kokuyu kökünden çözüyor.",
+    "verse": "Arabandaki kötü koku için spreye para vermene gerek yok. Mutfağındaki bir malzeme kokuyu kökünden çözüyor.",
     "explanation": "Sigara ve yemek kokusu paspaslara ve koltuğa siner. Üzerine ince karbonat serp, gece boyu beklet, sabah süpürgeyle çek. Karbonat kokuyu emer, sprey gibi üstünü örtmez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3578,7 +3578,7 @@
     "id": "kt-0201",
     "day": 201,
     "concept": "Çekmece sabun kalıbı",
-    "verse": "Çekmeceni açtığında ağır bir koku mu çarpıyor? Köşesine koyacağın tek bir şey o kokuyu ferahlığa çeviriyor.",
+    "verse": "Çekmeceni açtığında ağır bir koku mu çarpıyor? Köşesine koyacağın tek bir şey kokuyu ferahlığa çeviriyor.",
     "explanation": "Ambalajını açmadan bir kalıp sabunu çekmecenin köşesine bırak, hafif ferah bir koku yayar. Kapalı çekmecede durgun hava ağır kokar. Lavanta kesesi de aynı işi görür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3597,7 +3597,7 @@
     "id": "kt-0202",
     "day": 202,
     "concept": "Kullanılmayan oda havalandırma",
-    "verse": "Az kullandığın odaya her girişte ağır bir koku mu çarpıyor? Sebebi çok basit ve çözümü tamamen bedava.",
+    "verse": "Az kullandığın odaya girince ağır bir koku mu çarpıyor? Sebebi çok basit ve çözümü tamamen bedava.",
     "explanation": "Kapalı odada hava değişmez, nem ve toz birikip ağır bir koku yapar. Haftada en az iki kez pencereyi 10 dakika ardına kadar aç. Kapısını da günde bir aralık bırak.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3616,7 +3616,7 @@
     "id": "kt-0203",
     "day": 203,
     "concept": "Buzdolabı sebzelik koku",
-    "verse": "Buzdolabının sebzeliğinden kötü bir koku mu geliyor? Suçlu genelde tek bir sebze ve yanındakileri de hızla bozuyor.",
+    "verse": "Buzdolabının sebzeliğinden kötü bir koku mu geliyor? Suçlu tek bir sebze ve yanındakileri de hızla bozuyor.",
     "explanation": "Çürüyen tek bir sebze koku yayar ve etilen gazıyla yanındakileri de bozar. Ezilmiş olanı hemen ayıkla. Sebzeliği haftada bir boşalt, sirkeli suyla sil, kurula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3635,7 +3635,7 @@
     "id": "kt-0204",
     "day": 204,
     "concept": "Halı koku karbonat fırçalama",
-    "verse": "Halındaki ağır kokuyu spreyle gizlemeye çalışmak boşuna. Gece boyu bekleyen tek bir malzeme kokuyu kökünden alıyor.",
+    "verse": "Halındaki ağır kokuyu spreyle gizlemek boşuna. Gece boyu bekleyen tek bir malzeme kokuyu kökünden alıyor.",
     "explanation": "Halının üzerine karbonat ele, yumuşak fırçayla liflerin arasına gir, gece boyu beklet. Sabah süpürgeyle iyice çek. Karbonat kokuyu bağlar. Önce görünmez bir köşede dene.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3654,7 +3654,7 @@
     "id": "kt-0205",
     "day": 205,
     "concept": "Bulaşık makinesi sirke durulama",
-    "verse": "Bulaşık makinesinden çıkan bardaklar kötü mü kokuyor? Ayda bir yapacağın tek bir şey makineyi yepyeni gibi bırakıyor.",
+    "verse": "Bulaşık makinesinden çıkan bardaklar kötü mü kokuyor? Ayda bir yapacağın tek şey makineyi yepyeni yapıyor.",
     "explanation": "Boş makinenin alt sepetine bir bardak beyaz sirke koy, en sıcak programda çalıştır. Sirke borulardaki yağ ve kireci çözer. Sirkeyle çamaşır suyunu asla karıştırma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3673,7 +3673,7 @@
     "id": "kt-0206",
     "day": 206,
     "concept": "Araba klima koku",
-    "verse": "Arabanın klimasını açınca ağır bir koku mu yayılıyor? Sebebi çok basit ve önlemesi sadece birkaç dakikanı alıyor.",
+    "verse": "Arabanın klimasını açınca ağır bir koku mu yayılıyor? Sebebi basit ve önlemesi birkaç dakikanı alıyor.",
     "explanation": "Klima kanalında nem birikir, küf üreyip kokar. Varışa yaklaşırken klimayı kapat ama fanı birkaç dakika açık tut, kanal kurusun. Polen filtresini de yılda bir değiştir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3691,7 +3691,7 @@
     "id": "kt-0207",
     "day": 207,
     "concept": "Çöp kovası haftalık yıkama",
-    "verse": "Çöp kovasına poşet takıyorsun ama koku yine de gitmiyor mu? Çünkü asıl kaynağı hepimiz gözden kaçırıyoruz.",
+    "verse": "Çöp kovasına poşet takıyorsun ama koku yine de gitmiyor mu? Asıl kaynağı hepimiz gözden kaçırıyoruz.",
     "explanation": "Küçük sızıntılar kovanın iç yüzeyine siner, poşet bunu çözmez. Haftada bir kovayı yıka, bir kapak sıvı sabun ve sirke ekle, fırçala, sonra tam kurula. Kuru yüzey koku tutmaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3710,7 +3710,7 @@
     "id": "kt-0208",
     "day": 208,
     "concept": "Çekmece vanilya pamuk",
-    "verse": "Çekmecelerin hafif ve ferah koksun istiyorsan sprey sıkma. Tek bir damlayla haftalarca süren doğal bir çözüm var.",
+    "verse": "Çekmecelerin ferah koksun istiyorsan sprey sıkma. Tek bir damlayla haftalarca süren doğal bir çözüm var.",
     "explanation": "Bir pamuğa birkaç damla vanilya damlat, kapağı delikli küçük bir kavanoza koy ve çekmeceye yerleştir. Hafif doğal bir koku yayar, giysiye sinmez. Pamuğu ayda bir yenile.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3729,7 +3729,7 @@
     "id": "kt-0209",
     "day": 209,
     "concept": "Ev geneli kaynatılmış baharat",
-    "verse": "Eve ferah bir koku yaymak için oda spreyine para verme. Mutfağında zaten duran birkaç malzeme çok daha iyisini yapıyor.",
+    "verse": "Eve ferah bir koku için oda spreyine para verme. Mutfağında duran birkaç malzeme çok daha iyisini yapıyor.",
     "explanation": "Küçük bir tencereye su, birkaç tarçın çubuğu, karanfil ve bir dilim portakal kabuğu koy, kısık ateşte kaynat. Buhar evi doğal bir kokuyla doldurur. Asla boş kaynatma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3748,7 +3748,7 @@
     "id": "kt-0210",
     "day": 210,
     "concept": "Bulaşık süngeri koku",
-    "verse": "Mutfak bezini yıkıyorsun ama koku bir türlü gitmiyor mu? Bu koku sandığından çok daha inatçı ve sebebi seni şaşırtacak.",
+    "verse": "Mutfak bezini yıkıyorsun ama koku bir türlü gitmiyor mu? Bu kokunun sebebi seni gerçekten şaşırtacak.",
     "explanation": "Nemli sünger ve mutfak bezi bakteri üretip ağır kokar. Her kullanımdan sonra iyice sık ve dik kuruyacak şekilde koy. İki günde bir süngeri kaynar suda beklet.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3767,7 +3767,7 @@
     "id": "kt-0211",
     "day": 211,
     "concept": "Mikrodalga kapı açık kurutma",
-    "verse": "Mikrodalgayı kullandıktan sonra kapağını hemen kapatıyorsan dur. Bu küçük alışkanlık içeride kötü bir sürpriz hazırlıyor.",
+    "verse": "Mikrodalgayı kullandıktan sonra kapağını hemen kapatıyorsan dur. İçeride kötü bir sürpriz hazırlanıyor.",
     "explanation": "Yemekten çıkan buhar içeride yoğuşur, kapalı kapakta nem kokuya döner. Kullandıktan sonra iç yüzeyi nemli bezle sil ve kapağı birkaç dakika aralık bırak.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3786,7 +3786,7 @@
     "id": "kt-0212",
     "day": 212,
     "concept": "Buzdolabı 4 derece",
-    "verse": "Buzdolabını ne kadar soğuk o kadar iyi sanıyorsan yanılıyorsun. Bu alışkanlık her ay faturana boşu boşuna yansıyor.",
+    "verse": "Buzdolabını ne kadar soğuk o kadar iyi sanıyorsan yanılıyorsun. Bu alışkanlık her ay faturana yansıyor.",
     "explanation": "Buzdolabını 4, derin dondurucuyu -18 dereceye ayarla. Daha soğuk her derece elektriği artırır ama gıda güvenliğine katkı vermez. Çoğu dolap gereğinden soğuk çalışır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3803,7 +3803,7 @@
     "id": "kt-0213",
     "day": 213,
     "concept": "Sıcak yemek bekletme",
-    "verse": "Sıcak tencereyi doğrudan buzdolabına koyuyorsan bir dakika dur. Bu alışkanlık hem faturanı hem dolabındakileri etkiliyor.",
+    "verse": "Sıcak tencereyi doğrudan buzdolabına koyuyorsan bir dakika dur. Bu alışkanlık dolabındakileri de etkiliyor.",
     "explanation": "Sıcak tencereyi önce oda sıcaklığına yakın soğut, sonra dolaba koy. Sıcak gıda kompresörü uzun çalıştırır ve yanındakileri ısıtır. 2 saatten fazla da dışarıda bırakma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3820,7 +3820,7 @@
     "id": "kt-0214",
     "day": 214,
     "concept": "Fırın son dakika",
-    "verse": "Fırını kapattıktan sonra bile yemeğin pişebildiğini biliyor muydun? Bu küçük numara her ay faturana da yansıyor.",
+    "verse": "Fırını kapattıktan sonra bile yemeğin pişebildiğini biliyor muydun? Bu küçük numara faturana da yansıyor.",
     "explanation": "Yemek bitmeden birkaç dakika önce fırını kapat. Ağır cam ve metal gövde ısıyı tutar, pişirmeyi tamamlar ve boşa giden son tüketimi keser. Kapağı açmadan beklet.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3837,7 +3837,7 @@
     "id": "kt-0215",
     "day": 215,
     "concept": "Fırın açma alışkanlığı",
-    "verse": "Fırının kapağını merakla her açışında yemeğine kötülük yapıyorsun. Üstelik bunun faturana yansıyan bir bedeli de var.",
+    "verse": "Fırının kapağını her açışında yemeğine kötülük yapıyorsun. Üstelik bunun faturana yansıyan bir bedeli de var.",
     "explanation": "Pişerken kapağı merakla açma. Her açışta sıcaklık ciddi düşer, fırın tekrar ısınmak için enerji harcar ve süre uzar. Camdan ve içerideki ışıkla kontrol et.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3854,7 +3854,7 @@
     "id": "kt-0216",
     "day": 216,
     "concept": "Ocakta doğru tencere",
-    "verse": "Tencereni ocağın gözüne göre seçmiyorsan enerjinin bir kısmı havaya gidiyor. Peki doğru seçim nasıl yapılıyor?",
+    "verse": "Tencereni ocağın gözüne göre seçmiyorsan enerjinin bir kısmı havaya gidiyor. Peki doğru seçim nasıl yapılır?",
     "explanation": "Tencerenin tabanı ocak gözüyle aynı çapta ya da biraz büyük olsun. Küçük tencere büyük gözde ısıyı kenardan kaçırır. Gazda da alevi tabanın dışına taşırma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3871,7 +3871,7 @@
     "id": "kt-0217",
     "day": 217,
     "concept": "Kaynatırken kapak",
-    "verse": "Suyu kapaksız kaynatıyorsan her seferinde boşa gaz yakıyorsun. Küçük bir alışkanlık hem zamandan hem faturadan kazandırıyor.",
+    "verse": "Suyu kapaksız kaynatıyorsan boşa gaz yakıyorsun. Küçük bir alışkanlıkla hem zamandan hem faturadan kazanıyorsun.",
     "explanation": "Su ve yemekleri kapaklı kaynat. Kapak buharı ve ısıyı içeride tutar, su daha hızlı kaynar ve daha az gaz harcanır. Kaynayınca alevi kısıp hafif kaynamada tut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3888,7 +3888,7 @@
     "id": "kt-0218",
     "day": 218,
     "concept": "Su ısıtıcısı kadarı",
-    "verse": "Su ısıtıcısını her seferinde ağzına kadar dolduruyorsan dikkat. Tek bardak çay için ödediğin elektrik sandığından fazla.",
+    "verse": "Su ısıtıcısını her seferinde ağzına kadar dolduruyorsan dikkat. Tek bardak çay sandığından pahalıya geliyor.",
     "explanation": "Su ısıtıcısına sadece ihtiyacın kadar su koy. Fazla suyu ısıtmak boşa elektrik demek. Yine de rezistansın üzeri örtülü kalsın ki cihaz boş yanmasın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3906,7 +3906,7 @@
     "id": "kt-0219",
     "day": 219,
     "concept": "Stand-by priz çekici",
-    "verse": "Televizyonu kapattım sanıyorsun ama o hala sessizce elektrik yiyor. Faturanı kabartan bu gizli tüketimin çok basit bir çözümü var.",
+    "verse": "Televizyonu kapattım sanıyorsun ama o hala elektrik yiyor. Bu gizli tüketimin çok basit bir çözümü var.",
     "explanation": "TV, modem ve şarj adaptörü bekleme modunda sürekli elektrik çeker. Kullanmadıklarını anahtarlı prizle tek tuşta kes. Bu gizli tüketim yıllık faturada fark yaratır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3924,7 +3924,7 @@
     "id": "kt-0220",
     "day": 220,
     "concept": "LED ampul geçişi",
-    "verse": "Evdeki eski ampul rafta ucuz görünüyor ama faturada en pahalısı o. Tek bir değişiklikle bu masrafı ciddi biçimde azaltabilirsin.",
+    "verse": "Evdeki eski ampul ucuz görünüyor ama faturada en pahalısı o. Tek değişiklik bu masrafı ciddi biçimde azaltıyor.",
     "explanation": "Akkor ve halojen ampulleri LED ile değiştir. LED aynı ışığı çok daha az watt ile verir ve uzun ömürlüdür. En çok yanan lambalardan başla, kısa sürede kendini öder.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3942,7 +3942,7 @@
     "id": "kt-0221",
     "day": 221,
     "concept": "Çamaşır 30 derece",
-    "verse": "Her çamaşırı 60 derecede yıkıyorsan boşuna para yakıyor olabilirsin. Makinenin asıl elektriği nereye harcadığını duyunca şaşıracaksın.",
+    "verse": "Her çamaşırı 60 derecede yıkıyorsan boşuna para yakıyorsun. Makinenin elektriği nereye harcadığına şaşıracaksın.",
     "explanation": "Günlük az kirli çamaşırı 30 derecede yıka. Makine enerjisinin büyük kısmı suyu ısıtmaya gider, sıcaklığı düşürmek tüketimi azaltır. Yüksek ısıyı çok kirlilere sakla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3959,7 +3959,7 @@
     "id": "kt-0222",
     "day": 222,
     "concept": "Makineyi tam doldur",
-    "verse": "Makineyi yarı dolu çalıştırmak sana masum görünüyor olabilir. Oysa her seferinde neredeyse iki kat masraf ödediğini biliyor muydun?",
+    "verse": "Makineyi yarı dolu çalıştırmak sana masum görünüyor olabilir. Oysa her seferinde neredeyse iki kat ödüyorsun.",
     "explanation": "Çamaşır ve bulaşık makinesini dolduğunda çalıştır. Yarı yükte de neredeyse aynı su ve elektrik harcanır. Tıkma yapma, davulun üstünde bir karış boşluk kalsın.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3977,7 +3977,7 @@
     "id": "kt-0223",
     "day": 223,
     "concept": "Yüksek devir sıkma",
-    "verse": "Kurutma makinesi evindeki en çok elektrik yiyen cihazlardan biri. Çamaşırı içine atmadan önce yapacağın tek ayar faturayı ciddi düşürüyor.",
+    "verse": "Kurutma makinesi evindeki en obur cihazlardan biri. Çamaşırı atmadan önceki tek ayar faturayı ciddi düşürüyor.",
     "explanation": "Çamaşırı kurutma makinesine atmadan önce yüksek devirde sık. Az nemli giren çamaşır çok daha hızlı kurur, makine az çalışır. En iyisi ipte ya da askıda kurutmak.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -3994,7 +3994,7 @@
     "id": "kt-0224",
     "day": 224,
     "concept": "Perde ile güneş",
-    "verse": "Perdeyi ne zaman açıp ne zaman kapattığın ısınma faturanı değiştiriyor. Doğru saati bilirsen güneşten bedava ısı almak mümkün.",
+    "verse": "Perdeyi ne zaman açıp kapattığın ısınma faturanı değiştiriyor. Doğru saati bilirsen güneşten bedava ısı alırsın.",
     "explanation": "Kış gündüzü güneye bakan perdeleri aç, bedava güneş ısısını içeri al. Akşam kapat ki ısı dışarı kaçmasın. Yazın tersini yap, gündüz kapalı tut ve serinliği koru.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4012,7 +4012,7 @@
     "id": "kt-0225",
     "day": 225,
     "concept": "Radyatör önünü aç",
-    "verse": "Koltuğu peteğin önüne koyduysan odanın neden geç ısındığı anlaşıldı. Sıcaklık odaya yayılacağına bambaşka bir yere gidiyor.",
+    "verse": "Koltuğu peteğin önüne koyduysan odanın neden geç ısındığı belli. Sıcaklık odaya değil bambaşka bir yere gidiyor.",
     "explanation": "Petek önünü koltuk, perde ya da kurutulan çamaşırla kapatma. Önü kapalı radyatör ısıyı odaya yayamaz, oda geç ısınır ve kombi daha çok yakar. Önünü açık bırak.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4030,7 +4030,7 @@
     "id": "kt-0226",
     "day": 226,
     "concept": "Radyatör petek havası",
-    "verse": "Peteğin üstü soğuk ama altı sıcaksa kombin boşu boşuna çalışıyor demektir. Bu sorunun çözümü sandığından çok daha kolay.",
+    "verse": "Peteğin üstü soğuk ama altı sıcaksa kombin boşuna çalışıyor. Bu sorunun çözümü sandığından çok daha kolay.",
     "explanation": "Radyatörün üstü soğuk altı sıcaksa içinde hava sıkışmıştır. Pürjör vidasını hafifçe gevşet, altına bir bez tut ve su gelene kadar havayı al. Sonra vidayı kapat.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4048,7 +4048,7 @@
     "id": "kt-0227",
     "day": 227,
     "concept": "Termostat 1 derece",
-    "verse": "Termostatı sadece bir derece kısmak faturada gözle görülür fark yaratıyor. Üstelik konforundan neredeyse hiç ödün vermeden yapabilirsin.",
+    "verse": "Termostatı bir derece kısmak faturada görünür bir fark yaratıyor. Üstelik konforundan ödün vermeden yapabilirsin.",
     "explanation": "Termostatı kışın 1 derece düşür, yazın 1 derece yükselt. Tek derece bile ısıtma ve soğutma masrafında gözle görülür fark yaratır. Üstüne hırka giy, odayı 20-21 derecede tut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4065,7 +4065,7 @@
     "id": "kt-0228",
     "day": 228,
     "concept": "Kapı altı çekçek",
-    "verse": "Kapının altındaki parmak kadar boşluk ısını her gün dışarı kaçırıyor. Çözüm için gereken şey ise evinde çoktan var.",
+    "verse": "Kapının altındaki parmak kadar boşluk ısını dışarı kaçırıyor. Çözüm için gereken şey ise evinde çoktan var.",
     "explanation": "Dış kapı ve soğuk oda kapılarının altındaki boşluğa kumaş rulo koy. Soğuk hava o aralıktan girer, sıcak hava kaçar. Eski bir çorabı kumaşla doldurup da yapabilirsin.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4083,7 +4083,7 @@
     "id": "kt-0229",
     "day": 229,
     "concept": "Pencere kenarı yalıtım",
-    "verse": "Pencerenden sızan o ince rüzgar peteklerini boşu boşuna çalıştırıyor. Bir kış boyu tasarruf ettirecek çözümü ise çok ucuz.",
+    "verse": "Pencerenden sızan o ince rüzgar peteklerini boşuna çalıştırıyor. Bir kış boyu tasarruf ettiren çözümü çok ucuz.",
     "explanation": "Elini pencere kenarına tut, hava sızdırıyorsa fitil ya da süngerli bant yapıştır. Çerçevedeki gizli aralıklar ısıyı dışarı verir, kombi durmadan çalışır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4101,7 +4101,7 @@
     "id": "kt-0230",
     "day": 230,
     "concept": "Buzdolabı lastik testi",
-    "verse": "Buzdolabının kapısı gerçekten sıkı kapanıyor mu hiç merak ettin mi? Bir kağıt parçasıyla gizli elektrik kaçağını hemen yakalayabilirsin.",
+    "verse": "Buzdolabının kapısı gerçekten sıkı kapanıyor mu? Bir kağıt parçasıyla gizli elektrik kaçağını hemen yakalarsın.",
     "explanation": "Kapıya bir kağıt sıkıştırıp kapat. Kağıt kolayca çıkıyorsa kapı lastiği yorulmuştur, soğuk kaçar ve dolap sürekli çalışır. Lastiği temizle, esnemiyorsa değiştir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4119,7 +4119,7 @@
     "id": "kt-0231",
     "day": 231,
     "concept": "Buzlanmış dondurucu",
-    "verse": "Dondurucunda biriken buz tabakası sessiz sedasız elektrik yiyor. Üstelik dolabın verimli soğuması için bilmen gereken bir şey daha var.",
+    "verse": "Dondurucunda biriken buz tabakası sessizce elektrik yiyor. Verimli soğuma için bilmen gereken bir şey daha var.",
     "explanation": "No-frost olmayan dondurucuda buz kalınlaşınca soğuma zorlaşır, cihaz daha çok çalışır. Yarım parmak buz birikmeden kapatıp çöz ve kurula. Dolu dondurucu daha verimli soğur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4137,7 +4137,7 @@
     "id": "kt-0232",
     "day": 232,
     "concept": "Buzdolabı duvar boşluğu",
-    "verse": "Buzdolabını duvara yapıştırmak ona sandığından çok daha fazla zarar veriyor. Yanlış yerleştirilen dolap her ay fazladan elektrik yakıyor.",
+    "verse": "Buzdolabını duvara yapıştırmak ona çok zarar veriyor. Her ay fazladan elektrik yakmasının sebebi tam olarak bu.",
     "explanation": "Buzdolabını arkada ve yanlarda birkaç parmak boşluk kalacak şekilde yerleştir. Arkadaki ızgara ısıyı dışarı atar, duvara yapışıksa atamaz ve daha çok elektrik harcar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4155,7 +4155,7 @@
     "id": "kt-0233",
     "day": 233,
     "concept": "Duş süresi tasarruf",
-    "verse": "Duşta geçirdiğin fazladan birkaç dakika iki faturayı birden kabartıyor. Üstelik konforu bozmadan tasarruf etmenin bir yolu da var.",
+    "verse": "Duştaki fazladan birkaç dakika iki faturayı birden kabartıyor. Konforu bozmadan tasarruf etmenin yolu var.",
     "explanation": "Duş süresini kısalt ve sabunlanırken suyu kapat. Sıcak su hem su faturası hem doğalgaz demek, tasarruf iki yönlü olur. Perlatör de konforu bozmadan debiyi düşürür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4173,7 +4173,7 @@
     "id": "kt-0234",
     "day": 234,
     "concept": "Musluk perlatörü",
-    "verse": "Musluğun ucuna takılan minicik bir parça akan suyu neredeyse yarıya indiriyor. Üstelik basıncı hiç düşürmeden bunu başarıyor.",
+    "verse": "Musluğun ucuna takılan minik bir parça akan suyu yarıya indiriyor. Üstelik basıncı hiç düşürmüyor.",
     "explanation": "Mutfak ve lavabo musluklarına perlatör tak. Suya hava karıştırıp basıncı korur ama akan su miktarını ciddi azaltır. Ucuz bir parça, dakikasında takılır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4191,7 +4191,7 @@
     "id": "kt-0235",
     "day": 235,
     "concept": "Akan su bulaşık",
-    "verse": "Bulaşığı açık suyun altında yıkamak su sayacını resmen uçuruyor. Elde yıkarken bile tasarruf etmenin çok basit bir yolu var.",
+    "verse": "Bulaşığı akan suyun altında yıkamak sayacı resmen uçuruyor. Elde yıkarken bile tasarrufun basit bir yolu var.",
     "explanation": "Bulaşığı akan su altında değil, lavabo gözünde biriktirip yıka ya da makineyi doldurup çalıştır. Açık su, dolu bulaşık makinesinden çok daha fazla su ve enerji harcar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4209,7 +4209,7 @@
     "id": "kt-0236",
     "day": 236,
     "concept": "Damlayan musluk",
-    "verse": "Damlayan tek bir musluk ayda kovalar dolusu suyu sessizce akıtıyor. Çözümü ise sandığından çok daha ucuz ve kolay.",
+    "verse": "Damlayan tek bir musluk ayda kovalarca suyu sessizce akıtıyor. Çözümü sandığından çok daha ucuz ve kolay.",
     "explanation": "Damlayan musluğun contasını değiştir, çoğu zaman birkaç liralık parça ve basit bir el işi. Saniyede bir damla bile aylık ciddi su kaybı demek. Önce vanayı kapat.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4227,7 +4227,7 @@
     "id": "kt-0237",
     "day": 237,
     "concept": "Kazak topaklanma jilet",
-    "verse": "Kazağındaki topakları elinle koparıyorsan aslında daha kötü yapıyorsun. Onlardan kurtulmanın çok daha doğru bir yolu var.",
+    "verse": "Kazağındaki topakları elinle koparıyorsan daha kötü yapıyorsun. Onlardan kurtulmanın çok daha doğru bir yolu var.",
     "explanation": "Topakları elle koparma, ipliği zedeler ve daha çok tüylenir. Kazağı düz koy, tek kullanımlık jiletle yüzeyi hafifçe kazı ya da pilling tarak kullan. Tek yönde çalış.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4246,7 +4246,7 @@
     "id": "kt-0238",
     "day": 238,
     "concept": "Kazağı asma katla",
-    "verse": "Kazağını askıya asınca omuzları neden sarkıyor hiç düşündün mü? Formunu bozmadan saklamanın aslında çok basit bir yolu var.",
+    "verse": "Kazağını askıya asınca omuzları neden sarkıyor? Formunu bozmadan saklamanın çok basit bir yolu var.",
     "explanation": "Örgü kazakları katlayıp rafa yatay koy. Askıda kendi ağırlığından uzar ve omuz uçları sivrilir. Asman gerekirse gövdeyi askının yatay çubuğuna sarıp as.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4265,7 +4265,7 @@
     "id": "kt-0239",
     "day": 239,
     "concept": "Ütüyü tersten yap",
-    "verse": "Koyu renk kıyafetlerini ütüledikçe yüzeyde parlak izler mi kalıyor? Bunu önlemenin çok basit bir yolu var.",
+    "verse": "Koyu kıyafetlerini ütüledikçe yüzeyde parlak izler mi kalıyor? Bunu önlemenin çok basit bir yolu var.",
     "explanation": "Koyu pamuklu ve yünlüleri ters çevirip iç yüzünden ütüle ya da üzerine ince nemli bir bez koy. Doğrudan ütülenirse yüzeyde parlak izler kalır, baskılar da bozulur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4283,7 +4283,7 @@
     "id": "kt-0240",
     "day": 240,
     "concept": "Ütü suyu musluk değil",
-    "verse": "Ütüne doğrudan musluk suyu dolduruyorsan büyük bir hata yapıyorsun. Zamanla ütünü bozan şey tam olarak bu.",
+    "verse": "Ütüne doğrudan musluk suyu dolduruyorsan büyük bir hata yapıyorsun. Zamanla ütünü bozan şey bu.",
     "explanation": "Ütüye damıtılmış su ya da yarı yarıya saf su koy. Sert musluk suyu buhar deliklerinde kireç biriktirir, buhar zayıflar ve kumaşa beyaz leke sıçrar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4302,7 +4302,7 @@
     "id": "kt-0241",
     "day": 241,
     "concept": "Gömlek yaka önce",
-    "verse": "Gömlek ütülerken nereden başladığın sandığından çok daha önemli. Yanlış sıralama bütün emeğini boşa çıkarıyor.",
+    "verse": "Gömlek ütülerken nereden başladığın sandığından çok daha önemli. Yanlış sıralama emeğini boşa çıkarıyor.",
     "explanation": "Önce yaka, sonra kol manşetleri, ardından kollar, en son gövde ütüle. Gövdeyi başta yaparsan küçük detaylarla uğraşırken onu yeniden buruşturursun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4320,7 +4320,7 @@
     "id": "kt-0242",
     "day": 242,
     "concept": "Buruşuk giysi banyo buharı",
-    "verse": "Gömleğin buruşuk ama elinin altında ütü yok. Banyoda seni kurtaracak çok pratik bir çözüm olduğunu biliyor muydun?",
+    "verse": "Gömleğin buruşuk ama elinin altında ütü yok. Banyoda seni kurtaracak çok pratik bir çözüm var.",
     "explanation": "Sıcak duş açıkken gömleği banyo kapısına as ve kapıyı kapat. Buhar lifleri gevşetir, hafif kırışıklar 10-15 dakikada açılır. Çok buruşuk giysilerde bu yöntem yetmez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4339,7 +4339,7 @@
     "id": "kt-0243",
     "day": 243,
     "concept": "Deri ayakkabı günlük dinlendir",
-    "verse": "Aynı deri ayakkabıyı her gün üst üste giyiyorsan dikkat et. Bu alışkanlık ayakkabının ömrünü resmen yarıya indiriyor.",
+    "verse": "Aynı deri ayakkabıyı her gün üst üste giyiyorsan dikkat et. Bu alışkanlık ömrünü resmen yarıya indiriyor.",
     "explanation": "Deri ayakkabı gün boyu teri emer, ertesi gün yine giyilirse nem içinde kalır ve çatlar. İki çifti dönüşümlü giy, her çifte en az 24 saat kuruma molası ver.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4357,7 +4357,7 @@
     "id": "kt-0244",
     "day": 244,
     "concept": "Deri ayakkabı kalıp",
-    "verse": "Deri ayakkabını çıkarıp dolaba öylece boş bırakıyorsan yanlış yapıyorsun. Zamanla burnu çöküyor ve kırışıyor.",
+    "verse": "Deri ayakkabını dolaba öylece boş bırakıyorsan yanlış yapıyorsun. Zamanla burnu çöküp kırışıyor.",
     "explanation": "Ayakkabıyı boş bırakırsan derinin burnu kıvrılıp kalıcı kırışık yapar. İçine ayakkabı kalıbı ya da rulo gazete koy. Kalıp hem formu korur hem nemi emer.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4375,7 +4375,7 @@
     "id": "kt-0245",
     "day": 245,
     "concept": "Yeni deri su itici",
-    "verse": "Yeni aldığın deri ayakkabıyı hemen giymeden önce dur. Onu yağmurdan ve lekeden koruyacak önemli bir adım var.",
+    "verse": "Yeni aldığın deri ayakkabıyı giymeden önce dur. Onu yağmurdan ve lekeden koruyacak önemli bir adım var.",
     "explanation": "Yeni deri ya da süeti giymeden önce su itici sprey uygula. 15-20 cm uzaktan ince bir kat at, kurut, sonra ikinci katı ekle. Yağmur ve tuz lekesini büyük ölçüde önler.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4394,7 +4394,7 @@
     "id": "kt-0246",
     "day": 246,
     "concept": "Süet ayakkabı silgi",
-    "verse": "Süet ayakkabındaki lekeyi ıslak bezle silmeye kalkma. Su süede iyi gelmek yerine kalıcı iz bırakıyor.",
+    "verse": "Süet ayakkabındaki lekeyi ıslak bezle silme. Su ona iyi gelmek yerine kalıcı iz bırakıyor.",
     "explanation": "Süet su görünce sertleşir ve iz tutar. Lekeyi kuru süet fırçası ya da temiz lastik silgiyle ovala, tüyler kalksın. Fırçayı tek yönde çek ve asla suyla yıkama.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4413,7 +4413,7 @@
     "id": "kt-0247",
     "day": 247,
     "concept": "Spor ayakkabı makine değil",
-    "verse": "Spor ayakkabını çamaşır makinesine atmadan önce iki kez düşün. Bu kolaycılık tabanın ayrılmasına yol açabiliyor.",
+    "verse": "Spor ayakkabını çamaşır makinesine atmadan önce iki kez düşün. Bu kolaycılık tabanı ayırabiliyor.",
     "explanation": "Makinenin dönüşü ve ısısı yapıştırıcıyı gevşetir, taban ayrılır. Bağcık ve tabanlığı çıkar, gövdeyi ılık su ve yumuşak fırçayla elde temizle. Kurutucuya asla atma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4432,7 +4432,7 @@
     "id": "kt-0248",
     "day": 248,
     "concept": "Spor ayakkabı güneş değil",
-    "verse": "Islanan spor ayakkabını kurusun diye kalorifer üstüne mi koyuyorsun? Bu yöntem ayakkabıya iyilikten çok zarar veriyor.",
+    "verse": "Islanan ayakkabını kurusun diye kalorifer üstüne mi koyuyorsun? Bu yöntem iyilikten çok zarar veriyor.",
     "explanation": "Doğrudan ısı yapıştırıcıyı yumuşatır, kumaşı sarartır ve tabanı çatlatır. İçine bükülü gazete doldurup gölgede havadar yerde kurut. Gazeteyi 1-2 saatte bir değiştir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4451,7 +4451,7 @@
     "id": "kt-0249",
     "day": 249,
     "concept": "Beyaz taban diş macunu",
-    "verse": "Spor ayakkabının beyaz tabanı sarardı diye üzülme. Banyodaki bir malzemeyle eski beyazlığına döndürmek mümkün.",
+    "verse": "Spor ayakkabının beyaz tabanı sarardı diye üzülme. Banyodaki bir malzeme onu eski haline döndürüyor.",
     "explanation": "Beyaz diş macununu eski bir diş fırçasıyla tabana sürüp ovala, 10 dakika beklet, nemli bezle sil. Jel değil beyaz macun olsun. Kumaş gövdeye sürme, yalnız lastikte kullan.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4469,7 +4469,7 @@
     "id": "kt-0250",
     "day": 250,
     "concept": "Bot tuz lekesi sirke",
-    "verse": "Kış botlarında oluşan beyaz tuz izleri deriyi yavaş yavaş kurutuyor. Mutfağındaki bir karışımla bu izleri çıkarabilirsin.",
+    "verse": "Kış botlarındaki beyaz tuz izleri deriyi yavaş yavaş kurutuyor. Mutfağındaki bir karışım bunu çıkarıyor.",
     "explanation": "Eşit su ve beyaz sirke karışımına batırdığın bezle tuz izlerini nazikçe sil, sonra kuru bezle al. Kuruyunca deri kremi sür. Sirkeyi seyreltmeden sürme, deriyi kurutur.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4488,7 +4488,7 @@
     "id": "kt-0251",
     "day": 251,
     "concept": "Ayakkabı parlatma sıra",
-    "verse": "Ayakkabını cilalamadan önce atladığın bir adım var. O adımı geçersen cila parlatmak yerine leke bırakıyor.",
+    "verse": "Ayakkabını cilalamadan önce atladığın bir adım var. Onu geçersen cila parlatmak yerine leke bırakıyor.",
     "explanation": "Önce nemli bezle tozu ve kiri al, kurut. Sonra ince bir kat krem cila sür, birkaç dakika emmesini bekle, yumuşak fırçayla parlat. Az cila daha iyi parlatır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4507,7 +4507,7 @@
     "id": "kt-0252",
     "day": 252,
     "concept": "Cila rengi nötr",
-    "verse": "Renkli ayakkabına hangi cilayı süreceğinden emin değil misin? Yanlış ton seçersen ayakkabın lekeli görünebiliyor.",
+    "verse": "Renkli ayakkabına hangi cilayı süreceğinden emin değil misin? Yanlış ton lekeli bir görüntü bırakıyor.",
     "explanation": "Renginden emin olmadığın deride renksiz krem cila kullan. Renk değişimi riski olmaz, hem parlaklık hem nem verir. Renkli cilayı yalnız birebir tutan tonda kullan.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4526,7 +4526,7 @@
     "id": "kt-0253",
     "day": 253,
     "concept": "Naylon çorap parlatma",
-    "verse": "Ayakkabını cilaladın ama istediğin parlaklığı bir türlü alamıyor musun? Çekmecendeki eski bir eşya tam bu iş için birebir.",
+    "verse": "Ayakkabını cilaladın ama bir türlü istediğin gibi parlamıyor mu? Çekmecendeki eski bir eşya tam birebir.",
     "explanation": "Krem cila kuruduktan sonra eski ince naylon çorabı ayakkabıya sürt. Naylonun sık dokusu yüzeyi pürüzsüz parlatır ve kadife bezden daha çok parlaklık verir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4545,7 +4545,7 @@
     "id": "kt-0254",
     "day": 254,
     "concept": "Yedek düğme poşet",
-    "verse": "Yeni giysilerle gelen o küçük yedek düğme poşetlerini ne yapıyorsun? Onları saklamanın çok akıllıca bir yolu var.",
+    "verse": "Yeni giysilerle gelen küçük yedek düğme poşetlerini ne yapıyorsun? Saklamanın çok akıllıca bir yolu var.",
     "explanation": "Yedek düğme ve iplik poşetini etikette bırakma, kaybolur. Hepsini küçük bir kutuda topla, yanına kumaş örneğini de koy. Düğme düşünce eşleşen yedeği hemen bulursun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4563,7 +4563,7 @@
     "id": "kt-0255",
     "day": 255,
     "concept": "Naftalin yerine lavanta",
-    "verse": "Dolabına hâlâ naftalin atıyorsan bu alışkanlığı bırakmanın vakti geldi. Hem daha güzel kokan hem sağlıklı bir çözüm var.",
+    "verse": "Dolabına hâlâ naftalin atıyorsan bırakmanın vakti geldi. Hem daha güzel kokan hem sağlıklı bir çözüm var.",
     "explanation": "Naftalin yerine kurutulmuş lavanta ya da sedir ağacı bloğu kullan. Güvenin sevmediği kokuyu verirler ve giysiye ağır sinmez. Lavanta kesesini birkaç ayda bir sık.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4582,7 +4582,7 @@
     "id": "kt-0256",
     "day": 256,
     "concept": "Yünlüyü temiz kaldır",
-    "verse": "Yün kazağını giydikten sonra dolaba öylece kaldırıyorsan dikkat. Güveleri dolabına davet eden şey tam olarak bu.",
+    "verse": "Yün kazağını giydikten sonra dolaba öylece kaldırıyorsan dikkat. Güveleri davet eden şey tam olarak bu.",
     "explanation": "Güve larvası ter ve yemek lekesi olan yünü yer, temiz kumaşa daha az bulaşır. Sezon sonu bütün yünlüleri yıkayıp kurut, kapaklı kutuda ya da nefes alan bezde sakla.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4601,7 +4601,7 @@
     "id": "kt-0257",
     "day": 257,
     "concept": "Deri çanta kuru bez",
-    "verse": "Deri çantanı sezon bitince dolaba boş mu kaldırıyorsun? Onu çökmekten ve küften koruyacak basit bir hazırlık var.",
+    "verse": "Deri çantanı sezon sonunda dolaba boş mu kaldırıyorsun? Çökmesini ve küfü önleyen basit bir hazırlık var.",
     "explanation": "Boş deri çanta uzun durunca çöker, nem alırsa küf yapar. İçine kumaş ya da rulo kağıt doldurup formunu koru, pamuklu toz torbasında sakla. Naylon poşet nem hapseder.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4619,7 +4619,7 @@
     "id": "kt-0258",
     "day": 258,
     "concept": "Fermuar mum kalem",
-    "verse": "Tutukluk yapan fermuarı zorlaya zorlaya açmaya çalışma. Evdeki küçük bir malzemeyle onu yağ gibi kaydırabilirsin.",
+    "verse": "Sıkışan fermuarı zorlaya zorlaya açmaya çalışma. Evdeki küçük bir malzeme onu yağ gibi kaydırıyor.",
     "explanation": "Sıkışan fermuarı zorlarsan dişleri kopar. Mum ya da kurşun kalem ucunu dişler boyunca sürt, sonra birkaç kez aç kapa. Yağlı ürün kumaşa leke yapabilir, az kullan.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4637,7 +4637,7 @@
     "id": "kt-0259",
     "day": 259,
     "concept": "Sakız buzluk yöntemi",
-    "verse": "Giysine sakız ya da mum yapıştıysa sakın çekiştirerek koparma. Mutfağındaki bir köşe bu işi senin yerine hallediyor.",
+    "verse": "Giysine sakız ya da mum yapıştıysa çekiştirip koparma. Mutfağındaki bir köşe bu işi senin yerine görüyor.",
     "explanation": "Sakızı çekiştirme, lif kopar. Giysiyi poşete koyup buzlukta dondur, sertleşen sakızı künt bıçakla kır. Mum kalıntısına kurutma kağıdı koyup ılık ütüyle kağıda çek.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4656,7 +4656,7 @@
     "id": "kt-0260",
     "day": 260,
     "concept": "Askı tel değil geniş",
-    "verse": "Ceketini ince tel askıya asıyorsan omuzları yavaş yavaş bozuluyor. Kalıbını korumanın yolu aslında çok basit.",
+    "verse": "Ceketini ince tel askıya asıyorsan omuzları yavaşça bozuluyor. Kalıbını korumanın yolu çok basit.",
     "explanation": "İnce tel askı ceketin omzunda çıkıntı yapar ve form bozulur. Geniş omuzlu ahşap ya da kalın plastik askı kullan, ağırlığı yaysın. Düğmeleri aç, sırt düz dursun.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4674,7 +4674,7 @@
     "id": "kt-0261",
     "day": 261,
     "concept": "Parmakla nem testi",
-    "verse": "Bitkini takvime bakarak suluyorsan büyük ihtimalle ona zarar veriyorsun. Ne zaman su istediğini anlamanın çok kolay bir yolu var.",
+    "verse": "Bitkini takvime bakarak suluyorsan ona zarar veriyor olabilirsin. Su istediğini anlamanın çok kolay bir yolu var.",
     "explanation": "Sulamadan önce işaret parmağını toprağa 3-4 cm batır. Nemliyse bekle, kuruysa sula. Çoğu ev bitkisi susuzluktan değil fazla sudan ölür, çünkü kökler boğulup çürür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4693,7 +4693,7 @@
     "id": "kt-0262",
     "day": 262,
     "concept": "Alttan sulama",
-    "verse": "Bitkinin yaprakları sararıyorsa sorun sulama şeklinde olabilir. Üstten su vermek yerine deneyebileceğin bambaşka bir yöntem var.",
+    "verse": "Bitkinin yaprakları sararıyorsa sorun sulama şeklinde olabilir. Üstten su vermek yerine bambaşka bir yol var.",
     "explanation": "Saksıyı 15-20 dakika su dolu bir kabın içine oturt, bitki suyu drenaj deliğinden yukarı çeker. Üstten sulamada su kenardan kaçar ve kök topu kuru kalır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4712,7 +4712,7 @@
     "id": "kt-0263",
     "day": 263,
     "concept": "Oda sıcaklığında su",
-    "verse": "Bitkine musluktan aldığın buz gibi suyu hemen veriyorsan dur. Bu alışkanlık kökleri fark etmeden şoka sokuyor.",
+    "verse": "Bitkine musluktan buz gibi su verip geçiyorsan dur. Bu alışkanlık kökleri fark etmeden şoka sokuyor.",
     "explanation": "Çok soğuk su kökleri şoka sokar, tropik bitkilerde yaprak lekesi yapar. Suyu bir gece açıkta beklet, hem oda sıcaklığına gelir hem klorun bir kısmı uçar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4731,7 +4731,7 @@
     "id": "kt-0264",
     "day": 264,
     "concept": "Sarı yaprak nedeni",
-    "verse": "Sararan yaprağı görür görmez hemen kesiyorsan biraz acele ediyorsun. Sararmanın asıl nedenini anlamanın çok basit bir yolu var.",
+    "verse": "Sararan yaprağı görür görmez kesiyorsan acele ediyorsun. Asıl nedeni anlamanın çok basit bir yolu var.",
     "explanation": "Alt yapraklar sararıp yumuşuyorsa neden genelde fazla sudur, üst yapraklar sararıp kuruyorsa susuzluktur. Önce toprağı kontrol et, nedenini bulmadan gübre ekleme.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4750,7 +4750,7 @@
     "id": "kt-0265",
     "day": 265,
     "concept": "Drenaj zorunlu",
-    "verse": "Bitkini dibinde delik olmayan dekoratif saksıya koyduysan dikkat et. Kökleri fark etmeden yavaş yavaş boğuluyor olabilir.",
+    "verse": "Bitkini deliksiz dekoratif bir saksıya koyduysan dikkat et. Kökleri fark etmeden boğuluyor olabilir.",
     "explanation": "Deliksiz saksıda fazla su dipte birikir ve kök çürür. Bitkiyi delikli plastik iç saksıda tut, onu dekoratif kabın içine koy. Sularken iç saksıyı çıkarıp suyu süzdür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4769,7 +4769,7 @@
     "id": "kt-0266",
     "day": 266,
     "concept": "Tabaktaki suyu boşalt",
-    "verse": "Sulamadan sonra saksı tabağında biriken suyu içsin diye bırakıyor musun? Bu küçük alışkanlık bitkine büyük zarar veriyor.",
+    "verse": "Saksı tabağında biriken suyu bitki içsin diye bırakıyor musun? Bu küçük alışkanlık ona büyük zarar veriyor.",
     "explanation": "Sulamadan 15-20 dakika sonra tabakta biriken fazla suyu mutlaka dök. Kökler sürekli suda kalırsa oksijensiz kalıp çürür, kötü koku ve sinek başlar. Bitki o suyu çekmez.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4788,7 +4788,7 @@
     "id": "kt-0267",
     "day": 267,
     "concept": "Yaprakları nemli bezle sil",
-    "verse": "Bitkinin yaprakları parlasın diye sprey almayı mı düşünüyorsun? Evindeki bir bardak su aslında aynı işi fazlasıyla görüyor.",
+    "verse": "Yaprakları parlasın diye sprey almayı mı düşünüyorsun? Evindeki bir bardak su aynı işi fazlasıyla görüyor.",
     "explanation": "Tozlu yaprak ışığı ememez, bitki güçten düşer. Yumuşak nemli bezle yaprakları tek tek alttan destekleyerek sil. Süt veya yağ sürme. Toz tutar ve gözenekleri tıkar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4807,7 +4807,7 @@
     "id": "kt-0268",
     "day": 268,
     "concept": "Yumurta kabuğu kalsiyum",
-    "verse": "Yumurta kabuklarını çöpe atıyorsan çok değerli bir şeyi kaçırıyorsun. Balkondaki sebzelerin bu hazineye bayılacak.",
+    "verse": "Yumurta kabuklarını çöpe atıyorsan değerli bir şeyi kaçırıyorsun. Balkondaki sebzelerin bu hazineye bayılacak.",
     "explanation": "Yıkanmış yumurta kabuğunu kurutup ince toz haline getir ve toprağa karıştır. Yavaşça kalsiyum salar, domateste çiçek dibi çürüğünü azaltır. Bütün kabuk koyma. Çok yavaş çözünür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4826,7 +4826,7 @@
     "id": "kt-0269",
     "day": 269,
     "concept": "Sabunlu su ile bitki biti",
-    "verse": "Bitkindeki yaprak bitleri için hemen ilaç almana gerek yok. Mutfağında duran basit bir şey bu böcekleri kolayca yok ediyor.",
+    "verse": "Yaprak bitleri için hemen ilaç almana gerek yok. Mutfağındaki basit bir şey bu böcekleri kolayca yok ediyor.",
     "explanation": "Bir litre suya birkaç damla sıvı bulaşık sabunu karıştır, yaprakların özellikle altına püskürt. Sabun yaprak bitini boğar. Deterjan veya çamaşır suyu kullanma. Yaprağı yakar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4845,7 +4845,7 @@
     "id": "kt-0270",
     "day": 270,
     "concept": "Sinek için sirke tuzağı",
-    "verse": "Saksı toprağından uçuşan o küçük sinekler seni bezdirdi mi? Mutfağındaki bir malzeme onları kendine çekip yok ediyor.",
+    "verse": "Saksı toprağından uçuşan küçük sinekler seni bezdirdi mi? Mutfağındaki bir malzeme onları çekip yok ediyor.",
     "explanation": "Küçük bir kaba elma sirkesi ve bir damla bulaşık sabunu koy, saksının yanına bırak. Sinekler sirkeye gelip batar. Asıl çözüm sulamayı azaltmak. Bu sinekler nemli toprakta ürer.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4864,7 +4864,7 @@
     "id": "kt-0271",
     "day": 271,
     "concept": "Balkon korkuluğu temizliği",
-    "verse": "Balkon korkuluğunu her gün silip duruyorsan boşuna yoruluyorsun. Doğru yöntemle ayda bir temizlik aslında fazlasıyla yetiyor.",
+    "verse": "Balkon korkuluğunu her gün siliyorsan boşuna yoruluyorsun. Doğru yöntemle ayda bir temizlik fazlasıyla yetiyor.",
     "explanation": "Metal korkuluğu nemli mikrofiber bezle ayda bir sil. Paslı noktaları ince zımparayla temizleyip üstüne ince yağ sür. Aşındırıcı tel fırça boyayı kaldırır ve pası hızlandırır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4883,7 +4883,7 @@
     "id": "kt-0272",
     "day": 272,
     "concept": "Sararan ucu makasla kes",
-    "verse": "Yaprağın ucu kahverengileşince hemen elinle koparıyorsan bitkine zarar veriyorsun. Bunun çok daha doğru bir yolu var.",
+    "verse": "Yaprağın kuruyan ucunu elinle koparıyorsan bitkine zarar veriyorsun. Bunun çok daha doğru bir yolu var.",
     "explanation": "Kuru yaprak ucunu temiz makasla, yaprağın doğal şeklini taklit ederek ince bir kenar bırakıp kes. Elle koparmak sağlam dokuya zarar verir ve kahverengileşmeyi artırır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4902,7 +4902,7 @@
     "id": "kt-0273",
     "day": 273,
     "concept": "Bitkiyi pencereye yapıştırma",
-    "verse": "Bitkini bol ışık alsın diye cama dayamak iyi bir fikir gibi görünüyor. Oysa kışın yaprakları sessizce zarar görüyor.",
+    "verse": "Bitkini bol ışık alsın diye cama dayamak iyi fikir gibi görünüyor. Oysa kışın yapraklar sessizce zarar görüyor.",
     "explanation": "Yapraklar soğuk cama değerse kışın don lekesi, yazın yanık olur. Saksıyı camdan 10-15 cm uzakta tut. Kalorifer üstüne de koyma. Sıcak hava yaprak uçlarını yakar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4921,7 +4921,7 @@
     "id": "kt-0274",
     "day": 274,
     "concept": "Bitkiyi çevir",
-    "verse": "Bitkin hep aynı yöne eğilip duruyorsa bunun suçlusu ışık değil sensin. Çözüm haftada bir yapacağın küçük bir harekette gizli.",
+    "verse": "Bitkin hep aynı yöne eğiliyorsa suçlusu ışık değil sensin. Çözüm haftada bir yapacağın küçük bir harekette gizli.",
     "explanation": "Bitki ışığa doğru büyür ve tek taraflı kalır. Haftada bir saksıyı çeyrek tur döndür. Böylece her tarafı ışık alır ve dik büyür. Karanlık köşeye taşıyacaksan kademeli alıştır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4940,7 +4940,7 @@
     "id": "kt-0275",
     "day": 275,
     "concept": "Nem seven bitkiyi grupla",
-    "verse": "Tropik bitkin için pahalı nemlendirici almana hiç gerek yok. Evdeki basit malzemelerle aynı nemi kolayca sağlayabilirsin.",
+    "verse": "Tropik bitkin için pahalı nemlendirici almana gerek yok. Evdeki basit malzemelerle aynı nemi sağlayabilirsin.",
     "explanation": "Nem seven bitkileri birbirine yakın grupla. Birlikte daha nemli bir mikro ortam oluştururlar. Altlarına çakıl serili su dolu tabak koy. Yaprağa sürekli sprey küf riski taşır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4959,7 +4959,7 @@
     "id": "kt-0276",
     "day": 276,
     "concept": "Saksı boyutunu abartma",
-    "verse": "Bitkin büyüsün diye onu hemen kocaman bir saksıya mı aldın? Bu iyi niyetli hamle köklerine hiç beklemediğin bir zarar veriyor.",
+    "verse": "Bitkin büyüsün diye onu kocaman bir saksıya mı aldın? Bu iyi niyetli hamle köklerine zarar veriyor olabilir.",
     "explanation": "Çok büyük saksıda fazla toprak su tutar ve kök çürür. Saksıyı bir beden büyüğüne geçir, kök topundan 2-3 cm geniş yeter. Delikten kök sarkıyorsa zamanı gelmiştir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4978,7 +4978,7 @@
     "id": "kt-0277",
     "day": 277,
     "concept": "Kahve telvesi yanılgısı",
-    "verse": "Kahve telvesini gübre olsun diye doğrudan saksıya döküyorsan dur. Bu alışkanlık bitkine faydadan çok zarar veriyor olabilir.",
+    "verse": "Kahve telvesini gübre olsun diye saksıya döküyorsan dur. Bu alışkanlık bitkine faydadan çok zarar veriyor.",
     "explanation": "Yaş kahve telvesini toprağın üstüne kalın dökme. Küflenir, su geçirmeyen bir tabaka yapıp kökü boğar. Az miktarda kurutup komposta ekle ya da iyice seyreltip ara sıra ver.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -4997,7 +4997,7 @@
     "id": "kt-0278",
     "day": 278,
     "concept": "Solan çiçeği ayıkla",
-    "verse": "Balkon çiçeklerin erken solup açmayı bırakıyorsa nedeni çok basit. Küçük bir alışkanlık onları tüm yaz çiçekte tutabiliyor.",
+    "verse": "Balkon çiçeklerin erken solup açmayı bırakıyorsa nedeni basit. Küçük bir alışkanlık onları tüm yaz çiçekte tutuyor.",
     "explanation": "Solan çiçekleri düzenli ayıkla. Bitki tohum yapmaya enerji harcamak yerine yeni çiçek üretir. Sapı dipten temiz kes. Sardunya ve petunya böylece tüm yaz çiçek açar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5016,7 +5016,7 @@
     "id": "kt-0279",
     "day": 279,
     "concept": "Saksıyı tekerlekli altlığa koy",
-    "verse": "Ağır saksıyı kucaklayıp taşımaya çalışırken belini incitebilirsin. Oysa hiç kaldırmadan yer değiştirmenin çok kolay bir yolu var.",
+    "verse": "Ağır saksıyı kucaklayıp taşırken belini incitebilirsin. Onu hiç kaldırmadan yer değiştirmenin kolay bir yolu var.",
     "explanation": "Büyük saksıları tekerlekli bitki altlığına yerleştir. Güneşe göre yer değiştirmek ve döndürmek sırtını zorlamadan kolaylaşır. Altlık zemine su lekesi geçmesini de önler.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5054,7 +5054,7 @@
     "id": "kt-0281",
     "day": 281,
     "concept": "Tatilde fitille sula",
-    "verse": "Tatilde bitkilerin kurumasın diye pahalı sistemlere para verme. Evdeki basit bir malzeme günlerce onları kendi kendine suluyor.",
+    "verse": "Tatilde bitkilerin kurumasın diye pahalı sistem almana gerek yok. Evdeki basit bir malzeme onları günlerce suluyor.",
     "explanation": "Bir kaseye su koy, kalın pamuklu bir ipin bir ucunu suya, diğer ucunu toprağa göm. Fitil suyu yavaşça taşır, bitki ihtiyacı kadar çeker. Saksıyı suya oturtma. Kök çürür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5073,7 +5073,7 @@
     "id": "kt-0282",
     "day": 282,
     "concept": "Kışın sulamayı azalt",
-    "verse": "Kışın bitkini yazdaki gibi sulamaya devam ediyorsan onu farkında olmadan boğuyorsun. Sebebini duyunca sulama düzenini değiştireceksin.",
+    "verse": "Kışın bitkini yazdaki gibi suluyorsan onu farkında olmadan boğuyorsun. Sebebini duyunca düzenini değiştireceksin.",
     "explanation": "Kışın ışık azalır, bitki yavaşlar ve çok az su ister. Yaz sıklığıyla sularsan toprak ıslak kalır ve kök çürür. Toprak üstü iyice kuruyana kadar bekle. Gübreyi de kes.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5092,7 +5092,7 @@
     "id": "kt-0283",
     "day": 283,
     "concept": "Yeni bitkiyi ayır",
-    "verse": "Eve yeni bir bitki aldığında onu hemen diğerlerinin yanına koyuyorsan risk alıyorsun. Tek bir saksı bütün bitkilerini hasta edebilir.",
+    "verse": "Yeni aldığın bitkiyi hemen diğerlerinin yanına koyuyorsan risk alıyorsun. Tek saksı hepsini hasta edebilir.",
     "explanation": "Yeni bitkide gözle görünmeyen böcek veya hastalık olabilir. İlk bir iki hafta diğerlerinden ayrı tut ve yaprakların altını kontrol et. Sorun yoksa aralarına kat.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5111,7 +5111,7 @@
     "id": "kt-0284",
     "day": 284,
     "concept": "Balkon saksısını gruplama",
-    "verse": "Balkondaki saksıları köşe köşe dağıtıyorsan bitkilerin işini zorlaştırıyorsun. Onları bir araya getirmenin şaşırtıcı bir faydası var.",
+    "verse": "Balkondaki saksıları köşe köşe dağıtmak bitkilerin işini zorlaştırıyor. Bir araya toplamanın faydası şaşırtıcı.",
     "explanation": "Saksıları bir araya topla. Birlikte nemi paylaşır ve rüzgarda daha yavaş kururlar. Uzun bitkileri arkaya, kısaları öne diz. Her biri ışık alır ve sulaması kolaylaşır.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5130,7 +5130,7 @@
     "id": "kt-0285",
     "day": 285,
     "concept": "Karınca yolu sirke",
-    "verse": "Mutfağına giren karıncaları tek tek ezmeye çalışmak hiçbir işe yaramıyor. Onları bir daha gelmeyecek şekilde göndermenin yolu bambaşka.",
+    "verse": "Mutfağa giren karıncaları tek tek ezmek hiçbir işe yaramıyor. Onları temelli göndermenin yolu bambaşka.",
     "explanation": "Karıncalar feromon iziyle birbirini takip eder. Yarım su yarım beyaz sirke karışımını karınca yoluna ve giriş noktalarına sür. Koku haritası silinir. Mermerde sirke kullanma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5149,7 +5149,7 @@
     "id": "kt-0286",
     "day": 286,
     "concept": "Tarçın karınca bariyeri",
-    "verse": "Karıncalar pencere kenarından sıra olmuş içeri giriyorsa ilaca gerek yok. Mutfağındaki bir baharat onlara görünmez bir duvar örüyor.",
+    "verse": "Karıncalar pencere kenarından sıra olmuş giriyorsa ilaca gerek yok. Mutfaktaki bir baharat görünmez duvar örüyor.",
     "explanation": "Karıncalar tarçın kokusundan kaçar. Pencere kenarına, kapı eşiğine ve giriş çizgisine toz tarçın serp. Görünmez bir bariyer olur ve sırayı dağıtır. Kokusu geçince tazele.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5168,7 +5168,7 @@
     "id": "kt-0287",
     "day": 287,
     "concept": "Defne yaprağı güve",
-    "verse": "Un ve bakliyat kavanozlarında kurtlanma başladıysa kileri ilaçlamana gerek yok. Tek bir yaprak bütün dolabı koruyor desek inanır mısın?",
+    "verse": "Un ve bakliyat kavanozlarında kurtlanma başladıysa ilaca gerek yok. Tek bir yaprak bütün dolabı koruyor.",
     "explanation": "Un, bulgur, pirinç ve makarna kavanozlarına birer defne yaprağı koy. Defnenin kokusu mutfak güvesini caydırır, gıdaya zarar vermez. Açılan paketleri kapaklı cam kavanoza al.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5187,7 +5187,7 @@
     "id": "kt-0288",
     "day": 288,
     "concept": "Lavanta dolap güvesi",
-    "verse": "Yünlü kazakların dolapta delik deşik oluyorsa suçlu güve demektir. Naftalinin ağır kokusuna katlanmadan onları uzak tutmanın yolu var.",
+    "verse": "Yünlü kazakların dolapta delik deşik oluyorsa suçlu güve. Naftalin kokusuna katlanmadan onları uzak tutabilirsin.",
     "explanation": "Giysi güvesi lavanta kokusundan kaçar. Kuru lavanta ya da lavanta yağı damlatılmış bez keseyi kazak aralarına koy. Kazakları yıkayıp kaldır. Güve kirli yünü sever.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5206,7 +5206,7 @@
     "id": "kt-0289",
     "day": 289,
     "concept": "Limon karanfil sinek",
-    "verse": "Yaz akşamları sinekler yüzünden sofrada oturamaz hale geldiysen çözüm mutfağında. Masaya koyacağın tek bir şey onları uzaklaştırıyor.",
+    "verse": "Yaz akşamları sinekler yüzünden sofrada oturamıyorsan çözüm mutfağında. Masaya koyacağın tek şey yetiyor.",
     "explanation": "Yarım limonun içine 8-10 tane karanfil batır ve masaya ya da pencere kenarına bırak. Karanfil ile limon kokusu karasineği caydırır. Limon kuruyunca yenisiyle değiştir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5225,7 +5225,7 @@
     "id": "kt-0290",
     "day": 290,
     "concept": "Meyve sineği tuzağı",
-    "verse": "Mutfaktaki o minik sinekler bir türlü gitmek bilmiyorsa onlara küçük bir tuzak kur. Bir kase ve iki malzemeyle hepsini toplayabilirsin.",
+    "verse": "Mutfaktaki o minik sinekler bir türlü gitmiyorsa onlara küçük bir tuzak kur. Bir kase ve iki malzeme yeter.",
     "explanation": "Küçük bir kaseye elma sirkesi koy, bir damla bulaşık deterjanı ekle, streç filmle kapat ve çatalla birkaç delik aç. Sirke sineği çeker, deterjan yüzünden içine düşer ve çıkamaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5244,7 +5244,7 @@
     "id": "kt-0291",
     "day": 291,
     "concept": "Kuru zemin böcek",
-    "verse": "Mutfağında böcek istemiyorsan yatmadan önce yapman gereken küçük bir iş var. Böcekleri asıl çeken şey yemek artığı değil bambaşka bir şey.",
+    "verse": "Mutfağında böcek istemiyorsan yatmadan önce küçük bir iş yapmalısın. Onları çeken şey yemek artığı değil.",
     "explanation": "Hamamböceği ve karıncalar suya gelir. Yatmadan önce eviyeyi kurula, su damlası bırakma, bulaşığı biriktirme, çöp kovasını kapalı tut. Kuru mutfak böcek için cazip değildir.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5263,7 +5263,7 @@
     "id": "kt-0292",
     "day": 292,
     "concept": "Diatomit toz böcek",
-    "verse": "Evdeki böceklere karşı en etkili doğal silah kimyasal bir ilaç değil. Görünüşü masum ama böceklere geçit vermeyen bir toz bu işi çözüyor.",
+    "verse": "Evdeki böceklere karşı en etkili doğal silah ilaç değil. Masum görünen bir toz bu işi kökünden çözüyor.",
     "explanation": "Gıda sınıfı diatomit tozunu duvar diplerine ve çatlaklara ince serp. Böceğin dış iskeletini aşındırıp kurutur. Serperken maske tak, tozu kuru tut, ıslanınca etkisi gider.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5282,7 +5282,7 @@
     "id": "kt-0293",
     "day": 293,
     "concept": "Çöp kovası koku böcek",
-    "verse": "Çöp kovan hem koku yapıyor hem sinekleri çağırıyorsa poşeti suçlama. Kovanın dibine sereceğin bir tutam şey iki derdi birden bitiriyor.",
+    "verse": "Çöp kovan hem kokuyor hem sinek çağırıyorsa poşeti suçlama. Kovanın dibine sereceğin bir tutam şey yetiyor.",
     "explanation": "Poşeti koymadan önce kovanın dibine bir avuç karbonat serp. Karbonat kokuyu yutar, kovayı sineğe cazip olmaktan çıkarır. Kovayı haftada bir sirkeli suyla yıkayıp kurut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5301,7 +5301,7 @@
     "id": "kt-0294",
     "day": 294,
     "concept": "Saksı sineği fazla su",
-    "verse": "Saksı topraklarından minik sinekler havalanıyorsa bil ki sebebi sensin. Farkında olmadan yaptığın bir hata onlara yuva hazırlıyor.",
+    "verse": "Saksı toprağından minik sinekler havalanıyorsa sebebi sensin. Farkında olmadan onlara yuva hazırlıyorsun.",
     "explanation": "Toprak sineği nemli toprakta ürer. Sulamayı azalt, üst 2-3 cm kuruyunca sula. Toprağın üstüne ince bir kat kum ser, dişi sinek nemli toprağa yumurtlayamaz.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5320,7 +5320,7 @@
     "id": "kt-0295",
     "day": 295,
     "concept": "Limon kabuğu çok amaçlı",
-    "verse": "Limonu sıktıktan sonra kabuğunu çöpe atıyorsan çok şey kaçırıyorsun. O kabuk mutfakta tam üç ayrı işini birden görebiliyor.",
+    "verse": "Limonu sıkınca kabuğunu çöpe atıyorsan çok şey kaçırıyorsun. O kabuk mutfakta üç ayrı işini görüyor.",
     "explanation": "Limon kabuğuyla evyeyi ovup kireci sökersin, buzdolabına koyup koku alırsın, kaynar suya atıp çaydanlık kirecini gevşetirsin. Mermer ve doğal taşta limon kullanma.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5339,7 +5339,7 @@
     "id": "kt-0296",
     "day": 296,
     "concept": "Kaymayan kesme tahtası",
-    "verse": "Kesme tahtan doğrama sırasında tezgahta kayıp duruyorsa bu ciddi bir kaza riski. Altına sereceğin tek bir şey onu yerine sabitliyor.",
+    "verse": "Kesme tahtan doğrarken tezgahta kayıp duruyorsa bu ciddi bir kaza riski. Altına sereceğin tek şey yetiyor.",
     "explanation": "Tahtanın altına nemli bir kağıt havlu veya ince bir mutfak bezi ser. Sürtünme artar, tahta doğrarken kaymaz, parmak kesme riski düşer. Silikon kaymaz altlık da aynı işi görür.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5357,7 +5357,7 @@
     "id": "kt-0297",
     "day": 297,
     "concept": "Cam kavanoz kapağı açma",
-    "verse": "Açılmayan kavanoz kapağıyla boğuşup bileğini yormana hiç gerek yok. Küçük bir fizik numarası kapağı saniyeler içinde gevşetiyor.",
+    "verse": "Açılmayan kavanoz kapağıyla boğuşup bileğini yormana gerek yok. Küçük bir fizik numarası saniyeler içinde çözüyor.",
     "explanation": "Kavanozu ters çevirip metal kapağı sıcak musluk suyunun altında 20-30 saniye tut. Metal camdan önce genleşir, kapak gevşer. Kapağa kaşık sapıyla vurmak da vakumu bozar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5375,7 +5375,7 @@
     "id": "kt-0298",
     "day": 298,
     "concept": "Buz kalıbı ot saklama",
-    "verse": "Yemekten artan maydanoz ve dereotunu solduğu için çöpe atıyorsan israfa son ver. Onları aylarca taze tutmanın çok pratik bir yolu var.",
+    "verse": "Artan maydanoz ve dereotunu soldu diye çöpe atıyorsan israfa son ver. Aylarca taze tutmanın yolu var.",
     "explanation": "Doğranmış maydanoz, dereotu ve fesleğeni buz kalıbına koy, üzerine zeytinyağı veya su dök, dondur. Yemek yaparken bir küp at, tazesi gibi olur. Aylarca dayanır, israf biter.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5394,7 +5394,7 @@
     "id": "kt-0299",
     "day": 299,
     "concept": "Yapışkan etiket çıkarma",
-    "verse": "Kavanoz etiketini söktün ama yapışkan izi bir türlü çıkmıyor değil mi? Mutfağındaki bir malzeme onu kazımadan çözüyor.",
+    "verse": "Kavanoz etiketini söktün ama yapışkan izi bir türlü çıkmıyor değil mi? Mutfağındaki bir malzeme kazımadan çözüyor.",
     "explanation": "Etiket kalıntısına biraz sıvı yağ sür, 10 dakika beklet, sonra bezle sil. Yağ yapıştırıcıyı çözer, kazımaya gerek kalmaz. İnatçı kalıntıda karbonatla macun yapıp ovala.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5413,7 +5413,7 @@
     "id": "kt-0300",
     "day": 300,
     "concept": "Çizik mobilya ceviz",
-    "verse": "Ahşap mobilyandaki o çizik her geçtiğinde gözüne batıyordur. Mutfaktaki doğal bir şey onu birkaç dakikada görünmez yapıyor.",
+    "verse": "Ahşap mobilyandaki o çizik her geçişinde gözüne batıyordur. Mutfaktaki doğal bir şey onu dakikalar içinde siliyor.",
     "explanation": "Çiziğin üzerine iç cevizi birkaç kez ovala, sonra parmağınla yedir. Cevizin yağı çiziğin içine dolar, renk koyulaşır, çizik kaybolur. Açık ve orta tonlu ahşapta işe yarar.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5432,7 +5432,7 @@
     "id": "kt-0301",
     "day": 301,
     "concept": "Statik etek çengelli iğne",
-    "verse": "Eteğin yürürken bacağına yapışıp duruyorsa yalnız değilsin. Dikiş kutundaki küçücük bir şey bu derdi anında bitiriyor.",
+    "verse": "Eteğin yürürken bacağına yapışıp duruyorsa yalnız değilsin. Dikiş kutundaki küçücük bir şey derdi bitiriyor.",
     "explanation": "Astarlı etekte statik elektrik birikir ve kumaş vücuda yapışır. Eteğin iç dikişine küçük bir çengelli iğne tak, metal yükü dağıtır. Cilde nemlendirici sürmek de yardım eder.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5451,7 +5451,7 @@
     "id": "kt-0302",
     "day": 302,
     "concept": "Yorgan için top",
-    "verse": "Yorganını yıkadıktan sonra içi top top mu oluyor? Kurutma sırasında yapacağın küçük bir hile onu ilk günkü gibi kabartıyor.",
+    "verse": "Yorganını yıkayınca içi top top mu oluyor? Kurutma sırasındaki küçük bir hile onu ilk günkü gibi kabartıyor.",
     "explanation": "Kurutma makinesine temiz bir tenis topu veya kuru havlu topu at. Dönerken içindeki tüyü sürekli döver, topaklanmayı önler. Makinen yoksa ara ara silkeleyip düz sererek kurut.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5469,7 +5469,7 @@
     "id": "kt-0303",
     "day": 303,
     "concept": "Çekmece bölme kutu",
-    "verse": "Çekmecen ne kadar toplasan da iki güne yine mi karışıyor? Çöpe atacağın şeylerle kalıcı bir düzen kurmak mümkün.",
+    "verse": "Çekmecen ne kadar toplasan da iki güne yine mi karışıyor? Çöpe atacağın şeylerle kalıcı düzen kurulabilir.",
     "explanation": "Eski ayakkabı ya da telefon kutularını kesip çekmece içine bölme yap, her eşyaya ayrı göz aç. Kalem, şarj ve çorap birbirine karışmaz. Hazır organizer almana gerek yok.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5487,7 +5487,7 @@
     "id": "kt-0304",
     "day": 304,
     "concept": "Sürahi dibi pirinç",
-    "verse": "Sürahinin dibindeki lekeye fırça bir türlü ulaşmıyor değil mi? Mutfağındaki tek bir malzeme o dibi el değmeden parlatıyor.",
+    "verse": "Sürahinin dibindeki lekeye fırça ulaşmıyor değil mi? Mutfağındaki tek malzeme o dibi el değmeden parlatıyor.",
     "explanation": "İçine biraz pirinç, bir kaşık karbonat ve az su koy, ağzını kapatıp çalkala. Pirinç tanecikleri fırçanın giremediği dibi kazır, karbonat aşındırır. Sonra bolca durula.",
     "source": "Komşu Tüyosu",
     "moods": [
@@ -5506,7 +5506,7 @@
     "id": "kt-0305",
     "day": 305,
     "concept": "Buzdolabı kasa düzen",
-    "verse": "Buzdolabını ne kadar düzenlesen de üç güne yine mi dağılıyor? Tek kuruş harcamadan kuracağın sistem her şeyi yerinde tutuyor.",
+    "verse": "Buzdolabını ne kadar düzenlesen de üç güne yine mi dağılıyor? Tek kuruş harcamadan kalıcı bir düzen kurabilirsin.",
     "explanation": "Açık plastik saklama kutularını dolap rafına yerleştir, sebzeyi, sosu ve atıştırmalığı gruplara ayır. Kutuyu çekince arkadaki eşyaya ulaşırsın, unutulup bozulan kalmaz.",
     "source": "Komşu Tüyosu",
     "moods": [

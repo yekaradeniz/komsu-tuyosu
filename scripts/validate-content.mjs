@@ -68,7 +68,9 @@ for (const e of pool) {
   if (sec > LIM.videoMaxSec) add(`video ~${sec.toFixed(1)}sn > ${LIM.videoMaxSec}sn (retention riski)`);
   if (v && !/[.?!]$/.test(v)) add('verse noktalama ile bitmiyor');
   if (x && !/[.?!]$/.test(x)) add('cevap noktalama ile bitmiyor');
-  if (/[a-zA-Z]/.test(v) && /\b(cok|icin|gibi|sey|nasil|neden)\b/.test(v)) add('verse ASCII Turkce (cok/icin/sey...) - karakter bozuk');
+  // Sadece GERCEKTEN bozuk yazimlar: "gibi"/"neden" dogru Turkce kelimeler, onlari sayma.
+  const bozuk = v.match(/\b(cok|icin|sey|nasil|guzel|kucuk|buyuk|deger|ogren|dusun|gunluk|surekli|calis)\b/g);
+  if (bozuk) add(`Turkce karakter bozuk: ${[...new Set(bozuk)].join(', ')}`);
 }
 
 const byId = {};
