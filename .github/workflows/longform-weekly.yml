@@ -35,6 +35,10 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
+      - name: Turkce karakter kontrolu
+        run: node scripts/check-turkish.mjs
+        continue-on-error: true
+
       - name: Render long-form (siradaki haftalik 5'li)
         run: npm run render:longform
         timeout-minutes: 40

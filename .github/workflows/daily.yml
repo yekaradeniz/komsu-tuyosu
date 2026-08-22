@@ -43,6 +43,10 @@ jobs:
           echo "Random delay: ${DELAY}s ($((DELAY/60)) dk)"
           sleep $DELAY
 
+      - name: Turkce karakter kontrolu (tum icerik)
+        run: node scripts/check-turkish.mjs
+        continue-on-error: true
+
       - name: Icerik kontrolu (siradaki video, uyari)
         run: node scripts/validate-content.mjs --next 1
         continue-on-error: true
