@@ -1,16 +1,14 @@
 {
   "launchDate": "2026-06-01",
   "lastPost": {
-    "date": "2026-08-21",
-    "verseId": "kt-0107",
-    "photoId": "pexels-5901672",
-    "postId": "oL_dKrz4yvE",
+    "date": "2026-08-22",
+    "verseId": "kt-0108",
+    "photoId": "pexels-10474617",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/oL_dKrz4yvE"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-7291131",
     "pexels-7760059",
     "pexels-36707295",
     "pexels-8756703",
@@ -23,7 +21,8 @@
     "pexels-9467020",
     "pexels-6032170",
     "pexels-36182861",
-    "pexels-5901672"
+    "pexels-5901672",
+    "pexels-10474617"
   ],
   "postedVerseIds": [
     "kt-0001",
@@ -132,7 +131,8 @@
     "kt-0104",
     "kt-0105",
     "kt-0106",
-    "kt-0107"
+    "kt-0107",
+    "kt-0108"
   ],
   "usedVideoIds": [
     "pexels-6863732",
@@ -243,9 +243,10 @@
     "pexels-9467020",
     "pexels-6032170",
     "pexels-36182861",
-    "pexels-5901672"
+    "pexels-5901672",
+    "pexels-10474617"
   ],
-  "audioIndex": 0,
+  "audioIndex": 1,
   "lastSuccessfulPostId": "oL_dKrz4yvE",
   "cooldownUntil": null
 }
