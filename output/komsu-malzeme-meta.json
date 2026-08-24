@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 17,
-  "episodeNo": 18,
-  "videoTitle": "Çayın Bilmediğin 5 Pratik Kullanımı",
-  "material": "Çay",
-  "thumbTop": "Evde Çay",
+  "index": 18,
+  "episodeNo": 19,
+  "videoTitle": "Soğanın Mutfak Dışı 5 Kullanımı",
+  "material": "Soğan",
+  "thumbTop": "Evde Soğan",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-018-1",
-      "keyword": "Koku",
-      "title": "Çayla Kötü Kokuyu Al",
-      "start": 6
+      "id": "mz-019-1",
+      "keyword": "Izgara",
+      "title": "Soğanla Camı Tertemiz Yap",
+      "start": 5
     },
     {
-      "id": "mz-018-2",
-      "keyword": "Ahşap",
-      "title": "Çayla Ahşabı Canlandır",
-      "start": 65
+      "id": "mz-019-2",
+      "keyword": "Pas",
+      "title": "Soğanla Pası Sök",
+      "start": 61
     },
     {
-      "id": "mz-018-3",
-      "keyword": "Bitki",
-      "title": "Çay Telvesiyle Bahçeyi Besle",
+      "id": "mz-019-3",
+      "keyword": "Boya",
+      "title": "Soğan Kabuğuyla Yumurta Boya",
       "start": 121
     },
     {
-      "id": "mz-018-4",
-      "keyword": "Yağ",
-      "title": "Yağlı Tencereyi Çayla Aç",
-      "start": 181
+      "id": "mz-019-4",
+      "keyword": "Buğu",
+      "title": "Soğanla Camın Buğusunu Kes",
+      "start": 179
     },
     {
-      "id": "mz-018-5",
-      "keyword": "Göz",
-      "title": "Şişmiş Gözü Çayla İndir",
+      "id": "mz-019-5",
+      "keyword": "Boya Kokusu",
+      "title": "Soğanla Boya Kokusunu Yut",
       "start": 236
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 299
+  "durationSec": 300
 }
