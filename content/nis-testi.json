@@ -1,0 +1,542 @@
+[
+  {
+    "id": "nt-001",
+    "niche": "hayvan",
+    "concept": "Karınca kolonisi",
+    "verse": "Karınca kolonisinde kimse emir vermez, kraliçe bile. Peki binlerce karınca yiyeceğe giden en kısa yolu nasıl buluyor?",
+    "explanation": "Yolu feromon izi seçiyor. Kısa yoldan gidenler aynı sürede daha çok tur atar, izi kalınlaştırır; koloni saatler içinde en kısa rotada birleşir.",
+    "pexelsQuery": [
+      "ants close up macro",
+      "ant colony trail ground",
+      "ants carrying food",
+      "insect macro soil"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-002",
+    "niche": "hayvan",
+    "concept": "Ana arı seçimi",
+    "verse": "Kovandaki her dişi larva aslında kraliçe olabilecek şekilde doğar. Peki hangisinin kraliçe olacağına ne karar veriyor?",
+    "explanation": "Kararı beslenme veriyor: larva evresi boyunca arı sütüyle beslenen larva kraliçeye dönüşür. İşçi arı yazın altı hafta yaşar, kraliçe yıllarca yumurtlar.",
+    "pexelsQuery": [
+      "bees honeycomb close up",
+      "beehive frame bees",
+      "honeybee macro flower",
+      "beekeeper hive vertical"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-003",
+    "niche": "hayvan",
+    "concept": "Ahtapot zekası",
+    "verse": "Ahtapot kapalı bir kavanozun kapağını içeriden çevirip açabiliyor. Peki bu işi tek bir beyinle mi yönetiyor?",
+    "explanation": "Sinir hücrelerinin üçte ikisi kollarında. Yaklaşık 500 milyon nöronun 350 milyonu sekiz kola dağılmış; her kol dokunduğu şeyi kendi başına tanıyıp karar verir.",
+    "pexelsQuery": [
+      "octopus underwater close up",
+      "octopus tentacles reef",
+      "octopus swimming ocean",
+      "sea creature underwater macro"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-004",
+    "niche": "hayvan",
+    "concept": "Kedi miyavlaması",
+    "verse": "Yetişkin kediler birbirine neredeyse hiç miyavlamaz, sana ise sürekli miyavlar. Peki bu sesi neden sana saklıyor?",
+    "explanation": "Miyavlama insana yönelik gelişti. Yavru kedi annesini çağırmak için miyavlar, büyüyünce kediler arasında bırakır; evdeki kedi sen tepki verdikçe sürdürür.",
+    "pexelsQuery": [
+      "cat meowing close up",
+      "domestic cat face portrait",
+      "cat eyes macro",
+      "cat looking at camera indoor"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-005",
+    "niche": "hayvan",
+    "concept": "Yusufçuk avı",
+    "verse": "Yusufçuk havadaki bir sineği avlamaya kalktığında neredeyse hiç ıskalamaz. Peki bu isabetin sırrı ne?",
+    "explanation": "Avının peşinden gitmez, nereye varacağını hesaplar. Beyni sineğin rotasını önceden kestirip kesişme noktasına uçar; ölçülen başarı oranı yüzde 95.",
+    "pexelsQuery": [
+      "dragonfly close up macro",
+      "dragonfly wings sunlight",
+      "dragonfly on reed pond",
+      "flying insect macro nature"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-006",
+    "niche": "para",
+    "concept": "Ampul ve fatura",
+    "verse": "Evdeki eski ampulleri değiştirmeyi hep erteliyorsun. Peki o ampuller faturandan ne kadar götürüyor?",
+    "explanation": "LED ampul aynı ışığı akkor ampulün en az yüzde 75 daha az elektriğiyle verir ve 25 kat uzun ömürlüdür. Yani tek LED, 25 ampulün parasını kurtarır.",
+    "pexelsQuery": [
+      "person changing light bulb",
+      "light bulb close up",
+      "electricity meter reading",
+      "woman switching off lamp"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-007",
+    "niche": "para",
+    "concept": "Çamaşır yıkama sıcaklığı",
+    "verse": "Çamaşır makinesini hep 60 derecede çalıştırıyorsun, daha temiz olsun diye. Peki bu alışkanlık kaça mal oluyor?",
+    "explanation": "Çamaşır makinesinin harcadığı enerjinin yüzde 90'ı suyu ısıtmaya gider, dönmeye değil. Günlük kirlilikte 30 derece yeter, sıcaklığı düşürünce fatura da düşer.",
+    "pexelsQuery": [
+      "woman loading washing machine",
+      "laundry basket clothes",
+      "washing machine control panel",
+      "hands sorting laundry"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-008",
+    "niche": "para",
+    "concept": "Damlayan musluk maliyeti",
+    "verse": "Mutfaktaki musluk damlıyor ama sen buna küçük bir dert deyip aylardır bakmıyorsun. Bir damla ne tutar ki?",
+    "explanation": "Saniyede bir damla akan musluk yılda 11 bin litre su harcar, yani 60 küvet dolusu. Musluk contası ise evdeki en ucuz yedek parçalardan biridir.",
+    "pexelsQuery": [
+      "dripping faucet close up",
+      "water tap running",
+      "hands fixing kitchen sink",
+      "water bill calculator"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-009",
+    "niche": "para",
+    "concept": "Markette birim fiyat",
+    "verse": "Markette hep büyük boy paketi alıyorsun, çünkü büyüğü daha hesaplı sanıyorsun. Etikette bunu çürüten bir satır var.",
+    "explanation": "Raf etiketindeki birim fiyat satırına bak, kilo ya da litre başına düşen gerçek fiyat orada yazar. Yasal zorunluluktur ve büyük paketin her zaman ucuz olmadığını gösterir.",
+    "pexelsQuery": [
+      "woman comparing products supermarket",
+      "supermarket shelf price tag",
+      "shopping cart grocery aisle",
+      "hands holding grocery package"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-010",
+    "niche": "para",
+    "concept": "Küçük alışkanlığın maliyeti",
+    "verse": "Günde bir kahve, bir simit derken hiçbiri bütçeni sarsmıyor gibi görünüyor. Peki yıl sonunda toplamı ne yapar?",
+    "explanation": "Günlük harcamayı 365 ile çarp, gerçek rakam orada çıkar: günde 50 lira yılda 18.250 lira eder. En tehlikeli masraf, tek seferde büyük olan değil, her gün tekrarlanandır.",
+    "pexelsQuery": [
+      "counting money hands close up",
+      "coffee cup cafe counter",
+      "wallet coins close up",
+      "calculator budget notebook"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-011",
+    "niche": "vucut",
+    "concept": "Hapşırma refleksi",
+    "verse": "Hapşırırken gözlerini açık tutmayı denedin mi? Beyin sen istemeden kapakları kapatıyor, peki neden?",
+    "explanation": "Beyin sapı hapşırma emrini tek pakette yollar: diyafram, göğüs kasları ve göz kapakları aynı anda tetiklenir. Gözün yerinden fırlaması ise efsane.",
+    "pexelsQuery": [
+      "woman sneezing tissue",
+      "close up face portrait",
+      "person nose allergy vertical",
+      "human eye blinking closeup"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-012",
+    "niche": "vucut",
+    "concept": "REM uykusu felci",
+    "verse": "Rüyanda koşarken yatağında hiç kıpırdamıyorsun. Bedenini gece boyunca kim frenliyor dersin?",
+    "explanation": "REM evresinde beyin sapı omurilikteki motor sinirleri baskılar, kolların ve bacakların geçici olarak felç olur. Sadece göz kasları ve diyafram çalışır.",
+    "pexelsQuery": [
+      "woman sleeping bed night",
+      "person sleeping dark room",
+      "closed eyes resting face",
+      "brain scan animation vertical"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-013",
+    "niche": "vucut",
+    "concept": "Kapı eşiği etkisi",
+    "verse": "Mutfağa girdin ve ne almaya geldiğini o anda unuttun. Bunun suçlusu ne hafızan ne de yaşın.",
+    "explanation": "Beyin bir kapıdan geçince olayı kapatıp yeni bir bölüm açar, önceki odadaki hedef arka plana düşer. Psikolojide buna kapı eşiği etkisi deniyor.",
+    "pexelsQuery": [
+      "woman walking through doorway",
+      "person entering kitchen home",
+      "confused woman thinking",
+      "hand opening door closeup"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-014",
+    "niche": "vucut",
+    "concept": "Uyuşan bacak",
+    "verse": "Bacağın uyuştuktan sonra o karıncalanma neden hemen geçmiyor? Uyuşan şey aslında kasların değil.",
+    "explanation": "Baskı, sinir lifindeki sinyal iletimini durdurur. Baskı kalkınca lifler düzensiz ateşler, beyin bunu karıncalanma diye okur ve birkaç dakikada diner.",
+    "pexelsQuery": [
+      "person sitting cross legged floor",
+      "hand massaging leg",
+      "man stretching legs closeup",
+      "nerve anatomy animation"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-015",
+    "niche": "vucut",
+    "concept": "Susuzluk sinyali",
+    "verse": "Su içer içmez susuzluğun geçiyor, oysa su kana dakikalar sonra karışıyor. Beyin bunu nasıl biliyor?",
+    "explanation": "Ağzındaki ve boğazındaki reseptörler yutkunmalarını sayıp beyne anında bildirir. Susuzluk merkezi, su daha mideden emilmeden sinyali kapatır.",
+    "pexelsQuery": [
+      "woman drinking water bottle",
+      "close up drinking glass",
+      "person pouring water vertical",
+      "man drinking after workout"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-016",
+    "niche": "uzay",
+    "concept": "Venüs'te gün ve yıl",
+    "verse": "Güneş sistemindeki bir gezegende gün, yıldan daha uzun sürüyor. Sence bu hangi gezegen olabilir?",
+    "explanation": "Venüs. Kendi ekseninde bir turunu 243 Dünya gününde tamamlıyor, Güneş çevresindeki turunu ise 225 günde. Yani günü, yılından 18 gün uzun.",
+    "pexelsQuery": [
+      "planet space animation",
+      "solar system planets",
+      "night sky planet",
+      "galaxy stars space"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-017",
+    "niche": "uzay",
+    "concept": "Güneş ışığının yolculuğu",
+    "verse": "Gökyüzünde gördüğün Güneş, aslında onun şu anki hâli değil. Peki kaç dakika öncesini izliyorsun?",
+    "explanation": "Güneş ışığı Dünya'ya 8 dakika 20 saniyede ulaşıyor. Işık saniyede 300 bin kilometre yol alıyor, aradaki 150 milyon kilometreyi bu sürede geçiyor.",
+    "pexelsQuery": [
+      "sun sky rays",
+      "sunlight clouds sky",
+      "sun space solar",
+      "sunrise sky timelapse"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-018",
+    "niche": "uzay",
+    "concept": "Kara delikte zaman",
+    "verse": "Bir kara deliğe yaklaşan astronot için zaman, senin saatinle aynı hızda akmaz. Peki bunu ne yavaşlatıyor?",
+    "explanation": "Kütleçekim zamanı yavaşlatıyor. Olay ufkuna yaklaştıkça, uzaktan bakan biri için astronotun saati giderek yavaşlar. Einstein 1915'te öngördü, atom saatleri doğruladı.",
+    "pexelsQuery": [
+      "black hole space",
+      "galaxy space stars",
+      "deep space nebula",
+      "universe stars motion"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-019",
+    "niche": "uzay",
+    "concept": "Nötron yıldızı yoğunluğu",
+    "verse": "Evrende öyle bir madde var ki, bir çay kaşığı dolusu milyarlarca ton çekiyor. Bu madde nerede bulunuyor?",
+    "explanation": "Nötron yıldızlarında. Ağır bir yıldız çöktüğünde geriye çapı 20 kilometre olan bir küre kalıyor ve bu kürenin çay kaşığı kadarı yaklaşık 1 milyar ton geliyor.",
+    "pexelsQuery": [
+      "stars galaxy space",
+      "supernova space explosion",
+      "glowing stars night sky",
+      "nebula cosmos stars"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-020",
+    "niche": "uzay",
+    "concept": "Evrenin büyüklüğü",
+    "verse": "Evren yaklaşık 14 milyar yıl önce doğdu ama görebildiğimiz kısmı çok daha geniş. Bunun sebebi ne olabilir?",
+    "explanation": "Uzayın kendisi genişliyor. Işık yola çıktıktan sonra aradaki mesafe de büyüdüğü için gözlenebilir evrenin çapı 93 milyar ışık yılına ulaşıyor.",
+    "pexelsQuery": [
+      "milky way night sky",
+      "galaxy universe space",
+      "star trails timelapse",
+      "telescope night stars"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-021",
+    "niche": "tarih",
+    "concept": "Boston pekmez seli",
+    "verse": "1919'da Boston'da bir sokağı saatte 56 kilometre hızla dev bir dalga bastı. İçindeki şey su değildi.",
+    "explanation": "Depodaki dev tank patladı ve 8,7 milyon litre melas, yani koyu şeker pekmezi sokağa aktı. 21 kişi öldü, 150 kişi yaralandı.",
+    "pexelsQuery": [
+      "vintage city street",
+      "old brick warehouse",
+      "thick syrup pouring",
+      "antique newspaper pages"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-022",
+    "niche": "tarih",
+    "concept": "Mikrodalga fırının doğuşu",
+    "verse": "1945'te bir mühendis radar cihazının önünde dururken cebindeki çikolata eridi. Her mutfakta duran o alet böyle doğdu.",
+    "explanation": "Percy Spencer erimeyi fark edip magnetron dalgalarıyla mısır patlattı. İlk mikrodalga fırın 1947'de satışa çıktı ve 340 kilo ağırlığındaydı.",
+    "pexelsQuery": [
+      "old radio equipment",
+      "vintage laboratory",
+      "melting chocolate",
+      "retro kitchen"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-023",
+    "niche": "tarih",
+    "concept": "Kot pantolondaki küçük cep",
+    "verse": "Kot pantolonunun sağ cebinin içinde küçücük bir cep daha var. Hiç kullanmıyorsun ama oraya konan bir şey vardı.",
+    "explanation": "O küçük cep, cep saatleri için yapıldı. Levi Strauss ile Jacob Davis'in 1873'te patentini aldığı ilk kot pantolonlarda vardı; kol saati yayılınca işlevsiz kaldı.",
+    "pexelsQuery": [
+      "denim jeans closeup",
+      "antique pocket watch",
+      "vintage sewing machine",
+      "old workshop tools"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-024",
+    "niche": "tarih",
+    "concept": "İnsan çalar saat mesleği",
+    "verse": "Bir zamanlar İngiltere'de insanları sabah uyandırmak ayrı bir meslekti. Bu işi yapanlar kapıyı bile çalmıyordu.",
+    "explanation": "Uzun bambu sopalarla yatak odası pencerelerine vururlardı. Knocker-up denen bu meslek Sanayi Devrimi'nde doğdu, bazı fabrika kasabalarında 1950'lere kadar sürdü.",
+    "pexelsQuery": [
+      "foggy old street",
+      "old brick houses",
+      "vintage window rain",
+      "antique wall clock"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-025",
+    "niche": "tarih",
+    "concept": "Mamutlar ve piramitler",
+    "verse": "Büyük Piramit'in dikilişinden yaklaşık 900 yıl sonra dünyada hâlâ mamutlar yaşıyordu. Nerede olduklarını bilen çok az.",
+    "explanation": "Son mamutlar Sibirya kıyısındaki Wrangel Adası'nda yaşadı ve yaklaşık MÖ 1650'de yok oldu. Giza'daki Büyük Piramit ise MÖ 2560 civarında tamamlanmıştı.",
+    "pexelsQuery": [
+      "egyptian pyramids",
+      "desert sand dunes",
+      "arctic tundra snow",
+      "ancient stone carving"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-026",
+    "niche": "iliski",
+    "concept": "Küçük İlgi Anları",
+    "verse": "Partnerin ufak bir şey anlatır, sen telefondan başını kaldırmazsın. Araştırmacılar tam bu anı ölçtü.",
+    "explanation": "Evli kalan çiftler bu küçük ilgi çağrılarına %86 oranında karşılık verdi, ayrılanlarda oran %33'tü. Fark büyük jestlerde değil.",
+    "pexelsQuery": [
+      "couple talking on sofa",
+      "person distracted by phone",
+      "man listening carefully",
+      "couple at home evening"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-027",
+    "niche": "iliski",
+    "concept": "Tartışmanın İlk Dakikası",
+    "verse": "Bir kavganın sonunu ilk cümleden anlamak mümkün mü? Araştırmacı sadece ilk üç dakikayı izleyip tahmin etti.",
+    "explanation": "Tahminlerin %96'sı tuttu. Sert başlayan tartışma sert bitiyor; sonucu belirleyen kavganın konusu değil, ilk cümlenin tonu.",
+    "pexelsQuery": [
+      "couple arguing at home",
+      "tense conversation two people",
+      "woman upset talking",
+      "couple sitting apart"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-028",
+    "niche": "iliski",
+    "concept": "İşe Yarayan Özür",
+    "verse": "Özür diledin ama karşındaki hâlâ kırgın. Peki bir özrün hangi parçası gerçekten işe yarıyor?",
+    "explanation": "Sorumluluğu açıkça üstlenmek: hatalıydım, bunu ben yaptım. 755 kişilik çalışmada en zayıf parça 'beni affeder misin' cümlesi çıktı.",
+    "pexelsQuery": [
+      "man apologizing to woman",
+      "couple holding hands table",
+      "serious conversation cafe",
+      "woman turning away upset"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-029",
+    "niche": "iliski",
+    "concept": "Kıskançlık Döngüsü",
+    "verse": "Partnerinin sosyal medyasını bir kontrol edeyim dedin, sonra bir daha. Bu içini rahatlatıyor mu?",
+    "explanation": "Tam tersi: 308 kişilik çalışmada takip süresi arttıkça kıskançlık da artıyor. Kontrol belirsizliği azaltmıyor, yenisini üretiyor.",
+    "pexelsQuery": [
+      "woman scrolling phone night",
+      "person checking phone worried",
+      "hand holding phone dark",
+      "woman thinking by window"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-030",
+    "niche": "iliski",
+    "concept": "Sınır Koyan Cümle",
+    "verse": "Birine hayır demen gerekiyor ama hep 'yapamam' diyorsun. Tek kelimeyi değiştirsen ne olur?",
+    "explanation": "'Yapamam' yerine 'yapmam' de. Küçük bir deneyde 'yapmam' diyenlerin %80'i kararında kaldı, ötekilerde %10. Biri kural, diğeri engel bildirir.",
+    "pexelsQuery": [
+      "woman saying no gesture",
+      "two friends serious talk",
+      "person refusing request",
+      "confident woman indoors"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  }
+]
