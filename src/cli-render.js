@@ -16,9 +16,14 @@ import { generateVoice, getAudioDuration } from './generateVoice.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const content = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-tuyosu.json'), 'utf-8'));
+// NIS TESTI: 13:00 slotu farkli bir icerik havuzundan (nis-testi.json) cekiyor.
+// CONTENT_FILE/STATE_FILE env'i verilmezse normal ev tuyosu akisi calisir.
+const CONTENT_FILE = process.env.CONTENT_FILE || 'komsu-tuyosu.json';
+const STATE_FILE = process.env.STATE_FILE || 'log.json';
+const content = JSON.parse(readFileSync(join(ROOT, 'content', CONTENT_FILE), 'utf-8'));
+console.log(`Icerik havuzu: ${CONTENT_FILE} | state: ${STATE_FILE}`);
 const photos = JSON.parse(readFileSync(join(ROOT, 'content', 'photos.json'), 'utf-8'));
-const statePath = join(ROOT, 'output', 'log.json');
+const statePath = join(ROOT, 'output', STATE_FILE);
 const state = readState(statePath);
 const today = new Date().toISOString().slice(0, 10);
 const launchDate = state.launchDate ?? today;
@@ -40,7 +45,7 @@ if (pendingRetry) {
   const postedSet = new Set(state.postedVerseIds);
   const unposted = content.filter(e => !postedSet.has(e.id));
   if (unposted.length === 0) {
-    throw new Error(`Tüm uygun günler paylaşıldı. komsu-tuyosu.json bitti.`);
+    throw new Error(`Tum icerik paylasildi: ${CONTENT_FILE} bitti.`);
   }
   entry = unposted[0];
 
@@ -54,7 +59,7 @@ if (pendingRetry) {
     if (!hasExplanation) missing.push('explanation (mânâ)');
     throw new Error(
       `${entry.id} icin eksik alan(lar): ${missing.join(', ')}. ` +
-      `content/komsu-tuyosu.json'a doldurun, sonra workflow'u tekrar tetikleyin. ` +
+      `content/${CONTENT_FILE}'a doldurun, sonra workflow'u tekrar tetikleyin. ` +
       `Post atilmadi (sira korunuyor).`
     );
   }

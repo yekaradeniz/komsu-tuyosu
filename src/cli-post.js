@@ -13,8 +13,10 @@ import { uploadToYoutube } from './uploadToYoutube.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const content = JSON.parse(readFileSync(join(ROOT, 'content', 'komsu-tuyosu.json'), 'utf-8'));
-const statePath = join(ROOT, 'output', 'log.json');
+const CONTENT_FILE = process.env.CONTENT_FILE || 'komsu-tuyosu.json';
+const STATE_FILE = process.env.STATE_FILE || 'log.json';
+const content = JSON.parse(readFileSync(join(ROOT, 'content', CONTENT_FILE), 'utf-8'));
+const statePath = join(ROOT, 'output', STATE_FILE);
 const state = readState(statePath);
 
 if (!state.lastPost?.date) {

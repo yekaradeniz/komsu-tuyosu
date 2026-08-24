@@ -5520,5 +5520,1355 @@
       "woman arranging fridge"
     ],
     "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0306",
+    "topic": "tasarruf",
+    "concept": "Su sayacı kaçak testi",
+    "verse": "Evde tek damla su kullanmasan bile sayacın dönüyor olabilir. Bunu on dakikada kendin kontrol edebilirsin.",
+    "explanation": "Bütün muslukları kapat, su sayacındaki rakamı not et ve iki saat suya dokunma. Rakam değiştiyse gizli bir kaçak var; önce klozet haznesine bak, geçmezse tesisatçı çağır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman checking water meter",
+      "water tap running home",
+      "woman bathroom sink water",
+      "home plumbing pipes"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0307",
+    "topic": "tasarruf",
+    "concept": "Kombi radyatör derecesi",
+    "verse": "Kombinin radyatör suyu kaç dereceye ayarlı, hiç baktın mı? O tek rakam gaz faturanı doğrudan belirliyor.",
+    "explanation": "Yoğuşmalı kombide radyatör suyunu 80 yerine 60-65 dereceye çek. Kombi yoğuşma moduna girer, ev yine ısınır, gaz tüketimi düşer. Yıllık bakımı yetkili servise yaptır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman adjusting home boiler",
+      "home radiator heating",
+      "woman warm home winter",
+      "home thermostat control"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0308",
+    "topic": "tasarruf",
+    "concept": "Bulaşık makinesi eko programı",
+    "verse": "Bulaşık makinende hep en kısa programa mı basıyorsun? O alışkanlık her yıkamada faturana zam yapıyor.",
+    "explanation": "Eko programı seç. Suyu düşük derecede yavaş ısıttığı için makinenin en az elektrik ve su harcayan programıdır; enerji etiketi de ona göre ölçülür.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman loading dishwasher",
+      "dishwasher kitchen home",
+      "woman pressing dishwasher button",
+      "housewife kitchen dishes"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0309",
+    "topic": "tasarruf",
+    "concept": "Klima filtresi tozu",
+    "verse": "Klima saatlerdir çalışıyor ama oda bir türlü serinlemiyor mu? Suçlu klima değil, içindeki küçük bir parça.",
+    "explanation": "Klimayı kapat, ön kapağı kaldır, tozlu filtreleri çıkarıp ılık suyla yıka ve tam kuruyunca tak; ayda bir tekrarla. Tıkalı filtre hava akışını keser, cihaz daha çok elektrik çeker.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman cleaning air conditioner filter",
+      "air conditioner home wall",
+      "woman air conditioner remote",
+      "hot summer living room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0310",
+    "topic": "tasarruf",
+    "concept": "Termosifon 60 derece",
+    "verse": "Termosifonun termostatını en yükseğe çekip öyle mi bırakıyorsun? O ayar sana her ay sessizce para kaybettiriyor.",
+    "explanation": "Termostatı 60 dereceye ayarla. Daha yükseği elektriği ve kireç birikimini artırır, daha düşüğü depoda bakteri riski yaratır. Cihazın içine müdahale gerekirse elektrikçi çağır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "water heater bathroom home",
+      "woman hot water tap",
+      "bathroom shower hot water",
+      "woman adjusting water heater"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0311",
+    "topic": "market",
+    "concept": "Raf etiketinde birim fiyat",
+    "verse": "Büyük boy paket her zaman daha ucuz değil. Raf etiketinde çoğu kişinin bakmadığı bir sayı var.",
+    "explanation": "Etiketin köşesindeki birim fiyata bak, kilo veya litre fiyatını yazar. İki paketi bu sayıyla karşılaştır, büyük boy bazen pahalı çıkar.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman comparing grocery prices",
+      "woman reading product label supermarket",
+      "woman shopping supermarket shelf",
+      "housewife grocery shopping"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0312",
+    "topic": "market",
+    "concept": "Göz hizası rafı",
+    "verse": "Markette gözünün hizasındaki ürünü almak neden pahalıya geliyor? Raflar rastgele dizilmiyor.",
+    "explanation": "Göz hizasındaki rafa en pahalı markalar dizilir. Eğilip alt rafa, uzanıp üst rafa bak; market markası ve ekonomik boylar orada durur.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman reaching supermarket shelf",
+      "woman choosing product grocery shelf",
+      "supermarket aisle shelves",
+      "woman grocery store aisle"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0313",
+    "topic": "market",
+    "concept": "Liste ve tok alışveriş",
+    "verse": "Aç karnına markete girince sepet kendiliğinden doluyor. Bunu iki basit alışkanlık bitiriyor.",
+    "explanation": "Alışverişten önce bir şey ye ve listeni reyon sırasına göre yaz. Tok gezince dürtüsel alım azalır, sıralı liste seni her koridora sokmaz.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman writing shopping list kitchen",
+      "woman shopping list supermarket",
+      "woman pushing grocery cart",
+      "housewife planning groceries"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0314",
+    "topic": "market",
+    "concept": "Etiket ve kasa farkı",
+    "verse": "Kasada okunan fiyat raf etiketinden yüksekse ne yapıyorsun? Burada yasal bir hakkın var.",
+    "explanation": "Etiket ile kasa fiyatı farklıysa yasaya göre düşük olan uygulanır. Etiketin fotoğrafını çek, kasada göster, olmazsa tüketici hakem heyetine git.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman at supermarket checkout",
+      "woman paying cashier grocery store",
+      "woman holding grocery receipt",
+      "supermarket cashier counter"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0315",
+    "topic": "market",
+    "concept": "İndirimde stok tuzağı",
+    "verse": "İndirimli üründen üçer beşer almak her zaman kazanç değil. Sepete atmadan önce bir soru sor.",
+    "explanation": "Stoklamadan önce sor: bunu tarihi geçmeden bitirir miyim? Kuru gıda ve deterjanda stok kârlı, sütte ve sebzede bozulan ürün indirimi siler.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman with full shopping cart",
+      "supermarket discount shelf",
+      "woman organizing pantry shelves",
+      "woman unpacking grocery bags"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0316",
+    "topic": "gida-saklama",
+    "concept": "Buzlukta düz dondurma",
+    "verse": "Buzluktan çıkardığın kıyma çözülsün diye saatlerce mi bekliyorsun? Poşete koyarken yaptığın bir hata bunun sebebi.",
+    "explanation": "Kıymayı poşete koyup elinle iki parmak kalınlığında yay, havasını çıkar, tepside yatık dondur. Buzdolabında 3-4 saatte çözülür, donunca dosya gibi dik dizersin.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman putting food in freezer",
+      "freezer storage bags kitchen",
+      "housewife organizing freezer",
+      "woman kitchen meal prep"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0317",
+    "topic": "gida-saklama",
+    "concept": "Kavanozda dondurma payı",
+    "verse": "Buzluğa koyduğun cam kavanoz çatlayıp içindekini döktü mü hiç? Kapağı kapatmadan önce atladığın bir ayrıntı var.",
+    "explanation": "Kavanozu ağzına kadar doldurma, üstte 2-3 santim boşluk bırak. Su donarken hacmi yüzde 9 büyür, ağzına kadar dolu kavanoz bu basınçla çatlar. Düz kenarlı kavanoz seç.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman filling glass jar",
+      "glass jars food storage kitchen",
+      "housewife kitchen jars",
+      "woman closing jar lid"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0318",
+    "topic": "gida-saklama",
+    "concept": "Son tüketim tarihi farkı",
+    "verse": "Tarihi bir gün geçmiş makarnayı hemen çöpe mi atıyorsun? Paketteki iki ayrı tarih iki ayrı anlama geliyor.",
+    "explanation": "Son tüketim tarihi geçen ürünü at, tavsiye edilen tüketim tarihi ise kalite sınırıdır. Makarna, pirinç, bal ve sağlam konserve o tarihten sonra da yenir; kutu şişkinse atacaksın.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman reading food label",
+      "woman checking pantry shelf",
+      "pasta rice jars pantry",
+      "woman holding canned food"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0319",
+    "topic": "gida-saklama",
+    "concept": "Sebze artığı poşeti",
+    "verse": "Soğan kabuğunu, havuç ucunu, pırasa yeşilini çöpe atıyorsun değil mi? O artıklar bir tencere yemeklik değer taşıyor.",
+    "explanation": "Temiz sebze artıklarını buzlukta bir poşette biriktir, poşet dolunca 1 litre suyla 40 dakika kaynatıp süz. Bedava sebze suyun olur, küflü ve çürük parçayı poşete koyma.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman chopping vegetables kitchen",
+      "vegetable peels cutting board",
+      "woman making soup pot",
+      "housewife cooking vegetables"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0320",
+    "topic": "gida-saklama",
+    "concept": "Plastik kapta domates lekesi",
+    "verse": "Plastik saklama kabını domatesli yemek sarıya boyadı, kokusu da çıkmıyor mu? İkisinin de sebebi aynı.",
+    "explanation": "Yağ ve domates plastiğin gözeneklerine işler, salçalı ve yağlı yemeği cam kapta sakla. Sararmış plastiği yıkayıp bir gün güneşe bırak, güneş ışığı lekeyi soldurur.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman washing plastic container",
+      "plastic food containers kitchen",
+      "housewife cleaning kitchen counter",
+      "woman cooking tomato sauce"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0321",
+    "topic": "bitki",
+    "concept": "Gübre verme sırası",
+    "verse": "Gübreyi kuru toprağa döküp bitkinin canlanmasını mı bekliyorsun? Bu sıra köklerini yakabilir.",
+    "explanation": "Önce toprağı sula, yarım saat bekle, sonra yarım dozda sıvı gübre ver. Gübreyi ilkbahar ve yazda ayda bir uygula. Kışın bitki uyur, gübre kökte tuz gibi birikir.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman feeding houseplant fertilizer",
+      "housewife caring potted plant",
+      "woman watering indoor plant",
+      "woman with plant pot home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0322",
+    "topic": "bitki",
+    "concept": "Gölge testiyle ışık",
+    "verse": "Bitkin bakımlı olduğu halde canlanmıyorsa suçlu su değil ışık olabilir. Elinle basit bir test yapabilirsin.",
+    "explanation": "Öğlen elini bitkinin 30 santim üstünde tut. Gölge keskinse yer bol ışıklı, bulanıksa orta, gölge zor seçiliyorsa bitkin karanlıkta kalıyor demektir.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman placing plant near window",
+      "sunlight on indoor plant",
+      "housewife holding potted plant",
+      "woman moving plant home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0323",
+    "topic": "bitki",
+    "concept": "Bol ve seyrek sulama",
+    "verse": "Bitkine her gün bir bardak su verip iyi baktığını sanıyorsun. Oysa bu alışkanlık köklerini zayıf bırakıyor.",
+    "explanation": "Sularken drenaj deliğinden su akana kadar bol ver, sonra toprağın üstü kuruyana kadar bekle. Azar azar su üstü ıslatır, kökler derine inmez.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman watering plant watering can",
+      "housewife watering houseplant",
+      "water draining plant pot",
+      "woman caring plants home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0324",
+    "topic": "bitki",
+    "concept": "Örümcek akarı belirtisi",
+    "verse": "Yaprakların soluk benekli ve altında ince bir ağ mı var? Gözle zor görünen bir zararlı işbaşında.",
+    "explanation": "Örümcek akarı kuru havada çoğalır. Bitkiyi ılık duşta yaprak altları dahil yıka, nemli bezle sil, diğer saksılardan ayrı tut. Nem artınca tekrarı azalır.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman inspecting plant leaves",
+      "housewife cleaning plant leaf",
+      "woman spraying houseplant",
+      "woman examining indoor plant"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0325",
+    "topic": "bitki",
+    "concept": "Saksı dibine taş miti",
+    "verse": "Saksının dibine drenaj olsun diye taş koyuyorsan kötü bir haberim var. Bu yöntem tersine çalışıyor.",
+    "explanation": "Taş katmanı suyu aşağı çekmez, ıslak bölgeyi köke yaklaştırır. Saksıyı baştan sona toprakla doldur, deliğin üstüne tül koy, tabaktaki suyu dök.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman repotting plant pot",
+      "housewife filling pot soil",
+      "woman planting indoor pot",
+      "woman gardening at home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0326",
+    "topic": "tamir",
+    "concept": "Gıcırdayan kapı menteşesi",
+    "verse": "Gıcırdayan kapıya zeytinyağı sürme, birkaç hafta sonra daha beter gıcırdar. Çözüm menteşenin içinde.",
+    "explanation": "Menteşe pimini tornavidayla alttan yukarı it, çıkar. Pime ince makine yağı ya da silikon sprey sür, geri tak. Zeytinyağı toz tutup yapışır, gıcırtı geri gelir.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman opening door home",
+      "door hinge closeup",
+      "woman door handle",
+      "wooden door home interior"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0327",
+    "topic": "tamir",
+    "concept": "Gevşemiş vida deliği",
+    "verse": "Dolap kolunun vidası her sıkışta tekrar gevşiyor mu? Çözümü mutfak çekmecende duruyor.",
+    "explanation": "Deliğe ahşap tutkalına batırılmış iki üç kürdan sıkıştır, fazlasını kır, bir saat kurumaya bırak. Delik daralır, vidayı geri taktığında sapasağlam tutar.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman using screwdriver",
+      "screwdriver cabinet handle",
+      "woman fixing cabinet door",
+      "kitchen cabinet handle closeup"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0328",
+    "topic": "tamir",
+    "concept": "Duvar deliği kapatma",
+    "verse": "Duvardaki dübel deliğini diş macunuyla kapatma. Birkaç ay sonra neden çatladığını göreceksin.",
+    "explanation": "Deliği hazır duvar macunuyla doldur, spatulayla bastır, fazlasını sıyır. İki saat kuruyunca ince zımparayla düzle, üstüne boya sür. Diş macunu kuruyunca büzüşür.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "putty knife wall repair",
+      "woman painting wall home",
+      "sanding wall interior",
+      "woman home wall renovation"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0329",
+    "topic": "tamir",
+    "concept": "Duvara delmeden kablo kontrolü",
+    "verse": "Duvara matkapla delik açmadan önce şu hattı işaretle. Yoksa ucun elektrik kablosuna girebilir.",
+    "explanation": "Priz ve anahtarların tam üstünde ve altında kablo dikey iner, o hatta delme. Ucuz bir kablo dedektörüyle önce tara. Emin değilsen delme, elektrikçi çağır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman using power drill",
+      "drilling wall home",
+      "electrical outlet wall home",
+      "woman home improvement drill"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0330",
+    "topic": "tamir",
+    "concept": "Dolap kapağı hiza ayarı",
+    "verse": "Mutfak dolabının kapakları birbirine göre eğri mi duruyor? Sökmene gerek yok, ayarı menteşesinde.",
+    "explanation": "Sağa sola kaydırmak için menteşenin öndeki vidasını çeyrek tur çevir. Yukarı aşağı hizalamak için menteşeyi dolaba tutan iki vidayı gevşet, kapağı kaydır, sık.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman opening kitchen cabinet",
+      "kitchen cabinet doors",
+      "cabinet hinge closeup",
+      "woman kitchen cupboard door"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0331",
+    "topic": "koku",
+    "concept": "Kuruyan yer süzgeci",
+    "verse": "Az kullandığın banyodan kanalizasyon kokusu geliyorsa temizlik çözmez. Sebebi hiç aklına gelmeyecek.",
+    "explanation": "Süzgecin altındaki su kilidi kuruyunca kanalizasyon gazı içeri sızar. Az kullanılan süzgece haftada bir bardak su dök, kilit dolsun.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman cleaning bathroom floor",
+      "bathroom floor drain",
+      "woman mopping bathroom",
+      "housewife cleaning bathroom"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0332",
+    "topic": "koku",
+    "concept": "Ev kokusu körlüğü",
+    "verse": "Kendi evinin kokusunu neden hiç almadığını düşündün mü? Misafirin kapıdan girer girmez onu alıyor.",
+    "explanation": "Burnun sabit bir kokuya birkaç dakikada alışır ve onu algılamaz. Evden 10 dakika çık, dönünce ilk 5 saniyede aldığın koku gerçek kokudur.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman opening front door",
+      "woman entering living room",
+      "housewife home hallway",
+      "woman relaxing at home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0333",
+    "topic": "koku",
+    "concept": "Kızartma kokusu davlumbaz",
+    "verse": "Kızartma kokusu mutfakta kalmayıp bütün eve yayılıyor mu? Hatayı ocağı yakmadan önce yapıyorsun.",
+    "explanation": "Davlumbazı ocağı yakmadan önce çalıştır, mutfak kapısını kapat, sadece mutfak penceresini arala. Yemekten sonra 10 dakika daha açık tut.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman frying pan kitchen",
+      "kitchen range hood",
+      "woman cooking stove",
+      "housewife kitchen cooking"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0334",
+    "topic": "koku",
+    "concept": "Süpürge filtresi kokusu",
+    "verse": "Süpürdükçe evin daha ağır kokuyorsa halıyı suçlama. Kokuyu odaya üfleyen şey elinin altında duruyor.",
+    "explanation": "Kirli filtre ve dolu torba, süpürgeden çıkan havayı kokutur. Yıkanabilir filtreyi ayda bir yıka ve tam kurut, torbayı yarısı dolmadan değiştir.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman vacuuming carpet",
+      "vacuum cleaner filter",
+      "housewife vacuuming living room",
+      "woman cleaning carpet home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0335",
+    "topic": "koku",
+    "concept": "Sirke kasesi yöntemi",
+    "verse": "Kızartma ve balık kokusu evden gitmiyorsa oda spreyi sıkma. Mutfağındaki bir malzeme kokuyu söküyor.",
+    "explanation": "Bir kaseye beyaz sirke doldur, kokan odanın ortasında gece boyu beklet. Sabaha koku uçar. Sirkeyi asla çamaşır suyuyla karıştırma.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "white vinegar bowl kitchen",
+      "woman holding bowl kitchen",
+      "vinegar bottle kitchen counter",
+      "housewife kitchen counter"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0336",
+    "topic": "bocek",
+    "concept": "Kuru gider sifonu",
+    "verse": "Banyoda hiç kullanmadığın bir gider var mı? Böcekler eve çoğu zaman tam oradan giriyor.",
+    "explanation": "Haftada bir kullanılmayan giderlere bir bardak su dök. Sifondaki su buharlaşınca kanalizasyon açık kalır, böcekler oradan yukarı çıkar.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman cleaning bathroom sink",
+      "woman pouring water drain",
+      "housewife bathroom cleaning",
+      "woman cleaning shower floor"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0337",
+    "topic": "bocek",
+    "concept": "Kapı altı böcek girişi",
+    "verse": "Evi her gün siliyorsun ama hamamböceği yine çıkıyor mu? Sorun temizlikte değil, kapıda.",
+    "explanation": "Kapı altına fırçalı bant tak, boru deliklerini silikonla kapat. Hamamböceği 3 milimetrelik aralıktan geçer, giriş açıkken ilaç kalıcı olmaz.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman opening front door home",
+      "woman cleaning door frame",
+      "housewife home entrance",
+      "woman hallway apartment door"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0338",
+    "topic": "bocek",
+    "concept": "Bakliyatı dondurucuda beklet",
+    "verse": "Marketten aldığın un ve bakliyatı doğrudan dolaba mı koyuyorsun? Güve evde başlamıyor olabilir.",
+    "explanation": "Yeni aldığın un, bakliyat ve kuruyemişi 4 gün dondurucuda beklet. Paketten gelen güve yumurtaları eksi 18 derecede ölür. Sonra cam kavanoza al.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman opening freezer kitchen",
+      "woman storing food freezer",
+      "housewife pantry jars",
+      "woman unpacking groceries kitchen"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0339",
+    "topic": "bocek",
+    "concept": "Kolileri evde tutma",
+    "verse": "Market kolilerini ve kargo kutularını evde biriktirir misin? Hamamböceğinin en sevdiği yer orası.",
+    "explanation": "Kolileri aynı gün dışarı çıkar, içindekini rafa boşalt. Oluklu mukavvanın arası hamamböceğine hem sıcak yuva hem yumurta köşesi olur.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman carrying cardboard box home",
+      "woman unpacking boxes apartment",
+      "housewife holding delivery box",
+      "woman kitchen storage shelf"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0340",
+    "topic": "bocek",
+    "concept": "Balkonda duran su",
+    "verse": "Sivrisinekler akşam olunca evi basıyorsa balkona bir bak. Kaynak çoğu zaman iki adım ötende.",
+    "explanation": "Balkondaki saksı tabağı, kova ve leğende duran suyu haftada bir boşalt. Sivrisinek 7-10 günde uçar, bir çay bardağı durgun su bile yeter.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman balcony plants home",
+      "woman watering balcony flowers",
+      "housewife cleaning balcony",
+      "woman standing balcony evening"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0341",
+    "topic": "cocuk",
+    "concept": "Dolap devrilme riski",
+    "verse": "Çocuğun açık çekmecelere tırmanmayı seviyor mu? Bu alışkanlık evdeki en sessiz tehlikeyi tetikliyor.",
+    "explanation": "Yüksek dolabı ve kitaplığı duvara L demiriyle sabitle. Çocuk çekmeceye basınca ağırlık öne kayar ve dolap devrilir. Ağır eşyaları en alt çekmecede tut.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "toddler climbing furniture",
+      "mother watching toddler home",
+      "child bedroom dresser",
+      "woman arranging bedroom furniture"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0342",
+    "topic": "cocuk",
+    "concept": "Duvarda mum boya izi",
+    "verse": "Duvardaki mum boya izini ovaladıkça daha mı yayılıyor? Boyayı bozmadan çıkaran yöntem çok basit.",
+    "explanation": "Saç kurutma makinesini sıcak konumda 20 saniye ize tut, mum yumuşayınca kuru mikrofiber bezle sil. İz kalırsa nemli beze karbonat alıp hafifçe ovala.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "child drawing on wall",
+      "toddler crayon drawing",
+      "woman cleaning wall",
+      "mother wiping wall stain"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0343",
+    "topic": "cocuk",
+    "concept": "Oyuncak rotasyonu",
+    "verse": "Oyuncak dolu odada çocuğun beş dakikada sıkılıyor mu? Sebebi tam da oyuncakların sayısında gizli.",
+    "explanation": "Oyuncakların dörtte birini ortada bırak, kalanını kutulayıp kaldır. İki haftada bir değiştir. Az seçenek olunca çocuk tek oyuncakla daha uzun oynar.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "child playing with toys floor",
+      "woman sorting toys box",
+      "toddler toys living room",
+      "mother organizing toy storage"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0344",
+    "topic": "cocuk",
+    "concept": "Katmanlı yatak serme",
+    "verse": "Gece altını ıslatınca yarı uykulu çarşaf mı değiştiriyorsun? Yatağı bir kez hazırlayıp bu derdi bitirebilirsin.",
+    "explanation": "Yatağa alez, çarşaf, ikinci alez, ikinci çarşaf diye iki kat ser. Gece kaza olunca üstteki iki katı çek, altta hazır yatak çıkar. İki dakikada biter.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman making childs bed",
+      "mother changing bed sheets",
+      "child bedroom bed",
+      "woman folding bed linen"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0345",
+    "topic": "cocuk",
+    "concept": "Perde ipi güvenliği",
+    "verse": "Perdenin ya da jaluzinin sarkan ipi masum görünüyor. Küçük çocuklu evlerde o ipin tek bir kuralı var.",
+    "explanation": "İpi çocuğun boyunun üstüne, duvara vidalanmış bir kancaya sarıp topla. Sarkan ilmek boyna dolanabilir. Beşiği pencereden en az bir metre uzağa çek.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "toddler near window curtain",
+      "child playing near window",
+      "woman adjusting window blinds",
+      "mother child living room window"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0346",
+    "topic": "evcil",
+    "concept": "Koltuktaki evcil hayvan tüyü",
+    "verse": "Koltuktaki kedi tüyü süpürgeyle bir türlü çıkmıyor değil mi? Mutfaktaki basit bir şey hepsini topluyor.",
+    "explanation": "Bulaşık eldivenini tak, hafifçe ıslat ve koltuğun üstünde hep aynı yöne doğru gezdir. Sürtünme tüyü topaklar, tek hamlede avucuna gelir.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman cleaning sofa",
+      "cat on sofa home",
+      "woman vacuuming couch",
+      "cat lying on couch"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0347",
+    "topic": "evcil",
+    "concept": "Kum kabı ve çamaşır suyu",
+    "verse": "Kedi kumunun kabını çamaşır suyuyla mı yıkıyorsun? Bu alışkanlık banyonda zehirli gaz açığa çıkarabilir.",
+    "explanation": "İdrardaki amonyak çamaşır suyuyla birleşince zehirli klor gazı çıkar. Kabı sıcak su ve bulaşık deterjanıyla yıka, durula, kurut, sonra kum koy.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "cat litter box home",
+      "woman cleaning bathroom",
+      "cat walking bathroom floor",
+      "woman wearing cleaning gloves"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0348",
+    "topic": "evcil",
+    "concept": "Tırmalama tahtası yeri",
+    "verse": "Kedin koltuğu tırmalamayı bir türlü bırakmıyor mu? Tırmalama tahtasını yanlış yere koymuş olabilirsin.",
+    "explanation": "Tahtayı kedinin tırmaladığı koltuğun tam yanına koy; en az 60 santim boyunda ve devrilmeyecek kadar ağır olsun. Kedi tırmalarken vücudunu gerer.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "cat scratching post home",
+      "cat sofa living room",
+      "woman petting cat sofa",
+      "cat stretching at home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0349",
+    "topic": "evcil",
+    "concept": "Plastik mama kabı",
+    "verse": "Kedinin mamasını plastik kapta mı veriyorsun? O kabın görünmeyen çizikleri çenesinde sivilce yapabilir.",
+    "explanation": "Paslanmaz çelik ya da seramik kaba geç, plastikteki mikro çizikler bakteri tutar. Kabı her gün sıcak sabunlu suyla yıka, dipte yağ kalmasın.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "cat eating from bowl",
+      "woman feeding cat home",
+      "cat food bowl kitchen",
+      "dog eating from bowl"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0350",
+    "topic": "evcil",
+    "concept": "Halıdaki idrar kokusu",
+    "verse": "Halıdaki kedi çişini sıcak suyla mı siliyorsun? Sıcak su o kokuyu çıkarmak yerine kalıcı hale getiriyor.",
+    "explanation": "Sıcak su idrardaki proteini life sabitler. Önce kuru bezle bastırarak emdir, ovalama; sonra evcil hayvanlar için enzimli temizleyici uygula.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman cleaning carpet",
+      "dog on carpet home",
+      "woman scrubbing floor home",
+      "cat on rug living room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0351",
+    "topic": "misafir",
+    "concept": "Ani misafirde 10 dakika",
+    "verse": "Kapı çaldı, ev dağınık ve on dakikan var. Nereden başlayacağını bilirsen misafir hiç anlamaz.",
+    "explanation": "Sadece giriş, oturma odası ve lavaboyu topla. Dağınık eşyaları bir sepete doldur, yatak odasına götür. Yüzeyleri sil, ışıkları yak.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman tidying living room",
+      "housewife cleaning living room",
+      "woman putting items in basket",
+      "woman home entrance door"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0352",
+    "topic": "misafir",
+    "concept": "Misafir öncesi ev kokusu",
+    "verse": "Kendi evinin kokusunu artık alamazsın ama misafir kapıdan girince alır. Çözümü sprey değil.",
+    "explanation": "Misafirden yarım saat önce çöpü çıkar, karşılıklı iki pencereyi beş dakika aç. Koku kaynağı dururken sprey sıkarsan koku üste biner.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman opening window home",
+      "woman taking out trash kitchen",
+      "curtain window fresh air home",
+      "housewife living room window"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0353",
+    "topic": "misafir",
+    "concept": "Çay acılaşmasın",
+    "verse": "Misafire ikinci bardağı koyarken çayın acılaştığını fark ettin mi? Asıl sorun demlemede değil.",
+    "explanation": "Çay demini alınca demliği ocaktan indir. 12-15 dakikada demlenir, ocakta bekledikçe tanen salıp acılaşır. Kalabalıkta azar azar demle.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman pouring turkish tea",
+      "teapot on stove kitchen",
+      "tea glass on table home",
+      "woman serving tea guests"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0354",
+    "topic": "misafir",
+    "concept": "Dondurucuda hazır ikramlık",
+    "verse": "Ani misafirde ikram telaşını bitiren şey dondurucunda duruyor. Hazırlığı bugünden yapılıyor.",
+    "explanation": "Börek ve poğaçayı pişirmeden tepside dondur, donunca torbaya al. Misafir gelince çözdürmeden 190 derece fırında 25 dakika pişir.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "woman freezer home kitchen",
+      "pastry on baking tray",
+      "woman putting tray in oven",
+      "frozen food bag kitchen"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0355",
+    "topic": "misafir",
+    "concept": "Tabakları ısıtıp servis",
+    "verse": "Sıcacık koyduğun yemek misafirin tabağında neden çabuk soğuyor? Suçlu yemek değil, tabak.",
+    "explanation": "Servisten önce tabakları fırının en düşük ayarında 10 dakika ısıt. Soğuk porselen yemeğin ısısını çeker. Plastik tabağı fırına koyma.",
+    "moods": [
+      "cozy"
+    ],
+    "pexelsQuery": [
+      "stack of plates kitchen",
+      "woman setting dinner table",
+      "woman serving food plate home",
+      "warm meal served table home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0356",
+    "topic": "mevsim",
+    "concept": "Klima filtresi sezon bakımı",
+    "verse": "Klimayı yazın ilk sıcağında açıp oturuyorsun. Oysa on dakikalık bir iş faturanı belirliyor.",
+    "explanation": "Sezonun ilk gününde fişi çek, kapağı aç, filtreleri çıkar. Ilık sabunlu suda yıka, gölgede tam kurut, sonra tak. Tozlu filtre soğutmayı düşürür.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman cleaning air conditioner",
+      "air conditioner filter",
+      "air conditioner living room",
+      "woman using air conditioner"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0357",
+    "topic": "mevsim",
+    "concept": "Kışın çapraz havalandırma",
+    "verse": "Kışın pencereyi vasistas konumda saatlerce aralık bırakıyorsun. Nemi atmanın çok daha hızlı yolu var.",
+    "explanation": "Günde iki kez karşılıklı pencereleri 5-10 dakika sonuna kadar aç. Hava tamamen değişir, duvar soğumaz. Aralık pencere ısıyı kaçırır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman opening window",
+      "open window living room",
+      "woman airing bedroom",
+      "window condensation morning"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0358",
+    "topic": "mevsim",
+    "concept": "Dolabı dış duvardan ayır",
+    "verse": "Gardırobu dış duvara sımsıkı dayamışsın. Kışın tam o duvarın arkasında sessizce bir sorun büyüyor.",
+    "explanation": "Dolabı ve koltuğu dış duvardan 5-10 santim öne çek. Hava dolaşmayan yüzey soğur, nem yoğuşur, küf başlar. Yılda bir arkasını kontrol et.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman moving furniture",
+      "bedroom wardrobe wall",
+      "damp wall corner",
+      "woman cleaning bedroom wall"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0359",
+    "topic": "mevsim",
+    "concept": "Kuru temizleme naylonu",
+    "verse": "Kışlıkları kuru temizlemenin naylonuyla dolaba kaldırıyorsun. Gelecek sezon kötü bir sürpriz var.",
+    "explanation": "Naylonu çıkar, giysiyi pamuklu bez kılıfa geçir. İnce naylon nemi hapseder, kumaş sararır ve küf kokar. Giysiyi tam kuruyken kaldır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman organizing wardrobe",
+      "garment bag closet",
+      "woman folding winter clothes",
+      "winter clothes storage box"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0360",
+    "topic": "mevsim",
+    "concept": "Kış öncesi kombi bakımı",
+    "verse": "Kombiyi ilk soğukta açıp ısınmayı bekliyorsun. Soğuklar başlamadan atlamaman gereken bir adım var.",
+    "explanation": "Kombinin yıllık bakımını ve baca temizliğini eylülde yetkili servise yaptır. Eve karbonmonoksit dedektörü tak. Gaz ve bacaya kendin dokunma.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "home gas boiler",
+      "technician checking boiler",
+      "smoke detector home ceiling",
+      "radiator home winter"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0361",
+    "topic": "beyaz-esya",
+    "concept": "Buzdolabı tahliye deliği",
+    "verse": "Buzdolabında sebzeliğin altında sürekli su birikiyor mu? Dolap bozuk değil, sebebi çok daha basit.",
+    "explanation": "İç arka duvarın dibindeki tahliye deliği kırıntıyla tıkanmıştır. Kulak çubuğuyla temizle, bir bardak ılık su dök. Yılda iki kez yeterli.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman cleaning refrigerator",
+      "woman opening fridge",
+      "housewife kitchen fridge",
+      "cleaning refrigerator shelves"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0362",
+    "topic": "beyaz-esya",
+    "concept": "Fırın tabanına folyo",
+    "verse": "Fırının tabanına yağ damlamasın diye folyo seriyor musun? Bu alışkanlık fırına pahalıya mal oluyor.",
+    "explanation": "Folyo taban ısısını hapseder, emayeyi çatlatır, alt rezistansı zorlar. Tabana hiçbir şey serme; bir alt rafa boş tepsi koy, damlayanı o tutsun.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman using oven",
+      "woman baking oven tray",
+      "housewife kitchen oven",
+      "cleaning oven door"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0363",
+    "topic": "beyaz-esya",
+    "concept": "Çamaşır makinesi pompa filtresi",
+    "verse": "Çamaşır makinenin alt ön köşesindeki minik kapağı hiç açtın mı? Arkasında yıllardır biriken bir şey var.",
+    "explanation": "Orada tahliye pompasının filtresi durur, tüy ve bozuk para birikir. Üç ayda bir fişi çek, altına havlu ve kap koy, filtreyi çıkarıp yıka.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman laundry washing machine",
+      "housewife doing laundry",
+      "washing machine close up",
+      "woman loading washing machine"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0364",
+    "topic": "beyaz-esya",
+    "concept": "Bulaşık makinesi püskürtme kolu",
+    "verse": "Bulaşıklar makineden lekeli çıkmaya başladıysa deterjanı değiştirme. Asıl suçlu içeride dönüp duruyor.",
+    "explanation": "Alt ve üst püskürtme kollarını çevirip çıkar, tıkalı delikleri kürdanla aç, sirkeli suda yarım saat beklet. Üç ayda bir tekrarla, basınç döner.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman loading dishwasher",
+      "open dishwasher kitchen",
+      "housewife kitchen dishes",
+      "woman unloading dishwasher"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0365",
+    "topic": "beyaz-esya",
+    "concept": "Bulaşık makinesi tuz haznesi",
+    "verse": "Bulaşık makinenin tuz haznesine en son ne zaman baktın? Hepsi bir arada tablet tek başına yetmiyor.",
+    "explanation": "Suyun sertse tuz haznesini dolu tut, ayda bir göstergeye bak. Kireç rezistansı sarar, makinenin ömrünü kısaltır. Sofra tuzu koyma, makine tuzu al.",
+    "moods": [
+      "kitchen"
+    ],
+    "pexelsQuery": [
+      "woman kitchen dishwasher",
+      "dishwasher detergent tablet",
+      "housewife cleaning kitchen",
+      "woman washing dishes"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0366",
+    "topic": "guvenlik",
+    "concept": "Yağ yangınına su",
+    "verse": "Tavadaki yağ alev aldığında ilk refleksin su dökmek olur. Oysa doğru hamle mutfakta elinin altında.",
+    "explanation": "Asla su dökme, alev patlayarak yayılır. Ocağı kapat, tavayı metal bir kapakla ört, oksijeni kes. Alev büyürse evden çık, 112'yi ara.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman cooking frying pan",
+      "kitchen stove flame",
+      "frying pan on stove",
+      "fire extinguisher home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0367",
+    "topic": "guvenlik",
+    "concept": "Gaz kaçağında ışık düğmesi",
+    "verse": "Evde doğalgaz kokusu aldığında ilk işin ışığı açmak olmasın. O kıvılcım her şeyi değiştirir.",
+    "explanation": "Elektrik düğmesine, prize ve telefona dokunma, kıvılcım patlama yaratır. Sayaç vanasını kapat, pencereleri aç, dışarı çıkıp 187'yi ara.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman kitchen gas stove",
+      "gas stove burner flame",
+      "hand turning stove knob",
+      "woman opening window"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0368",
+    "topic": "guvenlik",
+    "concept": "Karbonmonoksit alarmı",
+    "verse": "Kombi ve sobalı evlerde en tehlikeli gaz kokusuz ve görünmez. Fark ettiğinde çoktan geç olur.",
+    "explanation": "Karbonmonoksit alarmı tak, ucuz ama hayat kurtarır. Kombi ve sobadan 1-3 metre uzağa, göz hizasına as. Bacayı yılda bir servise temizlet.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "smoke detector ceiling",
+      "woman home living room",
+      "home radiator heating",
+      "gas boiler home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0369",
+    "topic": "guvenlik",
+    "concept": "Ana su vanası",
+    "verse": "Boru patladığında suyu nereden keseceğini biliyor musun? O anı beklersen ev su içinde kalır.",
+    "explanation": "Evin ana su vanasını bugün bul, genelde mutfak dolabında veya banyoda. Yılda iki kez aç kapat, sıkışmasın. Yerini evdeki herkese göster.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "hand turning water valve",
+      "water leaking floor home",
+      "pipes under kitchen sink",
+      "woman bathroom sink"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0370",
+    "topic": "guvenlik",
+    "concept": "Çoklu prizde ısıtıcı",
+    "verse": "Elektrikli ısıtıcıyı çoklu prize takıyorsan bugün bırak. O priz sen fark etmeden ısınıyor.",
+    "explanation": "Isıtıcı ve ütüyü çoklu prize değil, doğrudan duvar prizine tak. Çoklu priz bu yükte ısınıp yangın çıkarır. Priz ısınıyorsa elektrikçi çağır.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "power strip extension cord",
+      "hand plugging power plug",
+      "electric heater living room",
+      "woman electric plug socket"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0371",
+    "topic": "saglikli-ev",
+    "concept": "Toz akarına 60 derece",
+    "verse": "Yatak takımını haftada bir yıkıyorsun ama sabahları burnun hâlâ tıkalı uyanıyorsun. Sorun makinenin ayarında.",
+    "explanation": "Nevresim ve yastık kılıfını 60 derecede yıka. Toz akarları 55 derecenin altındaki suda ölmez, ılık yıkama çoğunu canlı bırakır.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman changing bed sheets",
+      "woman doing laundry home",
+      "washing machine home laundry",
+      "woman making bed bedroom"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0372",
+    "topic": "saglikli-ev",
+    "concept": "Kışın şok havalandırma",
+    "verse": "Kışın üşümemek için pencereyi hep aralık bırakıyorsun. Bu alışkanlık hem faturanı hem duvarını vuruyor.",
+    "explanation": "Pencereyi aralık tutma, günde üç kez karşılıklı iki pencereyi 5 dakika sonuna kadar aç. Şok havalandırma nemi atar, duvarı soğutmaz.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman opening window home",
+      "open window winter room",
+      "fresh air window curtains",
+      "woman by window living room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0373",
+    "topic": "saglikli-ev",
+    "concept": "Dolap arkası küf",
+    "verse": "Gardırobu dış duvara sımsıkı dayadın ve arkasında siyah lekeler çıktı. Duvarın suçu yok aslında.",
+    "explanation": "Dış duvara dayalı dolapları duvardan 5 santim öne çek. Arkada hava dolaşmayınca yüzey soğur, üstünde yoğuşan nem birkaç haftada küfe döner.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman moving furniture home",
+      "wardrobe bedroom home",
+      "mold on wall home",
+      "damp wall corner room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0374",
+    "topic": "saglikli-ev",
+    "concept": "Pişirirken davlumbaz",
+    "verse": "Ocakta yemek pişerken davlumbazı açmaya üşeniyorsun. O yarım saatte mutfağın havası ciddi bozuluyor.",
+    "explanation": "Ocağı yakmadan önce davlumbazı çalıştır, yemek bitince 10 dakika daha açık bırak. Gaz kokusu alırsan ocağı kapat ve yetkili servisi ara.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "woman cooking stove kitchen",
+      "kitchen range hood",
+      "steam pot cooking home",
+      "woman kitchen cooking home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0375",
+    "topic": "saglikli-ev",
+    "concept": "Evde nem ölçer",
+    "verse": "Evdeki küfle savaşıyorsun ama nemin kaç olduğunu bilmiyorsun. Ucuz bir alet bunu bir günde çözüyor.",
+    "explanation": "Salona ve yatak odasına birer nem ölçer koy, değer yüzde 60'ı geçerse havalandır. Sağlıklı aralık yüzde 40 ile 60 arasıdır, üstünde küf ürer.",
+    "moods": [
+      "cleaning"
+    ],
+    "pexelsQuery": [
+      "humidity meter home",
+      "condensation on window home",
+      "woman living room home",
+      "thermometer on wall home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0376",
+    "topic": "zaman",
+    "concept": "On dakika zamanlayıcı",
+    "verse": "Evi toplamaya nereden başlayacağını bilemeyip oturup kalıyorsun. Aslında on dakikan yeter.",
+    "explanation": "Telefondan on dakika kur ve tek bir odaya gir. Yalnızca yeri belli olmayan eşyaları bir sepete topla, sonra tek turda dağıt. Süre bitince dur.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman tidying living room",
+      "woman organizing home",
+      "woman holding storage basket",
+      "housewife tidying room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0377",
+    "topic": "zaman",
+    "concept": "Temizleyici bekleme süresi",
+    "verse": "Fırını ve banyoyu ovalamak saatini alıyor, kolun kopuyor. Sorun temizleyicide değil, sıralamada.",
+    "explanation": "Temizleyiciyi odaya girer girmez sık, on dakika kendi çalışsın. Sen o arada bulaşığı yerleştir. Döndüğünde kir çözülür, tek silişte kalkar.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman spraying cleaner",
+      "woman cleaning bathroom sink",
+      "woman spraying kitchen counter",
+      "housewife cleaning oven"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0378",
+    "topic": "zaman",
+    "concept": "Önce makineyi çalıştır",
+    "verse": "Temizliğe süpürgeyle başlıyorsun, akşam olunca çamaşır hâlâ sepette bekliyor. Yanlış işten başlıyorsun.",
+    "explanation": "İlk iş çamaşır ve bulaşık makinesini doldurup çalıştır. Makine seksen dakika kendi çalışırken sen odaları topla. Böylece iki iş aynı anda ilerler.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman loading washing machine",
+      "woman loading dishwasher",
+      "housewife laundry room",
+      "woman doing laundry at home"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0379",
+    "topic": "zaman",
+    "concept": "Kova ile tek tur",
+    "verse": "Bir bez için mutfağa, sprey için banyoya koşturup duruyorsun. Zamanın temizlikte değil, yolda gidiyor.",
+    "explanation": "Tüm malzemeni bir kovaya koy ve odaya öyle gir. Kapıdan başla, saat yönünde tek tur at, başladığın yerde bitir. Aynı yüzeye iki kez dönmezsin.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman carrying cleaning supplies",
+      "cleaning bucket with supplies",
+      "woman wiping shelf with cloth",
+      "housewife cleaning room"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "kt-0380",
+    "topic": "zaman",
+    "concept": "İki dakika kuralı",
+    "verse": "Küçük işleri sonraya bırakınca akşam karşına dağ gibi bir yığın çıkıyor. Basit bir kural bunu bitirir.",
+    "explanation": "İki dakikadan kısa süren işi o an yap, sonraya bırakma. Bardağı makineye koy, ceketi as, postayı ayır. Biriktiğinde saatler alır, o an yapınca hiç sürmez.",
+    "moods": [
+      "organizing"
+    ],
+    "pexelsQuery": [
+      "woman putting away dishes",
+      "woman hanging coat at home",
+      "woman tidying kitchen counter",
+      "housewife quick tidy up"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
   }
 ]
