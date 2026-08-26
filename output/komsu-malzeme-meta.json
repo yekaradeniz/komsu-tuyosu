@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 18,
-  "episodeNo": 19,
-  "videoTitle": "Soğanın Mutfak Dışı 5 Kullanımı",
-  "material": "Soğan",
-  "thumbTop": "Evde Soğan",
+  "index": 19,
+  "episodeNo": 20,
+  "videoTitle": "Patatesin Şaşırtıcı 5 Ev Kullanımı",
+  "material": "Patates",
+  "thumbTop": "Evde Patates",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-019-1",
-      "keyword": "Izgara",
-      "title": "Soğanla Camı Tertemiz Yap",
-      "start": 5
-    },
-    {
-      "id": "mz-019-2",
+      "id": "mz-020-1",
       "keyword": "Pas",
-      "title": "Soğanla Pası Sök",
-      "start": 61
+      "title": "Patatesle Pası Çıkar",
+      "start": 6
     },
     {
-      "id": "mz-019-3",
-      "keyword": "Boya",
-      "title": "Soğan Kabuğuyla Yumurta Boya",
-      "start": 121
-    },
-    {
-      "id": "mz-019-4",
+      "id": "mz-020-2",
       "keyword": "Buğu",
-      "title": "Soğanla Camın Buğusunu Kes",
-      "start": 179
+      "title": "Patatesle Cam Buğusunu Önle",
+      "start": 66
     },
     {
-      "id": "mz-019-5",
-      "keyword": "Boya Kokusu",
-      "title": "Soğanla Boya Kokusunu Yut",
-      "start": 236
+      "id": "mz-020-3",
+      "keyword": "Gümüş",
+      "title": "Gümüşü Patates Suyuyla Parlat",
+      "start": 128
+    },
+    {
+      "id": "mz-020-4",
+      "keyword": "Leke",
+      "title": "Patatesle İnatçı Lekeyi Sök",
+      "start": 195
+    },
+    {
+      "id": "mz-020-5",
+      "keyword": "Ampul",
+      "title": "Patatesle Kırık Ampulü Çıkar",
+      "start": 252
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 300
+  "durationSec": 318
 }
