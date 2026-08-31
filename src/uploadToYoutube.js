@@ -1,4 +1,5 @@
 import { readFileSync, statSync } from 'node:fs';
+import { nicheTags } from './nicheSeo.js';
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const UPLOAD_URL = 'https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status';
@@ -62,9 +63,18 @@ function buildTitle(verse, concept) {
 const SUB_LINK = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
 const PL_HAFTANIN = 'https://www.youtube.com/playlist?list=PLynH0txiEqh26QdVivze5z7xUNmUMgFPP';
 const PL_MALZEME = 'https://www.youtube.com/playlist?list=PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G';
+const PL_NIS = 'https://www.youtube.com/playlist?list=PLSGgmX77Qg94';
 
-function buildDescription(caption) {
-  // Shorts -> abone CTA (tek tik link) + long-form yonlendirme (gercek linkler)
+export function buildDescription(caption, niche) {
+  // Shorts -> abone CTA (tek tik link) + playlist yonlendirme (gercek linkler).
+  // Nis videosunda ev serilerine yonlendirmek izleyiciyi kaybettirir: karinca
+  // videosu izleyen kisiye 'sirke, karbonat' playlisti alakasiz geliyor.
+  if (niche) {
+    return `${caption}\n\n` +
+      `🔔 Her gün yeni bir ilginç bilgi: ${SUB_LINK}\n\n` +
+      `▶ Tüm bilgi videoları:\n` +
+      `• Biliyor muydun?: ${PL_NIS}\n\n#Shorts`;
+  }
   return `${caption}\n\n` +
     `🔔 Her gün yeni bir pratik ev tüyosu: ${SUB_LINK}\n\n` +
     `▶ Daha detaylı uzun videolar:\n` +
@@ -91,27 +101,33 @@ const MOOD_TAGS = {
   organizing: ['ev düzeni', 'organizasyon'],
   cozy: ['ev bakımı', 'ev dekorasyonu']
 };
-export function buildTags(moods, concept) {
-  const base = ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
-  const dyn = (moods || []).flatMap(m => MOOD_TAGS[m] || []);
+export function buildTags(moods, concept, niche) {
+  // Nis testi videolari ev etiketleri almaz: ahtapot videosuna 'leke temizligi'
+  // etiketi gitmesi hem yanlis sinyal hem alakasiz metadata.
+  const base = niche
+    ? nicheTags(niche)
+    : ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
+  const dyn = niche ? [] : (moods || []).flatMap(m => MOOD_TAGS[m] || []);
   // O gunun konusu (concept) en spesifik tag; ayni mood'daki yuzlerce Short'u ayristirir.
   const conceptTags = concept && concept.trim() ? [concept.trim().toLocaleLowerCase('tr-TR')] : [];
   // Kanal adi (komsu tuyosu) etiket olarak KULLANILMIYOR (marka degil)
   return [...new Set([...conceptTags, ...dyn, ...base])].slice(0, 15);
 }
 
-export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, playlistId, firstComment, clientId, clientSecret, refreshToken }) {
+export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, niche, playlistId, firstComment, clientId, clientSecret, refreshToken }) {
   const accessToken = await getAccessToken({ clientId, clientSecret, refreshToken });
 
   const title = buildTitle(verse, concept);
-  const description = buildDescription(caption);
+  const description = buildDescription(caption, niche);
 
   const metadata = {
     snippet: {
       title,
       description,
-      tags: buildTags(moods, concept),
-      categoryId: '26',   // Howto & Style
+      tags: buildTags(moods, concept, niche),
+      // Nis videolari Howto & Style degil: karinca/uzay videosu ev kategorisinde
+      // yanlis kitleye gosteriliyor. 27 = Education.
+      categoryId: niche ? '27' : '26',
       defaultLanguage: 'tr',
       defaultAudioLanguage: 'tr'
     },

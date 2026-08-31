@@ -52,7 +52,10 @@ try {
     caption,
     concept: entry.concept,
     moods: entry.moods,
-    playlistId: 'PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2',  // "Pratik Ev İpuçları" (Shorts)
+    niche: entry.niche,                                // nis videolari ev etiketi almaz
+    playlistId: entry.niche
+      ? (process.env.NICHE_PLAYLIST_ID || 'PLSGgmX77Qg94')  // "Biliyor muydun?" (nis testi)
+      : 'PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2',          // "Pratik Ev İpuçları" (Shorts)
     firstComment: buildFirstComment(entry, date),      // etkilesim + abone CTA
     clientId: ytClientId,
     clientSecret: ytClientSecret,

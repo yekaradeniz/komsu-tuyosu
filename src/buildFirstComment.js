@@ -31,6 +31,30 @@ const SORULAR = [
 // sub_confirmation=1: tiklandiginda abone onay penceresi acilir (tek tikla abone)
 const SUB_LINK = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
 
+// Nis testi videolari icin ayri set: 'ev tuyosu' ifadesi karinca ya da uzay
+// videosunda izleyiciye alakasiz geliyor, yorum da video da uyumsuz duruyor.
+const NIS_ALAN = {
+  hayvan: 'hayvanlar', para: 'tasarruf', vucut: 'insan vücudu', uzay: 'uzay',
+  tarih: 'tarih', iliski: 'ilişkiler', deniz: 'denizler', yemek: 'mutfak',
+  doga: 'doğa', teknoloji: 'teknoloji', dunya: 'dünya', muhendislik: 'mühendislik',
+};
+
+const NIS_SORULAR = [
+  (alan) => `Bunu biliyor muydunuz? ${cap(alan)} hakkında merak ettiğiniz bir şey varsa yazın, videosunu yapalım.`,
+  (alan) => `Sizce bu doğru mu? ${cap(alan)} konusunda başka hangi konuyu duymak istersiniz?`,
+  (alan) => `Bunu ilk kez mi duydunuz? ${cap(alan)} ile ilgili bildiğiniz ilginç bir bilgi varsa yorumlarda paylaşın.`,
+  (alan) => `Bu sizi de şaşırttı mı? ${cap(alan)} tarafında öğrenmek istediğiniz bir konu var mı?`,
+  (alan) => `Duymuş muydunuz? ${cap(alan)} hakkında sizin bildiğiniz bir bilgiyi yorumlarda görmek isterim.`,
+  (alan) => `Bunu bilen var mıydı? ${cap(alan)} ile ilgili hangi soruyu cevaplamamızı istersiniz?`,
+];
+
+const NIS_CTA = [
+  `Her gün yeni bir ilginç bilgi için abone olun: ${SUB_LINK}`,
+  `Böyle bilgileri kaçırmamak için abone olun, her gün yeni bir tane var: ${SUB_LINK}`,
+  `Her gün bir bilgi paylaşıyoruz, abone olup takipte kalın: ${SUB_LINK}`,
+  `Yeni bilgiler için abone olmayı unutmayın: ${SUB_LINK}`,
+];
+
 const CTA = [
   `Her gün yeni bir pratik ev tüyosu için abone olun: ${SUB_LINK}`,
   `Böyle tüyoları kaçırmamak için abone olun, her gün yeni bir tane var: ${SUB_LINK}`,
@@ -53,6 +77,11 @@ function dateSeed(dateStr) {
  */
 export function buildFirstComment(entry, dateStr) {
   const seed = dateSeed(dateStr);
+  const niche = entry && entry.niche;
+  if (niche) {
+    const alan = NIS_ALAN[niche] || 'bu konu';
+    return `${NIS_SORULAR[seed % NIS_SORULAR.length](alan)}\n\n${NIS_CTA[seed % NIS_CTA.length]}`;
+  }
   const moods = (entry && entry.moods) || [];
   const alan = MOOD_ALAN[moods[0]] || 'ev işleri';
   const soru = SORULAR[seed % SORULAR.length](alan);
@@ -60,4 +89,4 @@ export function buildFirstComment(entry, dateStr) {
   return `${soru}\n\n${cta}`;
 }
 
-export const _internal = { SORULAR, CTA, MOOD_ALAN };
+export const _internal = { SORULAR, CTA, MOOD_ALAN, NIS_SORULAR, NIS_CTA, NIS_ALAN };
