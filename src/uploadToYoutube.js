@@ -1,5 +1,5 @@
 import { readFileSync, statSync } from 'node:fs';
-import { nicheTags } from './nicheSeo.js';
+import { buildTagsFor, renderNamed, profileFor, loadTemplates, render } from './seoTemplate.js';
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const UPLOAD_URL = 'https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status';
@@ -58,28 +58,17 @@ function buildTitle(verse, concept) {
 /**
  * Instagram caption'ini YouTube description'a donusturur (#Shorts ekler).
  */
-// Tiklanabilir linkler. sub_confirmation=1: link tiklandiginda abone onay
-// penceresi acilir (tek tikla abone) - duz kanal linkinden cok daha etkili.
-const SUB_LINK = 'https://www.youtube.com/@komsutuyosu?sub_confirmation=1';
-const PL_HAFTANIN = 'https://www.youtube.com/playlist?list=PLynH0txiEqh26QdVivze5z7xUNmUMgFPP';
-const PL_MALZEME = 'https://www.youtube.com/playlist?list=PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G';
-const PL_NIS = 'https://www.youtube.com/playlist?list=PLSGgmX77Qg94';
-
+// Abone CTA'si ve playlist yonlendirmesi profile gore degisir: nis videosunda
+// ev serilerine yonlendirmek izleyiciyi kaybettiriyor (karinca videosu izleyene
+// 'sirke, karbonat' playlisti alakasiz geliyor). Metinler seo-templates.json'da.
 export function buildDescription(caption, niche) {
-  // Shorts -> abone CTA (tek tik link) + playlist yonlendirme (gercek linkler).
-  // Nis videosunda ev serilerine yonlendirmek izleyiciyi kaybettirir: karinca
-  // videosu izleyen kisiye 'sirke, karbonat' playlisti alakasiz geliyor.
-  if (niche) {
-    return `${caption}\n\n` +
-      `🔔 Her gün yeni bir ilginç bilgi: ${SUB_LINK}\n\n` +
-      `▶ Tüm bilgi videoları:\n` +
-      `• Biliyor muydun?: ${PL_NIS}\n\n#Shorts`;
-  }
-  return `${caption}\n\n` +
-    `🔔 Her gün yeni bir pratik ev tüyosu: ${SUB_LINK}\n\n` +
-    `▶ Daha detaylı uzun videolar:\n` +
-    `• Bu Haftanın Tüyoları: ${PL_HAFTANIN}\n` +
-    `• Malzeme Serisi (sirke, karbonat, limon...): ${PL_MALZEME}\n\n#Shorts`;
+  const entry = niche ? { niche } : {};
+  const tpl = loadTemplates();
+  const footer = render(tpl.descriptionFooter, {
+    subscribe: renderNamed(entry, 'subscribe'),
+    playlistBlock: renderNamed(entry, 'playlistBlock'),
+  }, tpl);
+  return `${caption}\n\n${footer}`;
 }
 
 /**
@@ -93,25 +82,10 @@ export function buildDescription(caption, niche) {
  * @param {string} opts.refreshToken
  * @returns {Promise<{videoId: string, url: string}>}
  */
-// Mood -> Turkce etiket (Shorts etiketlerini o gunun konusuna gore dinamiklestirir)
-const MOOD_TAGS = {
-  cleaning: ['temizlik', 'temizlik ipuçları'],
-  kitchen: ['mutfak', 'mutfak tüyoları'],
-  laundry: ['çamaşır', 'çamaşır ipuçları'],
-  organizing: ['ev düzeni', 'organizasyon'],
-  cozy: ['ev bakımı', 'ev dekorasyonu']
-};
+// Etiketler seo-templates.json'dan gelir (profil tabani + nis/mood + konu).
+// Imza korunuyor: eski scriptler (fix-niche-seo, update-old-shorts) cagiriyor.
 export function buildTags(moods, concept, niche) {
-  // Nis testi videolari ev etiketleri almaz: ahtapot videosuna 'leke temizligi'
-  // etiketi gitmesi hem yanlis sinyal hem alakasiz metadata.
-  const base = niche
-    ? nicheTags(niche)
-    : ['ev ipuçları', 'pratik bilgi', 'pratik bilgiler', 'yaşam hileleri', 'ev tüyoları', 'püf noktası', 'shorts'];
-  const dyn = niche ? [] : (moods || []).flatMap(m => MOOD_TAGS[m] || []);
-  // O gunun konusu (concept) en spesifik tag; ayni mood'daki yuzlerce Short'u ayristirir.
-  const conceptTags = concept && concept.trim() ? [concept.trim().toLocaleLowerCase('tr-TR')] : [];
-  // Kanal adi (komsu tuyosu) etiket olarak KULLANILMIYOR (marka degil)
-  return [...new Set([...conceptTags, ...dyn, ...base])].slice(0, 15);
+  return buildTagsFor({ moods, concept, niche });
 }
 
 export async function uploadToYoutube({ videoPath, verse, caption, concept, moods, niche, playlistId, firstComment, clientId, clientSecret, refreshToken }) {
@@ -125,9 +99,9 @@ export async function uploadToYoutube({ videoPath, verse, caption, concept, mood
       title,
       description,
       tags: buildTags(moods, concept, niche),
-      // Nis videolari Howto & Style degil: karinca/uzay videosu ev kategorisinde
-      // yanlis kitleye gosteriliyor. 27 = Education.
-      categoryId: niche ? '27' : '26',
+      // Kategori profilden gelir: ev videosu 26 (Howto & Style), nis videosu
+      // 27 (Education). Karinca videosu ev kategorisinde yanlis kitleye gidiyordu.
+      categoryId: profileFor(niche ? { niche } : {}).categoryId,
       defaultLanguage: 'tr',
       defaultAudioLanguage: 'tr'
     },

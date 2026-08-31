@@ -3,6 +3,7 @@
 // YouTube'a yukler. Instagram flow YOK (kanal sadece YouTube).
 
 import { readFileSync } from 'node:fs';
+import { profileFor } from './seoTemplate.js';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { readState, writeState } from './state.js';
@@ -53,9 +54,8 @@ try {
     concept: entry.concept,
     moods: entry.moods,
     niche: entry.niche,                                // nis videolari ev etiketi almaz
-    playlistId: entry.niche
-      ? (process.env.NICHE_PLAYLIST_ID || 'PLSGgmX77Qg94')  // "Biliyor muydun?" (nis testi)
-      : 'PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2',          // "Pratik Ev İpuçları" (Shorts)
+    // Playlist ve kategori profilden gelir (content/seo-templates.json).
+    playlistId: process.env.PLAYLIST_ID_OVERRIDE || profileFor(entry).playlistId,
     firstComment: buildFirstComment(entry, date),      // etkilesim + abone CTA
     clientId: ytClientId,
     clientSecret: ytClientSecret,

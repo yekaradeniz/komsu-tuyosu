@@ -47,6 +47,10 @@ jobs:
         run: node scripts/check-turkish.mjs
         continue-on-error: true
 
+      - name: Nis tanimlarini senkronla (yeni nis varsa template'e yaz)
+        run: node scripts/sync-niches.mjs
+        continue-on-error: true
+
       - name: Icerik kontrolu (siradaki video, uyari)
         run: node scripts/validate-content.mjs --next 1
         continue-on-error: true
@@ -75,6 +79,8 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git config pull.rebase true
           git add output/
+          # sync-niches yeni nis tanimi yazmis olabilir, kaybolmasin
+          git add content/seo-templates.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

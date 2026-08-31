@@ -25,7 +25,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const DIR = join(ROOT, 'content');
 const TR = /[çğıöşüÇĞİÖŞÜ]/;
-const SKIP_KEY = /pexels|query|url|^id$|photo|thumb|mood|source/i;
+// _ ile baslayan alanlar gelistirici notu (_readme, _note): videoda gorunmez.
+const SKIP_KEY = /^_|pexels|query|url|^id$|photo|thumb|mood|source/i;
 const MIN_LEN = 80;
 
 const ASCII_MAP = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', Ç: 'c', Ğ: 'g', İ: 'i', Ö: 'o', Ş: 's', Ü: 'u' };

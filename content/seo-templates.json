@@ -1,0 +1,543 @@
+{
+  "_readme": [
+    "Tum SEO metinleri, etiketleri ve seri ayarlari burada. Kodda hard-coded metin YOK.",
+    "Yeni nis eklemek: content dosyasina 'niche' alanli kayit ekle, BU DOSYAYA DOKUNMA.",
+    "  Tanimsiz nis otomatik calisir: etiket/hashtag icerikten turetilir (autoDerive).",
+    "  Kaliteyi yukseltmek istersen profiles.nis.niches altina tanim ekle, override eder.",
+    "Yeni seri/kanal: profiles altina yeni profil ekle, match kuralini yaz.",
+    "Sablonlarda {degisken} yer tutucular kullanilir: subLink, subjectWord, topicWord, playlist.*"
+  ],
+  "channel": {
+    "handle": "komsutuyosu",
+    "subLink": "https://www.youtube.com/@komsutuyosu?sub_confirmation=1"
+  },
+  "playlists": {
+    "shorts": "PLynH0txiEqh30D7_OctvEaSRpsZR2SCD2",
+    "haftanin": "PLynH0txiEqh26QdVivze5z7xUNmUMgFPP",
+    "malzeme": "PLynH0txiEqh3-w7UG-tVtSAWuehnTYR8G",
+    "nis": "PLSGgmX77Qg94"
+  },
+  "profiles": {
+    "nis": {
+      "match": {
+        "hasField": "niche"
+      },
+      "categoryId": "27",
+      "playlist": "nis",
+      "subjectWord": "ilginç bilgi",
+      "autoDerive": true,
+      "baseTags": [
+        "ilginç bilgiler",
+        "biliyor muydun",
+        "bilgi",
+        "shorts"
+      ],
+      "hashtagCore": [
+        "#biliyormuydun",
+        "#ilginçbilgiler"
+      ],
+      "hashtagPool": [],
+      "hashtagCount": 4,
+      "templates": {
+        "subscribe": "🔔 Her gün yeni bir {subjectWord}: {subLink}",
+        "playlistBlock": "▶ Tüm bilgi videoları:\n• Biliyor muydun?: {playlist.nis}",
+        "intros": [
+          "{verse}",
+          "{verse}\n\nSen biliyor muydun?",
+          "{verse}\n\nCevap videoda.",
+          "Bunu biliyor muydun?\n\n{verse}",
+          "{verse}\n\nDuymuş muydun?",
+          "Bugünün bilgisi:\n\n{verse}"
+        ],
+        "commentQuestions": [
+          "Bunu biliyor muydunuz? {Topic} hakkında merak ettiğiniz bir şey varsa yazın, videosunu yapalım.",
+          "Sizce bu doğru mu? {Topic} konusunda başka hangi konuyu duymak istersiniz?",
+          "Bunu ilk kez mi duydunuz? {Topic} ile ilgili bildiğiniz ilginç bir bilgi varsa yorumlarda paylaşın.",
+          "Bu sizi de şaşırttı mı? {Topic} tarafında öğrenmek istediğiniz bir konu var mı?",
+          "Duymuş muydunuz? {Topic} hakkında sizin bildiğiniz bir bilgiyi yorumlarda görmek isterim.",
+          "Bunu bilen var mıydı? {Topic} ile ilgili hangi soruyu cevaplamamızı istersiniz?"
+        ],
+        "commentCtas": [
+          "Her gün yeni bir {subjectWord} için abone olun: {subLink}",
+          "Böyle bilgileri kaçırmamak için abone olun, her gün yeni bir tane var: {subLink}",
+          "Her gün bir bilgi paylaşıyoruz, abone olup takipte kalın: {subLink}",
+          "Yeni bilgiler için abone olmayı unutmayın: {subLink}"
+        ]
+      },
+      "niches": {
+        "hayvan": {
+          "topic": "hayvanlar",
+          "tags": [
+            "hayvanlar",
+            "ilginç hayvanlar",
+            "hayvan davranışları",
+            "doğa"
+          ],
+          "hashtags": [
+            "#hayvanlar",
+            "#doğa",
+            "#ilginçhayvanlar",
+            "#hayvangerçekleri",
+            "#vahşiyaşam"
+          ]
+        },
+        "para": {
+          "topic": "tasarruf",
+          "tags": [
+            "tasarruf",
+            "para biriktirme",
+            "bütçe",
+            "finansal ipuçları"
+          ],
+          "hashtags": [
+            "#tasarruf",
+            "#parabiriktirme",
+            "#bütçe",
+            "#finans",
+            "#paraipuçları"
+          ]
+        },
+        "vucut": {
+          "topic": "insan vücudu",
+          "tags": [
+            "insan vücudu",
+            "sağlık bilgisi",
+            "biyoloji",
+            "vücut gerçekleri"
+          ],
+          "hashtags": [
+            "#insanvücudu",
+            "#sağlık",
+            "#biyoloji",
+            "#vücut",
+            "#sağlıkbilgisi"
+          ]
+        },
+        "uzay": {
+          "topic": "uzay",
+          "tags": [
+            "uzay",
+            "astronomi",
+            "evren",
+            "gökbilim"
+          ],
+          "hashtags": [
+            "#uzay",
+            "#astronomi",
+            "#evren",
+            "#gökbilim",
+            "#uzaygerçekleri"
+          ]
+        },
+        "tarih": {
+          "topic": "tarih",
+          "tags": [
+            "tarih",
+            "tarihi bilgiler",
+            "tarih gerçekleri",
+            "geçmiş"
+          ],
+          "hashtags": [
+            "#tarih",
+            "#tarihibilgiler",
+            "#geçmiş",
+            "#tarihgerçekleri",
+            "#kültür"
+          ]
+        },
+        "iliski": {
+          "topic": "ilişkiler",
+          "tags": [
+            "ilişkiler",
+            "insan davranışı",
+            "iletişim",
+            "sosyal psikoloji"
+          ],
+          "hashtags": [
+            "#ilişkiler",
+            "#insandavranışı",
+            "#iletişim",
+            "#psikoloji",
+            "#sosyalilişkiler"
+          ]
+        },
+        "deniz": {
+          "topic": "denizler",
+          "tags": [
+            "okyanus",
+            "denizler",
+            "sualtı dünyası",
+            "deniz gerçekleri"
+          ],
+          "hashtags": [
+            "#okyanus",
+            "#deniz",
+            "#sualtı",
+            "#denizgerçekleri",
+            "#doğa"
+          ]
+        },
+        "yemek": {
+          "topic": "mutfak",
+          "tags": [
+            "mutfak bilimi",
+            "yemek püf noktaları",
+            "gıda bilgisi",
+            "mutfak"
+          ],
+          "hashtags": [
+            "#mutfakbilimi",
+            "#yemek",
+            "#gıda",
+            "#mutfak",
+            "#yemekipuçları"
+          ]
+        },
+        "doga": {
+          "topic": "doğa",
+          "tags": [
+            "doğa olayları",
+            "hava durumu",
+            "doğa bilimi",
+            "meteoroloji"
+          ],
+          "hashtags": [
+            "#doğaolayları",
+            "#hava",
+            "#doğa",
+            "#meteoroloji",
+            "#bilim"
+          ]
+        },
+        "teknoloji": {
+          "topic": "teknoloji",
+          "tags": [
+            "teknoloji",
+            "telefon ipuçları",
+            "dijital dünya",
+            "teknoloji bilgisi"
+          ],
+          "hashtags": [
+            "#teknoloji",
+            "#telefonipuçları",
+            "#dijital",
+            "#teknolojibilgisi",
+            "#akıllıtelefon"
+          ]
+        },
+        "dunya": {
+          "topic": "dünya",
+          "tags": [
+            "coğrafya",
+            "ülkeler",
+            "dünya gerçekleri",
+            "gezi bilgisi"
+          ],
+          "hashtags": [
+            "#coğrafya",
+            "#ülkeler",
+            "#dünya",
+            "#gezi",
+            "#dünyagerçekleri"
+          ]
+        },
+        "muhendislik": {
+          "topic": "mühendislik",
+          "tags": [
+            "mühendislik",
+            "nasıl çalışır",
+            "yapılar",
+            "teknik bilgi"
+          ],
+          "hashtags": [
+            "#mühendislik",
+            "#nasılçalışır",
+            "#yapılar",
+            "#teknik",
+            "#bilim"
+          ]
+        }
+      }
+    },
+    "ev": {
+      "match": {
+        "default": true
+      },
+      "categoryId": "26",
+      "playlist": "shorts",
+      "subjectWord": "pratik ev tüyosu",
+      "autoDerive": false,
+      "baseTags": [
+        "ev ipuçları",
+        "pratik bilgi",
+        "pratik bilgiler",
+        "yaşam hileleri",
+        "ev tüyoları",
+        "püf noktası",
+        "shorts"
+      ],
+      "hashtagCore": [
+        "#evipuçları",
+        "#pratikbilgi"
+      ],
+      "hashtagPool": [
+        "#temizlik",
+        "#evtüyoları",
+        "#mutfaktüyoları",
+        "#evdüzeni",
+        "#pratikçözüm",
+        "#evbakımı",
+        "#organizasyon",
+        "#çamaşır",
+        "#tasarruf",
+        "#leketemizliği",
+        "#yaşamhilesi",
+        "#püfnoktası",
+        "#dekorasyon",
+        "#mutfak",
+        "#temizlikipuçları",
+        "#evişleri",
+        "#hayatkurtaran",
+        "#evhali",
+        "#pratikbilgiler",
+        "#evhanımı",
+        "#shorts",
+        "#nasılyapılır",
+        "#evdekorasyonu",
+        "#tüyo"
+      ],
+      "hashtagCount": 4,
+      "moodTags": {
+        "cleaning": [
+          "temizlik",
+          "temizlik ipuçları"
+        ],
+        "kitchen": [
+          "mutfak",
+          "mutfak tüyoları"
+        ],
+        "laundry": [
+          "çamaşır",
+          "çamaşır ipuçları"
+        ],
+        "organizing": [
+          "ev düzeni",
+          "organizasyon"
+        ],
+        "cozy": [
+          "ev bakımı",
+          "ev dekorasyonu"
+        ]
+      },
+      "moodTopics": {
+        "cleaning": "temizlik",
+        "kitchen": "mutfak",
+        "laundry": "çamaşır",
+        "organizing": "düzen",
+        "cozy": "ev"
+      },
+      "defaultTopic": "ev işleri",
+      "templates": {
+        "subscribe": "🔔 Her gün yeni bir {subjectWord}: {subLink}",
+        "playlistBlock": "▶ Daha detaylı uzun videolar:\n• Bu Haftanın Tüyoları: {playlist.haftanin}\n• Malzeme Serisi (sirke, karbonat, limon...): {playlist.malzeme}",
+        "intros": [
+          "{verse}",
+          "{verse}\n\nSen biliyor muydun?",
+          "{verse}\n\nDenediniz mi?",
+          "{verse}\n\nDetaylar videoda.",
+          "Bunu biliyor muydun?\n\n{verse}",
+          "Bugünün tüyosu:\n\n{verse}"
+        ],
+        "commentQuestions": [
+          "Bu tüyoyu daha önce denediniz mi? {Topic} konusunda sizin bildiğiniz bir püf noktası varsa yorumlarda paylaşın.",
+          "Sizde işe yarıyor mu? {Topic} için en çok hangi konuda tüyo istersiniz?",
+          "Bunu bilenler var mıydı aranızda? {Topic} tarafında merak ettiğiniz bir şey olursa yazın, videosunu çekelim.",
+          "Sizin evde bu nasıl yapılıyor? {Topic} ile ilgili kendi yönteminizi yorumlarda görmek isterim.",
+          "Denediyseniz sonucu yazar mısınız? {Topic} konusunda başka hangi tüyoyu duymak istersiniz?",
+          "Bunu ilk kez mi duydunuz? {Topic} için sizin vazgeçmediğiniz bir pratik yöntem var mı?"
+        ],
+        "commentCtas": [
+          "Her gün yeni bir {subjectWord} için abone olun: {subLink}",
+          "Böyle tüyoları kaçırmamak için abone olun, her gün yeni bir tane var: {subLink}",
+          "Her gün bir tüyo paylaşıyoruz, abone olup takipte kalın: {subLink}",
+          "Yeni tüyolar için abone olmayı unutmayın: {subLink}"
+        ]
+      }
+    }
+  },
+  "descriptionFooter": "{subscribe}\n\n{playlistBlock}\n\n#Shorts",
+  "autoDerive": {
+    "maxTags": 4,
+    "maxHashtags": 4,
+    "minWordLength": 5,
+    "stopwords": [
+      "ancak",
+      "aslinda",
+      "aslında",
+      "bazen",
+      "belki",
+      "bile",
+      "bunlar",
+      "bunun",
+      "burada",
+      "çünkü",
+      "daha",
+      "değil",
+      "diğer",
+      "diye",
+      "dolayı",
+      "gibi",
+      "hala",
+      "hâlâ",
+      "hangi",
+      "hemen",
+      "henüz",
+      "hiçbir",
+      "için",
+      "kadar",
+      "kendi",
+      "olarak",
+      "olduğu",
+      "olur",
+      "önce",
+      "peki",
+      "şey",
+      "şeyi",
+      "sonra",
+      "sonucu",
+      "şunu",
+      "üzere",
+      "yani",
+      "yerine",
+      "zaten",
+      "zaman",
+      "hiç",
+      "çok",
+      "daha",
+      "göre",
+      "kere",
+      "tane",
+      "tam",
+      "yine",
+      "ise",
+      "ama",
+      "fakat",
+      "ancak",
+      "yaklaşık",
+      "yüzden",
+      "böyle",
+      "şöyle",
+      "nasıl",
+      "neden",
+      "niçin",
+      "yapabilir",
+      "ediyor",
+      "ediyorsun",
+      "oluyor",
+      "olmuyor",
+      "gidiyor",
+      "geliyor",
+      "düşünüyorsun",
+      "biliyor",
+      "bilmiyor",
+      "sanıyorsun",
+      "yapıyorsun",
+      "görünüyor",
+      "kalıyor",
+      "veriyor",
+      "alıyor",
+      "çıkar",
+      "eder",
+      "olan",
+      "olsa",
+      "varsa",
+      "yoksa",
+      "hepsi",
+      "birer"
+    ],
+    "badSuffixes": [
+      "abilir",
+      "acagi",
+      "acak",
+      "arak",
+      "daki",
+      "dan",
+      "deki",
+      "den",
+      "di",
+      "dir",
+      "diği",
+      "du",
+      "dur",
+      "duğu",
+      "dü",
+      "dür",
+      "düğü",
+      "dı",
+      "dır",
+      "dığı",
+      "ebilir",
+      "ecegi",
+      "ecek",
+      "erek",
+      "esi",
+      "ince",
+      "iyle",
+      "ken",
+      "larda",
+      "lardan",
+      "ları",
+      "lerde",
+      "lerden",
+      "leri",
+      "mak",
+      "malı",
+      "ması",
+      "mek",
+      "meli",
+      "mesi",
+      "miş",
+      "muş",
+      "müş",
+      "mış",
+      "nda",
+      "ndan",
+      "nde",
+      "nden",
+      "nin",
+      "nun",
+      "nün",
+      "nın",
+      "sine",
+      "sini",
+      "siz",
+      "suz",
+      "süz",
+      "sına",
+      "sını",
+      "sız",
+      "tan",
+      "ten",
+      "ti",
+      "tiği",
+      "tu",
+      "tuğu",
+      "tü",
+      "tüğü",
+      "tı",
+      "tığı",
+      "unca",
+      "uyla",
+      "yor",
+      "yorlar",
+      "yorsun",
+      "yoruz",
+      "ünce",
+      "üyle",
+      "ınca",
+      "ısı",
+      "ıyla"
+    ],
+    "_note": "badSuffixes: bu eklerle biten kelimeler etiket/hashtag olamaz. Turkce'de govde ayirma guvenilir degil, o yuzden kok uretmiyoruz; sadece cekimli halleri eliyoruz. Kalan kelimeler zaten cogunlukla yalin isim."
+  }
+}
