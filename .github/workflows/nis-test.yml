@@ -50,6 +50,9 @@ jobs:
       - name: Icerik kontrolu (siradaki video, uyari)
         run: node scripts/validate-content.mjs --next 1
         continue-on-error: true
+        env:
+          CONTENT_FILE: nis-testi.json
+          STATE_FILE: nis-log.json
 
       - name: Generate today's reel
         run: npm run render

@@ -42,7 +42,7 @@ const nextIdx = args.indexOf('--next');
 const nextN = nextIdx >= 0 ? parseInt(args[nextIdx + 1] || '1', 10) : null;
 
 const content = JSON.parse(readFileSync(join(ROOT, 'content', CONTENT), 'utf-8'));
-const logPath = join(ROOT, 'output', 'log.json');
+const logPath = join(ROOT, 'output', process.env.STATE_FILE || 'log.json');
 const posted = existsSync(logPath)
   ? new Set((JSON.parse(readFileSync(logPath, 'utf-8')).postedVerseIds) || [])
   : new Set();

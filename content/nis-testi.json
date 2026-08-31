@@ -147,8 +147,8 @@
     "id": "nt-009",
     "niche": "para",
     "concept": "Markette birim fiyat",
-    "verse": "Markette hep büyük boy paketi alıyorsun, çünkü büyüğü daha hesaplı sanıyorsun. Etikette bunu çürüten bir satır var.",
-    "explanation": "Raf etiketindeki birim fiyat satırına bak, kilo ya da litre başına düşen gerçek fiyat orada yazar. Yasal zorunluluktur ve büyük paketin her zaman ucuz olmadığını gösterir.",
+    "verse": "Markette hep büyük boy paketi alıyorsun, çünkü büyüğü hesaplı sanıyorsun. Etikette bunu çürüten bir satır var.",
+    "explanation": "Raf etiketindeki birim fiyata bak, kilo ya da litre başına gerçek fiyat orada yazar. Yasal zorunluluktur ve büyük paket her zaman ucuz değildir.",
     "pexelsQuery": [
       "woman comparing products supermarket",
       "supermarket shelf price tag",
@@ -165,8 +165,8 @@
     "id": "nt-010",
     "niche": "para",
     "concept": "Küçük alışkanlığın maliyeti",
-    "verse": "Günde bir kahve, bir simit derken hiçbiri bütçeni sarsmıyor gibi görünüyor. Peki yıl sonunda toplamı ne yapar?",
-    "explanation": "Günlük harcamayı 365 ile çarp, gerçek rakam orada çıkar: günde 50 lira yılda 18.250 lira eder. En tehlikeli masraf, tek seferde büyük olan değil, her gün tekrarlanandır.",
+    "verse": "Günde bir kahve, bir simit derken hiçbiri bütçeni sarsmıyor gibi. Peki yıl sonunda toplamı ne yapar?",
+    "explanation": "Günlük harcamayı 365 ile çarp: günde 50 lira yılda 18.250 lira eder. En tehlikeli masraf tek seferde büyük olan değil, her gün tekrarlanandır.",
     "pexelsQuery": [
       "counting money hands close up",
       "coffee cup cafe counter",
@@ -309,8 +309,8 @@
     "id": "nt-018",
     "niche": "uzay",
     "concept": "Kara delikte zaman",
-    "verse": "Bir kara deliğe yaklaşan astronot için zaman, senin saatinle aynı hızda akmaz. Peki bunu ne yavaşlatıyor?",
-    "explanation": "Kütleçekim zamanı yavaşlatıyor. Olay ufkuna yaklaştıkça, uzaktan bakan biri için astronotun saati giderek yavaşlar. Einstein 1915'te öngördü, atom saatleri doğruladı.",
+    "verse": "Kara deliğe yaklaşan astronot için zaman senin saatinle aynı hızda akmaz. Peki onu ne yavaşlatıyor?",
+    "explanation": "Kütleçekim zamanı yavaşlatır. Olay ufkuna yaklaştıkça uzaktan bakan biri için astronotun saati yavaşlar; Einstein öngördü, atom saatleri doğruladı.",
     "pexelsQuery": [
       "black hole space",
       "galaxy space stars",
@@ -327,8 +327,8 @@
     "id": "nt-019",
     "niche": "uzay",
     "concept": "Nötron yıldızı yoğunluğu",
-    "verse": "Evrende öyle bir madde var ki, bir çay kaşığı dolusu milyarlarca ton çekiyor. Bu madde nerede bulunuyor?",
-    "explanation": "Nötron yıldızlarında. Ağır bir yıldız çöktüğünde geriye çapı 20 kilometre olan bir küre kalıyor ve bu kürenin çay kaşığı kadarı yaklaşık 1 milyar ton geliyor.",
+    "verse": "Evrende öyle bir madde var ki bir çay kaşığı dolusu milyarlarca ton çekiyor. Bu madde nerede bulunuyor?",
+    "explanation": "Nötron yıldızlarında. Ağır bir yıldız çöktüğünde geriye çapı 20 kilometre olan küre kalır; bu kürenin çay kaşığı kadarı 1 milyar ton gelir.",
     "pexelsQuery": [
       "stars galaxy space",
       "supernova space explosion",
@@ -399,8 +399,8 @@
     "id": "nt-023",
     "niche": "tarih",
     "concept": "Kot pantolondaki küçük cep",
-    "verse": "Kot pantolonunun sağ cebinin içinde küçücük bir cep daha var. Hiç kullanmıyorsun ama oraya konan bir şey vardı.",
-    "explanation": "O küçük cep, cep saatleri için yapıldı. Levi Strauss ile Jacob Davis'in 1873'te patentini aldığı ilk kot pantolonlarda vardı; kol saati yayılınca işlevsiz kaldı.",
+    "verse": "Kot pantolonunun sağ cebinin içinde küçücük bir cep daha var. Hiç kullanmıyorsun ama bir işi vardı.",
+    "explanation": "O küçük cep, cep saatleri için yapıldı. 1873'te patenti alınan ilk kot pantolonlarda vardı; kol saati yayılınca işlevsiz kaldı.",
     "pexelsQuery": [
       "denim jeans closeup",
       "antique pocket watch",
@@ -417,8 +417,8 @@
     "id": "nt-024",
     "niche": "tarih",
     "concept": "İnsan çalar saat mesleği",
-    "verse": "Bir zamanlar İngiltere'de insanları sabah uyandırmak ayrı bir meslekti. Bu işi yapanlar kapıyı bile çalmıyordu.",
-    "explanation": "Uzun bambu sopalarla yatak odası pencerelerine vururlardı. Knocker-up denen bu meslek Sanayi Devrimi'nde doğdu, bazı fabrika kasabalarında 1950'lere kadar sürdü.",
+    "verse": "Bir zamanlar İngiltere'de insanları sabah uyandırmak ayrı bir meslekti. Kapıyı bile çalmıyorlardı.",
+    "explanation": "Uzun bambu sopalarla yatak odası pencerelerine vururlardı. Sanayi Devrimi'nde doğan bu meslek bazı fabrika kasabalarında 1950'lere kadar sürdü.",
     "pexelsQuery": [
       "foggy old street",
       "old brick houses",
@@ -435,8 +435,8 @@
     "id": "nt-025",
     "niche": "tarih",
     "concept": "Mamutlar ve piramitler",
-    "verse": "Büyük Piramit'in dikilişinden yaklaşık 900 yıl sonra dünyada hâlâ mamutlar yaşıyordu. Nerede olduklarını bilen çok az.",
-    "explanation": "Son mamutlar Sibirya kıyısındaki Wrangel Adası'nda yaşadı ve yaklaşık MÖ 1650'de yok oldu. Giza'daki Büyük Piramit ise MÖ 2560 civarında tamamlanmıştı.",
+    "verse": "Büyük Piramit dikildikten 900 yıl sonra dünyada hâlâ mamutlar yaşıyordu. Nerede olduklarını bilen az.",
+    "explanation": "Son mamutlar Sibirya kıyısındaki Wrangel Adası'nda yaşadı, MÖ 1650 civarında yok oldu. Büyük Piramit ise MÖ 2560'ta tamamlanmıştı.",
     "pexelsQuery": [
       "egyptian pyramids",
       "desert sand dunes",
@@ -532,6 +532,546 @@
       "two friends serious talk",
       "person refusing request",
       "confident woman indoors"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-031",
+    "niche": "deniz",
+    "concept": "Mariana Çukuru basıncı",
+    "verse": "Okyanusun en derin noktasına insan indi. Peki oradaki basınç tam olarak neye eşit, hiç düşündün mü?",
+    "explanation": "Tırnağının üstüne 50 uçak bindirmek gibi. 11 kilometre derinlikte basınç yüzeyin bin katı, o yüzden araçlar 12 santim kalın camla iniyor.",
+    "pexelsQuery": [
+      "deep ocean underwater dark",
+      "submarine underwater vehicle",
+      "ocean surface aerial drone",
+      "deep sea trench blue water"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-032",
+    "niche": "deniz",
+    "concept": "Deniz suyu neden tuzlu",
+    "verse": "Yağmur suyu tatlı, nehir suyu tatlı. Peki denize dökülen bu sular deniz suyunu neden tuzlu yapıyor?",
+    "explanation": "Nehirler kayalardan tuz söker, denize taşır. Su buharlaşınca tuz geride kalır; milyonlarca yıl biriktiği için bugün her litrede 35 gram tuz var.",
+    "pexelsQuery": [
+      "river flowing into sea",
+      "ocean waves rocks",
+      "salt crystals close up",
+      "sea water aerial view"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-033",
+    "niche": "deniz",
+    "concept": "Derinlikte renk kaybolur",
+    "verse": "Derin denizdeki birçok balık kıpkırmızıdır. Halbuki kırmızı en çok dikkat çeken renk, bu bir çelişki değil mi?",
+    "explanation": "Kırmızı ışık suda ilk kaybolan renktir. Otuz metre aşağıda kırmızı diye bir şey kalmaz, o balık orada siyah görünür ve avcıya görünmez olur.",
+    "pexelsQuery": [
+      "red fish underwater",
+      "scuba diver deep blue",
+      "underwater light rays",
+      "coral reef deep water"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-034",
+    "niche": "deniz",
+    "concept": "Gelgit ve Ay",
+    "verse": "Deniz her gün iki kez yükselip alçalıyor. Bu kadar suyu yerinden oynatan güç nereden geliyor sence?",
+    "explanation": "Ay'ın çekim gücü. Ay okyanusu kendine doğru çeker, dünya dönerken o kabarma kıyıları dolaşır; bu yüzden gelgit saati her gün 50 dakika kayar.",
+    "pexelsQuery": [
+      "tide coming in beach",
+      "full moon over ocean",
+      "rocky shore low tide",
+      "waves timelapse coast"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-035",
+    "niche": "deniz",
+    "concept": "Okyanus tabanı haritası",
+    "verse": "Ay yüzeyinin haritası okyanus tabanından daha ayrıntılı. Kendi gezegenimizi neden bu kadar az biliyoruz?",
+    "explanation": "Su radyo dalgasını geçirmez, uydu tabanı göremez. Ölçmek için gemiyle ses dalgası göndermek gerekir; bu yüzden taban haritasının beşte biri hazır.",
+    "pexelsQuery": [
+      "research ship ocean",
+      "sonar mapping screen",
+      "dark ocean depth",
+      "satellite view earth ocean"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-036",
+    "niche": "yemek",
+    "concept": "Ekmek buzdolabında bayatlar",
+    "verse": "Ekmek bayatlamasın diye buzdolabına koyuyorsun. Aslında ona yapabileceğin en kötü şeyi yapıyorsun.",
+    "explanation": "Bayatlama kuruma değil, nişastanın yeniden kristalleşmesi. Bu en hızlı buzdolabı sıcaklığında olur; ekmek dolapta tezgahtakinden üç kat hızlı bayatlar.",
+    "pexelsQuery": [
+      "bread slices on table",
+      "opening refrigerator door",
+      "fresh bread bakery",
+      "hands breaking bread"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-037",
+    "niche": "yemek",
+    "concept": "Soğan neden ağlatır",
+    "verse": "Soğan doğrarken gözün yaşarıyor ama patates doğrarken hiçbir şey olmuyor. Peki soğanın içinde ne var?",
+    "explanation": "Bıçak hücreyi kesince çıkan gaz gözdeki suyla birleşip asit oluşturur. Soğanı yarım saat buzdolabında beklettiğinde bu gaz çok daha az çıkar.",
+    "pexelsQuery": [
+      "cutting onion knife",
+      "woman chopping vegetables kitchen",
+      "onion close up macro",
+      "kitchen cutting board"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-038",
+    "niche": "yemek",
+    "concept": "Acı biberde su işe yaramaz",
+    "verse": "Ağzın acıdan yanıyor ve hemen suya koşuyorsun. Ama su acıyı neden hiç dindirmiyor, hatta yayıyor?",
+    "explanation": "Acıyı veren madde yağda çözünür, suda çözünmez. Su onu ağzın içine dağıtır; yoğurt, süt ya da ayran ise yağıyla acıyı gerçekten söker.",
+    "pexelsQuery": [
+      "red chili peppers",
+      "glass of milk pouring",
+      "spicy food eating",
+      "yogurt bowl close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-039",
+    "niche": "yemek",
+    "concept": "Bal neden bozulmaz",
+    "verse": "Mısır piramitlerinde bulunan bal hala yenebilir durumdaydı. Bir yiyecek nasıl bin yıllarca bozulmaz?",
+    "explanation": "Balda neredeyse hiç su yok, bu yüzden bakteri yaşayamaz. Arı ayrıca içine az miktarda asit katar; kavanoz kapalı durduğu sürece bal bozulmaz.",
+    "pexelsQuery": [
+      "honey jar dripping",
+      "honeycomb close up",
+      "bees on honeycomb",
+      "honey spoon golden"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-040",
+    "niche": "yemek",
+    "concept": "Kızarma tepkimesi",
+    "verse": "Haşlanmış et gri kalıyor, tavadaki et kızarıyor. İkisi de aynı et, peki rengi ve kokuyu ne değiştiriyor?",
+    "explanation": "Suyun kaynama noktası kızarma için düşük kalır. Et 140 dereceyi geçince protein ve şeker birleşir, yüzlerce yeni koku maddesi ortaya çıkar.",
+    "pexelsQuery": [
+      "steak searing pan",
+      "cooking meat sizzling",
+      "boiling pot water",
+      "grill fire cooking"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-041",
+    "niche": "doga",
+    "concept": "Şimşek mesafe hesabı",
+    "verse": "Şimşeği görüyorsun, sesi birkaç saniye sonra geliyor. O boşluk aslında sana bir bilgi veriyor.",
+    "explanation": "Işık anında ulaşır, ses saniyede 340 metre gider. Şimşekten sonra saydığın her üç saniye bir kilometre demek; ses hemen geldiyse fırtına tepende.",
+    "pexelsQuery": [
+      "lightning storm night",
+      "dark storm clouds",
+      "thunderstorm city skyline",
+      "rain window storm"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-042",
+    "niche": "doga",
+    "concept": "Gökyüzü neden mavi",
+    "verse": "Güneş ışığı beyaz, hava ise renksiz. Peki gökyüzü her gün nasıl oluyor da mavi görünüyor?",
+    "explanation": "Beyaz ışık bütün renklerin karışımı. Havadaki moleküller mavi ışığı diğerlerinden çok daha fazla dağıtır, gökyüzünün her yerinden gözüne mavi gelir.",
+    "pexelsQuery": [
+      "blue sky clouds timelapse",
+      "sun rays through sky",
+      "clear sky horizon",
+      "sunset sky colors"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-043",
+    "niche": "doga",
+    "concept": "Kar neden beyaz",
+    "verse": "Bir buz küpü şeffaftır, arkasını görürsün. Kar da sudan yapılıyor, peki neden bembeyaz görünüyor?",
+    "explanation": "Kar tek parça buz değil, milyonlarca minik kristal. Işık her kristalden farklı yöne yansır, bütün renkler karışık geri döner; gözün buna beyaz der.",
+    "pexelsQuery": [
+      "snow falling close up",
+      "snowflake macro",
+      "winter forest snow",
+      "ice cube melting"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-044",
+    "niche": "doga",
+    "concept": "Yağmur kokusu",
+    "verse": "Yağmur yağmadan önce o toprak kokusunu alırsın. Su kokusuz olduğuna göre o koku nereden geliyor?",
+    "explanation": "Kokuyu toprakta yaşayan bakteriler üretir. Yağmur damlası toprağa çarpınca bu maddeyi havaya fırlatır; burnun onu milyarda birlik miktarda fark eder.",
+    "pexelsQuery": [
+      "rain on dry soil",
+      "first rain drops ground",
+      "wet earth close up",
+      "rain falling garden"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-045",
+    "niche": "doga",
+    "concept": "Çölde gece soğuğu",
+    "verse": "Çölde gündüz sıcaklık elli dereceyi buluyor. Peki aynı yerde gece neden battaniye arıyorsun?",
+    "explanation": "Isıyı tutan şey havadaki nem. Çölde nem yok, gündüz biriken sıcaklık güneş batınca hızla uzaya kaçar; fark bir gecede 30 dereceyi geçebilir.",
+    "pexelsQuery": [
+      "desert dunes sunset",
+      "desert night stars",
+      "sand dunes wind",
+      "desert camp fire night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-046",
+    "niche": "teknoloji",
+    "concept": "Mikrodalga wifiyi bozar",
+    "verse": "Mikrodalga çalışırken telefonun interneti yavaşlıyor. Bu tesadüf değil, ikisi tam olarak aynı şeyi kullanıyor.",
+    "explanation": "İkisi de 2.4 gigahertz dalga yayar. Fırından sızan dalga wifi sinyalinin üstüne biner; modemi 5 gigahertz bandına alırsan bu karışma biter.",
+    "pexelsQuery": [
+      "microwave oven kitchen",
+      "wifi router home",
+      "person using phone kitchen",
+      "loading screen phone"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-047",
+    "niche": "teknoloji",
+    "concept": "Telefonu gece şarjda bırakmak",
+    "verse": "Telefonu her gece sabaha kadar şarjda bırakıyorsun. Pil ömrünü kısaltan asıl alışkanlık tam olarak bu.",
+    "explanation": "Lityum pil dolu beklemekten yorulur. Yüzde 20 ile 80 arasında tutulan pil, her gece yüzde 100'de bekletilene göre iki kat uzun ömürlü olur.",
+    "pexelsQuery": [
+      "phone charging cable night",
+      "smartphone battery icon",
+      "charging phone bedside",
+      "hands holding phone dark"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-048",
+    "niche": "teknoloji",
+    "concept": "Gizli mod ne gizler",
+    "verse": "Tarayıcıda gizli sekme açınca kimsenin seni göremediğini sanıyorsun. Gizlediği şey aslında çok daha küçük.",
+    "explanation": "Gizli mod sadece o cihazdaki geçmişi ve çerezi siler. İnternet sağlayıcın, işyerinin ağı ve girdiğin siteler seni aynı şekilde görmeye devam eder.",
+    "pexelsQuery": [
+      "laptop browser screen",
+      "person typing laptop night",
+      "server room data",
+      "cyber security screen"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-049",
+    "niche": "teknoloji",
+    "concept": "Hasarlı kare kod okunur",
+    "verse": "Üstü çizilmiş, köşesi yırtılmış bir kare kod hala okunuyor. Bu nasıl mümkün oluyor sence?",
+    "explanation": "Kod aynı bilgiyi birden çok kez yazar. Yüzde otuzu yok olsa bile kalan parçalar eksiği hesaplayıp tamamlar, bu yüzden hasarlı kod bile çalışır.",
+    "pexelsQuery": [
+      "qr code scanning phone",
+      "qr code on wall",
+      "phone camera scanning",
+      "paper poster street"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-050",
+    "niche": "teknoloji",
+    "concept": "Ekran parmağı nasıl anlar",
+    "verse": "Eldivenle telefona dokunuyorsun ama ekran hiç tepki vermiyor. Ekran parmağı nasıl anlıyor peki?",
+    "explanation": "Ekran basıncı değil, vücudundaki elektriği ölçer. Yün ya da deri elektriği geçirmez; dokunmatik eldivenlerin parmak ucunda ince metal iplik vardır.",
+    "pexelsQuery": [
+      "gloves winter phone",
+      "finger touching screen",
+      "smartphone screen close up",
+      "winter street phone hands"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-051",
+    "niche": "dunya",
+    "concept": "En küçük ülke",
+    "verse": "Dünyanın en küçük ülkesini yürüyerek yarım saatte turlayabilirsin. Peki kendi parası ve pulu var mı?",
+    "explanation": "Vatikan 0.44 kilometrekare, yaklaşık 60 futbol sahası büyüklüğünde. Buna rağmen kendi pasaportu, para birimi, postanesi ve radyosu var.",
+    "pexelsQuery": [
+      "vatican city aerial",
+      "st peters basilica rome",
+      "old european city square",
+      "passport stamp close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-052",
+    "niche": "dunya",
+    "concept": "On bir saat dilimi",
+    "verse": "Rusya'nın bir ucunda insanlar kahvaltı ederken diğer ucunda akşam oluyor. Kaç saat fark var dersin?",
+    "explanation": "On bir saat dilimi var. Ülkenin doğusunda yeni gün başlarken Moskova'da hala önceki günün akşamı yaşanıyor, bu tek ülke için dünya rekoru.",
+    "pexelsQuery": [
+      "world map globe",
+      "clock faces different times",
+      "snowy siberian landscape",
+      "moscow city night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-053",
+    "niche": "dunya",
+    "concept": "Ölü Deniz'de batmamak",
+    "verse": "Ölü Deniz'de yüzme bilmeyen biri bile su üstünde durabiliyor. Suyu bu kadar farklı yapan ne?",
+    "explanation": "Normal denizde her litrede 35 gram tuz var, orada 340 gram. Tuz suyu ağırlaştırır, vücudun bu ağır suyun içine batamaz ve yukarı itilirsin.",
+    "pexelsQuery": [
+      "dead sea floating person",
+      "salt lake shore",
+      "salt crust water",
+      "desert lake aerial"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-054",
+    "niche": "dunya",
+    "concept": "Sahra Amazon'u besliyor",
+    "verse": "Sahra Çölü'ndeki kum, Amazon ormanını besliyor. Aralarında koca bir okyanus var, bu nasıl oluyor?",
+    "explanation": "Rüzgar her yıl çölden milyonlarca ton tozu Atlantik üzerinden taşır. Tozdaki fosfor, yağmurla yıkanan orman toprağının kaybettiği gübreyi geri verir.",
+    "pexelsQuery": [
+      "sahara desert wind sand",
+      "dust storm sky",
+      "amazon rainforest aerial",
+      "jungle canopy rain"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-055",
+    "niche": "dunya",
+    "concept": "Antarktika'yı kim yönetir",
+    "verse": "Antarktika'nın sahibi hiçbir ülke değil, bayrağı ve hükümeti de yok. Peki orayı kim yönetiyor?",
+    "explanation": "1959'da imzalanan anlaşma kıtayı bilime ayırdı. Askeri üs kurmak ve maden çıkarmak yasak; orada sadece araştırmacılar dönüşümlü olarak yaşıyor.",
+    "pexelsQuery": [
+      "antarctica ice landscape",
+      "penguins ice snow",
+      "research station snow",
+      "iceberg ocean aerial"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-056",
+    "niche": "muhendislik",
+    "concept": "Uçak penceresi neden yuvarlak",
+    "verse": "Uçak pencereleri hep yuvarlak köşeli. İlk yolcu uçaklarında köşeli pencereler vardı ve sonu kötü bitti.",
+    "explanation": "Keskin köşe basıncı tek noktada toplar. 1950'lerde köşeli pencereli uçaklar havada parçalandı; köşe yuvarlanınca yük gövdeye eşit dağıldı.",
+    "pexelsQuery": [
+      "airplane window view clouds",
+      "passenger looking plane window",
+      "airplane wing sky",
+      "vintage airplane runway"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-057",
+    "niche": "muhendislik",
+    "concept": "Gökdelen neden sallanır",
+    "verse": "Yüksek binalar rüzgarda sallanıyor ve bu seni korkutuyor. Halbuki sallanmasa çok daha tehlikeli olurdu.",
+    "explanation": "Esnemeyen bina rüzgar yükünü ememez, kırılır. Tepeye konan yüzlerce tonluk ağırlık ters yöne kayıp salınımı söndürür, bina eğilir ama ayakta kalır.",
+    "pexelsQuery": [
+      "skyscraper looking up",
+      "city skyline windy clouds",
+      "construction crane building",
+      "glass tower reflection"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-058",
+    "niche": "muhendislik",
+    "concept": "Asansör halatı koparsa",
+    "verse": "Asansörün halatı kopsa ne olur diye düşünürsün. Gerçek cevap tahmin ettiğinden çok daha sıkıcı.",
+    "explanation": "Kabin tek halatla değil, altı sekiz halatla asılı. Biri koptuğunda hız algılayıcı devreye girer, çelik pabuçlar rayı sıkar ve kabin metrelerde durur.",
+    "pexelsQuery": [
+      "elevator doors opening",
+      "elevator shaft cables",
+      "modern building lobby",
+      "steel cable close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-059",
+    "niche": "muhendislik",
+    "concept": "Köprüdeki boşluklar",
+    "verse": "Köprüden geçerken tekerlekler ritmik tak tak sesi çıkarır. O boşluklar hata değil, bilerek bırakılmış.",
+    "explanation": "Çelik yazın uzar, kışın kısalır. Bir kilometrelik köprü mevsimler arasında 30 santim boy değiştirir; o boşluk olmasa yol kendi kendini büker.",
+    "pexelsQuery": [
+      "bridge road driving",
+      "steel bridge structure",
+      "highway aerial cars",
+      "bridge expansion joint"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-060",
+    "niche": "muhendislik",
+    "concept": "Uçak kanadı ne kadar bükülür",
+    "verse": "Türbülansta uçağın kanadı sallanınca herkes korkar. Aslında o kanat kırılmadan çok daha fazlasını yapabilir.",
+    "explanation": "Kanatlar testte uçlarından yukarı doğru bükülür. Koptukları nokta uçuşta görülen esnemenin kat kat üstündedir; o esneklik bir güvenlik payıdır.",
+    "pexelsQuery": [
+      "airplane wing turbulence",
+      "aircraft factory assembly",
+      "plane flying clouds",
+      "jet engine close up"
     ],
     "moods": [
       "cinematic"
