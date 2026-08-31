@@ -19,7 +19,9 @@ if (!clientId || !clientSecret) {
 const PORT = 8765;
 const REDIRECT_URI = `http://localhost:${PORT}/callback`;
 // force-ssl: upload + thumbnail set + video yonetimi (kapak otomatik set icin gerekli)
-const SCOPE = 'https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.force-ssl';
+// force-ssl: upload + thumbnail set + video yonetimi
+// yt-analytics.readonly: video basina abone/izlenme suresi/retention verisi
+const SCOPE = 'https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/yt-analytics.readonly';
 
 const authUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');
 authUrl.searchParams.set('client_id', clientId);
