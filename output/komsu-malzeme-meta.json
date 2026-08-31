@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 19,
-  "episodeNo": 20,
-  "videoTitle": "Patatesin Şaşırtıcı 5 Ev Kullanımı",
-  "material": "Patates",
-  "thumbTop": "Evde Patates",
+  "index": 20,
+  "episodeNo": 21,
+  "videoTitle": "Muz Kabuğunun Bilmediğin 5 Kullanımı",
+  "material": "Muz kabuğu",
+  "thumbTop": "Evde Muz kabuğu",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-020-1",
-      "keyword": "Pas",
-      "title": "Patatesle Pası Çıkar",
+      "id": "mz-021-1",
+      "keyword": "Gübre",
+      "title": "Saksı Bitkilerine Doğal Gübre",
       "start": 6
     },
     {
-      "id": "mz-020-2",
-      "keyword": "Buğu",
-      "title": "Patatesle Cam Buğusunu Önle",
-      "start": 66
-    },
-    {
-      "id": "mz-020-3",
+      "id": "mz-021-2",
       "keyword": "Gümüş",
-      "title": "Gümüşü Patates Suyuyla Parlat",
-      "start": 128
+      "title": "Gümüş ve Çatalları Parlatma",
+      "start": 60
     },
     {
-      "id": "mz-020-4",
-      "keyword": "Leke",
-      "title": "Patatesle İnatçı Lekeyi Sök",
-      "start": 195
+      "id": "mz-021-3",
+      "keyword": "Deri",
+      "title": "Deri Ayakkabıları Canlandırma",
+      "start": 116
     },
     {
-      "id": "mz-020-5",
-      "keyword": "Ampul",
-      "title": "Patatesle Kırık Ampulü Çıkar",
-      "start": 252
+      "id": "mz-021-4",
+      "keyword": "Yaprak",
+      "title": "Ev Bitkilerinin Yapraklarını Parlatma",
+      "start": 167
+    },
+    {
+      "id": "mz-021-5",
+      "keyword": "Kompost",
+      "title": "Kompost ve Toprak Zenginleştirme",
+      "start": 217
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 318
+  "durationSec": 272
 }
