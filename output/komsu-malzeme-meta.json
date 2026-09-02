@@ -1,41 +1,41 @@
 {
   "series": "malzeme",
-  "index": 20,
-  "episodeNo": 21,
-  "videoTitle": "Muz Kabuğunun Bilmediğin 5 Kullanımı",
-  "material": "Muz kabuğu",
-  "thumbTop": "Evde Muz kabuğu",
+  "index": 21,
+  "episodeNo": 22,
+  "videoTitle": "Portakal Kabuğunun 5 Şaşırtıcı Faydası",
+  "material": "Portakal kabuğu",
+  "thumbTop": "Evde Portakal kabuğu",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-021-1",
-      "keyword": "Gübre",
-      "title": "Saksı Bitkilerine Doğal Gübre",
+      "id": "mz-022-1",
+      "keyword": "Temizlik",
+      "title": "Doğal Yüzey Temizleyici Sprey",
       "start": 6
     },
     {
-      "id": "mz-021-2",
-      "keyword": "Gümüş",
-      "title": "Gümüş ve Çatalları Parlatma",
+      "id": "mz-022-2",
+      "keyword": "Koku",
+      "title": "Buzdolabı Koku Gidericisi",
       "start": 60
     },
     {
-      "id": "mz-021-3",
-      "keyword": "Deri",
-      "title": "Deri Ayakkabıları Canlandırma",
-      "start": 116
+      "id": "mz-022-3",
+      "keyword": "Mikrodalga",
+      "title": "Mikrodalga Fırını Kolayca Temizleme",
+      "start": 111
     },
     {
-      "id": "mz-021-4",
-      "keyword": "Yaprak",
-      "title": "Ev Bitkilerinin Yapraklarını Parlatma",
-      "start": 167
+      "id": "mz-022-4",
+      "keyword": "Böcek",
+      "title": "Doğal Karınca ve Böcek Kovucu",
+      "start": 163
     },
     {
-      "id": "mz-021-5",
-      "keyword": "Kompost",
-      "title": "Kompost ve Toprak Zenginleştirme",
-      "start": 217
+      "id": "mz-022-5",
+      "keyword": "Bulaşık",
+      "title": "Bulaşık Makinesinde Parlaklık",
+      "start": 214
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
