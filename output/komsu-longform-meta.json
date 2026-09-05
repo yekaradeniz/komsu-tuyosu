@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 50,
-  "episodeNo": 11,
+  "index": 55,
+  "episodeNo": 12,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0051",
-      "keyword": "Telefon",
-      "title": "Telefon Ekranını Doğru Sil",
+      "id": "kt-0056",
+      "keyword": "Bez",
+      "title": "Bir Bezle Sekiz Temiz Yüz",
       "start": 6
     },
     {
-      "id": "kt-0052",
-      "keyword": "Süpürgelik",
-      "title": "Süpürgelikleri Unutma",
-      "start": 78
+      "id": "kt-0057",
+      "keyword": "Tezgah",
+      "title": "Tezgah Kenarını Kuru Tut",
+      "start": 69
     },
     {
-      "id": "kt-0053",
-      "keyword": "Çerçeve",
-      "title": "Kapı Üstü Çerçevesini Sil",
-      "start": 146
+      "id": "kt-0058",
+      "keyword": "Ocak",
+      "title": "Ocaktaki Yağı Ilıkken Sil",
+      "start": 136
     },
     {
-      "id": "kt-0054",
-      "keyword": "Cila",
-      "title": "Mobilya Cilasını Az Kullan",
-      "start": 215
+      "id": "kt-0059",
+      "keyword": "Izgara",
+      "title": "Ocak Kapaklarını Geceden Islat",
+      "start": 206
     },
     {
-      "id": "kt-0055",
-      "keyword": "Koltuk",
-      "title": "Koltuğu Önce Fırçayla Temizle",
-      "start": 280
+      "id": "kt-0060",
+      "keyword": "Fırın",
+      "title": "Fırını Buharla Temizle",
+      "start": 275
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 352
+  "durationSec": 347
 }
