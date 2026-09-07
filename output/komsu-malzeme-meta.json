@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 21,
-  "episodeNo": 22,
-  "videoTitle": "Portakal Kabuğunun 5 Şaşırtıcı Faydası",
-  "material": "Portakal kabuğu",
-  "thumbTop": "Evde Portakal kabuğu",
+  "index": 22,
+  "episodeNo": 23,
+  "videoTitle": "Yumurta Kabuğunu Sakın Atma: 5 Kullanım",
+  "material": "Yumurta kabuğu",
+  "thumbTop": "Evde Yumurta kabuğu",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-022-1",
-      "keyword": "Temizlik",
-      "title": "Doğal Yüzey Temizleyici Sprey",
+      "id": "mz-023-1",
+      "keyword": "Kalsiyum",
+      "title": "Bitkiler İçin Kalsiyum Gübresi",
       "start": 6
     },
     {
-      "id": "mz-022-2",
-      "keyword": "Koku",
-      "title": "Buzdolabı Koku Gidericisi",
+      "id": "mz-023-2",
+      "keyword": "Ovma",
+      "title": "Doğal Aşındırıcı Ovma Tozu",
       "start": 60
     },
     {
-      "id": "mz-022-3",
-      "keyword": "Mikrodalga",
-      "title": "Mikrodalga Fırını Kolayca Temizleme",
+      "id": "mz-023-3",
+      "keyword": "Gider",
+      "title": "Lavabo ve Boru Açıcı Yardımcısı",
       "start": 111
     },
     {
-      "id": "mz-022-4",
-      "keyword": "Böcek",
-      "title": "Doğal Karınca ve Böcek Kovucu",
-      "start": 163
+      "id": "mz-023-4",
+      "keyword": "Salyangoz",
+      "title": "Salyangoz ve Sümüklüböcek Bariyeri",
+      "start": 165
     },
     {
-      "id": "mz-022-5",
-      "keyword": "Bulaşık",
-      "title": "Bulaşık Makinesinde Parlaklık",
-      "start": 214
+      "id": "mz-023-5",
+      "keyword": "Kompost",
+      "title": "Kompost Dengeleyici",
+      "start": 216
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 272
+  "durationSec": 275
 }
