@@ -1,43 +1,43 @@
 {
   "series": "malzeme",
-  "index": 22,
-  "episodeNo": 23,
-  "videoTitle": "Yumurta Kabuğunu Sakın Atma: 5 Kullanım",
-  "material": "Yumurta kabuğu",
-  "thumbTop": "Evde Yumurta kabuğu",
+  "index": 23,
+  "episodeNo": 24,
+  "videoTitle": "Vazelinin Aklına Gelmeyen 5 Kullanımı",
+  "material": "Vazelin",
+  "thumbTop": "Evde Vazelin",
   "thumbBig": "<span class=\"hl\">5</span> Kullanımı",
   "items": [
     {
-      "id": "mz-023-1",
-      "keyword": "Kalsiyum",
-      "title": "Bitkiler İçin Kalsiyum Gübresi",
+      "id": "mz-024-1",
+      "keyword": "Fermuar",
+      "title": "Sıkışan Fermuarları Kaydırma",
       "start": 6
     },
     {
-      "id": "mz-023-2",
-      "keyword": "Ovma",
-      "title": "Doğal Aşındırıcı Ovma Tozu",
-      "start": 60
+      "id": "mz-024-2",
+      "keyword": "Deri",
+      "title": "Deri Eşyaları Besleme ve Parlatma",
+      "start": 61
     },
     {
-      "id": "mz-023-3",
-      "keyword": "Gider",
-      "title": "Lavabo ve Boru Açıcı Yardımcısı",
-      "start": 111
+      "id": "mz-024-3",
+      "keyword": "Boya",
+      "title": "Boyadan Korunması Gereken Yüzeyleri Koruma",
+      "start": 116
     },
     {
-      "id": "mz-023-4",
-      "keyword": "Salyangoz",
-      "title": "Salyangoz ve Sümüklüböcek Bariyeri",
-      "start": 165
+      "id": "mz-024-4",
+      "keyword": "Gıcırtı",
+      "title": "Gıcırdayan Menteşe ve Rayları Yağlama",
+      "start": 170
     },
     {
-      "id": "mz-023-5",
-      "keyword": "Kompost",
-      "title": "Kompost Dengeleyici",
-      "start": 216
+      "id": "mz-024-5",
+      "keyword": "Pas",
+      "title": "Vidaları ve Civataları Pastan Koruma",
+      "start": 223
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-malzeme.mp4",
-  "durationSec": 275
+  "durationSec": 281
 }
