@@ -1,43 +1,43 @@
 {
   "series": "weekly",
-  "index": 55,
-  "episodeNo": 12,
+  "index": 60,
+  "episodeNo": 13,
   "videoTitle": "Bu Haftanın 5 Pratik Ev Tüyosu",
   "material": null,
   "thumbTop": "Bu Haftanın",
   "thumbBig": "<span class=\"hl\">5</span> Pratik Tüyosu",
   "items": [
     {
-      "id": "kt-0056",
-      "keyword": "Bez",
-      "title": "Bir Bezle Sekiz Temiz Yüz",
-      "start": 6
+      "id": "kt-0061",
+      "keyword": "Fırın",
+      "title": "Fırın Camındaki Sarı Tabaka",
+      "start": 5
     },
     {
-      "id": "kt-0057",
-      "keyword": "Tezgah",
-      "title": "Tezgah Kenarını Kuru Tut",
-      "start": 69
+      "id": "kt-0062",
+      "keyword": "Sünger",
+      "title": "Süngeri Mikrodalgaya Atma",
+      "start": 73
     },
     {
-      "id": "kt-0058",
-      "keyword": "Ocak",
-      "title": "Ocaktaki Yağı Ilıkken Sil",
-      "start": 136
+      "id": "kt-0063",
+      "keyword": "Sünger",
+      "title": "Tabak ve Tezgah İçin Ayrı Sünger",
+      "start": 139
     },
     {
-      "id": "kt-0059",
-      "keyword": "Izgara",
-      "title": "Ocak Kapaklarını Geceden Islat",
+      "id": "kt-0064",
+      "keyword": "Lavabo",
+      "title": "Lavaboyu Zeytinyağıyla Parlat",
       "start": 206
     },
     {
-      "id": "kt-0060",
-      "keyword": "Fırın",
-      "title": "Fırını Buharla Temizle",
-      "start": 275
+      "id": "kt-0065",
+      "keyword": "Bıçak",
+      "title": "Tabak Altıyla Bıçak Bileme",
+      "start": 269
     }
   ],
   "videoPath": "/home/runner/work/komsu-tuyosu/komsu-tuyosu/output/komsu-longform.mp4",
-  "durationSec": 347
+  "durationSec": 345
 }
