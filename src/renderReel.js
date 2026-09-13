@@ -119,7 +119,7 @@ function getVideoDuration(path) {
   });
 }
 
-export async function renderReel({ verse, explanation, videoUrl, videoPath, audioPath, voicePath, voiceDuration, manaVoicePath, manaVoiceDuration, outPath }) {
+export async function renderReel({ verse, explanation, videoUrl, videoPath, audioPath, voicePath, voiceDuration, manaVoicePath, manaVoiceDuration, ctaVoicePath, ctaVoiceDuration, ctaKicker, ctaSub, outPath }) {
   const tmp = mkdtempSync(join(tmpdir(), 'reel-'));
   const browser = await chromium.launch();
   try {
@@ -136,7 +136,11 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
 
     // ABONE CTA karti: cevap bitince 2.2sn gorunur. Kanalin abone donusumu cok
     // zayifti (1000 izlenmede 0.66 abone); video hicbir cagri yapmadan bitiyordu.
-    const ctaHtml = fillTemplate('reel-cta.html', {});
+    // Kart metni profile gore degisir: nis videosunda "ev tuyosu" yazmasi yanlis.
+    const ctaHtml = fillTemplate('reel-cta.html', {
+      KICKER: ctaKicker || 'İşine yaradıysa',
+      SUB: ctaSub || 'Her gün yeni bir ev tüyosu',
+    });
 
     const gradientPng = join(tmp, 'gradient.png');
     const versePng = join(tmp, 'verse.png');
@@ -186,7 +190,12 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
 
     // CTA (abone) karti: cevap karti TAMAMEN kaybolduktan sonra belirir (ust uste
     // binmesin), video onunla kapanir. manaOffset + manaLen = cevabin fade'i bitisi.
-    const CTA_LEN = 1.5;
+    // Seslendirme varsa kart sesi kapsayacak kadar durur: lead + ses + kapanis fade'i.
+    const hasCtaVoice = !!ctaVoicePath && existsSync(ctaVoicePath) && ctaVoiceDuration > 0;
+    const CTA_LEAD = 0.15;   // kart belirdikten sonra ses baslayana kadarki bekleme
+    const CTA_LEN = hasCtaVoice ? (CTA_LEAD + ctaVoiceDuration + FADE_DUR) : 1.5;
+    // CTA cevap karti TAMAMEN kaybolduktan sonra baslar. Capraz gecis denendi:
+    // yarim saniye kazandiriyor ama iki metin ust uste binip okunmaz oluyor.
     const ctaStart = manaOffset + manaLen;
     // Kapanis fade'i CTA'nin son yarim saniyesinde.
     const finalFadeStart = ctaStart + CTA_LEN - FADE_DUR;
@@ -222,81 +231,81 @@ export async function renderReel({ verse, explanation, videoUrl, videoPath, audi
       '-loop', '1', '-t', String(CTA_LEN), '-i', ctaPng      // [4] abone CTA karti
     ];
 
-    // Audio karma matrix:
-    //  - voicePath + audioPath: voice 1.0 vol (verse periyodu), bg music 0.25 vol (full)
-    //  - sadece audioPath: bg music 0.85 vol (mevcut davranis)
-    //  - sadece voicePath: voice 1.0 (verse periyodu), sonrasi sessiz
-    //  - hicbiri: sessiz
+    // SES KURGUSU
+    // Inputlar sirayla eklenir, index sabit yazilmaz: CTA sesi araya girince
+    // [5][6][7] gibi sabit numaralar kayiyordu.
     const hasMusic = !!audioPath && existsSync(audioPath);
+    let nextAudioIdx = 5;                       // [0..4] gorsel inputlari
+    const iVoice = hasVoice ? nextAudioIdx++ : -1;
+    const iMana = hasManaVoice ? nextAudioIdx++ : -1;
+    const iCta = hasCtaVoice ? nextAudioIdx++ : -1;
+    const iMusic = hasMusic ? nextAudioIdx++ : -1;
 
-    // Mana voice'i ne zaman baslar: verseLen + transitionLen (geçiş sonrasi)
-    // adelay millisaniye cinsinden
-    const manaVoiceStartMs = (verseLen + transitionLen + MANA_LEAD) * 1000;
+    if (hasVoice) args.push('-i', voicePath);
+    if (hasManaVoice) args.push('-i', manaVoicePath);
+    if (hasCtaVoice) args.push('-i', ctaVoicePath);
+    if (hasMusic) args.push('-stream_loop', '-1', '-i', audioPath);
+
+    const manaVoiceStartMs = Math.round((verseLen + transitionLen + MANA_LEAD) * 1000);
+    const ctaVoiceStartMs = Math.round((ctaStart + CTA_LEAD) * 1000);
     const voiceFadeOutStart = hasVoice ? voiceDuration - 0.5 : 0;
     const manaVoiceFadeOutStart = hasManaVoice ? manaVoiceDuration - 0.5 : 0;
 
-    if (hasVoice && hasManaVoice && hasMusic) {
-      console.log(`Verse voice (${voiceDuration.toFixed(1)}sn) + Mana voice (${manaVoiceDuration.toFixed(1)}sn) + müzik`);
-      args.push(
-        '-i', voicePath,                                    // [5] verse voice
-        '-i', manaVoicePath,                                // [6] mana voice
-        '-stream_loop', '-1', '-i', audioPath,              // [7] bg music
-        '-filter_complex',
-        filterComplex +
-        // Ses miksi: konusmalari birlestir; muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir),
-        // sonra sidechaincompress ile konusma varken muzigi OTOMATIK kis (ducking). Sabit volume yok.
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[vvoice]` +
-        `;[6:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]` +
-        `;[vvoice][mvoice]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[allvoice]` +
-        `;[allvoice]asplit=2[voice_out][voice_key]` +
-        `;[7:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]` +
-        `;[bgraw][voice_key]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=400[bgduck]` +
-        `;[voice_out][bgduck]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[outa]`,
-        '-map', '[outv]',
-        '-map', '[outa]',
-        '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
-      );
-    } else if (hasVoice && hasMusic) {
-      console.log(`Voice (${voiceDuration.toFixed(1)}sn) + müzik karışıyor`);
-      args.push(
-        '-i', voicePath,                                    // [5]
-        '-stream_loop', '-1', '-i', audioPath,              // [6]
-        '-filter_complex',
-        filterComplex +
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[voice]` +
-        `;[6:a]volume=0.25,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgmus]` +
-        `;[voice][bgmus]amix=inputs=2:duration=longest:dropout_transition=0[outa]`,
-        '-map', '[outv]',
-        '-map', '[outa]',
-        '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
-      );
-    } else if (hasVoice) {
-      console.log(`Voice (${voiceDuration.toFixed(1)}sn) (müzik yok)`);
-      args.push(
-        '-i', voicePath,                                    // [5]
-        '-filter_complex',
-        filterComplex +
-        `;[5:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[outa]`,
-        '-map', '[outv]',
-        '-map', '[outa]',
-        '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
-      );
+    const chains = [];
+    const voiceLabels = [];
+    if (hasVoice) {
+      // adelay 150ms: eskiden 1000ms idi, video bir saniye sessiz basliyordu.
+      chains.push(`[${iVoice}:a]volume=1.0,afade=t=out:st=${voiceFadeOutStart}:d=0.7,adelay=150|150[vvoice]`);
+      voiceLabels.push('[vvoice]');
+    }
+    if (hasManaVoice) {
+      chains.push(`[${iMana}:a]volume=1.0,afade=t=out:st=${manaVoiceFadeOutStart}:d=0.7,adelay=${manaVoiceStartMs}|${manaVoiceStartMs}[mvoice]`);
+      voiceLabels.push('[mvoice]');
+    }
+    if (hasCtaVoice) {
+      chains.push(`[${iCta}:a]volume=1.0,adelay=${ctaVoiceStartMs}|${ctaVoiceStartMs}[cvoice]`);
+      voiceLabels.push('[cvoice]');
+    }
+
+    let outaLabel = null;
+    if (voiceLabels.length && hasMusic) {
+      chains.push(voiceLabels.length > 1
+        ? `${voiceLabels.join('')}amix=inputs=${voiceLabels.length}:duration=longest:dropout_transition=0:normalize=0[allvoice]`
+        : `${voiceLabels[0]}anull[allvoice]`);
+      chains.push('[allvoice]asplit=2[voice_out][voice_key_raw]');
+      // apad SART. sidechaincompress iki inputtan da frame bekler; sidechain
+      // (konusma) bitince muzigi de kesiyordu. Konusma CTA'dan once bittigi icin
+      // videonun son 2 saniyesi tamamen sessiz cikiyordu (olculdu: 21.8sn'lik
+      // videoda t=19.8'den sonra sinyal yok). Sessizlikle totalLen'e kadar doldur.
+      chains.push(`[voice_key_raw]apad=whole_dur=${totalLen}[voice_key]`);
+      // Muzigi loudnorm ile ayni seviyeye getir (parca farki giderilir), sonra
+      // konusma varken sidechaincompress ile otomatik kis (ducking). Sabit volume yok.
+      chains.push(`[${iMusic}:a]loudnorm=I=-28:TP=-3:LRA=11,afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1[bgraw]`);
+      chains.push('[bgraw][voice_key]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=400[bgduck]');
+      chains.push('[voice_out][bgduck]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0[outa]');
+      outaLabel = '[outa]';
+      console.log(`Ses: konusma ${voiceLabels.length} parca + muzik (ducking), toplam ${totalLen.toFixed(1)}sn`);
+    } else if (voiceLabels.length) {
+      chains.push(voiceLabels.length > 1
+        ? `${voiceLabels.join('')}amix=inputs=${voiceLabels.length}:duration=longest:dropout_transition=0:normalize=0[outa]`
+        : `${voiceLabels[0]}anull[outa]`);
+      outaLabel = '[outa]';
+      console.log(`Ses: konusma ${voiceLabels.length} parca (muzik yok)`);
     } else if (hasMusic) {
-      console.log(`Müzik ekleniyor: ${audioPath}`);
+      // Konusma yoksa muzik ana ses, kisilmaz.
+      chains.push(`[${iMusic}:a]afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1,volume=0.85[outa]`);
+      outaLabel = '[outa]';
+      console.log('Ses: sadece muzik');
+    }
+
+    if (outaLabel) {
       args.push(
-        '-stream_loop', '-1', '-i', audioPath,              // [5]
-        '-filter_complex',
-        filterComplex + `;[5:a]afade=t=in:st=0:d=1,afade=t=out:st=${finalFadeStart}:d=1,volume=0.85[outa]`,
-        '-map', '[outv]',
-        '-map', '[outa]',
+        '-filter_complex', filterComplex + ';' + chains.join(';'),
+        '-map', '[outv]', '-map', outaLabel,
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000'
       );
     } else {
-      args.push(
-        '-filter_complex', filterComplex,
-        '-map', '[outv]',
-        '-an'
-      );
+      args.push('-filter_complex', filterComplex, '-map', '[outv]', '-an');
     }
 
     args.push(

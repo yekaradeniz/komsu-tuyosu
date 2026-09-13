@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { renderNamed } from './seoTemplate.js';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { pickPhoto } from './pickPhoto.js';
@@ -149,6 +150,8 @@ if (nextType === 'reel') {
     let voiceDuration = 0;
     let manaVoicePath = null;
     let manaVoiceDuration = 0;
+    let ctaVoicePath = null;
+    let ctaVoiceDuration = 0;
     const elevenKey = process.env.ELEVENLABS_API_KEY;
     const elevenVoiceId = process.env.ELEVENLABS_VOICE_ID;
     if (elevenKey && elevenVoiceId) {
@@ -180,6 +183,28 @@ if (nextType === 'reel') {
           manaVoiceDuration = await getAudioDuration(manaVoicePath);
           console.log(`  Cevap voice: ${manaVoiceDuration.toFixed(1)}sn`);
         }
+        // ABONE OL kartinin seslendirmesi. Metin profile gore template'ten gelir,
+        // her video icin ayni oldugu icin cache'ten okunur (tek seferlik kota).
+        try {
+          const ctaText = renderNamed(entry, 'voiceCta');
+          console.log(`CTA sesi (ElevenLabs): "${ctaText}"`);
+          ctaVoicePath = await generateVoice({
+            text: ctaText,
+            voiceId: elevenVoiceId,
+            apiKey: elevenKey,
+            cacheDir: voiceCacheDir,
+            // speed 1.15: CTA kisa bir cumle, hafif hizli okunca kart suresi kisaliyor
+            //  ve video 22sn bandini asmiyor. Soru/cevap hizina DOKUNULMADI.
+            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.15 }
+          });
+          ctaVoiceDuration = await getAudioDuration(ctaVoicePath);
+          console.log(`  CTA voice: ${ctaVoiceDuration.toFixed(1)}sn`);
+        } catch (e) {
+          // CTA sesi zorunlu degil: basarisiz olursa kart sessiz gosterilir.
+          console.warn(`CTA sesi uretilemedi, kart sessiz gidecek: ${e.message}`);
+          ctaVoicePath = null;
+          ctaVoiceDuration = 0;
+        }
       } catch (e) {
         console.warn(`ElevenLabs basarisiz, sesli devre disi (sabit sure fallback): ${e.message}`);
         voicePath = null;
@@ -199,6 +224,10 @@ if (nextType === 'reel') {
       voiceDuration,
       manaVoicePath,
       manaVoiceDuration,
+      ctaVoicePath,
+      ctaVoiceDuration,
+      ctaKicker: renderNamed(entry, 'ctaCardKicker'),
+      ctaSub: renderNamed(entry, 'ctaCardSub'),
       outPath: outVideo
     });
     console.log(`Reel hazir: ${outVideo}`);

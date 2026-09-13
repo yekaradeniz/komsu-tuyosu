@@ -5,7 +5,9 @@
     "  Tanimsiz nis otomatik calisir: etiket/hashtag icerikten turetilir (autoDerive).",
     "  Kaliteyi yukseltmek istersen profiles.nis.niches altina tanim ekle, override eder.",
     "Yeni seri/kanal: profiles altina yeni profil ekle, match kuralini yaz.",
-    "Sablonlarda {degisken} yer tutucular kullanilir: subLink, subjectWord, topicWord, playlist.*"
+    "Sablonlarda {degisken} yer tutucular kullanilir: subLink, subjectWord, topicWord, playlist.*",
+    "templates.voiceCta: video sonundaki ABONE OL kartinda seslendirilen metin (ElevenLabs, cache'li).",
+    "templates.ctaCardKicker / ctaCardSub: video sonundaki ABONE OL kartinin ust ve alt satiri."
   ],
   "channel": {
     "handle": "komsutuyosu",
@@ -62,7 +64,10 @@
           "Böyle bilgileri kaçırmamak için abone olun, her gün yeni bir tane var: {subLink}",
           "Her gün bir bilgi paylaşıyoruz, abone olup takipte kalın: {subLink}",
           "Yeni bilgiler için abone olmayı unutmayın: {subLink}"
-        ]
+        ],
+        "voiceCta": "Böyle bilgiler için abone ol.",
+        "ctaCardKicker": "Bunu bilmiyordun",
+        "ctaCardSub": "Her gün yeni bir ilginç bilgi"
       },
       "niches": {
         "hayvan": {
@@ -361,7 +366,10 @@
           "Böyle tüyoları kaçırmamak için abone olun, her gün yeni bir tane var: {subLink}",
           "Her gün bir tüyo paylaşıyoruz, abone olup takipte kalın: {subLink}",
           "Yeni tüyolar için abone olmayı unutmayın: {subLink}"
-        ]
+        ],
+        "voiceCta": "Böyle tüyolar için abone ol.",
+        "ctaCardKicker": "İşine yaradıysa",
+        "ctaCardSub": "Her gün yeni bir ev tüyosu"
       }
     }
   },
