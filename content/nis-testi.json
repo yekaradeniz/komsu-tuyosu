@@ -1078,5 +1078,765 @@
     ],
     "source": "Komşu Tüyosu",
     "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-061",
+    "niche": "bocek",
+    "nicheLabel": "böcekler",
+    "concept": "Hamamböceği dayanıklılığı",
+    "verse": "Hamamböceği başı koptuktan sonra bir hafta daha yaşayabiliyor. Nefesi nereden alıyor peki?",
+    "explanation": "Nefesi ağzından değil, gövdesindeki küçük deliklerden alır. Beyni sindirimi yönetmediği için sonunu getiren şey açlıktır, boğulma değil.",
+    "pexelsQuery": [
+      "cockroach macro close up",
+      "insect on floor night",
+      "kitchen counter dark",
+      "bug crawling surface"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-062",
+    "niche": "bocek",
+    "nicheLabel": "böcekler",
+    "concept": "Karınca taşıma gücü",
+    "verse": "Karınca kendi ağırlığının elli katını kaldırıyor. Bir insan bunu yapsa arabayı tek eliyle taşırdı.",
+    "explanation": "Sır kasta değil, boyutta. Canlı küçüldükçe kas kesiti ağırlığına göre büyük kalır, o yüzden minik böcek oransal olarak devden güçlüdür.",
+    "pexelsQuery": [
+      "ant carrying leaf macro",
+      "ants working ground",
+      "insect macro nature",
+      "ant colony close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-063",
+    "niche": "bocek",
+    "nicheLabel": "böcekler",
+    "concept": "Sinek neden yakalanmaz",
+    "verse": "Sineğe elini uzattığın anda çoktan kaçmış oluyor. Senin hareketini nasıl bu kadar erken görüyor?",
+    "explanation": "Sinek saniyede 250 kare görür, insan ancak 60. Ona göre el ağır çekimde yaklaşır; kaçış yönünü sen daha dokunmadan hesaplayıp kalkar.",
+    "pexelsQuery": [
+      "house fly macro",
+      "fly on window glass",
+      "insect compound eye",
+      "fly flying slow motion"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-064",
+    "niche": "bocek",
+    "nicheLabel": "böcekler",
+    "concept": "Arı kanadı hızı",
+    "verse": "Arı kanatlarını saniyede iki yüz kez çırpıyor. Bu kadar küçük bir kas bunu nasıl başarabiliyor?",
+    "explanation": "Kaslar her çırpış için ayrı komut almaz. Göğüs kafesi yay gibi titreşir, tek sinyal onlarca çırpışa dönüşür; duyduğun vızıltı bu titreşimdir.",
+    "pexelsQuery": [
+      "bee flying flower macro",
+      "honeybee wings close up",
+      "bee on flower slow motion",
+      "bees hive"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-065",
+    "niche": "bocek",
+    "nicheLabel": "böcekler",
+    "concept": "Ateşböceği ışığı",
+    "verse": "Ateşböceğini avucuna alsan elini yakmaz, çünkü o ışık hiç ısınmıyor. Ampul bunu neden başaramıyor?",
+    "explanation": "Böcek ışığı kimyasal tepkimeyle üretir, enerjinin neredeyse tamamı ışığa döner. Eski ampulde bu oran yüzde on, kalanı ısı olarak kaybolur.",
+    "pexelsQuery": [
+      "fireflies night forest",
+      "glowing insect dark",
+      "summer night meadow",
+      "light bulb glowing dark"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-066",
+    "niche": "dinozor",
+    "nicheLabel": "dinozorlar",
+    "concept": "T-Rex ve Stegosaurus arası",
+    "verse": "Stegosaurus ile T-Rex aynı çağda yaşamadı. Aralarındaki zaman seni şaşırtacak kadar uzun.",
+    "explanation": "İkisinin arası yaklaşık 80 milyon yıl. T-Rex bize, Stegosaurus'a olduğundan daha yakın yaşadı; ikisini yan yana çizen filmler yanlış.",
+    "pexelsQuery": [
+      "dinosaur skeleton museum",
+      "fossil bones display",
+      "tyrannosaurus skull",
+      "natural history museum hall"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-067",
+    "niche": "dinozor",
+    "nicheLabel": "dinozorlar",
+    "concept": "Kuşlar dinozordur",
+    "verse": "Balkonundaki güvercin aslında yaşayan bir dinozor. Bu bir benzetme değil, bilimsel sınıflandırma.",
+    "explanation": "Kuşlar T-Rex'in de içinde olduğu theropod soyundan gelir. Dinozorlar tamamen yok olmadı; bir kolu küçüldü, tüylendi ve uçmayı öğrendi.",
+    "pexelsQuery": [
+      "pigeon close up city",
+      "birds flying sky",
+      "chicken farm close up",
+      "bird feathers macro"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-068",
+    "niche": "dinozor",
+    "nicheLabel": "dinozorlar",
+    "concept": "Dinozorların hüküm süresi",
+    "verse": "Dinozorlar bu gezegende bizden çok daha uzun kaldı. Aradaki fark tahmin edebileceğinden büyük.",
+    "explanation": "Dinozorlar 165 milyon yıl yaşadı, modern insan yaklaşık 300 bin yıldır burada. Onların süresi bizimkinin beş yüz katından fazla.",
+    "pexelsQuery": [
+      "prehistoric landscape",
+      "dinosaur fossil dig site",
+      "ancient forest fog",
+      "geological rock layers"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-069",
+    "niche": "dinozor",
+    "nicheLabel": "dinozorlar",
+    "concept": "Tüylü dinozorlar",
+    "verse": "Filmlerdeki pullu ve çıplak dinozor görüntüsü artık yanlış biliniyor. Fosiller başka şey söylüyor.",
+    "explanation": "Çin'de bulunan fosillerde tüy izleri çıktı. Velociraptor tüylüydü ve boyu bir hindi kadardı; sinema onu iki katından fazla büyüttü.",
+    "pexelsQuery": [
+      "feathers macro close up",
+      "bird of prey closeup",
+      "fossil imprint rock",
+      "museum dinosaur exhibit"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-070",
+    "niche": "dinozor",
+    "nicheLabel": "dinozorlar",
+    "concept": "Dinozor kanı sıcak mıydı",
+    "verse": "Dinozorlar uzun süre soğukkanlı birer sürüngen sanıldı. Kemiklerinin içi bu fikri tamamen değiştirdi.",
+    "explanation": "Kemik kesitlerindeki hızlı büyüme halkaları memelilerinkine benziyor. Birçok dinozorun vücut ısısını kendi ürettiği bugün kabul ediliyor.",
+    "pexelsQuery": [
+      "bone cross section",
+      "fossil close up texture",
+      "museum skeleton display",
+      "paleontology lab work"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-071",
+    "niche": "evcilhayvan",
+    "nicheLabel": "evcil hayvanlar",
+    "concept": "Köpek burnunun gücü",
+    "verse": "Köpek kapalı kutudaki yiyeceği buluyor, sen kokuyu hiç almıyorsun. Aradaki fark nereden geliyor?",
+    "explanation": "Köpekte 300 milyon koku alıcısı var, insanda sadece 6 milyon. Beyninin koku bölgesi de oransal olarak kırk kat daha büyük.",
+    "pexelsQuery": [
+      "dog sniffing ground",
+      "dog nose close up",
+      "dog searching grass",
+      "puppy face macro"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-072",
+    "niche": "evcilhayvan",
+    "nicheLabel": "evcil hayvanlar",
+    "concept": "Kedi mırlamasının frekansı",
+    "verse": "Kedi mırlarken çıkardığı ses hep belli bir frekans aralığında kalıyor. O aralık tesadüf değil.",
+    "explanation": "Mırlama 25 ile 150 hertz arasındadır. Bu bant kemik ve doku onarımını hızlandıran titreşim aralığıyla örtüşür; kedi kendini onarıyor olabilir.",
+    "pexelsQuery": [
+      "cat purring closeup",
+      "cat sleeping sofa",
+      "hand petting cat",
+      "cat face macro"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-073",
+    "niche": "evcilhayvan",
+    "nicheLabel": "evcil hayvanlar",
+    "concept": "Köpek dönüş saatini bilir",
+    "verse": "Köpek sen daha eve varmadan kapının önünde bekliyor. Saate bakmadığına göre zamanı neyle ölçüyor?",
+    "explanation": "Kokunun azalmasını ölçüyor. Sabah bıraktığın koku gün boyu zayıflar; belli bir seviyeye indiğinde köpek için o saat gelmiş demektir.",
+    "pexelsQuery": [
+      "dog waiting by door",
+      "dog looking window",
+      "dog at home alone",
+      "dog greeting owner"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-074",
+    "niche": "evcilhayvan",
+    "nicheLabel": "evcil hayvanlar",
+    "concept": "Kedi pati teri",
+    "verse": "Kedi sıcakta terlemez diye bilinir ama tek bir yerden terler. Neresi olduğunu bilen çok az kişi var.",
+    "explanation": "Ter bezleri sadece pati tabanlarındadır. Çok sıcakta zeminde ıslak pati izi bırakır; asıl serinleme yöntemi ise tükürükle tüy yalamaktır.",
+    "pexelsQuery": [
+      "cat paw close up",
+      "cat walking floor",
+      "cat stretching sunlight",
+      "cat resting warm"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-075",
+    "niche": "evcilhayvan",
+    "nicheLabel": "evcil hayvanlar",
+    "concept": "Köpekler renk görür",
+    "verse": "Köpekler dünyayı siyah beyaz görüyor diye bilinir. Bu yaygın bilgi doğru değil, renk görüyorlar.",
+    "explanation": "Köpekte iki tip renk hücresi var, insanda üç. Maviyi ve sarıyı net görür, kırmızı ile yeşili ayıramaz; kırmızı top çimende ona gri görünür.",
+    "pexelsQuery": [
+      "dog playing ball park",
+      "colorful toys dog",
+      "dog eyes close up",
+      "dog running grass"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-076",
+    "niche": "spor",
+    "nicheLabel": "spor",
+    "concept": "Maraton mesafesi",
+    "verse": "Maraton neden 42 kilometre 195 metre? Bu tuhaf sayıyı bir kraliyet locasının yeri belirledi.",
+    "explanation": "1908 Londra Olimpiyatı'nda parkur saraydan başlayıp kraliyet locasının önünde bitecek şekilde uzatıldı. O günkü mesafe kural haline geldi.",
+    "pexelsQuery": [
+      "marathon runners street",
+      "running shoes pavement",
+      "stadium track finish",
+      "crowd cheering race"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-077",
+    "niche": "spor",
+    "nicheLabel": "spor",
+    "concept": "Futbol topunun parçaları",
+    "verse": "Klasik futbol topu tam 32 parçadan dikilir. Neden 32, neden hep beşgen ve altıgen kullanılıyor?",
+    "explanation": "12 beşgen ve 20 altıgen bir araya gelince küreye en yakın şekil çıkar. Dikişler basıncı eşit dağıtır, top her yöne aynı biçimde yuvarlanır.",
+    "pexelsQuery": [
+      "soccer ball close up",
+      "football on grass",
+      "ball kicking slow motion",
+      "stadium pitch"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-078",
+    "niche": "spor",
+    "nicheLabel": "spor",
+    "concept": "Sprinterin gerçek hızı",
+    "verse": "Bir sprinter yüz metre boyunca sürekli hızlanmaz. En hızlı olduğu bölüm sandığın yer değil.",
+    "explanation": "Zirve hız 60 ile 80 metre arasında yakalanır, saatte 44 kilometreyi bulur. Son 20 metrede herkes yavaşlar; kazanan en az yavaşlayandır.",
+    "pexelsQuery": [
+      "sprinter running track",
+      "athlete starting blocks",
+      "running fast slow motion",
+      "stadium race lanes"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-079",
+    "niche": "spor",
+    "nicheLabel": "spor",
+    "concept": "Yüzücüler neden tüy kazır",
+    "verse": "Profesyonel yüzücüler yarıştan önce vücut kıllarını kazıyor. Bunun ölçülmüş bir karşılığı var mı?",
+    "explanation": "Var. Kıl kazıyan yüzücülerde su direnci ve her kulaçta harcanan enerji ölçülebilir biçimde düşüyor; madalyayı saniyenin binde biri belirliyor.",
+    "pexelsQuery": [
+      "swimmer pool underwater",
+      "swimming race lanes",
+      "swimmer diving start",
+      "water surface pool"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-080",
+    "niche": "spor",
+    "nicheLabel": "spor",
+    "concept": "Potanın yüksekliği",
+    "verse": "Basketbol potası neden 3 metre 5 santim? Hesapla bulunmuş bir sayı değil, tam bir tesadüf.",
+    "explanation": "1891'de oyunu icat eden öğretmen sepeti spor salonunun balkon korkuluğuna çaktı. O korkuluk 3.05 metredeydi ve rakam bugüne kadar geldi.",
+    "pexelsQuery": [
+      "basketball hoop court",
+      "basketball player shooting",
+      "old gymnasium interior",
+      "basketball net close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-081",
+    "niche": "dil",
+    "nicheLabel": "diller",
+    "concept": "Dünyadaki dil sayısı",
+    "verse": "Dünyada yedi bin civarında dil konuşuluyor. Bu sayı hızla azalıyor ve sebebi gayet net.",
+    "explanation": "Dillerin yarısını on binden az kişi konuşuyor. Çocuklar büyük dillere geçtikçe küçük diller bir kuşakta kayboluyor; iki haftada bir dil ölüyor.",
+    "pexelsQuery": [
+      "old books library",
+      "people talking street",
+      "world map close up",
+      "handwritten manuscript"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-082",
+    "niche": "dil",
+    "nicheLabel": "diller",
+    "concept": "OK kelimesinin kökeni",
+    "verse": "Dünyanın en çok bilinen kelimesi bir gazete şakasından çıktı. Hangisi olduğunu tahmin edebilir misin?",
+    "explanation": "OK, 1839'da Boston'da 'oll korrect' diye bilerek yanlış yazılan bir espriydi. Seçim kampanyasıyla yayıldı ve neredeyse her dile girdi.",
+    "pexelsQuery": [
+      "vintage newspaper print",
+      "old typewriter keys",
+      "hand writing paper",
+      "printing press machine"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-083",
+    "niche": "dil",
+    "nicheLabel": "diller",
+    "concept": "İşaret dili evrensel değil",
+    "verse": "İşaret dilinin dünyada tek ve ortak olduğu sanılır. Gerçek bunun tam tersi, hem de çok.",
+    "explanation": "Her ülkenin kendi işaret dili var ve aralarında akrabalık bile olmayabilir. Amerikan işaret dili İngiliz işaret diliyle anlaşamaz.",
+    "pexelsQuery": [
+      "sign language hands",
+      "people communicating gestures",
+      "hands close up talking",
+      "classroom teaching hands"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-084",
+    "niche": "dil",
+    "nicheLabel": "diller",
+    "concept": "En çok dilli ülke",
+    "verse": "Tek bir ülkede sekiz yüzden fazla dil konuşuluyor. Dünyadaki dillerin sekizde biri orada.",
+    "explanation": "Papua Yeni Gine'de 840 dil var. Dağlar ve ormanlar toplulukları binlerce yıl birbirinden ayırdı, her vadi kendi dilini geliştirdi.",
+    "pexelsQuery": [
+      "mountain village aerial",
+      "tropical forest valley",
+      "remote village houses",
+      "misty mountains jungle"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-085",
+    "niche": "dil",
+    "nicheLabel": "diller",
+    "concept": "Merhaba kelimesinin kökü",
+    "verse": "Her gün söylediğin bir kelimenin asıl anlamı çok daha eski ve çok daha somut bir şey.",
+    "explanation": "Merhaba Arapça 'rahb' kökünden gelir, geniş yer demektir. Söylediğin şey aslında şu: burada sana geniş bir yer var, rahat et.",
+    "pexelsQuery": [
+      "people greeting handshake",
+      "open door welcome",
+      "arabic calligraphy",
+      "two people meeting street"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-086",
+    "niche": "ruya",
+    "nicheLabel": "rüyalar",
+    "concept": "Rüyadaki yüzler",
+    "verse": "Rüyanda gördüğün kalabalıktaki yüzlerin hiçbiri hayal ürünü değil. Hepsini daha önce görmüşsün.",
+    "explanation": "Beyin sıfırdan yüz üretmez. Sokakta yanından geçen, bir kez görüp unuttuğun yüzleri saklar ve rüyada onları yeniden karşına çıkarır.",
+    "pexelsQuery": [
+      "crowd of people street",
+      "blurry faces crowd",
+      "person sleeping bed",
+      "dark bedroom night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-087",
+    "niche": "ruya",
+    "nicheLabel": "rüyalar",
+    "concept": "Rüyalar neden unutulur",
+    "verse": "Uyanırken hatırladığın rüya birkaç dakika içinde siliniyor. Hafızan bunu neden tutmuyor?",
+    "explanation": "Anıyı kalıcı yapan kimyasal madde rüya evresinde neredeyse hiç salgılanmaz. Rüya kısa süreli hafızada kalır, ilk düşünceyle üstü yazılır.",
+    "pexelsQuery": [
+      "waking up morning bed",
+      "alarm clock bedside",
+      "person rubbing eyes",
+      "sunlight through curtains"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-088",
+    "niche": "ruya",
+    "nicheLabel": "rüyalar",
+    "concept": "Rüyada vücut felç olur",
+    "verse": "Rüya görürken vücudun neredeyse tamamen hareketsiz kalır. Bu bir arıza değil, koruma sistemi.",
+    "explanation": "Beyin rüya evresinde kaslara giden komutları keser. Bu olmasaydı rüyanda koştuğunda gerçekten koşar, kendini yataktan dışarıda bulurdun.",
+    "pexelsQuery": [
+      "person sleeping still",
+      "bedroom night dark",
+      "hands resting bed",
+      "clock ticking night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-089",
+    "niche": "ruya",
+    "nicheLabel": "rüyalar",
+    "concept": "Uykuda düşme hissi",
+    "verse": "Uykuya dalarken birden boşluğa düşer gibi sıçrıyorsun. Bunun bir adı ve bilinen bir sebebi var.",
+    "explanation": "Kaslar gevşerken beyin bu ani gevşemeyi düşme sanır ve kasları kasıp seni yakalamaya çalışır. Zararsızdır, yorgunken çok daha sık olur.",
+    "pexelsQuery": [
+      "person falling asleep",
+      "bed at night dark",
+      "tired person yawning",
+      "clock late night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-090",
+    "niche": "ruya",
+    "nicheLabel": "rüyalar",
+    "concept": "Horlama nasıl oluşur",
+    "verse": "Horlama burundan değil, boğazdaki bir titreşimden çıkar. Peki o sesi tam olarak ne çıkarıyor?",
+    "explanation": "Uykuda gevşeyen damak ve dil kökü hava yolunu daraltır. Dar aralıktan geçen hava dokuları titretir; sırtüstü yatınca daralma artar, ses büyür.",
+    "pexelsQuery": [
+      "person sleeping bed night",
+      "couple in bed night",
+      "dark bedroom pillow",
+      "sleep mask bed"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-091",
+    "niche": "bitki",
+    "nicheLabel": "bitkiler",
+    "concept": "Ağaçların iletişimi",
+    "verse": "Ormandaki ağaçlar birbirine haber gönderiyor. Mesajı taşıyan şey toprağın hemen altında.",
+    "explanation": "Kökleri saran mantar ağı ağaçları birbirine bağlar. Zarar gören ağaç kimyasal uyarı yollar, komşuları savunma maddesi üretmeye başlar.",
+    "pexelsQuery": [
+      "forest floor roots",
+      "mushrooms forest ground",
+      "tall trees forest",
+      "tree roots soil close up"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-092",
+    "niche": "bitki",
+    "nicheLabel": "bitkiler",
+    "concept": "Muz ağaç değildir",
+    "verse": "Muz bir ağaçta yetişmiyor, çünkü muz ağacı diye bir şey yok. O kalın gövde de gövde sayılmıyor.",
+    "explanation": "Muz dev bir ot. Gövde sandığın kısım sımsıkı sarılmış yaprak saplarıdır, içinde odun yoktur; meyve verdikten sonra bitki ölür, yerine yenisi çıkar.",
+    "pexelsQuery": [
+      "banana tree plantation",
+      "banana leaves close up",
+      "tropical plants garden",
+      "banana bunch tree"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-093",
+    "niche": "bitki",
+    "nicheLabel": "bitkiler",
+    "concept": "Bambunun büyüme hızı",
+    "verse": "Bir bitki günde neredeyse bir metre uzayabiliyor. Gözle görülebilecek kadar hızlı büyüyor.",
+    "explanation": "Bambu günde 90 santime kadar uzar. Hücreleri o anda bölünmez, önceden hazırlanmış bölmeler suyla şişip açılır; hız buradan geliyor.",
+    "pexelsQuery": [
+      "bamboo forest tall",
+      "bamboo stalks close up",
+      "green bamboo grove",
+      "sunlight bamboo forest"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-094",
+    "niche": "bitki",
+    "nicheLabel": "bitkiler",
+    "concept": "Kaktüs dikeni yapraktır",
+    "verse": "Kaktüsün dikenleri sadece savunma için sanılır. Asıl görevi bambaşka, üstelik hayati bir şey.",
+    "explanation": "O dikenler küçülmüş yapraklardır. Geniş yaprak suyu buharlaştırdığı için kaktüs yaprağını dikene indirdi; diken ayrıca gölge yapar ve çiy toplar.",
+    "pexelsQuery": [
+      "cactus close up desert",
+      "desert plants sunlight",
+      "cactus spines macro",
+      "arid landscape cactus"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-095",
+    "niche": "bitki",
+    "nicheLabel": "bitkiler",
+    "concept": "Domates meyve mi sebze mi",
+    "verse": "Domatesin meyve mi sebze mi olduğuna bir mahkeme karar verdi. Sebebi de bilim değil, paraydı.",
+    "explanation": "Botanik olarak meyvedir. 1893'te Amerikan mahkemesi sebze saydı, çünkü sebzeden gümrük vergisi alınıyordu; mutfak alışkanlığı bilimi yendi.",
+    "pexelsQuery": [
+      "tomatoes close up",
+      "vegetables market stall",
+      "tomato plant garden",
+      "fresh tomatoes basket"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-096",
+    "niche": "arac",
+    "nicheLabel": "araçlar",
+    "concept": "Cam neden dağılmaz",
+    "verse": "Kaza anında ön cam parçalanıp içeri yağmıyor. Camın içinde göremediğin bir katman var.",
+    "explanation": "Ön cam iki cam arasına yapıştırılmış şeffaf plastik tabakadır. Cam kırılır ama parçalar bu tabakaya yapışık kalır, yerinden çıkmaz.",
+    "pexelsQuery": [
+      "car windshield close up",
+      "cracked glass texture",
+      "car interior dashboard",
+      "driving rain windshield"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-097",
+    "niche": "arac",
+    "nicheLabel": "araçlar",
+    "concept": "Lastikler neden siyah",
+    "verse": "Lastiğin doğal rengi siyah değil, sütlü bir beyaz. Peki neden hepsi simsiyah çıkıyor?",
+    "explanation": "Kauçuğa karbon karası katılır. Bu katkı lastiğin ömrünü yaklaşık beş kat uzatır ve güneşin morötesine karşı korur; siyahlık yan üründür.",
+    "pexelsQuery": [
+      "car tires close up",
+      "tire tread macro",
+      "car wheel rotating",
+      "tires stacked garage"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-098",
+    "niche": "arac",
+    "nicheLabel": "araçlar",
+    "concept": "Trafik ışığı renkleri",
+    "verse": "Trafik ışığının renkleri arabalar için seçilmedi. Bu sistem otomobilin kendisinden bile eski.",
+    "explanation": "Renkler demiryolundan geldi. Kırmızı en uzaktan görülen renk olduğu için dur, yeşil ise kolay ayırt edildiği için geç anlamına getirildi.",
+    "pexelsQuery": [
+      "traffic light street",
+      "city intersection cars",
+      "traffic signal close up",
+      "street at night lights"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-099",
+    "niche": "arac",
+    "nicheLabel": "araçlar",
+    "concept": "Benzinlikte asıl risk",
+    "verse": "Benzinlikte telefon yasak ama asıl tehlike telefon değil. Yangınların çoğu başka şeyden çıkıyor.",
+    "explanation": "Kayıtlı yangınların çoğu statik elektrikten çıkıyor. Arabaya girip çıkan sürücü yüklenir, tabancaya dokununca kıvılcım atlar; metale dokunmak yeter.",
+    "pexelsQuery": [
+      "gas station pump",
+      "fuel nozzle close up",
+      "car refueling",
+      "gas station night"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
+  },
+  {
+    "id": "nt-100",
+    "niche": "arac",
+    "nicheLabel": "araçlar",
+    "concept": "Direksiyon neden solda",
+    "verse": "Bazı ülkelerde direksiyon solda, bazılarında sağda. Bu ayrım atlı araba günlerinden kalma.",
+    "explanation": "Kırbacı sağ eliyle sallayan arabacı solda otururdu, İngiltere bu düzeni korudu. Amerika geniş yük arabalarında ters tarafı seçti, dünya ikiye ayrıldı.",
+    "pexelsQuery": [
+      "car steering wheel",
+      "driving car interior",
+      "old carriage horses",
+      "road traffic aerial"
+    ],
+    "moods": [
+      "cinematic"
+    ],
+    "source": "Komşu Tüyosu",
+    "caption": "Sen biliyor muydun?"
   }
 ]

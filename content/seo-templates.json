@@ -261,6 +261,134 @@
             "#teknik",
             "#bilim"
           ]
+        },
+        "bocek": {
+          "topic": "böcekler",
+          "tags": [
+            "böcekler",
+            "ilginç böcekler",
+            "doğa",
+            "hayvanlar"
+          ],
+          "hashtags": [
+            "#böcekler",
+            "#doğa",
+            "#ilginçbilgi",
+            "#hayvanlar",
+            "#bilim"
+          ]
+        },
+        "dinozor": {
+          "topic": "dinozorlar",
+          "tags": [
+            "dinozorlar",
+            "fosil",
+            "tarih öncesi",
+            "paleontoloji"
+          ],
+          "hashtags": [
+            "#dinozor",
+            "#fosil",
+            "#tarihöncesi",
+            "#paleontoloji",
+            "#bilim"
+          ]
+        },
+        "evcilhayvan": {
+          "topic": "evcil hayvanlar",
+          "tags": [
+            "kedi",
+            "köpek",
+            "evcil hayvanlar",
+            "hayvan davranışları"
+          ],
+          "hashtags": [
+            "#kedi",
+            "#köpek",
+            "#evcilhayvan",
+            "#patiler",
+            "#hayvanlar"
+          ]
+        },
+        "spor": {
+          "topic": "spor",
+          "tags": [
+            "spor",
+            "spor tarihi",
+            "rekorlar",
+            "atletizm"
+          ],
+          "hashtags": [
+            "#spor",
+            "#rekor",
+            "#atletizm",
+            "#futbol",
+            "#sportarihi"
+          ]
+        },
+        "dil": {
+          "topic": "diller",
+          "tags": [
+            "dil",
+            "kelime kökeni",
+            "diller",
+            "etimoloji"
+          ],
+          "hashtags": [
+            "#dil",
+            "#kelimeler",
+            "#etimoloji",
+            "#diller",
+            "#kültür"
+          ]
+        },
+        "ruya": {
+          "topic": "rüyalar",
+          "tags": [
+            "rüya",
+            "uyku",
+            "beyin",
+            "uyku bilimi"
+          ],
+          "hashtags": [
+            "#rüya",
+            "#uyku",
+            "#beyin",
+            "#uykubilimi",
+            "#sağlık"
+          ]
+        },
+        "bitki": {
+          "topic": "bitkiler",
+          "tags": [
+            "bitkiler",
+            "doğa",
+            "botanik",
+            "bahçe"
+          ],
+          "hashtags": [
+            "#bitkiler",
+            "#doğa",
+            "#botanik",
+            "#bahçe",
+            "#yeşil"
+          ]
+        },
+        "arac": {
+          "topic": "araçlar",
+          "tags": [
+            "otomobil",
+            "araçlar",
+            "nasıl çalışır",
+            "teknik bilgi"
+          ],
+          "hashtags": [
+            "#otomobil",
+            "#araba",
+            "#nasılçalışır",
+            "#teknik",
+            "#araçlar"
+          ]
         }
       }
     },
