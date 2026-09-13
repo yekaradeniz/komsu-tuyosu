@@ -171,6 +171,15 @@ export function renderNamed(entry, name, extraVars = {}, tpl = loadTemplates()) 
   return render(str, { ...templateVars(entry, tpl), ...extraVars }, tpl);
 }
 
+/** Icerigin kendi pexelsQuery'si yetmezse kullanilacak yedek arama sorgulari.
+ *  Nis tanimindaki liste onceliklidir, sonra profilinki. Ev sorgulari nis
+ *  videosuna karisirsa kopek icerigine mutfak goruntusu geliyor. */
+export function pexelsFallbackFor(entry, tpl = loadTemplates()) {
+  const profile = resolveProfile(entry, tpl);
+  const niche = entry?.niche && profile.niches?.[entry.niche];
+  return [...(niche?.pexelsFallback || []), ...(profile.pexelsFallback || [])];
+}
+
 export function profileFor(entry, tpl = loadTemplates()) {
   const p = resolveProfile(entry, tpl);
   return {

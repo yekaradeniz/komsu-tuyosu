@@ -187,7 +187,9 @@ export async function fetchPexelsCandidatesByQueries(queries, apiKey, usedVideoI
   // Long-form sahne-bazli kullanim icin fallback kapatilabilir (alakasiz ev sahnesi gelmesin)
   const includeFallback = opts.includeFallback ?? true;
 
-  const allQueries = includeFallback ? [...new Set([...queries, ...FALLBACK_QUERIES])] : [...new Set(queries)];
+  // Yedek sorgular disaridan gelebilir (nis videosuna ev goruntusu gelmesin diye).
+  const fallback = opts.fallbackQueries || FALLBACK_QUERIES;
+  const allQueries = includeFallback ? [...new Set([...queries, ...fallback])] : [...new Set(queries)];
   const cache = new Map();
   const candidates = [];
   const seenIds = new Set();

@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { renderNamed } from './seoTemplate.js';
+import { renderNamed, pexelsFallbackFor } from './seoTemplate.js';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { pickPhoto } from './pickPhoto.js';
@@ -103,7 +103,8 @@ if (nextType === 'reel') {
   // MODERASYON: her aday Gemini frame kontrolunden gecer (suggestive/glamour/erotik REJECT,
   // normal ev isi YES). Reddedilenler usedVideoIds'e eklenir (asagida), bir daha denenmez.
   const candidates = Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0
-    ? await fetchPexelsCandidatesByQueries(entry.pexelsQuery, pexelsKey, usedVideoIds)
+    ? await fetchPexelsCandidatesByQueries(entry.pexelsQuery, pexelsKey, usedVideoIds,
+        { fallbackQueries: pexelsFallbackFor(entry) })   // nis videosu ev goruntusune dusmesin
     : await fetchPexelsCandidates(entry.moods, pexelsKey, usedVideoIds);
   console.log(`${candidates.length} Pexels aday (excl. ${usedVideoIds.size}), Gemini moderasyonundan gececek...`);
 

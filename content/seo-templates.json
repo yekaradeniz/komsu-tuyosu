@@ -7,7 +7,8 @@
     "Yeni seri/kanal: profiles altina yeni profil ekle, match kuralini yaz.",
     "Sablonlarda {degisken} yer tutucular kullanilir: subLink, subjectWord, topicWord, playlist.*",
     "templates.voiceCta: video sonundaki ABONE OL kartinda seslendirilen metin (ElevenLabs, cache'li).",
-    "templates.ctaCardKicker / ctaCardSub: video sonundaki ABONE OL kartinin ust ve alt satiri."
+    "templates.ctaCardKicker / ctaCardSub: video sonundaki ABONE OL kartinin ust ve alt satiri.",
+    "pexelsFallback: icerigin kendi pexelsQuery'si sonuc vermeyince kullanilan yedek sorgular. Profil ve nis seviyesinde tanimlanir."
   ],
   "channel": {
     "handle": "komsutuyosu",
@@ -84,6 +85,11 @@
             "#ilginçhayvanlar",
             "#hayvangerçekleri",
             "#vahşiyaşam"
+          ],
+          "pexelsFallback": [
+            "wildlife nature",
+            "animals in nature",
+            "forest animals"
           ]
         },
         "para": {
@@ -100,6 +106,11 @@
             "#bütçe",
             "#finans",
             "#paraipuçları"
+          ],
+          "pexelsFallback": [
+            "counting money",
+            "wallet coins",
+            "bank notes close up"
           ]
         },
         "vucut": {
@@ -116,6 +127,11 @@
             "#biyoloji",
             "#vücut",
             "#sağlıkbilgisi"
+          ],
+          "pexelsFallback": [
+            "human body anatomy",
+            "doctor medical scan",
+            "person exercising close up"
           ]
         },
         "uzay": {
@@ -132,6 +148,11 @@
             "#evren",
             "#gökbilim",
             "#uzaygerçekleri"
+          ],
+          "pexelsFallback": [
+            "space stars galaxy",
+            "night sky stars",
+            "planet earth space"
           ]
         },
         "tarih": {
@@ -148,6 +169,11 @@
             "#geçmiş",
             "#tarihgerçekleri",
             "#kültür"
+          ],
+          "pexelsFallback": [
+            "ancient ruins",
+            "old manuscript candle",
+            "historical architecture"
           ]
         },
         "iliski": {
@@ -164,6 +190,11 @@
             "#iletişim",
             "#psikoloji",
             "#sosyalilişkiler"
+          ],
+          "pexelsFallback": [
+            "two people talking",
+            "couple walking street",
+            "friends laughing"
           ]
         },
         "deniz": {
@@ -180,6 +211,11 @@
             "#sualtı",
             "#denizgerçekleri",
             "#doğa"
+          ],
+          "pexelsFallback": [
+            "ocean underwater",
+            "sea waves aerial",
+            "deep blue water"
           ]
         },
         "yemek": {
@@ -196,6 +232,11 @@
             "#gıda",
             "#mutfak",
             "#yemekipuçları"
+          ],
+          "pexelsFallback": [
+            "cooking kitchen closeup",
+            "fresh food ingredients",
+            "preparing meal"
           ]
         },
         "doga": {
@@ -212,6 +253,11 @@
             "#doğa",
             "#meteoroloji",
             "#bilim"
+          ],
+          "pexelsFallback": [
+            "storm clouds sky",
+            "rain nature",
+            "mountain landscape"
           ]
         },
         "teknoloji": {
@@ -228,6 +274,11 @@
             "#dijital",
             "#teknolojibilgisi",
             "#akıllıtelefon"
+          ],
+          "pexelsFallback": [
+            "smartphone screen closeup",
+            "computer circuit board",
+            "technology devices"
           ]
         },
         "dunya": {
@@ -244,6 +295,11 @@
             "#dünya",
             "#gezi",
             "#dünyagerçekleri"
+          ],
+          "pexelsFallback": [
+            "world map globe",
+            "aerial landscape country",
+            "travel destination"
           ]
         },
         "muhendislik": {
@@ -260,6 +316,11 @@
             "#yapılar",
             "#teknik",
             "#bilim"
+          ],
+          "pexelsFallback": [
+            "construction site crane",
+            "bridge structure",
+            "machine gears working"
           ]
         },
         "bocek": {
@@ -276,6 +337,11 @@
             "#ilginçbilgi",
             "#hayvanlar",
             "#bilim"
+          ],
+          "pexelsFallback": [
+            "insect macro nature",
+            "bugs close up",
+            "garden insects"
           ]
         },
         "dinozor": {
@@ -292,6 +358,11 @@
             "#tarihöncesi",
             "#paleontoloji",
             "#bilim"
+          ],
+          "pexelsFallback": [
+            "fossil museum",
+            "prehistoric landscape",
+            "skeleton exhibit"
           ]
         },
         "evcilhayvan": {
@@ -308,6 +379,11 @@
             "#evcilhayvan",
             "#patiler",
             "#hayvanlar"
+          ],
+          "pexelsFallback": [
+            "dog close up",
+            "cat close up",
+            "pet at home"
           ]
         },
         "spor": {
@@ -324,6 +400,11 @@
             "#atletizm",
             "#futbol",
             "#sportarihi"
+          ],
+          "pexelsFallback": [
+            "athlete training",
+            "stadium sport",
+            "running track"
           ]
         },
         "dil": {
@@ -340,6 +421,11 @@
             "#etimoloji",
             "#diller",
             "#kültür"
+          ],
+          "pexelsFallback": [
+            "old books writing",
+            "person writing notebook",
+            "library shelves"
           ]
         },
         "ruya": {
@@ -356,6 +442,11 @@
             "#beyin",
             "#uykubilimi",
             "#sağlık"
+          ],
+          "pexelsFallback": [
+            "person sleeping night",
+            "dark bedroom",
+            "night sky calm"
           ]
         },
         "bitki": {
@@ -372,6 +463,11 @@
             "#botanik",
             "#bahçe",
             "#yeşil"
+          ],
+          "pexelsFallback": [
+            "plants growing green",
+            "forest trees",
+            "garden leaves macro"
           ]
         },
         "arac": {
@@ -388,9 +484,20 @@
             "#nasılçalışır",
             "#teknik",
             "#araçlar"
+          ],
+          "pexelsFallback": [
+            "car driving road",
+            "car interior detail",
+            "traffic city street"
           ]
         }
-      }
+      },
+      "pexelsFallback": [
+        "cinematic nature slow motion",
+        "abstract light background",
+        "macro texture close up",
+        "documentary landscape"
+      ]
     },
     "ev": {
       "match": {
@@ -498,7 +605,17 @@
         "voiceCta": "Böyle tüyolar için abone ol.",
         "ctaCardKicker": "İşine yaradıysa",
         "ctaCardSub": "Her gün yeni bir ev tüyosu"
-      }
+      },
+      "pexelsFallback": [
+        "clean modern home",
+        "kitchen counter clean",
+        "cleaning home",
+        "folding laundry",
+        "tidy living room",
+        "home organization",
+        "household chores",
+        "bright home interior"
+      ]
     }
   },
   "descriptionFooter": "{subscribe}\n\n{playlistBlock}\n\n#Shorts",
