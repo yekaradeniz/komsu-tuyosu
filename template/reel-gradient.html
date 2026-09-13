@@ -2,15 +2,44 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
   /* Gradient karartma kapatildi (kullanici karari): arka plan video oldugu
      gibi gozuksun, text-shadow ile metin okunabilirligi saglanir. */
   .gradient { position: absolute; inset: 0; background: transparent; }
+
+  /* KALICI ABONE ROZETI - video boyunca sol ustte durur.
+     Sebep: sondaki ABONE OL kartini izleyicilerin sadece %24'u goruyor
+     (olculdu: %90 noktasinda audienceWatchRatio 0.17-0.27). Rozet videonun
+     ilk karesinden itibaren gorundugu icin herkese ulasir.
+     Sol ust secildi: Shorts arayuzu sag alti (begeni/yorum) ve alti (baslik)
+     kaplar, sol ust serbest kalir.
+     Kucuk ve yari saydam: icerigi bolmemesi, dikkat calmamasi icin. */
+  .sub-badge {
+    position: absolute; top: 96px; left: 56px;
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 26px 14px 20px;
+    background: rgba(0,0,0,0.42);
+    border-radius: 999px;
+    opacity: 0.88;
+  }
+  .sub-badge .dot {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: #E8620C; flex: none;
+    box-shadow: 0 0 0 5px rgba(232,98,12,0.28);
+  }
+  .sub-badge .txt {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 800; font-size: 30px; letter-spacing: 0.06em;
+    color: #fff; text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.55);
+  }
 </style>
 </head>
 <body>
   <div class="gradient"></div>
+  <div class="sub-badge"><span class="dot"></span><span class="txt">Abone ol</span></div>
 </body>
 </html>
