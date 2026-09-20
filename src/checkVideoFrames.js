@@ -2,7 +2,7 @@ import { spawn } from 'node:child_process';
 import { mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { isImageBufferSpiritual } from './checkPhoto.js';
+import { isImageBufferSpiritual, ModerationUnavailableError } from './checkPhoto.js';
 
 function ffmpeg(args) {
   return new Promise((resolve, reject) => {
@@ -51,17 +51,17 @@ async function checkFrame(framePath, geminiKey) {
  * @returns {Promise<{approved: boolean, reason?: string}>}
  */
 export async function validateVideoFrames(videoPath, durationSec, geminiKey, frameCount = 6) {
-  if (!geminiKey) return { approved: true, reason: 'no-gemini-key-skipped' };
+  if (!geminiKey) {
+    // KURAL: moderasyon yoksa post yok. Lokal render'da atlanir.
+    if (process.env.CI) throw new ModerationUnavailableError('GEMINI_API_KEY tanimli degil, moderasyon calisamaz.');
+    return { approved: true, reason: 'no-gemini-key-skipped (lokal)' };
+  }
 
   const { tmpDir, framePaths } = await extractFrames(videoPath, durationSec, frameCount);
   try {
     for (let i = 0; i < framePaths.length; i++) {
       const result = await checkFrame(framePaths[i], geminiKey);
       if (!result.approved) {
-        if (result.reason === 'quota-exceeded-skipped') {
-          console.log(`Kare ${i + 1}/${frameCount} quota aşıldı, atlanıyor.`);
-          continue;
-        }
         return { approved: false, reason: `kare ${i + 1}/${frameCount} reddedildi: ${result.reason}` };
       }
       console.log(`Kare ${i + 1}/${frameCount} onayli`);

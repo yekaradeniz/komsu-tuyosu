@@ -16,18 +16,52 @@ const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/we
 // "high demand", "overloaded") ya da gecici AG hatasi (connect/fetch timeout).
 // Bunlar genelde saniyeler/dakika icinde gecer -> backoff ile tekrar dene.
 const TRANSIENT_GEMINI_STATUSES = new Set([500, 502, 503, 504]);
+
+function errText(err) {
+  return (String(err?.message || '') + ' ' + String(err?.cause?.message || '')).toLowerCase();
+}
+
 function isTransientGeminiError(err) {
   if (!err) return false;
   if (TRANSIENT_GEMINI_STATUSES.has(err.status)) return true;
   const code = String(err.code || err.cause?.code || '').toUpperCase();
   if (code.includes('TIMEOUT') || code.includes('ECONN') || code.includes('ENOTFOUND') || code.includes('UND_ERR')) return true;
-  const m = (String(err.message || '') + ' ' + String(err.cause?.message || '')).toLowerCase();
+  const m = errText(err);
   return m.includes('unavailable') || m.includes('high demand')
     || m.includes('overloaded') || m.includes('try again')
     || m.includes('fetch failed') || m.includes('timeout') || m.includes('network')
     || m.includes('"code":503') || m.includes('"code":500')
     || m.includes('"code":502') || m.includes('"code":504');
 }
+
+// Kota ya da kredi bitti: 429 (kota asildi), 402 (prepay kredisi sifir).
+// Bu iki hata kosu boyunca gecmez, tekrar denemek cozmez.
+// 19 Eylul 2026: prepay kredisi bitti, 402 hicbir dala uymadi ve ham stack
+// trace ile ayni gun 3 kanalin videosu kayboldu.
+function isModerationUnavailable(err) {
+  if (!err) return false;
+  if (err.status === 429 || err.status === 402) return true;
+  const m = errText(err);
+  return m.includes('quota') || m.includes('credits are depleted')
+    || m.includes('resource_exhausted') || m.includes('billing');
+}
+
+/**
+ * KURAL: moderasyon calismazsa video YAYINLANMAZ.
+ * Bu hata firlayinca render durur ve o slot bos gecer. Bir gun eksik video
+ * maliyetsizdir; moderasyonsuz post kanal cezasi riskidir.
+ */
+export class ModerationUnavailableError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ModerationUnavailableError';
+  }
+}
+
+const BILLING_FIX_HINT = 'Duzeltme: ai.studio/projects adresinde projenin faturalamasini kapat, proje ucretsiz katmana doner.';
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const backoffMs = (attempt) => Math.min(60000, 5000 * Math.pow(2, attempt));
 
 /**
  * Validates whether an image is appropriate for the Sufi poetry account.
@@ -41,7 +75,12 @@ function isTransientGeminiError(err) {
  * Buffer'dan (lokal dosya, indirme vs.) Sufi uygunluğunu kontrol eder.
  */
 export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
-  if (!apiKey) return { approved: true, reason: 'no api key - moderation skipped' };
+  if (!apiKey) {
+    // CI'da key yoksa moderasyon hic calismaz, KURAL geregi post da yok.
+    // Lokal test render'da atlanir, oradan zaten yayin yapilmiyor.
+    if (process.env.CI) throw new ModerationUnavailableError('GEMINI_API_KEY tanimli degil, moderasyon calisamaz.');
+    return { approved: true, reason: 'no api key - moderation skipped (lokal)' };
+  }
   const validMime = SUPPORTED_IMAGE_TYPES.includes(mimeType) ? mimeType : 'image/jpeg';
   const base64 = Buffer.from(buffer).toString('base64');
 
@@ -69,24 +108,33 @@ export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
         }
       });
       const answer = (result.text || '').trim().toUpperCase();
-      // BOS/anlamsiz yanit = moderasyon calismadi, "uygunsuz" DEMEK DEGIL.
+      // BOS/anlamsiz yanit = moderasyon CALISMADI, "uygunsuz" demek DEGIL.
+      // Once tekrar dene; israr ederse post yok, moderasyonsuz yayin yapilmaz.
       if (!answer.startsWith('YES') && !answer.startsWith('NO')) {
-        console.warn(`Gemini bos/anlamsiz yanit ("${answer.slice(0, 20)}") - moderasyon atlandi (red DEGIL)`);
-        return { approved: true, reason: 'empty-response-skipped' };
+        if (attempt < maxRetries) {
+          const waitMs = backoffMs(attempt);
+          console.warn(`Gemini bos/anlamsiz yanit ("${answer.slice(0, 20)}"). ${waitMs / 1000}s sonra tekrar (deneme ${attempt + 1}/${maxRetries})...`);
+          await sleep(waitMs);
+          continue;
+        }
+        throw new ModerationUnavailableError(`Gemini ${maxRetries} denemede de bos yanit verdi, moderasyon calismiyor.`);
       }
       return { approved: answer.startsWith('YES'), reason: answer };
     } catch (err) {
-      if (err.status === 429 || (err.message && err.message.includes('quota'))) {
-        console.warn('Gemini quota exceeded, skipping moderation.');
-        return { approved: true, reason: 'quota-exceeded-skipped' };
+      if (err instanceof ModerationUnavailableError) throw err;
+      // Kota/kredi bitti: moderasyon bu kosuda calismayacak, o yuzden post yok.
+      if (isModerationUnavailable(err)) {
+        throw new ModerationUnavailableError(
+          `Gemini moderasyonu calismiyor (HTTP ${err.status ?? '?'}): ${String(err.message || '').replace(/\s+/g, ' ').slice(0, 180)} ${BILLING_FIX_HINT}`
+        );
       }
       // Gecici asiri yuk: backoff ile tekrar dene. Tukenirse FIRLAT
       // (guvenli: moderasyonsuz post atilmaz, o gun post gelmeyebilir
       // ama uygunsuz icerik riski sifir).
       if (isTransientGeminiError(err) && attempt < maxRetries) {
-        const waitMs = Math.min(60000, 5000 * Math.pow(2, attempt));
+        const waitMs = backoffMs(attempt);
         console.warn(`Gemini gecici hata (${err.status ?? ''} ${String(err.message || '').slice(0, 80)}). ${waitMs / 1000}s sonra tekrar (deneme ${attempt + 1}/${maxRetries})...`);
-        await new Promise(r => setTimeout(r, waitMs));
+        await sleep(waitMs);
         continue;
       }
       throw err;
