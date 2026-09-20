@@ -58,6 +58,17 @@ export class ModerationUnavailableError extends Error {
   }
 }
 
+// Gemini hata metni JSON gelir: {"error":{"code":402,"message":"..."}}.
+// Loga ham JSON degil, sadece aciklama yazilir.
+function geminiMessage(err) {
+  const raw = String(err?.message || '').trim();
+  try {
+    const parsed = JSON.parse(raw);
+    if (parsed?.error?.message) return String(parsed.error.message).replace(/\s+/g, ' ').trim();
+  } catch {}
+  return raw.replace(/\s+/g, ' ').slice(0, 180);
+}
+
 const BILLING_FIX_HINT = 'Duzeltme: ai.studio/projects adresinde projenin faturalamasini kapat, proje ucretsiz katmana doner.';
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
@@ -125,7 +136,7 @@ export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
       // Kota/kredi bitti: moderasyon bu kosuda calismayacak, o yuzden post yok.
       if (isModerationUnavailable(err)) {
         throw new ModerationUnavailableError(
-          `Gemini moderasyonu calismiyor (HTTP ${err.status ?? '?'}): ${String(err.message || '').replace(/\s+/g, ' ').slice(0, 180)} ${BILLING_FIX_HINT}`
+          `Gemini moderasyonu calismiyor (HTTP ${err.status ?? '?'}): ${geminiMessage(err)} ${BILLING_FIX_HINT}`
         );
       }
       // Gecici asiri yuk: backoff ile tekrar dene. Tukenirse FIRLAT
