@@ -12,9 +12,9 @@
  * Chapter zaman damgalari yalnizca CANLI aciklamada kalici (meta.json uzerine yaziliyor),
  * o yuzden her videonun mevcut aciklamasindan start'lari parse edip yeni SEO'ya enjekte ediyoruz.
  *
- * Kullanim:
- *   node --env-file=.env scripts/backfill-longform-seo.mjs          # dry-run (sadece gosterir)
- *   node --env-file=.env scripts/backfill-longform-seo.mjs --apply  # gercekten gunceller
+ * Kullanim (Deviant repo kokunden, with-secrets ile):
+ *   .claude/tools/with-secrets CHANNEL KOMSU -- node KomsuTuyosu/scripts/backfill-longform-seo.mjs          # dry-run (sadece gosterir)
+ *   .claude/tools/with-secrets CHANNEL KOMSU -- node KomsuTuyosu/scripts/backfill-longform-seo.mjs --apply  # gercekten gunceller
  */
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';

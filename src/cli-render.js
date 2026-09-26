@@ -67,10 +67,12 @@ if (pendingRetry) {
 }
 
 // Tip alternasyonu: normalde bir öncekinin tersi (carousel <-> reel).
-// REELS_ENABLED=false   → sadece carousel atılır
-// CAROUSEL_ENABLED=false → sadece reel atılır (carousel kodu silinmedi, geri açmak için bu satırı kaldır)
+// Varsayılan (Task 11, 2026-09-26): reels açık, carousel kapalı; bu iki satır artık
+// tek kaynak, eskiden .env'deki REELS_ENABLED=true / CAROUSEL_ENABLED=false değerleri.
+// REELS_ENABLED=false  ortam değişkeni → sadece carousel atılır
+// CAROUSEL_ENABLED=true ortam değişkeni → carousel de açılır (kod silinmedi, geri açmak istersen)
 const REELS_ENABLED    = process.env.REELS_ENABLED    !== 'false';
-const CAROUSEL_ENABLED = process.env.CAROUSEL_ENABLED !== 'false';
+const CAROUSEL_ENABLED = process.env.CAROUSEL_ENABLED === 'true';
 
 const lastType = state.lastPost?.type
   ?? (state.lastPost?.carousel === true ? 'carousel'
