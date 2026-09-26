@@ -67,12 +67,13 @@ if (pendingRetry) {
 }
 
 // Tip alternasyonu: normalde bir öncekinin tersi (carousel <-> reel).
-// Varsayılan (Task 11, 2026-09-26): reels açık, carousel kapalı; bu iki satır artık
-// tek kaynak, eskiden .env'deki REELS_ENABLED=true / CAROUSEL_ENABLED=false değerleri.
+// İkisinin de varsayılanı açık; kapatmak için ortam değişkeni 'false' verilir.
 // REELS_ENABLED=false  ortam değişkeni → sadece carousel atılır
-// CAROUSEL_ENABLED=true ortam değişkeni → carousel de açılır (kod silinmedi, geri açmak istersen)
+// CAROUSEL_ENABLED=false ortam değişkeni → sadece reel atılır. Varsayılan açık: longform-weekly ve
+// longform-malzeme iş akışları bu bayrağı ayarlamıyor ve carousel'e güveniyor. Yerel render komutu
+// eskiden .env'deki değeri artık açıkça veriyor: CAROUSEL_ENABLED=false.
 const REELS_ENABLED    = process.env.REELS_ENABLED    !== 'false';
-const CAROUSEL_ENABLED = process.env.CAROUSEL_ENABLED === 'true';
+const CAROUSEL_ENABLED = process.env.CAROUSEL_ENABLED !== 'false';
 
 const lastType = state.lastPost?.type
   ?? (state.lastPost?.carousel === true ? 'carousel'
