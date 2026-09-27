@@ -100,7 +100,8 @@ export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
   for (let attempt = 0; ; attempt++) {
     try {
       const result = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-lite',
+        // 2.5 modelleri yeni projelere kapali (27 Eyl 2026, HTTP 404).
+        model: 'gemini-3.5-flash-lite',
         contents: [{
           role: 'user',
           parts: [
@@ -110,10 +111,11 @@ export async function isImageBufferSpiritual(buffer, mimeType, apiKey) {
         }],
         config: {
           systemInstruction: SYSTEM_PROMPT,
-          // thinkingBudget 0: 2.5 modellerinde "thinking" acilirsa dusunme token'lari
+          // Dusunme en aza iner: "thinking" acilirsa dusunme token'lari
           // maxOutputTokens'i tuketip metni BOS birakiyor (Zihin'de tum adaylar
-          // reddedilip render timeout'a girdi). Onlem olarak burada da kapali.
-          thinkingConfig: { thinkingBudget: 0 },
+          // reddedilip render timeout'a girdi). 3.x modelleri thinkingBudget 0'i
+          // HTTP 400 ile reddediyor, yerine thinkingLevel 'minimal'.
+          thinkingConfig: { thinkingLevel: 'minimal' },
           maxOutputTokens: 20,
           temperature: 0
         }
