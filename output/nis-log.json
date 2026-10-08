@@ -3,13 +3,12 @@
   "lastPost": {
     "date": "2026-10-08",
     "verseId": "nt-066",
-    "photoId": "pexels-35818187",
+    "photoId": "pexels-7189097",
     "postId": null,
     "type": "reel",
     "carousel": false
   },
   "recentPhotos": [
-    "pexels-39925222",
     "pexels-39743888",
     "pexels-38753796",
     "pexels-18139465",
@@ -22,7 +21,8 @@
     "pexels-8192153",
     "pexels-9020068",
     "pexels-6134635",
-    "pexels-35818187"
+    "pexels-35818187",
+    "pexels-7189097"
   ],
   "postedVerseIds": [
     "nt-001",
@@ -158,9 +158,10 @@
     "pexels-8192153",
     "pexels-9020068",
     "pexels-6134635",
-    "pexels-35818187"
+    "pexels-35818187",
+    "pexels-7189097"
   ],
-  "audioIndex": 3,
+  "audioIndex": 4,
   "lastSuccessfulPostId": "QYHKG9W7ZgY",
   "cooldownUntil": null
 }
