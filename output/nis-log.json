@@ -4,9 +4,10 @@
     "date": "2026-10-12",
     "verseId": "nt-074",
     "photoId": "pexels-11284271",
-    "postId": null,
+    "postId": "m7080-cM7CI",
     "type": "reel",
-    "carousel": false
+    "carousel": false,
+    "youtubeUrl": "https://www.youtube.com/shorts/m7080-cM7CI"
   },
   "recentPhotos": [
     "pexels-9407407",
@@ -178,6 +179,6 @@
     "pexels-11284271"
   ],
   "audioIndex": 3,
-  "lastSuccessfulPostId": "SlaeqJycgZk",
+  "lastSuccessfulPostId": "m7080-cM7CI",
   "cooldownUntil": null
 }
