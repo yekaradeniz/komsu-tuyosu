@@ -1,16 +1,14 @@
 {
   "launchDate": "2026-08-24",
   "lastPost": {
-    "date": "2026-10-12",
-    "verseId": "nt-074",
-    "photoId": "pexels-11284271",
-    "postId": "m7080-cM7CI",
+    "date": "2026-10-13",
+    "verseId": "nt-075",
+    "photoId": "pexels-11622181",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/m7080-cM7CI"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-9407407",
     "pexels-8192153",
     "pexels-9020068",
     "pexels-6134635",
@@ -23,7 +21,8 @@
     "pexels-8433943",
     "pexels-34690395",
     "pexels-37563828",
-    "pexels-11284271"
+    "pexels-11284271",
+    "pexels-11622181"
   ],
   "postedVerseIds": [
     "nt-001",
@@ -99,7 +98,8 @@
     "nt-071",
     "nt-072",
     "nt-073",
-    "nt-074"
+    "nt-074",
+    "nt-075"
   ],
   "usedVideoIds": [
     "pexels-25252204",
@@ -176,9 +176,10 @@
     "pexels-8433943",
     "pexels-34690395",
     "pexels-37563828",
-    "pexels-11284271"
+    "pexels-11284271",
+    "pexels-11622181"
   ],
-  "audioIndex": 3,
+  "audioIndex": 4,
   "lastSuccessfulPostId": "m7080-cM7CI",
   "cooldownUntil": null
 }
