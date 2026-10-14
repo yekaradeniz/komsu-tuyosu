@@ -2,15 +2,13 @@
   "launchDate": "2026-08-24",
   "lastPost": {
     "date": "2026-10-14",
-    "verseId": "nt-077",
-    "photoId": "pexels-10329066",
-    "postId": "jp2VaCt-79E",
+    "verseId": "nt-078",
+    "photoId": "pexels-31229039",
+    "postId": null,
     "type": "reel",
-    "carousel": false,
-    "youtubeUrl": "https://www.youtube.com/shorts/jp2VaCt-79E"
+    "carousel": false
   },
   "recentPhotos": [
-    "pexels-6134635",
     "pexels-35818187",
     "pexels-7189097",
     "pexels-19683567",
@@ -23,7 +21,8 @@
     "pexels-11284271",
     "pexels-11622181",
     "pexels-39168782",
-    "pexels-10329066"
+    "pexels-10329066",
+    "pexels-31229039"
   ],
   "postedVerseIds": [
     "nt-001",
@@ -102,7 +101,8 @@
     "nt-074",
     "nt-075",
     "nt-076",
-    "nt-077"
+    "nt-077",
+    "nt-078"
   ],
   "usedVideoIds": [
     "pexels-25252204",
@@ -182,9 +182,10 @@
     "pexels-11284271",
     "pexels-11622181",
     "pexels-39168782",
-    "pexels-10329066"
+    "pexels-10329066",
+    "pexels-31229039"
   ],
-  "audioIndex": 6,
+  "audioIndex": 7,
   "lastSuccessfulPostId": "jp2VaCt-79E",
   "cooldownUntil": null
 }
