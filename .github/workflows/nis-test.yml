@@ -3,7 +3,14 @@ name: Nis Testi - Komsu Tuyosu
 on:
   # GitHub schedule KALDIRILDI (gecikmeli/guvenilmez). Tek otomatik tetikleyici: cron-job.org.
   workflow_dispatch:          # sadece elle 'Run' butonu
-  repository_dispatch:        # TEK otomatik tetikleyici: cron-job.org her gun 20:00 TR (2026-11-10'dan beri gunde 1)
+    inputs:
+      dry_run:
+        # Siradaki videoyu uretir, YAYINLAMAZ ve state'i commit etmez; MP4 artifact olur.
+        # Render degisikligini (or. V2 format) Linux'ta yayina cikmadan denemek icin.
+        description: 'Sadece uret, yayinlama (MP4 artifact olarak iner)'
+        type: boolean
+        default: false
+  repository_dispatch:       # TEK otomatik tetikleyici: cron-job.org her gun 20:00 TR (2026-11-10'dan beri gunde 1)
     types: [nis-test]
 
 permissions:
@@ -75,7 +82,16 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_REF_NAME: ${{ github.ref_name }}
 
+      - name: Deneme videosunu artifact olarak yukle (dry run)
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-reel
+          path: output/*.mp4
+          retention-days: 3
+
       - name: Commit generated MP4 + state
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
@@ -99,6 +115,7 @@ jobs:
           fi
 
       - name: Upload to YouTube Shorts
+        if: ${{ !inputs.dry_run }}
         run: npm run post
         env:
           CONTENT_FILE: nis-testi.json
@@ -110,6 +127,7 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
 
       - name: Commit post result (videoId)
+        if: ${{ !inputs.dry_run }}
         run: |
           git add output/nis-log.json
           if git diff --staged --quiet; then
