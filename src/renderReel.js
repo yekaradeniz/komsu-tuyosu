@@ -37,7 +37,7 @@ function calcExplanationFontSize(_explanation) {
   return 51;
 }
 
-function fillTemplate(name, vars) {
+export function fillTemplate(name, vars) {
   let html = readFileSync(join(TEMPLATE_DIR, name), 'utf-8');
   for (const [k, v] of Object.entries(vars)) {
     html = html.replace(new RegExp(`\\{\\{${k}\\}\\}`, 'g'), v);
@@ -45,7 +45,7 @@ function fillTemplate(name, vars) {
   return html;
 }
 
-async function renderHtmlToPng(html, outPath, browser) {
+export async function renderHtmlToPng(html, outPath, browser) {
   // 2x render (Retina): viewport 1080x1920 ama deviceScaleFactor 2 => screenshot 2160x3840 px.
   // ffmpeg lanczos ile 1080x1920'ye geri olcekler. Sonuc: text kenarlari super keskin.
   const context = await browser.newContext({
@@ -68,7 +68,7 @@ export async function downloadVideo(url, outPath) {
   writeFileSync(outPath, buf);
 }
 
-function ffmpeg(args) {
+export function ffmpeg(args) {
   return new Promise((resolve, reject) => {
     const ffmpegPath = process.env.FFMPEG_PATH || 'ffmpeg';
     const proc = spawn(ffmpegPath, args, { stdio: ['ignore', 'pipe', 'pipe'] });

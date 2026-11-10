@@ -84,7 +84,14 @@ async function searchPage(apiKey, query, orientation = 'portrait') {
   return data.videos ?? [];
 }
 
-function pickBestFile(video, orientation = 'portrait') {
+function pickBestFile(video, orientation = 'portrait', nearestHeight = 0) {
+  // nearestHeight (V2 reel, 4-5 klip): hedef yukseklige EN YAKIN dikey dosya. Bes tane
+  // 4K indirme ve cozme render adimini 12 dakikalik sinira yaklastirir; tek klipli
+  // V1 akisinda bu secenek verilmez, asagidaki 4K kurali aynen gecerlidir.
+  if (nearestHeight && orientation !== 'landscape') {
+    const tall = (video.video_files ?? []).filter(f => f.height > f.width && f.height >= nearestHeight);
+    if (tall.length) return tall.sort((a, b) => a.height - b.height)[0];
+  }
   // PORTRAIT (Shorts): en yuksek cozunurluk (4K) tercih edilir - kisa video, downscale
   //   keskinligi artiriyor, render suresi sorun degil. DOKUNMA, kalite buna bagli.
   // LANDSCAPE (long-form): hedefe EN YAKIN kaynak (>=1920). 5 sahneli uzun videoda 4K
@@ -209,7 +216,7 @@ export async function fetchPexelsCandidatesByQueries(queries, apiKey, usedVideoI
         if (usedVideoIds.has(fullId)) continue;
         if (seenIds.has(fullId)) continue;
         if (!isCleanVideo(video)) continue;
-        const best = pickBestFile(video, orientation);
+        const best = pickBestFile(video, orientation, opts.nearestHeight);
         if (!best) continue;
         seenIds.add(fullId);
         candidates.push({
@@ -230,4 +237,24 @@ export async function fetchPexelsCandidatesByQueries(queries, apiKey, usedVideoI
     throw new Error(`Pexels'te uygun yeni video yok (queries: ${queries.join(', ')}, kullanilmis: ${usedVideoIds.size})`);
   }
   return candidates;
+}
+
+/**
+ * Adaylari sorgu sirasina gore donusumlu dizer: her sorgunun 1. adayi, sonra 2. adaylar...
+ * V2 reel her sorgudan bir klip ister; duz listede ilk sorgunun adaylari one yigiliyor.
+ * @param {Array<{query: string}>} candidates
+ * @param {string[]} queryOrder - once denenecek sorgular (entry.pexelsQuery)
+ */
+export function roundRobinByQuery(candidates, queryOrder = []) {
+  const groups = new Map(queryOrder.map((q) => [q, []]));
+  for (const c of candidates) {
+    if (!groups.has(c.query)) groups.set(c.query, []);
+    groups.get(c.query).push(c);
+  }
+  const lists = [...groups.values()];
+  const out = [];
+  for (let i = 0; lists.some((l) => i < l.length); i++) {
+    for (const l of lists) if (i < l.length) out.push(l[i]);
+  }
+  return out;
 }

@@ -57,7 +57,9 @@ for (const e of pool) {
   const first = (v.split('\n')[0] || '').trim();
   const m = first.match(/^(.{15,95}?[.?!])(\s|$)/);
   const firstSentence = m ? m[1] : first;
-  const sec = (v.length + x.length) / CPS + OVERHEAD;
+  // V2 olcumu (2026-11-10, nt-102): 250 karakter = 18.9sn gercek video. Soru-cevap
+  // arasi bosluk ve kapanis fade'i kalktigi icin sabit pay 3.6 yerine 1.3sn.
+  const sec = (v.length + x.length) / CPS + (e.format === 'v2' ? 1.3 : OVERHEAD);
   const add = (msg) => issues.push({ id: e.id, msg });
 
   if (!v) add('verse BOS');
@@ -68,6 +70,13 @@ for (const e of pool) {
   if (x.length > LIM.explMax) add(`cevap cok uzun (${x.length}ch > ${LIM.explMax})`);
   if (x.length && x.length < LIM.explMin) add(`cevap cok kisa (${x.length}ch < ${LIM.explMin})`);
   if (sec > LIM.videoMaxSec) add(`video ~${sec.toFixed(1)}sn > ${LIM.videoMaxSec}sn (retention riski)`);
+  // V2 format: ilk karedeki kanca basligi ve goruntu kesitleri icin 4 sorgu sart.
+  if (e.format === 'v2') {
+    const h = (e.hook || '').trim();
+    if (!h) add('v2: hook BOS (ilk karedeki kanca basligi)');
+    else if (h.length < 10 || h.length > 34) add(`v2: hook ${h.length}ch, 10-34 arasi olmali (3 satira sigmali)`);
+    if (!Array.isArray(e.pexelsQuery) || e.pexelsQuery.length < 4) add('v2: en az 4 pexelsQuery gerekli (her kesit ayri goruntu)');
+  }
   if (v && !/[.?!]$/.test(v)) add('verse noktalama ile bitmiyor');
   if (x && !/[.?!]$/.test(x)) add('cevap noktalama ile bitmiyor');
   // Sadece GERCEKTEN bozuk yazimlar: "gibi"/"neden" dogru Turkce kelimeler, onlari sayma.

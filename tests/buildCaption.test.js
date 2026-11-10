@@ -12,11 +12,11 @@ describe('buildCaption', () => {
     expect(caption).toContain('Bular bu âlemin hem berzahında');
   });
 
-  it('CORE_TAGS her zaman captionda yer alir', () => {
+  // Eskiden sabit CORE_TAGS listesi vardi; etiketler content/seo-templates.json'a
+  // tasindi ve bu test 'CORE_TAGS is not iterable' ile kirmizi kaldi (2026-11-10'da goruldu).
+  it('caption her zaman en az bir hashtag ile biter', () => {
     const caption = buildCaption(entry, '2026-05-12');
-    for (const tag of _internal.CORE_TAGS) {
-      expect(caption).toContain(tag);
-    }
+    expect(caption.split('\n').at(-1)).toMatch(/^#\S+( #\S+)*$/);
   });
 
   it('ayni tarih ayni captioni uretir (deterministic)', () => {

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px; height: 1920px; overflow: hidden; background: transparent;
+    -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+  }
+  /* V2 KANCA BASLIGI: ilk kareden itibaren ekranda, sessiz izleyen de konuyu
+     aninda okur. Olcum: izleyicinin %62'si ilk anda kaydiriyordu ve eski acilis
+     karesi 90-140 karakterlik bir yazi bloguydu.
+     Guvenli alan: ust 180px, sag 220px (ikonlar asagida), abone rozeti sol ustte
+     210-400px. Baslik rozetin altinda, ekranin ust ucte birinde. */
+  .stage {
+    position: absolute; left: 0; right: 0; top: 440px;
+    padding: 0 110px 0 70px;
+    text-align: center;
+  }
+  .wrap { line-height: 1.42; transform: rotate(-1.5deg); }
+  .hook {
+    display: inline;
+    font-family: 'Anton', sans-serif; font-weight: 400;
+    font-size: 112px; line-height: 1.42;
+    color: #ffffff; text-transform: uppercase; letter-spacing: 2px;
+    background-color: #E08A2B;
+    padding: 4px 24px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    -webkit-text-stroke: 1.5px #1a0c00;
+    text-shadow: 4px 4px 0 #1a0c00, 6px 6px 18px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="wrap"><span class="hook" id="hook">{{hook}}</span></div>
+  </div>
+<script>
+  // Olcum font YUKLENDIKTEN sonra yapilir. Yuklenmeden olculurse genis yedek
+  // fontla hesaplanip yazi gereksiz kuculuyor (ilk denemede 112px yerine 74px cikti).
+  document.fonts.ready.then(function () {
+    const hook = document.querySelector('#hook');
+    const wrap = document.querySelector('.wrap');
+    let size = parseFloat(getComputedStyle(hook).fontSize);
+    // En fazla 3 satir (yaklasik 490px); sigmiyorsa yaziyi kucult.
+    while (wrap.offsetHeight > 490 && size > 60) {
+      size -= 2;
+      hook.style.fontSize = size + 'px';
+    }
+  });
+</script>
+</body>
+</html>

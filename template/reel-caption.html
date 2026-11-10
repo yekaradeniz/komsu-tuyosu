@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* V2 ALTYAZI SERIDI: 1080x420, videoda y=960'a oturur (alt 520px Shorts
+     arayuzu, sagdaki ikon kolonu icin sag bosluk daha genis). Her kare bir
+     kelime grubunu gosterir, o an soylenen kelime sari. */
+  html, body {
+    width: 1080px; height: 420px; overflow: hidden; background: transparent;
+    -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+  }
+  .strip {
+    position: absolute; inset: 0;
+    padding: 0 170px 0 70px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cap {
+    font-family: 'Inter', sans-serif; font-weight: 900;
+    font-size: 96px; line-height: 1.12; letter-spacing: -1px;
+    text-transform: uppercase; text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 14px #000; paint-order: stroke fill;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.65));
+  }
+  .cap .on { color: #FFE14D; }
+</style>
+</head>
+<body>
+  <div class="strip"><div class="cap" id="cap"></div></div>
+<script>
+  // texts: grubun kelimeleri, active: vurgulanacak kelimenin sirasi (-1: bos kare)
+  window.setCaption = function (texts, active) {
+    const cap = document.getElementById('cap');
+    cap.style.fontSize = '';
+    cap.textContent = '';
+    texts.forEach((t, i) => {
+      const span = document.createElement('span');
+      // Virgul ve nokta ekranda kalabalik yapiyor; soru ve unlem kalir.
+      span.textContent = t.replace(/[.,;:…]+$/, '');
+      if (i === active) span.className = 'on';
+      cap.appendChild(span);
+      if (i < texts.length - 1) cap.appendChild(document.createTextNode(' '));
+    });
+    // En fazla 2 satir ve serit genisligi: uzun tek kelimede yaziyi kucult.
+    const strip = document.querySelector('.strip');
+    const maxW = strip.clientWidth - 240;
+    let size = 96;
+    while ((cap.scrollWidth > maxW || cap.offsetHeight > 250) && size > 50) {
+      size -= 2;
+      cap.style.fontSize = size + 'px';
+    }
+  };
+</script>
+</body>
+</html>

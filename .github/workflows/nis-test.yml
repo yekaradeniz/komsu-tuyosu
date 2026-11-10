@@ -60,7 +60,9 @@ jobs:
 
       - name: Generate today's reel
         run: npm run render
-        timeout-minutes: 12
+        # V2 format 4 klip indirip moderasyondan geciriyor ve 6 kesit kurguluyor;
+        # V1 bu adimda 119sn suruyordu (2026-11-10 olcumu), pay birakildi.
+        timeout-minutes: 18
         env:
           CONTENT_FILE: nis-testi.json
           STATE_FILE: nis-log.json

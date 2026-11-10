@@ -44,7 +44,7 @@ function cacheKey(text, voiceId, settings) {
  * @param {string} [opts.model]      - Model ID (default eleven_multilingual_v2)
  * @returns {Promise<string>} - MP3 dosyasinin lokal yolu
  */
-export async function generateVoice({ text, voiceId, apiKey, cacheDir, settings = DEFAULT_SETTINGS, model = DEFAULT_MODEL }) {
+export async function generateVoice({ text, voiceId, apiKey, cacheDir, settings = DEFAULT_SETTINGS, model = DEFAULT_MODEL, withTimestamps = false }) {
   if (!text || !text.trim()) throw new Error('generateVoice: text bos');
   if (!voiceId) throw new Error('generateVoice: voiceId yok');
   if (!apiKey) throw new Error('generateVoice: apiKey yok');
@@ -54,18 +54,20 @@ export async function generateVoice({ text, voiceId, apiKey, cacheDir, settings 
   const key = cacheKey(text, voiceId, settings);
   const outPath = join(cacheDir, `${key}.mp3`);
 
-  if (existsSync(outPath)) {
+  // withTimestamps: ses ile birlikte karakter zamanlamasi da gerekir (kelime
+  // senkron altyazi). Zamanlama dosyasi yoksa cache'teki ses tek basina yetmez.
+  if (existsSync(outPath) && (!withTimestamps || existsSync(alignmentPath(outPath)))) {
     console.log(`  Voice cache hit: ${key}.mp3`);
     return outPath;
   }
 
   console.log(`  Voice cache miss: ElevenLabs API'ye request (${text.length} char)...`);
-  const res = await fetch(`${API_BASE}/${voiceId}`, {
+  const res = await fetch(`${API_BASE}/${voiceId}${withTimestamps ? '/with-timestamps' : ''}`, {
     method: 'POST',
     headers: {
       'xi-api-key': apiKey,
       'Content-Type': 'application/json',
-      'Accept': 'audio/mpeg'
+      'Accept': withTimestamps ? 'application/json' : 'audio/mpeg'
     },
     body: JSON.stringify({
       text,
@@ -79,10 +81,30 @@ export async function generateVoice({ text, voiceId, apiKey, cacheDir, settings 
     throw new Error(`ElevenLabs API basarisiz (${res.status}): ${body.slice(0, 300)}`);
   }
 
-  const buf = Buffer.from(await res.arrayBuffer());
+  let buf;
+  if (withTimestamps) {
+    const json = await res.json();
+    if (!json.audio_base64 || !json.alignment?.characters?.length) {
+      throw new Error('ElevenLabs with-timestamps: ses ya da zamanlama bos dondu');
+    }
+    buf = Buffer.from(json.audio_base64, 'base64');
+    writeFileSync(alignmentPath(outPath), JSON.stringify(json.alignment));
+  } else {
+    buf = Buffer.from(await res.arrayBuffer());
+  }
   writeFileSync(outPath, buf);
   console.log(`  Voice uretildi: ${outPath} (${(buf.length / 1024).toFixed(0)} KB)`);
   return outPath;
+}
+
+/** Ses dosyasinin yanindaki karakter zamanlamasi dosyasi (with-timestamps). */
+export function alignmentPath(mp3Path) {
+  return mp3Path.replace(/\.mp3$/, '.align.json');
+}
+
+/** generateVoice({withTimestamps:true}) ile uretilen sesin karakter zamanlamasini okur. */
+export function readAlignment(mp3Path) {
+  return JSON.parse(readFileSync(alignmentPath(mp3Path), 'utf-8'));
 }
 
 /**

@@ -5,14 +5,15 @@ import { dirname, join } from 'node:path';
 import { pickPhoto } from './pickPhoto.js';
 import { pickValidatedPhoto, isPhotoSpiritual } from './checkPhoto.js';
 import { fetchUnsplashPhoto } from './fetchUnsplashPhoto.js';
-import { fetchPexelsCandidates, fetchPexelsCandidatesByQueries } from './fetchPexelsVideo.js';
+import { fetchPexelsCandidates, fetchPexelsCandidatesByQueries, roundRobinByQuery } from './fetchPexelsVideo.js';
 import { validateVideoFrames } from './checkVideoFrames.js';
 import { renderToPng, renderExplanationToPng } from './render.js';
 import { renderReel, downloadVideo, pickAudioByIndex, listAudioTracks } from './renderReel.js';
+import { renderReelV2 } from './renderReelV2.js';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { readState, writeState } from './state.js';
-import { generateVoice, getAudioDuration } from './generateVoice.js';
+import { generateVoice, getAudioDuration, readAlignment } from './generateVoice.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -105,41 +106,64 @@ if (nextType === 'reel') {
   // Komsu Tuyosu: entry.pexelsQuery varsa soru-baginli arama; yoksa mood fallback.
   // MODERASYON: her aday Gemini frame kontrolunden gecer (suggestive/glamour/erotik REJECT,
   // normal ev isi YES). Reddedilenler usedVideoIds'e eklenir (asagida), bir daha denenmez.
-  const candidates = Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0
-    ? await fetchPexelsCandidatesByQueries(entry.pexelsQuery, pexelsKey, usedVideoIds,
-        { fallbackQueries: pexelsFallbackFor(entry) })   // nis videosu ev goruntusune dusmesin
+  // V2 FORMAT (entry.format === 'v2'): kelime senkron altyazi + birden cok klip.
+  // Kisa kesitler kullanildigi icin 6 saniyelik kaynak yeter; V1 tek klibi butun
+  // video boyunca gosterdigi icin en az 22 saniye ister (DURATION_RANGES).
+  const isV2 = entry.format === 'v2' && Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0;
+  const WANT_CLIPS = isV2 ? 4 : 1;
+  const fetched = Array.isArray(entry.pexelsQuery) && entry.pexelsQuery.length > 0
+    ? await fetchPexelsCandidatesByQueries(entry.pexelsQuery, pexelsKey, usedVideoIds, {
+        fallbackQueries: pexelsFallbackFor(entry),   // nis videosu ev goruntusune dusmesin
+        ...(isV2 ? { durationRanges: [{ min: 6, max: 60 }, { min: 5, max: 120 }], minCandidates: 12, nearestHeight: 1920 } : {})
+      })
     : await fetchPexelsCandidates(entry.moods, pexelsKey, usedVideoIds);
+  const candidates = isV2 ? roundRobinByQuery(fetched, entry.pexelsQuery) : fetched;
   console.log(`${candidates.length} Pexels aday (excl. ${usedVideoIds.size}), Gemini moderasyonundan gececek...`);
 
   const tmpDir = mkdtempSync(join(tmpdir(), 'pexels-'));
   let chosen = null;
   let chosenPath = null;
+  const approved = [];           // [{ c, path }] - V1'de tek, V2'de en fazla WANT_CLIPS
   const rejectedIds = [];
 
   try {
-    // Adaylari sirayla dene: indir, Gemini frame moderasyonu, ilk onaylanani kullan.
+    // Adaylari sirayla dene: indir, Gemini frame moderasyonu, onaylananlari kullan.
     // UST SINIR: moderasyon bozulursa yuzlerce aday denenip render timeout'a giriyor
     // (Zihin'de 5 Ags 2026'da yasandi: Gemini bos yanit -> her aday "reddedildi").
     const MAX_TRY = 15;
     const tryCount = Math.min(candidates.length, MAX_TRY);
-    for (let i = 0; i < tryCount; i++) {
-      const c = candidates[i];
-      const localPath = join(tmpDir, `cand-${i}.mp4`);
-      console.log(`[${i + 1}/${tryCount}] ${c.id} (query: "${c.query}") indiriliyor...`);
-      await downloadVideo(c.url, localPath);
-      const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 2);
-      if (mod.approved) {
-        console.log(`✓ ${c.id} moderasyondan gecti`);
-        chosen = c;
-        chosenPath = localPath;
-        break;
+    const approvedQueries = new Set();
+    const tried = new Set();
+    let tries = 0;
+    // 1. tur: her sorgudan en fazla bir klip (goruntu cesitliligi). 2. tur: eksik
+    // kaldiysa ayni sorgudan ikinci klip de olur.
+    for (const onePerQuery of [true, false]) {
+      for (const c of candidates) {
+        if (approved.length >= WANT_CLIPS || tries >= tryCount) break;
+        if (tried.has(c.id) || (onePerQuery && approvedQueries.has(c.query))) continue;
+        tried.add(c.id);
+        tries++;
+        const localPath = join(tmpDir, `cand-${tries}.mp4`);
+        console.log(`[${tries}/${tryCount}] ${c.id} (query: "${c.query}") indiriliyor...`);
+        await downloadVideo(c.url, localPath);
+        const mod = await validateVideoFrames(localPath, c.duration, geminiKey, 2);
+        if (mod.approved) {
+          console.log(`✓ ${c.id} moderasyondan gecti`);
+          approved.push({ c, path: localPath });
+          approvedQueries.add(c.query);
+        } else {
+          console.log(`✗ ${c.id} reddedildi: ${mod.reason}`);
+          rejectedIds.push(c.id);
+          try { rmSync(localPath, { force: true }); } catch {}
+        }
       }
-      console.log(`✗ ${c.id} reddedildi: ${mod.reason}`);
-      rejectedIds.push(c.id);
     }
-    if (!chosen) {
-      throw new Error(`Denenen ${tryCount} adayin hicbiri moderasyondan gecemedi (toplam ${candidates.length} aday). Moderasyon bozuk olabilir - Gemini yanitlarini kontrol edin.`);
+    if (approved.length === 0) {
+      throw new Error(`Denenen ${tries} adayin hicbiri moderasyondan gecemedi (toplam ${candidates.length} aday). Moderasyon bozuk olabilir - Gemini yanitlarini kontrol edin.`);
     }
+    chosen = approved[0].c;
+    chosenPath = approved[0].path;
+    if (isV2) console.log(`V2: ${approved.length}/${WANT_CLIPS} klip onayli (${tries} deneme)`);
 
     // Müzik rotation: state.audioIndex'i kullan, audio/ klasörü doluysa sırayla seç
     const tracks = listAudioTracks();
@@ -169,7 +193,8 @@ if (nextType === 'reel') {
           voiceId: elevenVoiceId,
           apiKey: elevenKey,
           cacheDir: voiceCacheDir,
-          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 }
+          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 },
+          withTimestamps: isV2     // V2 altyazisi kelime zamanlamasi ister
         });
         voiceDuration = await getAudioDuration(voicePath);
         console.log(`  Soru voice: ${voiceDuration.toFixed(1)}sn`);
@@ -182,7 +207,8 @@ if (nextType === 'reel') {
             voiceId: elevenVoiceId,
             apiKey: elevenKey,
             cacheDir: voiceCacheDir,
-            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.2 }
+            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.2 },
+            withTimestamps: isV2
           });
           manaVoiceDuration = await getAudioDuration(manaVoicePath);
           console.log(`  Cevap voice: ${manaVoiceDuration.toFixed(1)}sn`);
@@ -219,7 +245,28 @@ if (nextType === 'reel') {
     }
 
     const outVideo = join(ROOT, 'output', `${today}.mp4`);
-    await renderReel({
+    // V2 iki sesi ve zamanlamalarini ister. Ses uretilemediyse (ElevenLabs hatasi)
+    // V1'e duser: o gun video yine cikar, sadece eski bicimde.
+    const v2Ready = isV2 && voicePath && manaVoicePath;
+    if (isV2 && !v2Ready) console.warn('V2 icin ses yok, bu video V1 bicimiyle uretilecek.');
+    if (v2Ready) {
+      await renderReelV2({
+        hook: entry.hook || entry.concept,
+        clips: approved.map(({ c, path }) => ({ path, duration: c.duration })),
+        audioPath,
+        voicePath,
+        voiceDuration,
+        voiceAlignment: readAlignment(voicePath),
+        manaVoicePath,
+        manaVoiceDuration,
+        manaAlignment: readAlignment(manaVoicePath),
+        ctaVoicePath,
+        ctaVoiceDuration,
+        ctaKicker: renderNamed(entry, 'ctaCardKicker'),
+        ctaSub: renderNamed(entry, 'ctaCardSub'),
+        outPath: outVideo
+      });
+    } else await renderReel({
       verse: entry.verse,
       explanation: entry.explanation || '',
       videoPath: chosenPath,
@@ -237,10 +284,11 @@ if (nextType === 'reel') {
     console.log(`Reel hazir: ${outVideo}`);
 
     // Reddedilen adaylar da kalıcı blacklist'e gidiyor (tekrar denenmesin)
+    const approvedIds = approved.map(({ c }) => c.id);
     const newUsedIds = [
-      ...(state.usedVideoIds ?? []).filter(id => id !== chosen.id),
+      ...(state.usedVideoIds ?? []).filter(id => !approvedIds.includes(id)),
       ...rejectedIds.filter(id => !(state.usedVideoIds ?? []).includes(id)),
-      chosen.id
+      ...approvedIds
     ];
 
     writeState(statePath, {
