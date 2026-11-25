@@ -12,11 +12,13 @@ import { join } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const API_BASE = 'https://api.elevenlabs.io/v1/text-to-speech';
-const DEFAULT_MODEL = 'eleven_multilingual_v2';
+// eleven_v4 (2026-11-25, Yunus: "bu kullandigimiz sesi dinlemek hic dogal gelmiyor").
+// eleven_multilingual_v2 + 1.1/1.2 hizlandirma yapay duruyordu. Ses: Burak (Actions
+// secret ELEVENLABS_VOICE_ID = stvBE08BCYHZ97rCIwoZ), butun kanallarda ayni.
+const DEFAULT_MODEL = 'eleven_v4';
 
-// Zihnimizin Sirlari TTS ayarlari.
-// Default speed 1.0 (cevap icin): cevapta noktalama yogun, dogal tempoda okunur.
-// SORU icin cli-render'da speed 0.9 verilir (noktalama az oldugu icin 1.0'da cok hizli).
+// Hiz her yerde 1.0: hizlandirma tonlamayi mekaniklestiriyordu. Burak v4 1.0'da
+// 259 karakteri 16.9sn'de okuyor, eski hizlandirilmis Melek 17.2sn (olculdu).
 const DEFAULT_SETTINGS = {
   stability: 0.5,
   similarity_boost: 0.95,
@@ -25,9 +27,10 @@ const DEFAULT_SETTINGS = {
   speed: 1.0
 };
 
-function cacheKey(text, voiceId, settings) {
+// Model anahtarda: yoksa model degisince eski modelin sesi cache'ten geri gelir.
+function cacheKey(text, voiceId, settings, model) {
   const hash = createHash('sha1')
-    .update(text + '|' + voiceId + '|' + JSON.stringify(settings))
+    .update(text + '|' + voiceId + '|' + JSON.stringify(settings) + '|' + model)
     .digest('hex')
     .slice(0, 16);
   return hash;
@@ -51,7 +54,7 @@ export async function generateVoice({ text, voiceId, apiKey, cacheDir, settings 
 
   if (!existsSync(cacheDir)) mkdirSync(cacheDir, { recursive: true });
 
-  const key = cacheKey(text, voiceId, settings);
+  const key = cacheKey(text, voiceId, settings, model);
   const outPath = join(cacheDir, `${key}.mp3`);
 
   // withTimestamps: ses ile birlikte karakter zamanlamasi da gerekir (kelime

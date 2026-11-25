@@ -138,9 +138,9 @@ const FINAL_HOLD = 3.0;
 const FADE_OUT = 1.5;
 const MUSIC_VOL = 0.16;  // onceki 0.20'den %20 kisik
 
-// Soru ve cevap ayni tempo: 1.1x
-const Q_SETTINGS = { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 };
-const A_SETTINGS = { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 };
+// Soru ve cevap ayni tempo: 1.0 (2026-11-25, hizlandirma sesi yapay yapiyordu)
+const Q_SETTINGS = { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.0 };
+const A_SETTINGS = { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.0 };
 
 // ---------- Main ----------
 const tmp = mkdtempSync(join(tmpdir(), 'lfk-'));

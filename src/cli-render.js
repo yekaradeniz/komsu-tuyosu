@@ -185,29 +185,28 @@ if (nextType === 'reel') {
     if (elevenKey && elevenVoiceId) {
       const voiceCacheDir = join(ROOT, 'output', 'audio-cache');
       try {
-        console.log('Soru sesi (ElevenLabs, speed 1.1)...');
-        // SORU icin speed 1.1: 0.9 cok yavas geliyordu, hafif hizlandirildi (kullanici karari).
-        // CEVAP speed 1.2 kullanir (asagida).
+        console.log('Soru sesi (ElevenLabs, speed 1.0)...');
+        // Hiz 1.0 (2026-11-25, Yunus: ses dogal gelmiyor). 1.1/1.2/1.15 hizlandirma
+        // tonlamayi mekaniklestiriyordu; Burak + eleven_v4 1.0'da sure ayni kaldi.
         voicePath = await generateVoice({
           text: entry.verse,
           voiceId: elevenVoiceId,
           apiKey: elevenKey,
           cacheDir: voiceCacheDir,
-          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.1 },
+          settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.0 },
           withTimestamps: isV2     // V2 altyazisi kelime zamanlamasi ister
         });
         voiceDuration = await getAudioDuration(voicePath);
         console.log(`  Soru voice: ${voiceDuration.toFixed(1)}sn`);
 
         if (entry.explanation && entry.explanation.trim()) {
-          console.log('Cevap sesi (ElevenLabs, speed 1.2)...');
-          // CEVAP icin speed 1.2: video suresini kisaltir, completion rate artar (icerik aynidir).
+          console.log('Cevap sesi (ElevenLabs, speed 1.0)...');
           manaVoicePath = await generateVoice({
             text: entry.explanation,
             voiceId: elevenVoiceId,
             apiKey: elevenKey,
             cacheDir: voiceCacheDir,
-            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.2 },
+            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.0 },
             withTimestamps: isV2
           });
           manaVoiceDuration = await getAudioDuration(manaVoicePath);
@@ -223,9 +222,7 @@ if (nextType === 'reel') {
             voiceId: elevenVoiceId,
             apiKey: elevenKey,
             cacheDir: voiceCacheDir,
-            // speed 1.15: CTA kisa bir cumle, hafif hizli okunca kart suresi kisaliyor
-            //  ve video 22sn bandini asmiyor. Soru/cevap hizina DOKUNULMADI.
-            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.15 }
+            settings: { stability: 0.5, similarity_boost: 0.95, style: 0, use_speaker_boost: true, speed: 1.0 }
           });
           ctaVoiceDuration = await getAudioDuration(ctaVoicePath);
           console.log(`  CTA voice: ${ctaVoiceDuration.toFixed(1)}sn`);
